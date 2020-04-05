@@ -17,7 +17,7 @@ struct StepDesignerView: View {
         NavigationView {
             GeometryReader { proxy in
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
-                    StepperView(cells: self.cells, alignments: self.cells.map { $0.alignment },verticalSpacing: 40.0)
+                    StepperView(cells: self.cells, alignments: self.cells.map { $0.alignment },verticalSpacing: 10.0)
                 }
             }
             .navigationBarTitle("Stepper View")
@@ -30,7 +30,7 @@ struct StepDesignerView: View {
 struct StepperContentView: View  {
     var alignment: StepperAlignment
     var body: some View {
-        return roundedRectangle()
+        return rectangleContent()
     }
     
     fileprivate func roundedRectangle() -> some View {
