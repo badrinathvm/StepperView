@@ -1,0 +1,6 @@
+framework module StepperView {
+  umbrella header "StepperView-umbrella.h"
+
+  export *
+  module * { export * }
+}

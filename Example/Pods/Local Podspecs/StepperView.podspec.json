@@ -1,0 +1,22 @@
+{
+  "name": "StepperView",
+  "version": "0.1.0",
+  "summary": "A short description of StepperView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/badrinathvm/StepperView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "badrinathvm": "Badarinath_Venkatnarayansetty@intuit.com"
+  },
+  "source": {
+    "git": "https://github.com/badrinathvm/StepperView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "StepperView/Classes/**/*"
+}
