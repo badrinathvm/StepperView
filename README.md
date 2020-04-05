@@ -22,9 +22,9 @@ pod 'StepperView'
 
 ## Author
 
-badrinathvm, Badarinath_Venkatnarayansetty@intuit.com
+Badarinath Venkatnarayansetty
 
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
-=======
+
