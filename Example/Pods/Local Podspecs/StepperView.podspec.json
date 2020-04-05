@@ -1,22 +1,25 @@
 {
   "name": "StepperView",
   "version": "0.1.0",
-  "summary": "A short description of StepperView.",
-  "description": "TODO: Add long description of the pod here.",
+  "swift_versions": "5.0",
+  "summary": "SwiftUI component for StepperView",
+  "description": "Stepper View componet for SwiftUI",
   "homepage": "https://github.com/badrinathvm/StepperView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "badrinathvm": "Badarinath_Venkatnarayansetty@intuit.com"
+    "badrinathvm": "badrinathvm@gmail.com"
   },
   "source": {
     "git": "https://github.com/badrinathvm/StepperView.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/badrivm",
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
-  "source_files": "StepperView/Classes/**/*"
+  "source_files": "StepperView/Classes/**/*",
+  "swift_version": "5.0"
 }
