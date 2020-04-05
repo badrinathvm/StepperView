@@ -14,7 +14,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-- iOS 10.0+
+- iOS 11.0+
 - Xcode 10.2+
 - Swift 5.0+
 - CocoaPods 1.6.1+
@@ -27,6 +27,17 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'StepperView'
 ```
+## Usage
+
+```
+var body: some View {
+  StepperView(cells: <List of all Views>, alignments: <alignment for the views>,verticalSpacing: 10.0)
+}
+```
+## Parameters
+- cells : Array of Views to be rendered
+- alignments: View to be pointed to either .top, .center or .bottom
+- verticalSpacing: option for custom spacing to place views
 
 ## Author
 
@@ -35,3 +46,4 @@ Badarinath Venkatnarayansetty
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
+
