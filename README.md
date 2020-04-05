@@ -9,6 +9,8 @@
     <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView.gif" width="290" alt="StepperView"/>
 </p>
 
+SwiftUI iOS component for Step Indications.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -30,25 +32,27 @@ pod 'StepperView'
 ## Usage
 
 ```
+import StepperView
+
 var body: some View {
-  StepperView(cells: <List of all Views>, alignments: <alignment for the views>,verticalSpacing: 10.0)
+  StepperView(cells: <List of Views>, alignments: <alignment for the views>,verticalSpacing: 10.0)
 }
 ```
 ## Parameters
 - cells : Array of Views to be rendered
-- alignments: View to be pointed to either .top, .center or .bottom
+- alignments: view to be pointed to either .top , .center , .bottom sections.
 - verticalSpacing: option for custom spacing to place views
-
 <p>
-    <a href="https://github.com/badrinathvm/StepperView/blob/master/Example/StepperView/StepDesignerView.swift">Refer StepperView Example for More details usage of StepperView Parameters</a>
+    <a href="https://github.com/badrinathvm/StepperView/blob/master/Example/StepperView/StepDesignerView.swift">Refer Example for More details usage of StepperView and Parameters</a>
 </p>
 
 ## Author
 
 Badarinath Venkatnarayansetty
 
+## Contact
+Follow and contact me on <a href="https://twitter.com/badrivm">Twitter</a> or <a href="https://www.linkedin.com/in/badarinath-venkatnarayansetty-abb79146/">LinkedIn</a>. If you find an issue, just open a ticket. Pull requests are welcome.
+
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
-
-
