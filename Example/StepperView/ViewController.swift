@@ -7,18 +7,32 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        if #available(iOS 13.0, *) {
+            let stepperView = UIHostingController(rootView: StepDesignerView())
+            stepperView.view.translatesAutoresizingMaskIntoConstraints = false
+            self.view.addSubview(stepperView.view)
+            
+            NSLayoutConstraint.activate([
+                stepperView.view.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 50),
+                stepperView.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                stepperView.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+                stepperView.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+            ])
+        } else {
+            // Fallback on earlier versions
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 
