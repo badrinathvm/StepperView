@@ -1,6 +1,5 @@
 //
 //  StepperView.swift
-//  Basics
 //
 //  Created by Venkatnarayansetty, Badarinath on 4/4/20.
 //  Copyright © 2020 Badarinath Venkatnarayansetty. All rights reserved.
