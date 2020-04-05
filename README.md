@@ -39,6 +39,10 @@ var body: some View {
 - alignments: View to be pointed to either .top, .center or .bottom
 - verticalSpacing: option for custom spacing to place views
 
+<p>
+    <a href="https://github.com/badrinathvm/StepperView/blob/master/Example/StepperView/StepDesignerView.swift">Refer StepperView Example for More details usage of StepperView Parameters</a>
+</p>
+
 ## Author
 
 Badarinath Venkatnarayansetty
@@ -46,4 +50,5 @@ Badarinath Venkatnarayansetty
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
+
 
