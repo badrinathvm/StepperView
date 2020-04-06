@@ -5,9 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 [![Platform](https://img.shields.io/cocoapods/p/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView.gif" width="290" alt="StepperView"/>
-</p>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/mixmatch.png" width="150MixMatch" alt="StepperViewMixMatch" align="left" hspace= "150"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView.gif" width="290" alt="StepperView" align = "center"/>
 
 SwiftUI iOS component for Step Indications.
 
@@ -65,3 +64,4 @@ Follow and contact me on <a href="https://twitter.com/badrivm">Twitter</a> or <a
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
+

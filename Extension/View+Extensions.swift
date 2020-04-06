@@ -9,7 +9,7 @@ import SwiftUI
 
 //MARK:- Helper function of View to operate on.
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-extension View {
+public extension View {
     // Stores the height for each of column which will be passed as part of onPreference change to the view.
     func heightPreference(column: Int) -> some View {
         background(GeometryReader { proxy in

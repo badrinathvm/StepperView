@@ -13,15 +13,23 @@ import StepperView
 struct StepDesignerView: View{
     let cells = [StepperContentView(), StepperContentView(), StepperContentView() ]
     let alignments = [StepperAlignment.top,.center,.bottom]
-    let indicatorTypes = [StepperIndicationType.circle,
-                          StepperIndicationType.image(Image(systemName: "arrow.right.circle")),
-                          StepperIndicationType.custom(AnyView(ImageView()))]
+    let circleIndicators = [StepperIndicationType<AnyView>.circle, StepperIndicationType.circle, StepperIndicationType.circle]
+    
+    let mixMatchIndicators = [StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.fill")),
+                          StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.circle")),
+                          //StepperIndicationType.custom(ImageView(name: "arrow.right.square").eraseToAnyView()),
+                          StepperIndicationType.custom(ImageView(name: "arrow.uturn.right").eraseToAnyView())
+                        ]
+    
     
     var body: some View {
         NavigationView {
             GeometryReader { proxy in
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
-                    StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.indicatorTypes,verticalSpacing: 10.0)
+                    HStack {
+                      StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.circleIndicators,verticalSpacing: 10.0)
+                      StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.mixMatchIndicators,verticalSpacing: 10.0)
+                    }
                 }
             }
             .navigationBarTitle("Stepper View")
@@ -31,8 +39,9 @@ struct StepDesignerView: View{
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ImageView: View {
+    var name:String
     var body: some View {
-        Image(systemName: "arrow.left.circle")
+        Image(systemName: name)
         .resizable()
         .frame(width: 12, height: 12)
     }
