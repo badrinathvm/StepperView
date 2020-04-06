@@ -11,26 +11,27 @@
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = E0956940883830C651240E754E3ECC52 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
-		1B255E758B9C6A55EC63E2EC634475C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		1BF0B9F5243BCB8800492C74 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9F4243BCB8800492C74 /* View+Extensions.swift */; };
-		1BF0B9F7243BCDA000492C74 /* VerticalAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9F6243BCDA000492C74 /* VerticalAlignment+Extension.swift */; };
-		1BF0B9FB243BCE1300492C74 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9FA243BCE1300492C74 /* IndicatorView.swift */; };
-		1BF0B9FD243BCE9000492C74 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9FC243BCE9000492C74 /* LineView.swift */; };
-		26BF963EC9A05367963DF7B031BFBE26 /* StepperView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6204BD505B4C8A3AFE795476C96A2840 /* StepperView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */; };
+		2EF492D1B953DF4F18674D01CAB0985C /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16802F6CC552EA6BA8B70B36E0DF2409 /* LineView.swift */; };
+		3F00E7613B8D39DB3242B880FB0E6258 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91877D493543D0B7EE7420CD1DFE2703 /* View+Extensions.swift */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		42086461F894A934103C7F2ED000E53D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */; };
+		7ACFB6633E0AB67B151686907E9378BE /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528A4FFF7FDAC5D4F2D13BAC8DCECA0 /* StepperView.swift */; };
+		7FD95B4617892A4622B7EE32A47F88B0 /* StepperView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 483BFDCAB68A7296F011F817096CB6F0 /* StepperView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81A053B41AC245377784B1A06B996CB4 /* VerticalAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07BAB1959CBCBF428D9E3ED4C8EF42 /* VerticalAlignment+Extension.swift */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE35F81C954881204729C569018D98C0 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C8BBFE2D9E3A9C566221B1DE04E91C /* FBSnapshotTestCase.m */; };
-		8DCFAD7809BEE170E1A59A5B5DD8CA06 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D97AF4781915CC74EE9DB8BFBC0B0A /* StepperView.swift */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 88EE4F95531D217A595AA8D85A24FA39 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A55818ADC9EA6E0F3E2FCA93DC83237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D2DF1ABBBD85F5E079D7D0EB5479BC /* SwiftSupport.swift */; };
+		A4469BF982B2F246592FF503E60FB7C1 /* StepperView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FAD39648268477E8DDD03D408D1363 /* StepperView-dummy.m */; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = AA172EA1A198EEFBE0794EACF7993C02 /* UIImage+Snapshot.m */; };
 		A96049D395A3B4553E6CDE7412D736EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BAD741515F5C2121EE7BFCDD8175482B /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528E7AF9140B3177E9215DBADCEE020 /* IndicatorView.swift */; };
 		BC1129ED76048110C3C30C73BE76996F /* Pods-StepperView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5607D0E6C665BF1FD799000DA9A62E /* Pods-StepperView_Tests-dummy.m */; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = D3067EAFD5B0A06885968D137840DB70 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5301327AFD5DD910A074609D7B2B7C5 /* Pods-StepperView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BF0820A43B8503E664BF525626B23C1 /* Pods-StepperView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,7 +39,6 @@
 		D73A065F7B163E24FA7A5855E3BA92B6 /* Pods-StepperView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB85FA938239E012A52C0169153D16DF /* Pods-StepperView_Example-dummy.m */; };
 		D8D78021260AC0F488831A2FC2A8AB56 /* Pods-StepperView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B13AD9D6D4BFABE3405A85D5F3386E40 /* Pods-StepperView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0B8D095C732352C854D365B9E5B993D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */; };
-		E5707EAD9BCCC9F9E834BAA2C8C37E76 /* StepperView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C4D60F1518C90C5364EE714324275A /* StepperView-dummy.m */; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B81AC7DF4855803A0FA70985F8A99 /* FBSnapshotTestCasePlatform.m */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -70,48 +70,51 @@
 
 /* Begin PBXFileReference section */
 		0211A231C93E1810BFC3F09AEE0A37F3 /* Pods-StepperView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Example-Info.plist"; sourceTree = "<group>"; };
-		05C028F74B9508FE72717D3BB2BD7B7A /* Pods_StepperView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		040C188AA172B32E7C2A8F2B11846B49 /* StepperView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepperView.xcconfig; sourceTree = "<group>"; };
+		05C028F74B9508FE72717D3BB2BD7B7A /* Pods_StepperView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StepperView_Example.framework; path = "Pods-StepperView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		0B76BC7D0C2C3FA2DB609CE53D5C0C37 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepperView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B76BC7D0C2C3FA2DB609CE53D5C0C37 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StepperView.framework; path = StepperView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF0820A43B8503E664BF525626B23C1 /* Pods-StepperView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StepperView_Example-umbrella.h"; sourceTree = "<group>"; };
-		10EEF39F14136B06A0BBCEF5C9E11FDD /* StepperView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StepperView-Info.plist"; sourceTree = "<group>"; };
 		13C8BBFE2D9E3A9C566221B1DE04E91C /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		16C4D60F1518C90C5364EE714324275A /* StepperView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepperView-dummy.m"; sourceTree = "<group>"; };
+		1528A4FFF7FDAC5D4F2D13BAC8DCECA0 /* StepperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		16802F6CC552EA6BA8B70B36E0DF2409 /* LineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		1A3E414A2122C3BC3532C12EFE05AD71 /* Pods-StepperView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Tests.modulemap"; sourceTree = "<group>"; };
 		1B5607D0E6C665BF1FD799000DA9A62E /* Pods-StepperView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Tests-dummy.m"; sourceTree = "<group>"; };
 		1B8ABEEA76ECDF1975B6D0787700F929 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		1BF0B9F4243BCB8800492C74 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		1BF0B9F6243BCDA000492C74 /* VerticalAlignment+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VerticalAlignment+Extension.swift"; sourceTree = "<group>"; };
-		1BF0B9FA243BCE1300492C74 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
-		1BF0B9FC243BCE9000492C74 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
-		1E00B83B5F68B4C4037EFFBDDB402E75 /* StepperView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-prefix.pch"; sourceTree = "<group>"; };
 		1E6041318F668A00834BD8F78AC546F5 /* Pods-StepperView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Example.modulemap"; sourceTree = "<group>"; };
 		3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		3E29C50D3CDB46CBCBD20AFA13EB3D8D /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		3EEB5557C8C6E600008045DF129FA063 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		418E0471655A8CDB5EB2C290498D2FD3 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		483BFDCAB68A7296F011F817096CB6F0 /* StepperView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-umbrella.h"; sourceTree = "<group>"; };
 		4969F046453FA46D6F0B372554F6F1B9 /* Pods-StepperView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4EA5DAFB8EA20FA670B63AC5FCD0523C /* Pods_StepperView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54930EA9ED94BF2A86C4CB6216754B2D /* StepperView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StepperView.modulemap; sourceTree = "<group>"; };
+		4EA5DAFB8EA20FA670B63AC5FCD0523C /* Pods_StepperView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StepperView_Tests.framework; path = "Pods-StepperView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50140918977F10A994B06AE8B2A9DE4C /* StepperView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = StepperView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		50E4225C3939301F6AD7511CD8FF9EA7 /* StepperView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-prefix.pch"; sourceTree = "<group>"; };
 		558D17434AAE6FD860B82C9D48690C5D /* Pods-StepperView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StepperView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CE7D81DC28BF85DB80CAA1A86D08019 /* StepperView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepperView.xcconfig; sourceTree = "<group>"; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6204BD505B4C8A3AFE795476C96A2840 /* StepperView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-umbrella.h"; sourceTree = "<group>"; };
 		715924BC41040CDB5C5EED50AC1D6AF0 /* Pods-StepperView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		72C74E58043A19D4B5DEA54E2CB223B6 /* Pods-StepperView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7321D3B4597D0EAD7B20D75393DE210E /* Pods-StepperView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StepperView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		746CC9C9E1B0E104CD1BA120C69A2526 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		75533AD36CEB909657363ECB4A2EA679 /* Pods-StepperView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StepperView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7A07BAB1959CBCBF428D9E3ED4C8EF42 /* VerticalAlignment+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "VerticalAlignment+Extension.swift"; sourceTree = "<group>"; };
+		7B7C74066FED9F0390359D3D2F7D1A76 /* StepperView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StepperView.modulemap; sourceTree = "<group>"; };
 		7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		80084CA5A2BB17240A8C033F5F8FE590 /* Pods-StepperView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StepperView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		82D2DF1ABBBD85F5E079D7D0EB5479BC /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		88EE4F95531D217A595AA8D85A24FA39 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8CDF020C04A35A3842CBDDCDE59F5F04 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		91877D493543D0B7EE7420CD1DFE2703 /* View+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		98FD387DFA194173633270BAF1BCD859 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A021355FD224A665359D962B77EB775 /* StepperView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StepperView-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		A6FAD39648268477E8DDD03D408D1363 /* StepperView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepperView-dummy.m"; sourceTree = "<group>"; };
 		AA172EA1A198EEFBE0794EACF7993C02 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		AB85FA938239E012A52C0169153D16DF /* Pods-StepperView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Example-dummy.m"; sourceTree = "<group>"; };
 		AD0B81AC7DF4855803A0FA70985F8A99 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
@@ -119,26 +122,23 @@
 		C628A88C84BB4C63A7BBA03A2241BDFF /* Pods-StepperView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D2193804BD7C1249E94FB67CDED94C8E /* Pods-StepperView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D3067EAFD5B0A06885968D137840DB70 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		D4D97AF4781915CC74EE9DB8BFBC0B0A /* StepperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		D5DD71F9C401C633FC64DAD38ED3EFE9 /* Pods-StepperView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Tests-Info.plist"; sourceTree = "<group>"; };
 		DA7E05D37FBEB588E6D2C7D745233EA8 /* Pods-StepperView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DE35F81C954881204729C569018D98C0 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		E0956940883830C651240E754E3ECC52 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		E354F8FD537351F26F7949B4EBFA5101 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		E5F87EEDF614699C12A0A686D21C467A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		F5420F3462AFDEEA9F4420B6A826D548 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FB600A60C7CB2AC4B14A5291E0FF6D04 /* StepperView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = StepperView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F528E7AF9140B3177E9215DBADCEE020 /* IndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3641EC131C1892D5F85C15853104AC45 /* Frameworks */ = {
+		56821529BA7EC24896BDF992D6FED60E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B255E758B9C6A55EC63E2EC634475C3 /* Foundation.framework in Frameworks */,
+				9A55818ADC9EA6E0F3E2FCA93DC83237 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,34 +183,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1BF0B9F8243BCDDA00492C74 /* Views */ = {
+		0B44229EEB93E8A9979B24E866454EF0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D4D97AF4781915CC74EE9DB8BFBC0B0A /* StepperView.swift */,
-				1BF0B9FA243BCE1300492C74 /* IndicatorView.swift */,
-				1BF0B9FC243BCE9000492C74 /* LineView.swift */,
+				3EEB5557C8C6E600008045DF129FA063 /* LICENSE */,
+				8CDF020C04A35A3842CBDDCDE59F5F04 /* README.md */,
+				50140918977F10A994B06AE8B2A9DE4C /* StepperView.podspec */,
 			);
-			path = Views;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		1BF0B9F9243BCDE800492C74 /* Extension */ = {
+		0C0F99D60E765AF64F0074CBCBB60690 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1BF0B9F4243BCB8800492C74 /* View+Extensions.swift */,
-				1BF0B9F6243BCDA000492C74 /* VerticalAlignment+Extension.swift */,
+				F528E7AF9140B3177E9215DBADCEE020 /* IndicatorView.swift */,
+				16802F6CC552EA6BA8B70B36E0DF2409 /* LineView.swift */,
+				1528A4FFF7FDAC5D4F2D13BAC8DCECA0 /* StepperView.swift */,
 			);
-			path = Extension;
+			name = Views;
+			path = StepperView/Classes/Views;
 			sourceTree = "<group>";
 		};
-		2B4B58EB7701DB9D918B254E0FD0F923 /* Support Files */ = {
+		1FE6AA163D621389A1EC56BA7708636D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				54930EA9ED94BF2A86C4CB6216754B2D /* StepperView.modulemap */,
-				5CE7D81DC28BF85DB80CAA1A86D08019 /* StepperView.xcconfig */,
-				16C4D60F1518C90C5364EE714324275A /* StepperView-dummy.m */,
-				10EEF39F14136B06A0BBCEF5C9E11FDD /* StepperView-Info.plist */,
-				1E00B83B5F68B4C4037EFFBDDB402E75 /* StepperView-prefix.pch */,
-				6204BD505B4C8A3AFE795476C96A2840 /* StepperView-umbrella.h */,
+				7B7C74066FED9F0390359D3D2F7D1A76 /* StepperView.modulemap */,
+				040C188AA172B32E7C2A8F2B11846B49 /* StepperView.xcconfig */,
+				A6FAD39648268477E8DDD03D408D1363 /* StepperView-dummy.m */,
+				9A021355FD224A665359D962B77EB775 /* StepperView-Info.plist */,
+				50E4225C3939301F6AD7511CD8FF9EA7 /* StepperView-prefix.pch */,
+				483BFDCAB68A7296F011F817096CB6F0 /* StepperView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/StepperView";
@@ -230,18 +232,6 @@
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
-		45FB231BACD7A3D6DE32ED3D064272BF /* StepperView */ = {
-			isa = PBXGroup;
-			children = (
-				1BF0B9F9243BCDE800492C74 /* Extension */,
-				1BF0B9F8243BCDDA00492C74 /* Views */,
-				E57ECAB1614EB61251517B3346414004 /* Pod */,
-				2B4B58EB7701DB9D918B254E0FD0F923 /* Support Files */,
-			);
-			name = StepperView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		4F5ADE5D4C522F33DCCEF4F49A0A741B /* Pods-StepperView_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +247,36 @@
 			);
 			name = "Pods-StepperView_Tests";
 			path = "Target Support Files/Pods-StepperView_Tests";
+			sourceTree = "<group>";
+		};
+		58D0141B0FE59C7865AC6BF23597A45D /* StepperView */ = {
+			isa = PBXGroup;
+			children = (
+				7BEFC1BA4A0C0B3711B892A2E24EC362 /* Extension */,
+				0B44229EEB93E8A9979B24E866454EF0 /* Pod */,
+				1FE6AA163D621389A1EC56BA7708636D /* Support Files */,
+				0C0F99D60E765AF64F0074CBCBB60690 /* Views */,
+			);
+			name = StepperView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		74DB3E6AC107DA3A151CA4896272A583 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58D0141B0FE59C7865AC6BF23597A45D /* StepperView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7BEFC1BA4A0C0B3711B892A2E24EC362 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7A07BAB1959CBCBF428D9E3ED4C8EF42 /* VerticalAlignment+Extension.swift */,
+				91877D493543D0B7EE7420CD1DFE2703 /* View+Extensions.swift */,
+			);
+			name = Extension;
+			path = StepperView/Classes/Extension;
 			sourceTree = "<group>";
 		};
 		7DE5752EED0A4C4A430975244947611A /* iOS */ = {
@@ -285,6 +305,7 @@
 				45E4BEB48F67ECE4946F86A2669DF19F /* Support Files */,
 				820C839EC049005CB82FAAF13AFDCB95 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -330,30 +351,12 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				E76AF66E9F3310107D4DDF991061622E /* Development Pods */,
+				74DB3E6AC107DA3A151CA4896272A583 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
 				07CF32D14B63573F6ECB5CA3FE6605FD /* Products */,
 				9A97EAC4B05F7C73A694C7880F288FB5 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		E57ECAB1614EB61251517B3346414004 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E5F87EEDF614699C12A0A686D21C467A /* LICENSE */,
-				F5420F3462AFDEEA9F4420B6A826D548 /* README.md */,
-				FB600A60C7CB2AC4B14A5291E0FF6D04 /* StepperView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		E76AF66E9F3310107D4DDF991061622E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				45FB231BACD7A3D6DE32ED3D064272BF /* StepperView */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
@@ -407,11 +410,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C59458DAFFF19062E1DD68FE50C747A7 /* Headers */ = {
+		8AEB70C322CF08796D4B21B7F0E1A6B6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BF963EC9A05367963DF7B031BFBE26 /* StepperView-umbrella.h in Headers */,
+				7FD95B4617892A4622B7EE32A47F88B0 /* StepperView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,12 +431,12 @@
 /* Begin PBXNativeTarget section */
 		168A52CD2EC5A2263BAF15EFF9FB166E /* StepperView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A863A8142A18DCF2EC51D478FF743FDB /* Build configuration list for PBXNativeTarget "StepperView" */;
+			buildConfigurationList = AD3A84BD1FA8EAC52712BDEEF9D539CE /* Build configuration list for PBXNativeTarget "StepperView" */;
 			buildPhases = (
-				C59458DAFFF19062E1DD68FE50C747A7 /* Headers */,
-				9330CA2FBB6EDE359C6EDE32F0C02E2F /* Sources */,
-				3641EC131C1892D5F85C15853104AC45 /* Frameworks */,
-				936685A569D4894E693364165E4E6C39 /* Resources */,
+				8AEB70C322CF08796D4B21B7F0E1A6B6 /* Headers */,
+				102F6460EE55ABE776EC649BCC36FC83 /* Sources */,
+				56821529BA7EC24896BDF992D6FED60E /* Frameworks */,
+				1A77DCBFDF74765824F26F0B63B2E84F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -532,6 +535,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1A77DCBFDF74765824F26F0B63B2E84F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C417A5C4078DBC39C72C215E59C6817 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,16 +563,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		936685A569D4894E693364165E4E6C39 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		102F6460EE55ABE776EC649BCC36FC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD741515F5C2121EE7BFCDD8175482B /* IndicatorView.swift in Sources */,
+				2EF492D1B953DF4F18674D01CAB0985C /* LineView.swift in Sources */,
+				A4469BF982B2F246592FF503E60FB7C1 /* StepperView-dummy.m in Sources */,
+				7ACFB6633E0AB67B151686907E9378BE /* StepperView.swift in Sources */,
+				81A053B41AC245377784B1A06B996CB4 /* VerticalAlignment+Extension.swift in Sources */,
+				3F00E7613B8D39DB3242B880FB0E6258 /* View+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1B5D5C4A0BAE63601FD72C732F7B8E88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -576,19 +592,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC1129ED76048110C3C30C73BE76996F /* Pods-StepperView_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9330CA2FBB6EDE359C6EDE32F0C02E2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5707EAD9BCCC9F9E834BAA2C8C37E76 /* StepperView-dummy.m in Sources */,
-				1BF0B9F5243BCB8800492C74 /* View+Extensions.swift in Sources */,
-				1BF0B9FD243BCE9000492C74 /* LineView.swift in Sources */,
-				8DCFAD7809BEE170E1A59A5B5DD8CA06 /* StepperView.swift in Sources */,
-				1BF0B9F7243BCDA000492C74 /* VerticalAlignment+Extension.swift in Sources */,
-				1BF0B9FB243BCE1300492C74 /* IndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,11 +635,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4B2F424C9E70BBBE51110A8A9F070830 /* Debug */ = {
+		1A9EDEF67E5B720C61EDD2B4F72F444E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 715924BC41040CDB5C5EED50AC1D6AF0 /* Pods-StepperView_Tests.debug.xcconfig */;
+			baseConfigurationReference = DA7E05D37FBEB588E6D2C7D745233EA8 /* Pods-StepperView_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -660,48 +665,17 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5B6541DACD2257ED44031D0D685E4205 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CE7D81DC28BF85DB80CAA1A86D08019 /* StepperView.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/StepperView/StepperView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/StepperView/StepperView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/StepperView/StepperView.modulemap";
-				PRODUCT_MODULE_NAME = StepperView;
-				PRODUCT_NAME = StepperView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		6981B49048575F8238B3C5B905C918E5 /* Release */ = {
+		223C75E41A9D2D61AFA1B9AD9C211902 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 418E0471655A8CDB5EB2C290498D2FD3 /* FBSnapshotTestCase.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -730,41 +704,7 @@
 			};
 			name = Release;
 		};
-		A14C35EFA558A16083B000039DC20B1A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA7E05D37FBEB588E6D2C7D745233EA8 /* Pods-StepperView_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StepperView_Tests/Pods-StepperView_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StepperView_Tests/Pods-StepperView_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -817,17 +757,20 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		B0EB9A3CD3C94E6EC7A05F9B5EE6F572 /* Debug */ = {
+		52AF8A13A3992E4C93025A8F3613D2F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4969F046453FA46D6F0B372554F6F1B9 /* Pods-StepperView_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -856,7 +799,106 @@
 			};
 			name = Debug;
 		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		96D7AE97145D5EA464B07348F1162EE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040C188AA172B32E7C2A8F2B11846B49 /* StepperView.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StepperView/StepperView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StepperView/StepperView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/StepperView/StepperView.modulemap";
+				PRODUCT_MODULE_NAME = StepperView;
+				PRODUCT_NAME = StepperView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9AB5E2E05579EDB30700CFF7F26DC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040C188AA172B32E7C2A8F2B11846B49 /* StepperView.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StepperView/StepperView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StepperView/StepperView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/StepperView/StepperView.modulemap";
+				PRODUCT_MODULE_NAME = StepperView;
+				PRODUCT_NAME = StepperView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D8CA8FC163C5B6AE608806F3092C31F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418E0471655A8CDB5EB2C290498D2FD3 /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -920,10 +962,12 @@
 			};
 			name = Debug;
 		};
-		C42A7F621067B3940BEB8A12DFE75F0E /* Debug */ = {
+		F5FC3580EFB3F51462C505960E01970B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CE7D81DC28BF85DB80CAA1A86D08019 /* StepperView.xcconfig */;
+			baseConfigurationReference = 715924BC41040CDB5C5EED50AC1D6AF0 /* Pods-StepperView_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -934,29 +978,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/StepperView/StepperView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/StepperView/StepperView-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-StepperView_Tests/Pods-StepperView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/StepperView/StepperView.modulemap";
-				PRODUCT_MODULE_NAME = StepperView;
-				PRODUCT_NAME = StepperView;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StepperView_Tests/Pods-StepperView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E543597C05ADA5AE55DAA748D387AE3B /* Release */ = {
+		F7C9455C78FEC51EF0F26575EC437656 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C628A88C84BB4C63A7BBA03A2241BDFF /* Pods-StepperView_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -986,45 +1033,14 @@
 			};
 			name = Release;
 		};
-		EE252C6C51286892441EE171776C7E81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 418E0471655A8CDB5EB2C290498D2FD3 /* FBSnapshotTestCase.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1032,8 +1048,8 @@
 		8A10EF26FFC499AAF2CD454D7FE43AA1 /* Build configuration list for PBXNativeTarget "Pods-StepperView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B2F424C9E70BBBE51110A8A9F070830 /* Debug */,
-				A14C35EFA558A16083B000039DC20B1A /* Release */,
+				F5FC3580EFB3F51462C505960E01970B /* Debug */,
+				1A9EDEF67E5B720C61EDD2B4F72F444E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1041,17 +1057,17 @@
 		A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE252C6C51286892441EE171776C7E81 /* Debug */,
-				6981B49048575F8238B3C5B905C918E5 /* Release */,
+				D8CA8FC163C5B6AE608806F3092C31F2 /* Debug */,
+				223C75E41A9D2D61AFA1B9AD9C211902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A863A8142A18DCF2EC51D478FF743FDB /* Build configuration list for PBXNativeTarget "StepperView" */ = {
+		AD3A84BD1FA8EAC52712BDEEF9D539CE /* Build configuration list for PBXNativeTarget "StepperView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C42A7F621067B3940BEB8A12DFE75F0E /* Debug */,
-				5B6541DACD2257ED44031D0D685E4205 /* Release */,
+				B9AB5E2E05579EDB30700CFF7F26DC7C /* Debug */,
+				96D7AE97145D5EA464B07348F1162EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1059,8 +1075,8 @@
 		B7CCE3EF55782EE24BB4D3A9FFAC4D0D /* Build configuration list for PBXNativeTarget "Pods-StepperView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0EB9A3CD3C94E6EC7A05F9B5EE6F572 /* Debug */,
-				E543597C05ADA5AE55DAA748D387AE3B /* Release */,
+				52AF8A13A3992E4C93025A8F3613D2F8 /* Debug */,
+				F7C9455C78FEC51EF0F26575EC437656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
