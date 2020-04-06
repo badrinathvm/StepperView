@@ -41,7 +41,7 @@ let indicatorTypes = [  StepperIndicationType.circle,
                     ]
 
 var body: some View {
-     StepperView(cells: cells, alignments: alignments,indicatorTypes:indicatorTypes, verticalSpacing: 10.0)
+     StepperView(cells: cells, alignments: alignments,indicatorTypes:indicatorTypes)
 }
 ```
 ## Parameters
