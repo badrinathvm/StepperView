@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'StepperView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.swift_version  = '5.0'
   s.summary          = 'SwiftUI component for StepperView'
   s.description      = 'Stepper View componet for SwiftUI'
