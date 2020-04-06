@@ -48,6 +48,12 @@ extension View {
     func embedINNavigationView() -> some View {
         NavigationView { self }
     }
+    
+    
+    /// wrapper to  AnyView 
+    func eraseToAnyView() -> AnyView {
+        AnyView(self)
+    }
 }
 
 //MARK:- Collects width of all the cells, with reduce takes the maximum value for the given key
