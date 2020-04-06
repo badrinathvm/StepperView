@@ -10,14 +10,18 @@ import SwiftUI
 import StepperView
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct StepDesignerView: View {
-    let cells = [StepperContentView(alignment: .top), StepperContentView(alignment: .center), StepperContentView(alignment: .bottom),StepperContentView(alignment: .top), StepperContentView(alignment: .center), StepperContentView(alignment: .bottom)]
+struct StepDesignerView: View{
+    let cells = [StepperContentView(), StepperContentView(), StepperContentView() ]
+    var alignments = [StepperAlignment.top,.center,.bottom]
+    let indicatorTypes = [StepperIndicationType.circle,
+                          StepperIndicationType.image(Image(systemName: "arrow.right.circle")),
+                          StepperIndicationType.custom(AnyView(ImageView()))]
     
     var body: some View {
         NavigationView {
             GeometryReader { proxy in
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
-                    StepperView(cells: self.cells, alignments: self.cells.map { $0.alignment },verticalSpacing: 10.0)
+                    StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.indicatorTypes,verticalSpacing: 10.0)
                 }
             }
             .navigationBarTitle("Stepper View")
@@ -25,10 +29,18 @@ struct StepDesignerView: View {
     }
 }
 
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+struct ImageView: View {
+    var body: some View {
+        Image(systemName: "arrow.left.circle")
+        .resizable()
+        .frame(width: 12, height: 12)
+    }
+}
+
 //MARK:- Stepper Content View
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct StepperContentView: View  {
-    var alignment: StepperAlignment
+struct StepperContentView: View {
     var body: some View {
         return rectangleContent()
     }
@@ -62,5 +74,3 @@ struct StepperContentView: View  {
               }
       }
 }
-
-

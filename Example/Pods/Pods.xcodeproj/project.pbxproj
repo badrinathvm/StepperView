@@ -12,6 +12,10 @@
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = E0956940883830C651240E754E3ECC52 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
 		1B255E758B9C6A55EC63E2EC634475C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
+		1BF0B9F5243BCB8800492C74 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9F4243BCB8800492C74 /* View+Extensions.swift */; };
+		1BF0B9F7243BCDA000492C74 /* VerticalAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9F6243BCDA000492C74 /* VerticalAlignment+Extension.swift */; };
+		1BF0B9FB243BCE1300492C74 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9FA243BCE1300492C74 /* IndicatorView.swift */; };
+		1BF0B9FD243BCE9000492C74 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9FC243BCE9000492C74 /* LineView.swift */; };
 		26BF963EC9A05367963DF7B031BFBE26 /* StepperView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6204BD505B4C8A3AFE795476C96A2840 /* StepperView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -76,6 +80,10 @@
 		1A3E414A2122C3BC3532C12EFE05AD71 /* Pods-StepperView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Tests.modulemap"; sourceTree = "<group>"; };
 		1B5607D0E6C665BF1FD799000DA9A62E /* Pods-StepperView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Tests-dummy.m"; sourceTree = "<group>"; };
 		1B8ABEEA76ECDF1975B6D0787700F929 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		1BF0B9F4243BCB8800492C74 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		1BF0B9F6243BCDA000492C74 /* VerticalAlignment+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VerticalAlignment+Extension.swift"; sourceTree = "<group>"; };
+		1BF0B9FA243BCE1300492C74 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		1BF0B9FC243BCE9000492C74 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		1E00B83B5F68B4C4037EFFBDDB402E75 /* StepperView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-prefix.pch"; sourceTree = "<group>"; };
 		1E6041318F668A00834BD8F78AC546F5 /* Pods-StepperView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Example.modulemap"; sourceTree = "<group>"; };
 		3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
@@ -111,7 +119,7 @@
 		C628A88C84BB4C63A7BBA03A2241BDFF /* Pods-StepperView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D2193804BD7C1249E94FB67CDED94C8E /* Pods-StepperView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D3067EAFD5B0A06885968D137840DB70 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		D4D97AF4781915CC74EE9DB8BFBC0B0A /* StepperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepperView.swift; path = StepperView/Classes/StepperView.swift; sourceTree = "<group>"; };
+		D4D97AF4781915CC74EE9DB8BFBC0B0A /* StepperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		D5DD71F9C401C633FC64DAD38ED3EFE9 /* Pods-StepperView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Tests-Info.plist"; sourceTree = "<group>"; };
 		DA7E05D37FBEB588E6D2C7D745233EA8 /* Pods-StepperView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DE35F81C954881204729C569018D98C0 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
@@ -175,6 +183,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1BF0B9F8243BCDDA00492C74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4D97AF4781915CC74EE9DB8BFBC0B0A /* StepperView.swift */,
+				1BF0B9FA243BCE1300492C74 /* IndicatorView.swift */,
+				1BF0B9FC243BCE9000492C74 /* LineView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1BF0B9F9243BCDE800492C74 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1BF0B9F4243BCB8800492C74 /* View+Extensions.swift */,
+				1BF0B9F6243BCDA000492C74 /* VerticalAlignment+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		2B4B58EB7701DB9D918B254E0FD0F923 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +233,8 @@
 		45FB231BACD7A3D6DE32ED3D064272BF /* StepperView */ = {
 			isa = PBXGroup;
 			children = (
-				D4D97AF4781915CC74EE9DB8BFBC0B0A /* StepperView.swift */,
+				1BF0B9F9243BCDE800492C74 /* Extension */,
+				1BF0B9F8243BCDDA00492C74 /* Views */,
 				E57ECAB1614EB61251517B3346414004 /* Pod */,
 				2B4B58EB7701DB9D918B254E0FD0F923 /* Support Files */,
 			);
@@ -556,7 +584,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5707EAD9BCCC9F9E834BAA2C8C37E76 /* StepperView-dummy.m in Sources */,
+				1BF0B9F5243BCB8800492C74 /* View+Extensions.swift in Sources */,
+				1BF0B9FD243BCE9000492C74 /* LineView.swift in Sources */,
 				8DCFAD7809BEE170E1A59A5B5DD8CA06 /* StepperView.swift in Sources */,
+				1BF0B9F7243BCDA000492C74 /* VerticalAlignment+Extension.swift in Sources */,
+				1BF0B9FB243BCE1300492C74 /* IndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
