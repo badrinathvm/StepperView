@@ -34,16 +34,25 @@ pod 'StepperView'
 ```
 import StepperView
 
+let cells = [ Text("Top").eraseToAnyView(),  Text("Center").eraseToAnyView(), Text("Bottom").eraseToAnyView() ]
+let alignments = [StepperAlignment.top,StepperAlignment.center,StepperAlignment.bottom]
+let indicatorTypes = [  StepperIndicationType.circle,
+                        StepperIndicationType.image(Image(systemName: "arrow.right.circle")),
+                        StepperIndicationType.custom(AnyView(ImageView()))
+                    ]
+
 var body: some View {
-  StepperView(cells: <List of Views>, alignments: <alignment for the views>,verticalSpacing: 10.0)
+     StepperView(cells: cells, alignments: alignments,indicatorTypes:indicatorTypes, verticalSpacing: 10.0)
 }
 ```
 ## Parameters
-- cells : Array of Views to be rendered
-- alignments: view to be pointed to either .top , .center , .bottom sections.
-- verticalSpacing: option for custom spacing to place views
+- cells : Array of Views to be rendered next to step Indicator 
+- alignments: list of view alignments to be pointed for eg: can be  .top , .center , .bottom sections
+- indicatorTypes: provides the option to customise the indicator.
+- verticalSpacing: custom spacing to place views vertically (optional)
+
 <p>
-    <a href="https://github.com/badrinathvm/StepperView/blob/master/Example/StepperView/StepDesignerView.swift">Refer Example for More details usage of StepperView and Parameters</a>
+    <a href="https://github.com/badrinathvm/StepperView/blob/master/Example/StepperView/StepDesignerView.swift">Refer Example for more details on usage of StepperView</a>
 </p>
 
 ## Author

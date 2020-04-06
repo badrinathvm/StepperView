@@ -12,7 +12,7 @@ import StepperView
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepDesignerView: View{
     let cells = [StepperContentView(), StepperContentView(), StepperContentView() ]
-    var alignments = [StepperAlignment.top,.center,.bottom]
+    let alignments = [StepperAlignment.top,.center,.bottom]
     let indicatorTypes = [StepperIndicationType.circle,
                           StepperIndicationType.image(Image(systemName: "arrow.right.circle")),
                           StepperIndicationType.custom(AnyView(ImageView()))]

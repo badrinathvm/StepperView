@@ -45,9 +45,10 @@ public struct StepperView<Cell>: View where Cell:View {
             VStack(spacing: verticalSpacing) {
                 ForEach(self.cells.indices) { index in
                     HStack(alignment: self.getAlignment(type: self.alignments[index])) {
-                         AnyView(IndicatorView(type: self.indicationType[index]))
+                        IndicatorView(type: self.indicationType[index])
                             .padding(.horizontal, 10.0)
                             .setAlignment(type: self.alignments[index])
+                            .eraseToAnyView()
                         self.cells[index]
                             .heightPreference(column: index)
                     }.offset(x: -40)

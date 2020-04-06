@@ -20,16 +20,15 @@ extension View {
     /// returns the alignment guide based on the alignemnt type.
     /// - Parameter type: sets the aligment guide.
     func setAlignment(type: StepperAlignment)-> some View  {
-          switch type {
-          case .top:
+        switch type {
+        case .top:
             return self.alignmentGuide(.customTop) { d in d[VerticalAlignment.top] - 15 }
-          case .center:
+        case .center:
             return self.alignmentGuide(.customCenter) { d in d[VerticalAlignment.center] }
-          case .bottom:
+        case .bottom:
             return self.alignmentGuide(.customBottom) { d in d[VerticalAlignment.bottom] + 15 }
-          }
-      }
-    
+        }
+    }
     
     /// returmns the alginment based ont he Stepper Alignment
     /// - Parameter type: StepperAlignment enum
@@ -38,7 +37,7 @@ extension View {
         case .top:
             return .customTop
         case .center:
-             return .customCenter
+            return .customCenter
         case .bottom:
             return .customBottom
         }
