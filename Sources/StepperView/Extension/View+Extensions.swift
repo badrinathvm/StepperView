@@ -22,11 +22,11 @@ public extension View {
     func setAlignment(type: StepperAlignment)-> some View  {
         switch type {
         case .top:
-            return self.alignmentGuide(.customTop) { d in d[VerticalAlignment.top] - 15 }
+            return self.alignmentGuide(.customTop) { d in d[VerticalAlignment.top] }
         case .center:
             return self.alignmentGuide(.customCenter) { d in d[VerticalAlignment.center] }
         case .bottom:
-            return self.alignmentGuide(.customBottom) { d in d[VerticalAlignment.bottom] + 15 }
+            return self.alignmentGuide(.customBottom) { d in d[VerticalAlignment.bottom] }
         }
     }
     
@@ -63,5 +63,17 @@ struct HeightPreference: PreferenceKey {
     
     static func reduce(value: inout Value, nextValue: () -> Value) {
         value.merge(nextValue(), uniquingKeysWith: max)
+    }
+}
+
+//MARK:- Collects bound, center coordinates and pass layout data to it's parent View
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+public struct BoundsPreferenceKey: PreferenceKey {
+    public typealias Value = Anchor<CGRect>?
+    
+    public static var defaultValue: Value = nil
+    
+    public static func reduce(value: inout Value, nextValue: () -> Value) {
+        value = nextValue()
     }
 }

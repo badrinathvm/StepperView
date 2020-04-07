@@ -29,7 +29,7 @@ public struct StepperView<Cell>: View where Cell:View {
     public var cells:[Cell]
     public var alignments:[StepperAlignment]
     public var indicationType: [StepperIndicationType<AnyView>]
-    public var verticalSpacing: CGFloat = 30.0
+    public var verticalSpacing: CGFloat
     
     public init(cells: [Cell], alignments: [StepperAlignment],indicationType: [StepperIndicationType<AnyView>],verticalSpacing:CGFloat = 30.0) {
         self.cells = cells
@@ -40,18 +40,18 @@ public struct StepperView<Cell>: View where Cell:View {
     
     public var body: some View {
         HStack {
-            //line view to host circle to point
+            //line view to host indicator to point
             LineView(dividerHeight: $dividerHeight)
             VStack(spacing: verticalSpacing) {
                 ForEach(self.cells.indices) { index in
                     HStack(alignment: self.getAlignment(type: self.alignments[index])) {
                         IndicatorView(type: self.indicationType[index])
-                            .padding(.horizontal, 10.0)
-                            .setAlignment(type: self.alignments[index])
+                            .padding(.horizontal, CGFloat(10.0))
                             .eraseToAnyView()
                         self.cells[index]
                             .heightPreference(column: index)
-                    }.offset(x: -40)
+                    }.setAlignment(type: self.alignments[index])
+                    .offset(x: CGFloat(-40))
                 }
             }.onPreferenceChange(HeightPreference.self) {
                 self.columnHeights = $0
