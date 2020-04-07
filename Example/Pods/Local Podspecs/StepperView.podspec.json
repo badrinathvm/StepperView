@@ -1,9 +1,9 @@
 {
   "name": "StepperView",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "swift_versions": "5.0",
-  "summary": "SwiftUI component for StepperView",
-  "description": "Stepper View componet for SwiftUI",
+  "summary": "SwiftUI iOS component for Step Indications.",
+  "description": "Stepper View Indication componet for SwiftUI",
   "homepage": "https://github.com/badrinathvm/StepperView",
   "license": {
     "type": "MIT",
@@ -14,12 +14,12 @@
   },
   "source": {
     "git": "https://github.com/badrinathvm/StepperView.git",
-    "tag": "1.0.0"
+    "tag": "1.0.3"
   },
   "social_media_url": "https://twitter.com/badrivm",
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "StepperView/Classes/**/*",
+  "source_files": "Sources/**/*.swift",
   "swift_version": "5.0"
 }
