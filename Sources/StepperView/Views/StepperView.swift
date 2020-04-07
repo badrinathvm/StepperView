@@ -31,7 +31,7 @@ public struct StepperView<Cell>: View where Cell:View {
     public var indicationType: [StepperIndicationType<AnyView>]
     public var verticalSpacing: CGFloat = 30.0
     
-    public init(cells: [Cell], alignments: [StepperAlignment],indicationType: [StepperIndicationType<AnyView>],verticalSpacing:CGFloat) {
+    public init(cells: [Cell], alignments: [StepperAlignment],indicationType: [StepperIndicationType<AnyView>],verticalSpacing:CGFloat = 30.0) {
         self.cells = cells
         self.alignments = alignments
         self.indicationType = indicationType

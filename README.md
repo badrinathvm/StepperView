@@ -28,22 +28,43 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'StepperView'
 ```
+
+## Swift Package Manager
+
+StepperView is available through Swift Package Manager. To install it, simply add the foollowing dependency to your Package.swift
+
+```ruby
+.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.0.5")
+```
+
 ## Usage
 
 ```
 import StepperView
 
-let cells = [ Text("Top").eraseToAnyView(),  Text("Center").eraseToAnyView(), Text("Bottom").eraseToAnyView() ]
-
 let alignments = [StepperAlignment.top,StepperAlignment.center,StepperAlignment.bottom]
 
-let indicatorTypes = [  StepperIndicationType.circle,
+let indicatorTypes = [  StepperIndicationType<AnyView>.circle,
                         StepperIndicationType.image(Image(systemName: "arrow.right.circle")),
-                        StepperIndicationType.custom(AnyView(ImageView()))
+                        StepperIndicationType.image(Image(systemName: "arrow.uturn.right"))
                     ]
 
 var body: some View {
-     StepperView(cells: cells, alignments: alignments,indicatorTypes:indicatorTypes)
+      StepperView(cells: [cellBody, cellBody , cellBody], alignments: alignments,indicationType:indicatorTypes)
+}
+
+var cellBody:some View {
+    VStack(alignment: .leading) {
+        ForEach(["Top","Center","Bottom"], id:\.self) { value in
+            HStack {
+                Text(value)
+                    .foregroundColor(Color.gray)
+                    .padding(.vertical , 10)
+                    .padding(.horizontal, 5)
+                Spacer()
+            }
+        }
+    }
 }
 ```
 ## Parameters

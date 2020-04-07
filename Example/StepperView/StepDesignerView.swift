@@ -27,7 +27,7 @@ struct StepDesignerView: View{
             GeometryReader { proxy in
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
-                      StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.circleIndicators,verticalSpacing: 10.0)
+                      StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.circleIndicators)
                       StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.mixMatchIndicators,verticalSpacing: 10.0)
                     }
                 }
