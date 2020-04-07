@@ -34,7 +34,9 @@ pod 'StepperView'
 import StepperView
 
 let cells = [ Text("Top").eraseToAnyView(),  Text("Center").eraseToAnyView(), Text("Bottom").eraseToAnyView() ]
+
 let alignments = [StepperAlignment.top,StepperAlignment.center,StepperAlignment.bottom]
+
 let indicatorTypes = [  StepperIndicationType.circle,
                         StepperIndicationType.image(Image(systemName: "arrow.right.circle")),
                         StepperIndicationType.custom(AnyView(ImageView()))
