@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 [![Platform](https://img.shields.io/cocoapods/p/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView.gif" width="200" alt="StepperView" align="left" hspace= "50"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView.gif" width="200" alt="StepperView" align="left" hspace= "150"/>
 <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView_multiple_options.gif" width="200" alt="StepperViewWithMultipleOptions" align = "center"/>
 
 SwiftUI iOS component for Step Indications.
@@ -23,7 +23,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Installation
 
 StepperView is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+it, simply add the following line to your Podfile.
 
 ```ruby
 pod 'StepperView'
@@ -34,7 +34,7 @@ pod 'StepperView'
 StepperView is available through Swift Package Manager. To install it, simply add the foollowing dependency to your Package.swift
 
 ```ruby
-.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.0.5")
+.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.0.6")
 ```
 
 ## Usage
@@ -87,5 +87,6 @@ Follow and contact me on <a href="https://twitter.com/badrivm">Twitter</a> or <a
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
+
 
 
