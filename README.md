@@ -15,8 +15,8 @@ SwiftUI iOS component for Step Indications.
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-- iOS 11.0+
-- Xcode 10.2+
+- iOS 13.0+
+- Xcode 11.2+
 - Swift 5.0+
 - CocoaPods 1.6.1+
 
