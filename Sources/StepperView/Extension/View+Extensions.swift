@@ -69,11 +69,30 @@ struct HeightPreference: PreferenceKey {
 //MARK:- Collects bound, center coordinates and pass layout data to it's parent View
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct BoundsPreferenceKey: PreferenceKey {
-    public typealias Value = Anchor<CGRect>?
+    
+ //   public typealias Value = Anchor<CGRect>?
+//
+//    public static var defaultValue: Value = nil
+//
+//    public static func reduce(value: inout Value, nextValue: () -> Value) {
+//        value = nextValue()
+//        print("Bounds \(String(describing: value))")
+//    }
+    
+    public typealias Value = TopBottomBoundsPreferenceKey?
     
     public static var defaultValue: Value = nil
     
-    public static func reduce(value: inout Value, nextValue: () -> Value) {
+    public static func reduce(value: inout TopBottomBoundsPreferenceKey?, nextValue: () -> TopBottomBoundsPreferenceKey?) {
         value = nextValue()
+        print("Bounds \(String(describing: value))")
     }
+    
+}
+
+
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+public struct TopBottomBoundsPreferenceKey {
+    var topLeading: Anchor<CGPoint>? = nil
+    var bottomTrailing: Anchor<CGPoint>? = nil
 }

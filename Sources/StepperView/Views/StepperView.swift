@@ -50,18 +50,58 @@ public struct StepperView<Cell>: View where Cell:View {
                             .eraseToAnyView()
                         self.cells[index]
                             .heightPreference(column: index)
+                            //.anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { TopBottomBoundsPreferenceKey(topLeading: $0) }
+                        //.anchorPreference(key: BoundsPreferenceKey.self, value: .topLeading, transform: { TopBottomBoundsPreferenceKey(topLeading: $0) })
+//                            .anchorPreference(key: BoundsPreferenceKey.self, value: .topLeading, transform: {  ( value: inout TopBottomBoundsPreferenceKey, anchor: Anchor<CGPoint>) in
+//                                value.topLeading = anchor
+//                            })
+//                        .transformAnchorPreference(key: BoundsPreferenceKey.self, value: .bottomTrailing, transform: { ( value: inout TopBottomBoundsPreferenceKey, anchor: Anchor<CGPoint>) in
+//                            value.bottomTrailing = anchor
+//                        })
+                        
+                            .anchorPreference(key: BoundsPreferenceKey.self, value: .topLeading, transform: { TopBottomBoundsPreferenceKey(topLeading: $0)})
+                            //.anchorPreference(key: BoundsPreferenceKey.self, value: .bottomTrailing, transform: { TopBottomBoundsPreferenceKey(bottomTrailing: $0)})
+                            .transformAnchorPreference(key: BoundsPreferenceKey.self, value: .bottomTrailing) { (value, anchor) in
+                                value?.bottomTrailing = anchor
+                        }
+    
                     }.setAlignment(type: self.alignments[index])
                     .offset(x: CGFloat(-40))
                 }
             }.onPreferenceChange(HeightPreference.self) {
                 self.columnHeights = $0
                 print(self.columnHeights)
-                //get heights of each of the cell + paddings
+                //get heights of each of the cell + paddings to pass it back to the children i.e., LineView here.
                 let paddings = CGFloat((self.verticalSpacing - 5) * CGFloat(self.cells.count))
                 self.dividerHeight = Array(self.columnHeights.values).reduce(0, +) + paddings
                 print("Divider Height \(self.dividerHeight)")
+            }.backgroundPreferenceValue(BoundsPreferenceKey.self) { preferences in
+                return GeometryReader { geometry in
+                    preferences.map { p in
+                         self.createBorder(geometry,p)
+                    }
+                }
             }
         }.padding()
+    }
+    
+    func createBorder(_ geometry: GeometryProxy, _ preferences: TopBottomBoundsPreferenceKey) -> some View {
+        let p = preferences
+        
+        let aTopLeading = p.topLeading
+        let aBottomTrailing = p.bottomTrailing
+        
+        let topLeading = aTopLeading != nil ? geometry[aTopLeading!] : .zero
+        let bottomTrailing = aBottomTrailing != nil ? geometry[aBottomTrailing!] : .zero
+        
+        
+        return RoundedRectangle(cornerRadius: 15)
+            .stroke(lineWidth: 3.0)
+            .foregroundColor(Color.green)
+            .frame(width: bottomTrailing.x - topLeading.x, height: bottomTrailing.y - topLeading.y)
+            .fixedSize()
+            .offset(x: topLeading.x, y: topLeading.y)
+            .animation(.easeInOut(duration: 1.0))
     }
 }
 
