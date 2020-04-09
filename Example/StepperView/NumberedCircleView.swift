@@ -13,10 +13,10 @@ import StepperView
 struct NumberedCircleView: View {
     var body: some View {
             Circle()
-                .stroke(Colors.teal, lineWidth: 3)
+                .stroke(Color(Colors.blue(.teal).rawValue), lineWidth: 3)
                 .frame(width: 28, height: 28)
                 .overlay(Text("1")
-                        .foregroundColor(Colors.teal)
+                        .foregroundColor(Color(Colors.blue(.teal).rawValue))
                     .font(.system(size: 12, weight: Font.Weight.bold)))
     }
 }
@@ -25,7 +25,7 @@ struct NumberedCircleView: View {
 struct StepTextView: View {
     var body: some View {
         Text("Visit any participating partner store")
-            .foregroundColor(Colors.teal)
+            .foregroundColor(Color(Colors.blue(.teal).rawValue))
             .font(.system(size: 16, weight: Font.Weight.bold))
             .padding(.vertical, 10)
     }
@@ -39,7 +39,7 @@ struct CircledStepView:View {
     
     var body: some View {
         HStack {
-            StepperView(cells: self.cells, alignments: alignments, indicationType:indicationTypes, lineOptions: StepperLineOptions.custom(3,Colors.teal))
+            StepperView(cells: self.cells, alignments: alignments, indicationType:indicationTypes, lineOptions: StepperLineOptions.custom(3,Color(Colors.blue(.teal).rawValue)))
         }
     }
 }
