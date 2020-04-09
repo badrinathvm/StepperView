@@ -14,10 +14,10 @@ struct NumberedCircleView: View {
     var text:String
     var body: some View {
         Circle()
-            .stroke(Color(Colors.blue(.teal).rawValue), lineWidth: 3)
+            .stroke(Colors.blue(.teal).rawValue, lineWidth: 3)
             .frame(width: 28, height: 28)
             .overlay(Text(text)
-                .foregroundColor(Color(Colors.blue(.teal).rawValue))
+                .foregroundColor(Colors.blue(.teal).rawValue)
                 .font(.system(size: 12, weight: Font.Weight.bold)))
     }
 }

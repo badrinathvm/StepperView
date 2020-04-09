@@ -15,8 +15,8 @@ struct ExampleView1: View {
     //alignments for the cell here to point
     let alignments = [StepperAlignment.top,StepperAlignment.center,StepperAlignment.bottom]
     
-    let circleIndicators = [StepperIndicationType<AnyView>.circle(Color(Colors.teal.rawValue)),
-                            StepperIndicationType.circle(Color(Colors.teal.rawValue)), StepperIndicationType.circle(Color(Colors.teal.rawValue))]
+    let circleIndicators = [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue),
+                            StepperIndicationType<AnyView>.circle(Colors.teal.rawValue), StepperIndicationType<AnyView>.circle(Colors.teal.rawValue)]
 
     //Custom Indicators to point.
     let mixMatchIndicators = [StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.fill")),
@@ -31,8 +31,8 @@ struct ExampleView1: View {
             VStack(spacing: 5) {
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
-                        StepperView(cells: [ TextHolderView(text: "Top") ] , alignments: [StepperAlignment.top ] , indicationType: [StepperIndicationType<AnyView>.circle(Color(Colors.teal.rawValue))])
-                        StepperView(cells: [TextHolderView(text: "Bottom")] , alignments: [.bottom ] , indicationType: [StepperIndicationType<AnyView>.circle(Color(Colors.teal.rawValue))] )
+                        StepperView(cells: [ TextHolderView(text: "Top") ] , alignments: [StepperAlignment.top ] , indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue)])
+                        StepperView(cells: [TextHolderView(text: "Bottom")] , alignments: [.bottom ] , indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue)] )
                         Spacer()
                     }
 

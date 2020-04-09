@@ -34,7 +34,7 @@ struct ExampleView2:View {
         HStack {
             StepperView(cells: self.cells,
                 indicationType:indicationTypes,
-                lineOptions: StepperLineOptions.custom(3,Color(Colors.blue(.teal).rawValue)))
+                lineOptions: StepperLineOptions.custom(3,Colors.blue(.teal).rawValue))
         }
     }
 }
@@ -45,7 +45,7 @@ struct StepTextView: View {
     var body: some View {
         VStack {
             Text(text)
-                .foregroundColor(Color(Colors.blue(.teal).rawValue))
+                .foregroundColor(Colors.blue(.teal).rawValue)
                 .font(.system(size: 16, weight: Font.Weight.medium))
                 .frame(maxWidth: .infinity, alignment: .leading)
         }

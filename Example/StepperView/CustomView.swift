@@ -22,7 +22,7 @@ struct CustomView: View {
                     .frame(width: 30, height: 30)
                     .aspectRatio(contentMode: .fit)
                 Text(text)
-                    .foregroundColor(Color(Colors.blue(.teal).rawValue))
+                    .foregroundColor(Colors.blue(.teal).rawValue)
                     .font(.system(size: 16, weight: Font.Weight.medium))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(EdgeInsets(top: 10, leading: 2, bottom: 10, trailing: 10))

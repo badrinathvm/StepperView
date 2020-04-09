@@ -20,16 +20,16 @@ struct ExampleView3:View {
                 ]
     
     let indicationTypes = [
-                StepperIndicationType<AnyView>.circle(Color(Colors.teal.rawValue)),
-                StepperIndicationType.circle(Color(Colors.teal.rawValue)),
-                StepperIndicationType.circle(Color(Colors.teal.rawValue))
+                StepperIndicationType<AnyView>.circle(Colors.teal.rawValue),
+                StepperIndicationType.circle(Colors.teal.rawValue),
+                StepperIndicationType.circle(Colors.teal.rawValue)
             ]
     
     var body: some View {
         HStack {
             StepperView(cells: self.cells,
                 indicationType:indicationTypes,
-                lineOptions: StepperLineOptions.custom(1,Color(Colors.blue(.teal).rawValue)))
+                lineOptions: StepperLineOptions.custom(1,Colors.blue(.teal).rawValue))
          }
     }
 }
