@@ -23,6 +23,14 @@ public extension View {
             Color.clear.preference(key: WidthPreference.self, value: [column: proxy.size.width])
         })
     }
+    
+    // Stores the height for each of column which will be passed as part of onPreference change to the view.
+    func verticalHeightPreference(column: Int? = 0) -> some View {
+        background(GeometryReader { proxy in
+            Color.clear.preference(key: VerticalHeightPreference.self, value: [column!: proxy.size.height])
+        })
+    }
+       
         
     /// returns the alignment guide based on the alignemnt type.
     /// - Parameter type: sets the aligment guide.
@@ -65,6 +73,17 @@ public extension View {
 //MARK:- Collects height of all the cells, with reduce takes the maximum value for the given key
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct HeightPreference: PreferenceKey {
+    typealias Value = [Int:CGFloat]
+    static let defaultValue: Value = [:]
+    
+    static func reduce(value: inout Value, nextValue: () -> Value) {
+        value.merge(nextValue(), uniquingKeysWith: max)
+    }
+}
+
+//MARK:- Collects height of all the cells, with reduce takes the maximum value for the given key
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+struct VerticalHeightPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
     static let defaultValue: Value = [:]
     

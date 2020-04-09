@@ -50,6 +50,12 @@ public struct StepperView<Cell>: View where Cell:View {
     }
     
     
+    func calculateIntermediateHeights( value: [Int:CGFloat] ) {
+        self.columnHeights = value
+        let totalHeight = Array(self.columnHeights.values).reduce(0, +)
+        print("Intermediate Divider Height \(self.columnHeights)")
+    }
+    
     public var body: some View {
         HStack {
             //line view to host indicator to point
@@ -65,18 +71,21 @@ public struct StepperView<Cell>: View where Cell:View {
                     }.setAlignment(type: self.alignments[index])
                     .offset(x: CGFloat(-40))
                 }
-            }.onPreferenceChange(HeightPreference.self) {
-                self.columnHeights = $0
-                print(self.columnHeights)
-                //get heights of each of the cell + paddings
-                let paddings = CGFloat((self.verticalSpacing - 5) * CGFloat(self.cells.count + 1))
-                let totalHeight = Array(self.columnHeights.values).reduce(0, +)
-                print(totalHeight)
-                self.dividerHeight = (self.alignments.contains(.center) || self.alignments.contains(.bottom)) ? (totalHeight + paddings) : totalHeight
-                print("Divider Height \(self.dividerHeight)")
-            }.onPreferenceChange(WidthPreference.self) {
+            }.verticalHeightPreference()
+            // Intermediate height of the Line View
+            .onPreferenceChange(HeightPreference.self) {
+                self.calculateIntermediateHeights(value: $0)
+            }
+             // Width of the Indicator View
+            .onPreferenceChange(WidthPreference.self) {
                 self.dividerPosition = $0.values.first ?? 12
-             }
+            }
+             // Height of the Line View
+            .onPreferenceChange(VerticalHeightPreference.self){
+                print("Height of Divider \($0)")
+                let finalHeight = $0.values.max() ?? 0.0
+                self.dividerHeight = finalHeight
+            }
         }.padding()
     }
 }

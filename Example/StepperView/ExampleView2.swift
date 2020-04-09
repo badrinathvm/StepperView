@@ -20,6 +20,8 @@ struct ExampleView2:View {
                   StepTextView(text:"Take a printed receipt")
                 ]
     
+    //let cells = [StepperContentView(), StepperContentView(), StepperContentView() ]
+    
     let indicationTypes = [
                 StepperIndicationType.custom(NumberedCircleView(text: "1").eraseToAnyView()),
                     .custom(NumberedCircleView(text: "2").eraseToAnyView()),
@@ -31,10 +33,15 @@ struct ExampleView2:View {
             ]
     
     var body: some View {
-        HStack {
-            StepperView(cells: self.cells,
-                indicationType:indicationTypes,
-                lineOptions: StepperLineOptions.custom(3,Colors.blue(.teal).rawValue))
+        NavigationView {
+            VStack(spacing: 5) {
+                ScrollView(Axis.Set.vertical, showsIndicators: false) {
+                    HStack {
+                        StepperView(cells: self.cells, indicationType :indicationTypes,lineOptions: StepperLineOptions.custom(1,Colors.blue(.teal).rawValue))
+                    }
+                }
+            }
+             .navigationBarTitle("Stepper View")
         }
     }
 }
@@ -48,6 +55,7 @@ struct StepTextView: View {
                 .foregroundColor(Colors.blue(.teal).rawValue)
                 .font(.system(size: 16, weight: Font.Weight.medium))
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, 10)
         }
     }
 }
