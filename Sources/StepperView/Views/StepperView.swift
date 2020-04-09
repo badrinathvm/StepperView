@@ -16,7 +16,7 @@ public enum StepperAlignment: String, CaseIterable {
 //MARK:- Stepper Indication options
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum StepperIndicationType<Content:View> {
-    case circle
+    case circle(Color)
     case image(Image)
     case custom(Content)
 }
@@ -41,13 +41,14 @@ public struct StepperView<Cell>: View where Cell:View {
     public var lineOptions:StepperLineOptions
     public var verticalSpacing: CGFloat
     
-    public init(cells: [Cell], alignments: [StepperAlignment],indicationType: [StepperIndicationType<AnyView>],lineOptions: StepperLineOptions = .defaults,verticalSpacing:CGFloat = 30.0) {
+    public init(cells: [Cell], alignments: [StepperAlignment] = [],indicationType: [StepperIndicationType<AnyView>],lineOptions: StepperLineOptions = .defaults,verticalSpacing:CGFloat = 30.0) {
         self.cells = cells
-        self.alignments = alignments
+        self.alignments = alignments.isEmpty ? (0..<cells.count).map {_ in  StepperAlignment.center } : alignments
         self.indicationType = indicationType
         self.lineOptions = lineOptions
         self.verticalSpacing = verticalSpacing
     }
+    
     
     public var body: some View {
         HStack {
@@ -68,9 +69,10 @@ public struct StepperView<Cell>: View where Cell:View {
                 self.columnHeights = $0
                 print(self.columnHeights)
                 //get heights of each of the cell + paddings
-                let paddings = CGFloat((self.verticalSpacing - 5) * CGFloat(self.cells.count))
+                let paddings = CGFloat((self.verticalSpacing - 5) * CGFloat(self.cells.count + 1))
                 let totalHeight = Array(self.columnHeights.values).reduce(0, +)
-                self.dividerHeight = (self.alignments.contains(.top) || self.alignments.contains(.bottom)) ? (totalHeight + paddings) : totalHeight
+                print(totalHeight)
+                self.dividerHeight = (self.alignments.contains(.center) || self.alignments.contains(.bottom)) ? (totalHeight + paddings) : totalHeight
                 print("Divider Height \(self.dividerHeight)")
             }.onPreferenceChange(WidthPreference.self) {
                 self.dividerPosition = $0.values.first ?? 12

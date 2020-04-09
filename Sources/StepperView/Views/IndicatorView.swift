@@ -28,10 +28,10 @@ struct IndicatorView: View {
     
     func getViewForOverlay(of type: StepperIndicationType<AnyView>, for index: Int) -> some View {
         switch type {
-        case .circle:
+        case .circle(let color):
             return Circle()
                 .frame(width: 10, height:10)
-                .foregroundColor(Color.green)
+                .foregroundColor(color)
                 .eraseToAnyView()
         case .image(let image):
             return image
