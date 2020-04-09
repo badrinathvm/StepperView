@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
         if #available(iOS 13.0, *) {
             let stepperView = UIHostingController(rootView: StepDesignerView())
+            //let stepperView = UIHostingController(rootView: CircledStepView())
             stepperView.view.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(stepperView.view)
             

@@ -30,7 +30,7 @@ struct StepDesignerView: View{
             VStack(spacing: 5) {
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
-                        StepperView(cells: [ PointerView(text: "Top") ] , alignments: [.top ] , indicationType: [StepperIndicationType<AnyView>.circle])
+                        StepperView(cells: [ PointerView(text: "Top") ] , alignments: [StepperAlignment.top ] , indicationType: [StepperIndicationType<AnyView>.circle])
                         StepperView(cells: [PointerView(text: "Bottom")] , alignments: [.bottom ] , indicationType: [StepperIndicationType<AnyView>.circle] )
                         Spacer()
                     }
@@ -40,7 +40,7 @@ struct StepDesignerView: View{
                         StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.circleIndicators)
                         
                          //Stepper Indicator with custom pointers
-                        StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.mixMatchIndicators,verticalSpacing: 10.0)
+                        StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.mixMatchIndicators)
                     }
                     
                 }

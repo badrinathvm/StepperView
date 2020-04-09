@@ -32,9 +32,6 @@ struct StepperContentView: View {
                   .padding(.vertical , 10)
                   .padding(.horizontal, 5)
                   .foregroundColor(Color.gray)
-                    .anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { value in
-                        return value
-                    }
                  Spacer()
             }
     }
