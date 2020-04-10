@@ -34,7 +34,6 @@ public struct StepperView<Cell>: View where Cell:View {
     @State private var dividerHeight:CGFloat = 0
     @State private var dividerPosition:CGFloat = 0
     @State private var columnHeights: [Int: CGFloat] = [:]
-    //@State private var shiftLinePositio
     public var cells:[Cell]
     public var alignments:[StepperAlignment]
     public var indicationType: [StepperIndicationType<AnyView>]
@@ -48,13 +47,7 @@ public struct StepperView<Cell>: View where Cell:View {
         self.lineOptions = lineOptions
         self.verticalSpacing = verticalSpacing
     }
-    
-    
-    func calculateIntermediateHeights( value: [Int:CGFloat] ) {
-        self.columnHeights = value
-        print("Intermediate Divider Height \(self.columnHeights)")
-    }
-    
+        
     public var body: some View {
         HStack {
             //line view to host indicator to point
@@ -68,7 +61,7 @@ public struct StepperView<Cell>: View where Cell:View {
                         self.cells[index]
                             .heightPreference(column: index)
                     }.setAlignment(type: self.alignments[index])
-                    .offset(x: CGFloat(-40))
+                    .offset(x: -40)
                 }
             }.verticalHeightPreference()
             // Intermediate height of the Line View
@@ -86,5 +79,10 @@ public struct StepperView<Cell>: View where Cell:View {
                 self.dividerHeight = finalHeight
             }
         }.padding()
+    }
+    
+    func calculateIntermediateHeights( value: [Int:CGFloat] ) {
+        self.columnHeights = value
+        print("Intermediate Divider Height \(self.columnHeights)")
     }
 }

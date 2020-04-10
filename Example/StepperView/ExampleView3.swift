@@ -15,7 +15,7 @@ import StepperView
 struct ExampleView3:View {
     
     let cells = [ CustomView(text: "Insert ATM Card" , imageName: "cc"),
-                  CustomView(text: "Select transaction and type pin", imageName: "transaction"),
+                  CustomView(text: "Select transaction and enter pin", imageName: "transaction"),
                   CustomView(text: "Collect Cash", imageName: "cash")
                 ]
     
