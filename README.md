@@ -13,7 +13,7 @@ SwiftUI iOS component for Step Indications.
 ## Usecase
 
 <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="200" alt="example1" align="left" hspace= "100"/>
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="350" alt="example2" align = "center"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2" align = "center"/>
 
 ## Example
 
@@ -73,8 +73,8 @@ var cellBody:some View {
 }
 ```
 ## Parameters
-- cells : Array of Views to be rendered next to step Indicator 
-- alignments: Defaulkted to .center, for custom options pass list of view alignments to be pointed for eg: can be  .top , .center , .bottom sections
+- cells : array of views to be rendered next to step Indicator 
+- alignments: defaults to .center, for custom options pass list of view alignments to be pointed for eg: can be  .top , .center , .bottom sections
 - indicatorTypes: provides the option to customise the indicator.
 - lineOptions: To customise the thickness and colors.
 - verticalSpacing: custom spacing to place views vertically (optional)
@@ -93,7 +93,3 @@ Follow and contact me on <a href="https://twitter.com/badrivm">Twitter</a> or <a
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
-
-
-
-
