@@ -55,7 +55,12 @@ let indicatorTypes = [  StepperIndicationType<AnyView>.circle(Colors.teal.rawVal
                     ]
 
 var body: some View {
-      StepperView(cells: [cellBody, cellBody , cellBody], alignments: alignments,indicationType:indicatorTypes,lineOptions: StepperLineOptions.custom(1,Colors.gray.rawValue))
+     var body: some View {
+      StepperView(cells: [cellBody, cellBody , cellBody], 
+                alignments: alignments,
+                indicationType:indicatorTypes,
+                lineOptions: StepperLineOptions.custom(1,Colors.gray.rawValue))
+     }
 }
 
 var cellBody:some View {
