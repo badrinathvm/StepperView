@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 [![Platform](https://img.shields.io/cocoapods/p/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView.gif" width="200" alt="StepperView" align="left" hspace= "150"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView_with_usecases.gif" width="200" alt="StepperView" align="left" hspace= "150"/>
 <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView_multiple_options.gif" width="200" alt="StepperViewWithMultipleOptions" align = "center"/>
 
 SwiftUI iOS component for Step Indications.
@@ -47,15 +47,15 @@ StepperView is available through Swift Package Manager. To install it, simply ad
 ```
 import StepperView
 
-let alignments = [StepperAlignment.top,StepperAlignment.center,StepperAlignment.bottom]
+let alignments = [StepperAlignment.top,.center,.bottom]
 
-let indicatorTypes = [  StepperIndicationType<AnyView>.circle,
-                        StepperIndicationType.image(Image(systemName: "arrow.right.circle")),
-                        StepperIndicationType.image(Image(systemName: "arrow.uturn.right"))
+let indicatorTypes = [  StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
+                        StepperIndicationType.image(Image(systemName: "arrow.right.circle", 12)),
+                        StepperIndicationType.image(Image(systemName: "arrow.uturn.right", 12))
                     ]
 
 var body: some View {
-      StepperView(cells: [cellBody, cellBody , cellBody], alignments: alignments,indicationType:indicatorTypes)
+      StepperView(cells: [cellBody, cellBody , cellBody], alignments: alignments,indicationType:indicatorTypes,lineOptions: StepperLineOptions.custom(1,Colors.gray.rawValue))
 }
 
 var cellBody:some View {
@@ -75,9 +75,9 @@ var cellBody:some View {
 ## Parameters
 - cells : array of views to be rendered next to step Indicator 
 - alignments: defaults to .center, for custom options pass list of view alignments to be pointed for eg: can be  .top , .center , .bottom sections
-- indicatorTypes: provides the option to customise the indicator.
-- lineOptions: To customise the thickness and colors.
-- verticalSpacing: custom spacing to place views vertically (optional)
+- indicatorTypes: enum provides the options to use .circle(color, width) , .image(Image, width) or .custom(AnyView)
+- lineOptions: optional parameter to customize the line for thickness and color options.
+- verticalSpacing: optional parameter for vertical spacing
 
 <p>
     <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">Refer Example for more details on usage of StepperView</a>
