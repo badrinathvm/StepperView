@@ -10,22 +10,28 @@ import SwiftUI
 //MARK:- Indicator View for Stepper Indicator
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct IndicatorView: View {
+    @State private var width:CGFloat = 0.0
+    
     var type: StepperIndicationType<AnyView>
+    var indexofIndicator:Int
     var body: some View {
         ZStack {
             Circle()
-                .stroke(Color(red: 245/255, green: 245/255, blue: 245/255), lineWidth: 5)
-                .frame(width: 12, height:12)
-                .overlay(getViewForOverlay(of: type))
+                .frame(width: self.width, height: self.width)
+                .foregroundColor(Color.white)
+                .overlay(self.getViewForOverlay(of: self.type, for: self.indexofIndicator))
+        }
+        .onPreferenceChange(WidthPreference.self) {
+            self.width = $0.values.first ?? 12
         }
     }
     
-    func getViewForOverlay(of type: StepperIndicationType<AnyView> ) -> some View {
+    func getViewForOverlay(of type: StepperIndicationType<AnyView>, for index: Int) -> some View {
         switch type {
-        case .circle:
+        case .circle(let color):
             return Circle()
                 .frame(width: 10, height:10)
-                .foregroundColor(Color.green)
+                .foregroundColor(color)
                 .eraseToAnyView()
         case .image(let image):
             return image
@@ -33,7 +39,9 @@ struct IndicatorView: View {
                 .frame(width: 12, height:12)
                 .eraseToAnyView()
         case .custom(let view):
-            return view.eraseToAnyView()
+            return view
+                .widthPreference(column: index)
+                .eraseToAnyView()
         }
     }
 }

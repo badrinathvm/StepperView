@@ -10,12 +10,13 @@ import SwiftUI
 import StepperView
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct StepDesignerView: View{
+struct ExampleView1: View {
     
-    //alignemts for the cell here to point
+    //alignments for the cell here to point
     let alignments = [StepperAlignment.top,StepperAlignment.center,StepperAlignment.bottom]
     
-    let circleIndicators = [StepperIndicationType<AnyView>.circle, StepperIndicationType.circle, StepperIndicationType.circle]
+    let circleIndicators = [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue),
+                            StepperIndicationType<AnyView>.circle(Colors.teal.rawValue), StepperIndicationType<AnyView>.circle(Colors.teal.rawValue)]
 
     //Custom Indicators to point.
     let mixMatchIndicators = [StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.fill")),
@@ -30,8 +31,8 @@ struct StepDesignerView: View{
             VStack(spacing: 5) {
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
-                        StepperView(cells: [ PointerView(text: "Top") ] , alignments: [.top ] , indicationType: [StepperIndicationType<AnyView>.circle])
-                        StepperView(cells: [PointerView(text: "Bottom")] , alignments: [.bottom ] , indicationType: [StepperIndicationType<AnyView>.circle] )
+                        StepperView(cells: [ TextHolderView(text: "Top") ] , alignments: [StepperAlignment.top ] , indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue)])
+                        StepperView(cells: [TextHolderView(text: "Bottom")] , alignments: [.bottom ] , indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue)] )
                         Spacer()
                     }
 
@@ -40,7 +41,7 @@ struct StepDesignerView: View{
                         StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.circleIndicators)
                         
                          //Stepper Indicator with custom pointers
-                        StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.mixMatchIndicators,verticalSpacing: 10.0)
+                        StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.mixMatchIndicators)
                     }
                     
                 }

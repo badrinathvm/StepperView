@@ -69,8 +69,9 @@ var cellBody:some View {
 ```
 ## Parameters
 - cells : Array of Views to be rendered next to step Indicator 
-- alignments: list of view alignments to be pointed for eg: can be  .top , .center , .bottom sections
+- alignments: Defaulkted to .center, for custom options pass list of view alignments to be pointed for eg: can be  .top , .center , .bottom sections
 - indicatorTypes: provides the option to customise the indicator.
+- lineOptions: To customise the thickness and colors.
 - verticalSpacing: custom spacing to place views vertically (optional)
 
 <p>
