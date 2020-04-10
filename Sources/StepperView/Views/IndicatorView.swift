@@ -28,15 +28,15 @@ struct IndicatorView: View {
     
     func getViewForOverlay(of type: StepperIndicationType<AnyView>, for index: Int) -> some View {
         switch type {
-        case .circle(let color):
+        case .circle(let color, let width):
             return Circle()
-                .frame(width: 10, height:10)
+                .frame(width: width, height: width)
                 .foregroundColor(color)
                 .eraseToAnyView()
-        case .image(let image):
+        case .image(let image, let width):
             return image
                 .resizable()
-                .frame(width: 12, height:12)
+                .frame(width: width, height: width)
                 .eraseToAnyView()
         case .custom(let view):
             return view

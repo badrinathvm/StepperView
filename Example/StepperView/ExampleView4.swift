@@ -10,7 +10,7 @@ import SwiftUI
 import StepperView
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct ExampleView1: View {
+struct ExampleView4: View {
     
     //alignments for the cell here to point
     let alignments = [StepperAlignment.top,StepperAlignment.center,StepperAlignment.bottom]
@@ -32,15 +32,11 @@ struct ExampleView1: View {
             VStack(spacing: 10) {
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
-                        StepperView(cells: [ TextHolderView(text: "Top") ],
-                                    alignments: [StepperAlignment.top] ,
-                                    indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)]
-                                  )
-                        StepperView(cells: [TextHolderView(text: "Center")] , alignments: [.center ] , indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)] )
-                    }
-                    
-                    HStack {
-                        StepperView(cells: [TextHolderView(text: "Bottom")] , alignments: [.bottom ] , indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)] )
+                        //Stepper Indicator with Circle pointers
+                        StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.circleIndicators)
+                        
+                        //Stepper Indicator with custom pointers
+                        StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.mixMatchIndicators)
                     }
                 }
             }
@@ -48,5 +44,6 @@ struct ExampleView1: View {
         }
     }
 }
+
 
 

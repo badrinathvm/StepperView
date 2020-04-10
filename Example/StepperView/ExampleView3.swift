@@ -20,21 +20,28 @@ struct ExampleView3:View {
                   CustomView(text: "Select type of Account",imageName: "cash")
                 ]
     
-    let alignments = [StepperAlignment.center, .center, .bottom, .center]
+    let alignments = [StepperAlignment.bottom, .center, .bottom, .center]
     
     let indicationTypes = [
-                StepperIndicationType<AnyView>.circle(Colors.teal.rawValue),
-                StepperIndicationType.circle(Colors.teal.rawValue),
-                StepperIndicationType.circle(Colors.teal.rawValue),
-                StepperIndicationType.circle(Colors.teal.rawValue)
+                StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12),
+                StepperIndicationType.circle(Colors.teal.rawValue,12),
+                StepperIndicationType.circle(Colors.teal.rawValue,12),
+                StepperIndicationType.circle(Colors.teal.rawValue,12)
             ]
     
     var body: some View {
-        HStack {
-            StepperView(cells: self.cells,
-                        alignments: alignments,
-                        indicationType:indicationTypes,
-                        lineOptions: StepperLineOptions.custom(1,Colors.blue(.teal).rawValue))
+        NavigationView {
+            ScrollView(Axis.Set.vertical, showsIndicators: false) {
+                VStack {
+                    HStack {
+                        StepperView(cells: self.cells,
+                                    alignments: alignments,
+                                    indicationType:indicationTypes,
+                                    lineOptions: StepperLineOptions.custom(1,Colors.blue(.teal).rawValue))
+                    }
+                }.padding(.vertical, 50)
+            }
+            .navigationBarTitle("StepperView")
         }
     }
 }

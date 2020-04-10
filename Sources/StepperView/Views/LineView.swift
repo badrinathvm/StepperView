@@ -30,9 +30,16 @@ struct LineView: View {
                     .frame(width: width, height: lineHeight)
                     // X: subtract one pixel only if the width is 1
                     // Y: subtract half of the lineYposition to set to it's center position.
-                    .offset(x: width == 1 ? lineXPosition/2 - Utils.halfSpacing - 1 : (lineXPosition/2 - Utils.halfSpacing) , y: (lineYPosition - lineYPosition / 2))
+                .offset(x: width == 1 ? lineXPosition/2 - Utils.halfSpacing - 1 : (lineXPosition/2 - Utils.halfSpacing) , y: getYOffsetPosition(for: self.alignment, and: lineYPosition))
                     .padding()
                     .eraseToAnyView()
+        }
+    }
+    
+    func getYOffsetPosition(for alignment: StepperAlignment,and offset: CGFloat ) -> CGFloat {
+        switch alignment {
+        case .top, .center , .bottom : return (lineYPosition - lineYPosition / 2)
+        //case .bottom: return lineYPosition + (lineYPosition / 2)
         }
     }
 }

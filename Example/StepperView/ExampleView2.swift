@@ -40,7 +40,7 @@ struct ExampleView2:View {
                         StepperView(cells: self.cells, indicationType :indicationTypes,lineOptions: StepperLineOptions.custom(1,Colors.blue(.teal).rawValue))
                     }
                 }
-            }
+            }.padding(.vertical, 50)
              .navigationBarTitle("Stepper View")
         }
     }

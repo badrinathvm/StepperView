@@ -16,8 +16,9 @@ public enum StepperAlignment: String, CaseIterable {
 //MARK:- Stepper Indication options
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum StepperIndicationType<Content:View> {
-    case circle(Color)
-    case image(Image)
+    public typealias Width = CGFloat
+    case circle(Color, Width)
+    case image(Image, Width)
     case custom(Content)
 }
 
@@ -52,7 +53,7 @@ public struct StepperView<Cell>: View where Cell:View {
     public var body: some View {
         HStack {
             //line view to host indicator to point
-            LineView(lineHeight: $lineHeight, lineXPosition: $lineXPosition, lineYPosition: $lineYPosition, options: self.lineOptions, alignment: self.alignments[0])
+            LineView(lineHeight: $lineHeight, lineXPosition: $lineXPosition, lineYPosition: $lineYPosition, options: self.lineOptions, alignment: self.firstAlignment)
             VStack(spacing: verticalSpacing) {
                 ForEach(self.cells.indices) { index in
                     HStack(alignment: self.getAlignment(type: self.alignments[index])) {
@@ -65,10 +66,9 @@ public struct StepperView<Cell>: View where Cell:View {
                     .offset(x: -40)
                 }
             }.verticalHeightPreference()
-                
             // Intermediate height of the Line View
             .onPreferenceChange(HeightPreference.self) {
-                self.lineYPosition = self.getYPosition(for: self.alignments[0])
+                self.lineYPosition = self.getYPosition(for: self.firstAlignment)
                 self.calculateIntermediateHeights(value: $0)
             }
              // Width of the Indicator View
@@ -79,8 +79,8 @@ public struct StepperView<Cell>: View where Cell:View {
             .onPreferenceChange(VerticalHeightPreference.self){
                 print("Height of Divider \($0)")
                 let finalHeight = $0.values.max() ?? 0.0
-                self.lineHeight = finalHeight - self.getYPosition(for: self.alignments[0])
-                print("Final Divider Height \(self.lineHeight)")
+                self.lineHeight = finalHeight - self.getYPosition(for: self.firstAlignment)
+                print("Line Height \(self.lineHeight)")
             }
         }.padding()
     }
@@ -90,5 +90,11 @@ public struct StepperView<Cell>: View where Cell:View {
     private func calculateIntermediateHeights( value: [Int:CGFloat] ) {
         self.columnHeights = value
         print("Intermediate Divider Height \(self.columnHeights)")
+    }
+    
+    
+    // returns the first alignemnt from the array else .center by default
+    private var firstAlignment: StepperAlignment {
+        return self.alignments.first ?? .center
     }
 }
