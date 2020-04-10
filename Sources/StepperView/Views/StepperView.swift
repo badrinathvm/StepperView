@@ -52,7 +52,6 @@ public struct StepperView<Cell>: View where Cell:View {
     
     func calculateIntermediateHeights( value: [Int:CGFloat] ) {
         self.columnHeights = value
-        let totalHeight = Array(self.columnHeights.values).reduce(0, +)
         print("Intermediate Divider Height \(self.columnHeights)")
     }
     
