@@ -78,6 +78,11 @@ var cellBody:some View {
     <a href="https://github.com/badrinathvm/StepperView/blob/master/Example/StepperView/StepDesignerView.swift">Refer Example for more details on usage of StepperView</a>
 </p>
 
+## Usecase
+
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="200" alt="example1" align="left" hspace= "150"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="200" alt="example2" align = "center"/>
+
 ## Author
 
 Badarinath Venkatnarayansetty
