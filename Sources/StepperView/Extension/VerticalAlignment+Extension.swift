@@ -12,18 +12,21 @@ import SwiftUI
 extension VerticalAlignment {
     private enum CustomTopAlignment: AlignmentID {
         static func defaultValue(in context: ViewDimensions) -> CGFloat {
+            topValue = context[.top]
             return context[.top]
         }
     }
     
     private enum CustomBottomAlignment: AlignmentID {
         static func defaultValue(in context: ViewDimensions) -> CGFloat {
+            bottomValue = context[.bottom]
             return context[.bottom]
         }
     }
     
     private enum CustomCenterAlignment: AlignmentID {
         static func defaultValue(in context: ViewDimensions) -> CGFloat {
+            centerValue = context[VerticalAlignment.center]
             return context[VerticalAlignment.center]
         }
     }
@@ -33,4 +36,10 @@ extension VerticalAlignment {
     static let customBottom = VerticalAlignment(CustomBottomAlignment.self)
     
     static let customCenter = VerticalAlignment(CustomCenterAlignment.self)
+    
+    static var topValue: CGFloat = 0.0
+    
+    static var centerValue: CGFloat = 0.0
+    
+    static var bottomValue: CGFloat = 0.0
 }

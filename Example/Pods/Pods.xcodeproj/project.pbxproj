@@ -11,6 +11,7 @@
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = E0956940883830C651240E754E3ECC52 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
+		1BD7CB722440F46900F17698 /* PreferenceKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB712440F46900F17698 /* PreferenceKey+Extension.swift */; };
 		1BF933C2243E66A800F2FEA6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF933C0243E66A400F2FEA6 /* Utils.swift */; };
 		1BF933C4243EB81B00F2FEA6 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF933C3243EB81B00F2FEA6 /* Colors+Extension.swift */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */; };
@@ -84,6 +85,7 @@
 		1A3E414A2122C3BC3532C12EFE05AD71 /* Pods-StepperView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Tests.modulemap"; sourceTree = "<group>"; };
 		1B5607D0E6C665BF1FD799000DA9A62E /* Pods-StepperView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Tests-dummy.m"; sourceTree = "<group>"; };
 		1B8ABEEA76ECDF1975B6D0787700F929 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		1BD7CB712440F46900F17698 /* PreferenceKey+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreferenceKey+Extension.swift"; sourceTree = "<group>"; };
 		1BF933C0243E66A400F2FEA6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1BF933C3243EB81B00F2FEA6 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
 		1E6041318F668A00834BD8F78AC546F5 /* Pods-StepperView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Example.modulemap"; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				BB25D3B63A0207DD0AEFE5AF216479D8 /* View+Extensions.swift */,
 				1BF933C0243E66A400F2FEA6 /* Utils.swift */,
 				1BF933C3243EB81B00F2FEA6 /* Colors+Extension.swift */,
+				1BD7CB712440F46900F17698 /* PreferenceKey+Extension.swift */,
 			);
 			name = Extension;
 			path = Sources/StepperView/Extension;
@@ -581,6 +584,7 @@
 				1BF933C4243EB81B00F2FEA6 /* Colors+Extension.swift in Sources */,
 				A4469BF982B2F246592FF503E60FB7C1 /* StepperView-dummy.m in Sources */,
 				7ACFB6633E0AB67B151686907E9378BE /* StepperView.swift in Sources */,
+				1BD7CB722440F46900F17698 /* PreferenceKey+Extension.swift in Sources */,
 				81A053B41AC245377784B1A06B996CB4 /* VerticalAlignment+Extension.swift in Sources */,
 				3F00E7613B8D39DB3242B880FB0E6258 /* View+Extensions.swift in Sources */,
 			);
