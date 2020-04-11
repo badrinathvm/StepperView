@@ -38,8 +38,19 @@ struct LineView: View {
     
     func getYOffsetPosition(for alignment: StepperAlignment,and offset: CGFloat ) -> CGFloat {
         switch alignment {
-        case .top, .center , .bottom : return (lineYPosition - lineYPosition / 2)
-        //case .bottom: return lineYPosition + (lineYPosition / 2)
+        case .top, .center:
+                print(lineYPosition - 2 * lineYPosition / 2)
+                return (lineYPosition -   lineYPosition / 2)
+        case .bottom:
+            print(lineYPosition + (lineYPosition / 2))
+            return lineYPosition + (lineYPosition / 2)
         }
     }
 }
+
+
+/*
+(.center, .center) = (lineYPosition - 2 * lineYPosition / 2)
+(.center, .bottom) =  (lineYPosition - lineYPosition / 2)
+(.top, .bottom) = (lineYPosition -   2 * lineYPosition / 2)
+*/
