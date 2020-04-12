@@ -37,6 +37,7 @@ struct LineView: View {
         }
     }
     
+    // returns Y offset position based on first and last alignments.
     func getYOffsetPosition(for first: StepperAlignment,last: StepperAlignment, and offset: CGFloat ) -> CGFloat {
         switch (first, last) {
             //top variations
