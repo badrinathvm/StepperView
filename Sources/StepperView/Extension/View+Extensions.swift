@@ -80,6 +80,7 @@ public extension View {
     func getYPosition(for alignment: StepperAlignment) -> CGFloat {
         switch alignment {
         case .top:
+             print("Top Value is \(VerticalAlignment.topValue)")
             return VerticalAlignment.topValue
         case .center:
             return VerticalAlignment.centerValue

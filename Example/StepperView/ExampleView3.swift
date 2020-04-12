@@ -17,13 +17,15 @@ struct ExampleView3:View {
     let cells = [ CustomView(text: "Insert ATM Card", imageName: "cc"),
                   CustomView(text: "Select transaction and enter pin", imageName: "transaction"),
                   CustomView(text: "Collect Cash", imageName: "cash"),
-                  CustomView(text: "Select type of Account",imageName: "cash")
+                  CustomView(text: "Select type of Account",imageName: "cash"),
+                   CustomView(text: "Select type of Account",imageName: "cash")
                 ]
     
-    let alignments = [StepperAlignment.top, .center, .bottom, .bottom]
+    let alignments = [StepperAlignment.top, .center, .bottom, .center, .top]
     
     let indicationTypes = [
                 StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12),
+                StepperIndicationType.circle(Colors.teal.rawValue,12),
                 StepperIndicationType.circle(Colors.teal.rawValue,12),
                 StepperIndicationType.circle(Colors.teal.rawValue,12),
                 StepperIndicationType.circle(Colors.teal.rawValue,12)

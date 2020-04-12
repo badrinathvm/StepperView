@@ -14,7 +14,7 @@ struct LineView: View {
     @Binding var lineXPosition:CGFloat
     @Binding var lineYPosition:CGFloat
     var options:StepperLineOptions
-    var alignment:StepperAlignment
+    var alignments:(StepperAlignment,StepperAlignment)
     var body:some View {
         switch options {
         case .defaults:
@@ -30,27 +30,26 @@ struct LineView: View {
                     .frame(width: width, height: lineHeight)
                     // X: subtract one pixel only if the width is 1
                     // Y: subtract half of the lineYposition to set to it's center position.
-                .offset(x: width == 1 ? lineXPosition/2 - Utils.halfSpacing - 1 : (lineXPosition/2 - Utils.halfSpacing) , y: getYOffsetPosition(for: self.alignment, and: lineYPosition))
+                    .offset(x: width == 1 ? lineXPosition/2 - Utils.halfSpacing - 1 : (lineXPosition/2 - Utils.halfSpacing),
+                        y: getYOffsetPosition(for: alignments.0, last: alignments.1, and: lineYPosition))
                     .padding()
                     .eraseToAnyView()
         }
     }
     
-    func getYOffsetPosition(for alignment: StepperAlignment,and offset: CGFloat ) -> CGFloat {
-        switch alignment {
-        case .top, .center:
-                print(lineYPosition - 2 * lineYPosition / 2)
-                return (lineYPosition -   lineYPosition / 2)
-        case .bottom:
-            print(lineYPosition + (lineYPosition / 2))
-            return lineYPosition + (lineYPosition / 2)
+    func getYOffsetPosition(for first: StepperAlignment,last: StepperAlignment, and offset: CGFloat ) -> CGFloat {
+        switch (first, last) {
+        case (.center, .top): return (lineYPosition - 3 * lineYPosition / 2)
+        case (.center, .center): return (lineYPosition - 2 * lineYPosition / 2)
+        case (.center, .bottom) : return (lineYPosition - lineYPosition / 2)
+            
+        case (.top, .top): return -VerticalAlignment.centerValue
+        case (.top, .center) : return -(VerticalAlignment.centerValue / 2)
+        case (.top, .bottom): return (lineYPosition  - 2 * lineYPosition / 2)
+            
+        case (.bottom, .top): return (lineYPosition -  2 * lineYPosition / 2)
+        case (.bottom, .center): return (lineYPosition - 1.5 * lineYPosition / 2)
+        case (.bottom,.bottom):return (lineYPosition - lineYPosition / 2)
         }
     }
 }
-
-
-/*
-(.center, .center) = (lineYPosition - 2 * lineYPosition / 2)
-(.center, .bottom) =  (lineYPosition - lineYPosition / 2)
-(.top, .bottom) = (lineYPosition -   2 * lineYPosition / 2)
-*/

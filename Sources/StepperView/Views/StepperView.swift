@@ -53,7 +53,7 @@ public struct StepperView<Cell>: View where Cell:View {
     public var body: some View {
         HStack {
             //line view to host indicator to point
-            LineView(lineHeight: $lineHeight, lineXPosition: $lineXPosition, lineYPosition: $lineYPosition, options: self.lineOptions, alignment: self.firstAlignment)
+            LineView(lineHeight: $lineHeight, lineXPosition: $lineXPosition, lineYPosition: $lineYPosition, options: self.lineOptions, alignments: (self.firstAlignment, self.lastAlignment))
             VStack(spacing: verticalSpacing) {
                 ForEach(self.cells.indices) { index in
                     HStack(alignment: self.getAlignment(type: self.alignments[index])) {
@@ -69,6 +69,7 @@ public struct StepperView<Cell>: View where Cell:View {
             // Intermediate height of the Line View
             .onPreferenceChange(HeightPreference.self) {
                 self.lineYPosition = self.getYPosition(for: self.firstAlignment)
+                //self.lineYPosition = self.getYPosition(for: .center)
                 self.calculateIntermediateHeights(value: $0)
             }
              // Width of the Indicator View
@@ -79,6 +80,7 @@ public struct StepperView<Cell>: View where Cell:View {
             .onPreferenceChange(VerticalHeightPreference.self){
                 print("Height of Divider \($0)")
                 let finalHeight = $0.values.max() ?? 0.0
+                print("Bisect \(self.bisectHeightsForFirstAndLastAlignments())")
                 self.lineHeight = finalHeight - self.bisectHeightsForFirstAndLastAlignments()
                 print("Line Height \(self.lineHeight)")
             }
@@ -103,6 +105,22 @@ public struct StepperView<Cell>: View where Cell:View {
     }
     
     func bisectHeightsForFirstAndLastAlignments() -> CGFloat {
-        return (lastAlignment == .bottom) ?  self.getYPosition(for: self.firstAlignment) : 2 * self.getYPosition(for: self.firstAlignment)
+        if self.alignments.count > 1 {
+            switch (firstAlignment, lastAlignment) {
+            case (.center, .top): return 3 * self.getYPosition(for: firstAlignment)
+            case (.center, .center): return 2 * self.getYPosition(for: firstAlignment)
+            case (.center, .bottom): return self.getYPosition(for: firstAlignment)
+            
+            case (.top, .center): return self.getYPosition(for: .center)
+            case (.top, .bottom): return self.getYPosition(for: firstAlignment)
+            case (.top, .top): return 2 * self.getYPosition(for: .center)
+                
+            case(.bottom, .top): return 2 * self.getYPosition(for: firstAlignment)
+            case (.bottom, .center): return 3 * self.getYPosition(for: .center)
+            case(.bottom, .bottom): return self.getYPosition(for: firstAlignment)
+           }
+        } else {
+            return self.getYPosition(for: self.firstAlignment)
+       }
     }
 }
