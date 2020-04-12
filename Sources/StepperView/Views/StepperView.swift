@@ -107,15 +107,20 @@ public struct StepperView<Cell>: View where Cell:View {
     func calculateHeightsForFirstAndLastAlignments() -> CGFloat {
         if self.alignments.count > 1 {
             switch (firstAlignment, lastAlignment) {
+                //Reduce 3 times to get actual height
                 case (.center, .top): return 3 * self.getYPosition(for: firstAlignment)
+                //Reduce 2 times to get actual height
                 case (.center, .center): return 2 * self.getYPosition(for: firstAlignment)
+                //Reduce 1 time to get actual height
                 case (.center, .bottom): return self.getYPosition(for: firstAlignment)
-                
+                //Reduce 1 time to get actual height
                 case (.top, .center): return self.getYPosition(for: .center)
                 case (.top, .bottom): return self.getYPosition(for: firstAlignment)
+                //Reduce 2 times to get actual height
                 case (.top, .top): return 2 * self.getYPosition(for: .center)
                     
                 case(.bottom, .top): return 2 * self.getYPosition(for: firstAlignment)
+                //Reduce 3 times to get actual height
                 case (.bottom, .center): return 3 * self.getYPosition(for: .center)
                 case(.bottom, .bottom): return self.getYPosition(for: firstAlignment)
            }
