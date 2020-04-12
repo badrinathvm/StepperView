@@ -102,27 +102,33 @@ public struct StepperView<Cell>: View where Cell:View {
     public var lastAlignment: StepperAlignment {
         return self.alignments.last ?? .center
     }
-    
+}
+
+//MARK:- Helper methods for StepperView
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+extension StepperView {
     // Calculates the height based on first and last alignments.
     func calculateHeightsForFirstAndLastAlignments() -> CGFloat {
         if self.alignments.count > 1 {
             switch (firstAlignment, lastAlignment) {
                 //Reduce 3 times to get actual height
-                case (.center, .top): return 3 * self.getYPosition(for: firstAlignment)
+            case (.center, .top): return 3 * self.getYPosition(for: .center)
                 //Reduce 2 times to get actual height
-                case (.center, .center): return 2 * self.getYPosition(for: firstAlignment)
+            case (.center, .center): return 2 * self.getYPosition(for: .center)
                 //Reduce 1 time to get actual height
-                case (.center, .bottom): return self.getYPosition(for: firstAlignment)
+            case (.center, .bottom): return self.getYPosition(for: .center)
+                
                 //Reduce 1 time to get actual height
                 case (.top, .center): return self.getYPosition(for: .center)
                 case (.top, .bottom): return self.getYPosition(for: firstAlignment)
                 //Reduce 2 times to get actual height
                 case (.top, .top): return 2 * self.getYPosition(for: .center)
-                    
+                
+                //Reduce 2 times as it's messured from it's first alignment (.bottom isn this case)
                 case(.bottom, .top): return 2 * self.getYPosition(for: firstAlignment)
                 //Reduce 3 times to get actual height
                 case (.bottom, .center): return 3 * self.getYPosition(for: .center)
-                case(.bottom, .bottom): return self.getYPosition(for: firstAlignment)
+                case (.bottom, .bottom): return self.getYPosition(for: firstAlignment)
            }
         } else {
             return self.getYPosition(for: self.firstAlignment)
