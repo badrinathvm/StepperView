@@ -39,17 +39,17 @@ struct LineView: View {
     
     func getYOffsetPosition(for first: StepperAlignment,last: StepperAlignment, and offset: CGFloat ) -> CGFloat {
         switch (first, last) {
-        case (.center, .top): return (lineYPosition - 3 * lineYPosition / 2)
-        case (.center, .center): return (lineYPosition - 2 * lineYPosition / 2)
-        case (.center, .bottom) : return (lineYPosition - lineYPosition / 2)
-            
-        case (.top, .top): return -VerticalAlignment.centerValue
-        case (.top, .center) : return -(VerticalAlignment.centerValue / 2)
-        case (.top, .bottom): return (lineYPosition  - 2 * lineYPosition / 2)
-            
-        case (.bottom, .top): return (lineYPosition -  2 * lineYPosition / 2)
-        case (.bottom, .center): return (lineYPosition - 1.5 * lineYPosition / 2)
-        case (.bottom,.bottom):return (lineYPosition - lineYPosition / 2)
+            case (.center, .top): return (lineYPosition - 3 * lineYPosition / 2)
+            case (.center, .center): return (lineYPosition - 2 * lineYPosition / 2)
+            case (.center, .bottom) : return (lineYPosition - lineYPosition / 2)
+                
+            case (.top, .top): return -VerticalAlignment.centerValue
+            case (.top, .center) : return -(VerticalAlignment.centerValue / 2)
+            case (.top, .bottom): return (lineYPosition  - 2 * lineYPosition / 2)
+                
+            case (.bottom, .top): return (lineYPosition -  2 * lineYPosition / 2)
+            case (.bottom, .center): return (lineYPosition - 1.5 * lineYPosition / 2)
+            case (.bottom,.bottom):return (lineYPosition - lineYPosition / 2)
         }
     }
 }
