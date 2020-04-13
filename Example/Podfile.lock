@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - StepperView (1.0.4)
+  - StepperView (1.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  StepperView: 3c1e9d67bfd4c73040e42b0488548ebaada5abc4
+  StepperView: 25478de5670fdd777852f8fe90461fabf0b13c4e
 
 PODFILE CHECKSUM: 9f7510adb19f7a52307ff19e961fb8365a7bc522
 
