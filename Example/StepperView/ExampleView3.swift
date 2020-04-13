@@ -20,7 +20,7 @@ struct ExampleView3:View {
                   CustomView(text: "Select type of Account",imageName: "cash")
                 ]
     
-    let alignments = [StepperAlignment.top, .center, .bottom, .bottom]
+    let alignments = [StepperAlignment.center, .center, .center, .center]
     
     let indicationTypes = [
                 StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12),
