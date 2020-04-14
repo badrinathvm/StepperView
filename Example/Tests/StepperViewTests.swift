@@ -73,6 +73,7 @@ class StepperViewTests: XCTestCase {
                                            lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
         
       let vc = UIHostingController(rootView: stepperView)
+      vc.view.frame = UIScreen.main.bounds
       assertSnapshot(matching: vc, as: .image)
     }
     
