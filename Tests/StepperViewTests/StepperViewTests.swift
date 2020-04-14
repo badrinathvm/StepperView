@@ -1,6 +1,7 @@
 import XCTest
 import SnapshotTesting
 import SwiftUI
+import UIKit
 @testable import StepperView
 
 #if canImport(SwiftUI) && !arch(arm) && !arch(i386)
