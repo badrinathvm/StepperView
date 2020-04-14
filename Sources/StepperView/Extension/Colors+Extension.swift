@@ -89,9 +89,9 @@ extension Colors {
     public var rawValue: RawValue {
         switch self {
         case .red(let variation):
-            switch variation{
-                case .normal: return Color(#colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1))
-                case .light: return Color(#colorLiteral(red: 0.9490196078, green: 0.3490196078, blue: 0.3176470588, alpha: 1))
+            switch variation {
+            case .normal: return Color(#colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1))
+            case .light: return Color(#colorLiteral(red: 0.9490196078, green: 0.3490196078, blue: 0.3176470588, alpha: 1))
             }
         case .gray(let variation):
             switch variation {

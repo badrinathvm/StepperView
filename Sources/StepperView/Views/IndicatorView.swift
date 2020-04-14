@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//MARK:- Indicator View for Stepper Indicator
+// MARK: - Indicator View for Stepper Indicator
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct IndicatorView: View {
     @State private var width:CGFloat = 0.0
@@ -45,4 +45,3 @@ struct IndicatorView: View {
         }
     }
 }
-
