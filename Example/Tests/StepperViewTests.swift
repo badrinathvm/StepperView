@@ -88,5 +88,4 @@ class StepperViewTests: XCTestCase {
         vc.view.frame = UIScreen.main.bounds
         assertSnapshot(matching: vc, as: .image)
     }
-
 }
