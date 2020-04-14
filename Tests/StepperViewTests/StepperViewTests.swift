@@ -3,7 +3,6 @@ import SnapshotTesting
 import SwiftUI
 @testable import StepperView
 
-#if os(iOS)
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 final class StepperViewTests: XCTestCase {
     
@@ -50,4 +49,3 @@ final class StepperViewTests: XCTestCase {
         ("testExampleView2", testExampleView2)
     ]
 }
-#endif
