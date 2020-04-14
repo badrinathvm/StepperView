@@ -1,7 +1,8 @@
 import XCTest
 import StepperView
 
-class Tests: XCTestCase {
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+class StepperViewTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -13,16 +14,7 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testStepAlignment() {
+        XCTAssertTrue(StepperAlignment.allCases.count == 3)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
