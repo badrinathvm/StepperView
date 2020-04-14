@@ -39,7 +39,7 @@ pod 'StepperView'
 StepperView is available through Swift Package Manager. To install it, simply add the following dependency to your Package.swift
 
 ```ruby
-.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.0.6")
+.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.1.2")
 ```
 
 ## Usage

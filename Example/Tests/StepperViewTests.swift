@@ -14,7 +14,10 @@ class StepperViewTests: XCTestCase {
         super.tearDown()
     }
     
-    func testStepAlignment() {
+    func testStepAlignments() {
         XCTAssertTrue(StepperAlignment.allCases.count == 3)
+        XCTAssertTrue(StepperAlignment.top.rawValue.lowercased() == "top")
+        XCTAssertTrue(StepperAlignment.center.rawValue.lowercased() == "center")
+        XCTAssertTrue(StepperAlignment.bottom.rawValue.lowercased() == "bottom")
     }
 }
