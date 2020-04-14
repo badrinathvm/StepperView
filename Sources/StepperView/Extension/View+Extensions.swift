@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//MARK:- Helper function of View to operate on.
+// MARK: - Helper function of View to operate on.
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public extension View {
     
@@ -41,14 +41,14 @@ public extension View {
     
     /// returns the alignment guide based on the alignemnt type.
     /// - Parameter type: sets the aligment guide.
-    func setAlignment(type: StepperAlignment)-> some View  {
+    func setAlignment(type: StepperAlignment)-> some View {
         switch type {
         case .top:
-            return self.alignmentGuide(.customTop) { d in d[VerticalAlignment.top] }
+            return self.alignmentGuide(.customTop) { alignment in alignment[VerticalAlignment.top] }
         case .center:
-            return self.alignmentGuide(.customCenter) { d in d[VerticalAlignment.center] }
+            return self.alignmentGuide(.customCenter) { alignment in alignment[VerticalAlignment.center] }
         case .bottom:
-            return self.alignmentGuide(.customBottom) { d in d[VerticalAlignment.bottom] }
+            return self.alignmentGuide(.customBottom) { alignment in alignment[VerticalAlignment.bottom] }
         }
     }
     
@@ -69,7 +69,6 @@ public extension View {
     func embedINNavigationView() -> some View {
         NavigationView { self }
     }
-    
     
     // Wrapper to  AnyView
     func eraseToAnyView() -> AnyView {

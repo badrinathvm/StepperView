@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-//MARK:- Collects height of all the cells, with reduce takes the maximum value for the given key
+// MARK: - Collects height of all the cells, with reduce takes the maximum value for the given key
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct HeightPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
@@ -19,7 +19,7 @@ struct HeightPreference: PreferenceKey {
     }
 }
 
-//MARK:- Collects height of all the cells, with reduce takes the maximum value for the given key
+// MARK: - Collects height of all the cells, with reduce takes the maximum value for the given key
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct VerticalHeightPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
@@ -30,7 +30,7 @@ struct VerticalHeightPreference: PreferenceKey {
     }
 }
 
-//MARK:- Collects width of all the cells, with reduce takes the maximum value for the given key
+// MARK: - Collects width of all the cells, with reduce takes the maximum value for the given key
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct WidthPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
@@ -41,7 +41,7 @@ struct WidthPreference: PreferenceKey {
     }
 }
 
-//MARK:- Collects bound, center coordinates and pass layout data to it's parent View
+// MARK: - Collects bound, center coordinates and pass layout data to it's parent View
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct BoundsPreferenceKey: PreferenceKey {
     public typealias Value = Anchor<CGRect>?
@@ -53,7 +53,7 @@ public struct BoundsPreferenceKey: PreferenceKey {
     }
 }
 
-//MARK:- CGRect Preference Key
+// MARK: - CGRect Preference Key
 struct CGRectPreferenceKey: PreferenceKey {
     typealias Value = CGRectData?
     
@@ -66,12 +66,12 @@ struct CGRectPreferenceKey: PreferenceKey {
     }
 }
 
-//MARK:- placeholder struct to hold CGRect data.
-struct CGRectData: Equatable,Identifiable {
+// MARK: - placeholder struct to hold CGRect data.
+struct CGRectData: Equatable, Identifiable {
     let id = UUID()
     var rect: CGRect
     
-    static func == (lhs: CGRectData , rhs: CGRectData) -> Bool {
+    static func == (lhs: CGRectData, rhs: CGRectData) -> Bool {
         lhs.id == rhs.id
     }
 }
