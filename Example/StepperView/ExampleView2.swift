@@ -20,8 +20,6 @@ struct ExampleView2:View {
                   StepTextView(text:"Take a printed receipt")
                 ]
     
-    //let cells = [StepperContentView(), StepperContentView(), StepperContentView() ]
-    
     let indicationTypes = [
                 StepperIndicationType.custom(NumberedCircleView(text: "1").eraseToAnyView()),
                     .custom(NumberedCircleView(text: "2").eraseToAnyView()),
@@ -37,25 +35,12 @@ struct ExampleView2:View {
             VStack(spacing: 5) {
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
-                        StepperView(cells: self.cells, indicationType :indicationTypes,lineOptions: StepperLineOptions.custom(1,Colors.blue(.teal).rawValue))
+                        StepperView(cells: self.cells, indicationType :indicationTypes,
+                                    lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                     }
                 }
             }.padding(.vertical, 50)
              .navigationBarTitle("Stepper View")
-        }
-    }
-}
-
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct StepTextView: View {
-    var text:String
-    var body: some View {
-        VStack {
-            Text(text)
-                .foregroundColor(Colors.blue(.teal).rawValue)
-                .font(.system(size: 16, weight: Font.Weight.medium))
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 10)
         }
     }
 }

@@ -13,6 +13,12 @@
 		1BD7CB70243FCD4800F17698 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6F243FCD4800F17698 /* CustomView.swift */; };
 		1BD7CB74244102C700F17698 /* ExampleView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB73244102C700F17698 /* ExampleView4.swift */; };
 		1BD7CB76244103A100F17698 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB75244103A100F17698 /* ExampleView.swift */; };
+		1BD7CB902446509200F17698 /* TextHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA315DC243D1D8F0026C37E /* TextHolderView.swift */; };
+		1BD7CB922446585500F17698 /* StepTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB912446585500F17698 /* StepTextView.swift */; };
+		1BD7CB932446585E00F17698 /* StepTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB912446585500F17698 /* StepTextView.swift */; };
+		1BD7CB94244658EE00F17698 /* NumberedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB69243F9AC500F17698 /* NumberedCircleView.swift */; };
+		1BD7CB9524465A0B00F17698 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6F243FCD4800F17698 /* CustomView.swift */; };
+		1BD7CB9624465AC700F17698 /* StepperContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF933B6243D24EB00F2FEA6 /* StepperContentView.swift */; };
 		1BF0B9EE2439BB7D00492C74 /* ExampleView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9ED2439BB7D00492C74 /* ExampleView1.swift */; };
 		1BF933B7243D24EB00F2FEA6 /* StepperContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF933B6243D24EB00F2FEA6 /* StepperContentView.swift */; };
 		1BF933BF243E5C8800F2FEA6 /* ExampleView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF933BE243E5C8800F2FEA6 /* ExampleView2.swift */; };
@@ -44,6 +50,7 @@
 		1BD7CB6F243FCD4800F17698 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		1BD7CB73244102C700F17698 /* ExampleView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView4.swift; sourceTree = "<group>"; };
 		1BD7CB75244103A100F17698 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		1BD7CB912446585500F17698 /* StepTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTextView.swift; sourceTree = "<group>"; };
 		1BF0B9ED2439BB7D00492C74 /* ExampleView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleView1.swift; sourceTree = "<group>"; };
 		1BF933B6243D24EB00F2FEA6 /* StepperContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperContentView.swift; sourceTree = "<group>"; };
 		1BF933BE243E5C8800F2FEA6 /* ExampleView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView2.swift; sourceTree = "<group>"; };
@@ -105,6 +112,7 @@
 				1BA315DC243D1D8F0026C37E /* TextHolderView.swift */,
 				1BD7CB69243F9AC500F17698 /* NumberedCircleView.swift */,
 				1BD7CB6F243FCD4800F17698 /* CustomView.swift */,
+				1BD7CB912446585500F17698 /* StepTextView.swift */,
 			);
 			name = SupportingViews;
 			sourceTree = "<group>";
@@ -354,11 +362,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepperView_Tests/Pods-StepperView_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapshotTesting.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -417,6 +425,7 @@
 				1BD7CB74244102C700F17698 /* ExampleView4.swift in Sources */,
 				1BD7CB76244103A100F17698 /* ExampleView.swift in Sources */,
 				1BA315DD243D1D8F0026C37E /* TextHolderView.swift in Sources */,
+				1BD7CB922446585500F17698 /* StepTextView.swift in Sources */,
 				1BD7CB70243FCD4800F17698 /* CustomView.swift in Sources */,
 				1BD7CB6A243F9AC500F17698 /* NumberedCircleView.swift in Sources */,
 				1BF933B7243D24EB00F2FEA6 /* StepperContentView.swift in Sources */,
@@ -430,7 +439,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD7CB9524465A0B00F17698 /* CustomView.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* StepperViewTests.swift in Sources */,
+				1BD7CB902446509200F17698 /* TextHolderView.swift in Sources */,
+				1BD7CB94244658EE00F17698 /* NumberedCircleView.swift in Sources */,
+				1BD7CB9624465AC700F17698 /* StepperContentView.swift in Sources */,
+				1BD7CB932446585E00F17698 /* StepTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

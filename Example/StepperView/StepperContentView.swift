@@ -9,7 +9,7 @@
 import SwiftUI
 import StepperView
 
-//MARK:- Stepper Content View
+// MARK: - Stepper Content View
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepperContentView: View {
     var body: some View {
@@ -29,24 +29,26 @@ struct StepperContentView: View {
     fileprivate func textContent(text: String) -> some View {
           return HStack {
                   Text(text)
-                  .padding(.vertical , 10)
+                  .padding(.vertical, 10)
                   .padding(.horizontal, 5)
                   .foregroundColor(Color.gray)
                  Spacer()
             }
     }
       
-      fileprivate func rectangleContent() -> some View  {
+      fileprivate func rectangleContent() -> some View {
           return
               VStack(alignment: .leading) {
-                  ForEach([StepperAlignment.top.rawValue, StepperAlignment.center.rawValue, StepperAlignment.bottom.rawValue], id:\.self) { value in
+                  ForEach([StepperAlignment.top.rawValue,
+                           StepperAlignment.center.rawValue,
+                           StepperAlignment.bottom.rawValue], id:\.self) { value in
                       self.textContent(text: value)
                   }
               }
       }
 }
 
-//MARK:- Image View to host Image
+// MARK: - Image View to host Image
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ImageView: View {
     var name:String

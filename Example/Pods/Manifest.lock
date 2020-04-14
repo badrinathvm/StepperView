@@ -1,27 +1,23 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
+  - SnapshotTesting (1.7.2)
   - StepperView (1.1.2)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
+  - SnapshotTesting (~> 1.7.2)
   - StepperView (from `../`)
 
 SPEC REPOS:
   trunk:
-    - FBSnapshotTestCase
+    - SnapshotTesting
 
 EXTERNAL SOURCES:
   StepperView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  SnapshotTesting: 8caa6661fea7c8019d5b46de77c16bab99c36c5c
   StepperView: 90862bcbb990fad27d995e9d3d62eae41d691a0d
 
-PODFILE CHECKSUM: 22d3254bca4d0adeb2e45f865d5e7262dd6f2228
+PODFILE CHECKSUM: f5a99c8518c38c24e820cc7e8f085cbe692e9c77
 
 COCOAPODS: 1.8.4
