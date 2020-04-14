@@ -19,3 +19,4 @@ identifier_name:
     error: 60
   min_length:
     warning: 2
+line_length: 160
