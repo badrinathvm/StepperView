@@ -8,7 +8,6 @@ target 'StepperView_Example' do
 
   target 'StepperView_Tests' do
     inherit! :search_paths
-
-    pod 'FBSnapshotTestCase' , '~> 2.1.4', :inhibit_warnings => true
+    pod 'SnapshotTesting', '~> 1.7.2', :inhibit_warnings => true
   end
 end
