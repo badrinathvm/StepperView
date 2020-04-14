@@ -21,6 +21,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "StepperViewTests",
-            dependencies: ["StepperView","SnapshotTesting"])
+            dependencies: ["StepperView"])
     ]
 )
