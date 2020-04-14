@@ -14,9 +14,7 @@ let package = Package(
             name: "StepperView",
             targets: ["StepperView"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git", from: "1.7.2"),
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "StepperView",
