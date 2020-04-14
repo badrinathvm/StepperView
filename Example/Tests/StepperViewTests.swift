@@ -53,8 +53,9 @@ class StepperViewTests: XCTestCase {
     }
     
     func testExampleView2() {
-        let stepperView = StepperView(cells: [StepTextView(text: "Insert ATM Card"), StepTextView(text: "Enter 4-Digit ATM Pin")],
-                            indicationType : [StepperIndicationType.custom(NumberedCircleView(text: "1").eraseToAnyView()),
+        let stepperView = StepperView(cells: [StepTextView(text: "Insert ATM Card"),
+                                              StepTextView(text: "Enter 4-Digit ATM Pin")],
+                        indicationType : [StepperIndicationType.custom(NumberedCircleView(text: "1").eraseToAnyView()),
                                               .custom(NumberedCircleView(text: "2").eraseToAnyView())])
         let vc = UIHostingController(rootView: stepperView)
         vc.view.frame = UIScreen.main.bounds
@@ -63,10 +64,13 @@ class StepperViewTests: XCTestCase {
     
     func testExampleView3() {
        let stepperView =  StepperView(cells: [CustomView(text: "Insert ATM Card", imageName: "cc"),
-                                              CustomView(text: "Select transaction and enter pin", imageName: "transaction")],
-                                           indicationType:[StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12),
-                                                          StepperIndicationType.circle(Colors.teal.rawValue,12)],
-                                           lineOptions: StepperLineOptions.custom(1,Colors.blue(.teal).rawValue))
+                                              CustomView(text: "Select transaction and enter pin",
+                                                         imageName: "transaction")],
+                                           indicationType:[
+                                                StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
+                                                StepperIndicationType.circle(Colors.teal.rawValue, 12)
+                                            ],
+                                           lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
         
       let vc = UIHostingController(rootView: stepperView)
       assertSnapshot(matching: vc, as: .image)
@@ -75,8 +79,11 @@ class StepperViewTests: XCTestCase {
     func testExampleView4() {
         let stepperView = StepperView(cells: [StepperContentView(), StepperContentView()],
                                       alignments: [.center, .bottom],
-                                      indicationType : [StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.fill"), 12),
-                                                        StepperIndicationType.custom(ImageView(name: "arrow.uturn.right").eraseToAnyView())])
+                                      indicationType: [
+                                            StepperIndicationType
+                                                .image(Image(systemName: "arrowshape.turn.up.right.fill"), 12),
+                                            StepperIndicationType
+                                                .custom(ImageView(name: "arrow.uturn.right").eraseToAnyView())])
         let vc = UIHostingController(rootView: stepperView)
         vc.view.frame = UIScreen.main.bounds
         assertSnapshot(matching: vc, as: .image)

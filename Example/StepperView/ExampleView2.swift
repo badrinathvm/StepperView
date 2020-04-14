@@ -20,8 +20,6 @@ struct ExampleView2:View {
                   StepTextView(text:"Take a printed receipt")
                 ]
     
-    //let cells = [StepperContentView(), StepperContentView(), StepperContentView() ]
-    
     let indicationTypes = [
                 StepperIndicationType.custom(NumberedCircleView(text: "1").eraseToAnyView()),
                     .custom(NumberedCircleView(text: "2").eraseToAnyView()),
@@ -37,7 +35,8 @@ struct ExampleView2:View {
             VStack(spacing: 5) {
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
-                        StepperView(cells: self.cells, indicationType :indicationTypes,lineOptions: StepperLineOptions.custom(1,Colors.blue(.teal).rawValue))
+                        StepperView(cells: self.cells, indicationType :indicationTypes,
+                                    lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                     }
                 }
             }.padding(.vertical, 50)

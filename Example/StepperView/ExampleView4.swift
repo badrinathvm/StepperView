@@ -13,15 +13,16 @@ import StepperView
 struct ExampleView4: View {
     
     //alignments for the cell here to point
-    let alignments = [StepperAlignment.top,StepperAlignment.center,StepperAlignment.bottom]
+    let alignments = [StepperAlignment.top, StepperAlignment.center, StepperAlignment.bottom]
     
-    let circleIndicators = [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12),
-                            StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12), StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12)]
+    let circleIndicators = [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
+                    StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
+                    StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)]
 
     //Custom Indicators to point.
     let mixMatchIndicators = [
         StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.fill"), 12),
-                          StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.circle"),12),
+                          StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.circle"), 12),
                           StepperIndicationType.custom(ImageView(name: "arrow.uturn.right").eraseToAnyView())]
         
     //custom cells
@@ -33,10 +34,14 @@ struct ExampleView4: View {
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
                         //Stepper Indicator with Circle pointers
-                        StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.circleIndicators)
+                        StepperView(cells: self.cells,
+                                    alignments: self.alignments,
+                                    indicationType : self.circleIndicators)
                         
                         //Stepper Indicator with custom pointers
-                        StepperView(cells: self.cells, alignments: self.alignments, indicationType : self.mixMatchIndicators)
+                        StepperView(cells: self.cells,
+                                    alignments: self.alignments,
+                                    indicationType : self.mixMatchIndicators)
                     }
                 }
             }
@@ -44,6 +49,3 @@ struct ExampleView4: View {
         }
     }
 }
-
-
-

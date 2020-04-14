@@ -13,15 +13,16 @@ import StepperView
 struct ExampleView1: View {
     
     //alignments for the cell here to point
-    let alignments = [StepperAlignment.top,StepperAlignment.center,StepperAlignment.bottom]
+    let alignments = [StepperAlignment.top, StepperAlignment.center, StepperAlignment.bottom]
     
-    let circleIndicators = [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12),
-                            StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12), StepperIndicationType<AnyView>.circle(Colors.teal.rawValue,12)]
+    let circleIndicators = [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
+                            StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
+                            StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)]
 
     //Custom Indicators to point.
     let mixMatchIndicators = [
         StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.fill"), 12),
-                          StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.circle"),12),
+                          StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.circle"), 12),
                           StepperIndicationType.custom(ImageView(name: "arrow.uturn.right").eraseToAnyView())]
         
     //custom cells
@@ -36,11 +37,15 @@ struct ExampleView1: View {
                                     alignments: [StepperAlignment.top] ,
                                     indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)]
                                   )
-                        StepperView(cells: [TextHolderView(text: "Center")] , alignments: [.center ] , indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)] )
+                        StepperView(cells: [TextHolderView(text: "Center")],
+                                    alignments: [.center],
+                                    indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)] )
                     }
                     
                     HStack {
-                        StepperView(cells: [TextHolderView(text: "Bottom")] , alignments: [.bottom ] , indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)] )
+                        StepperView(cells: [TextHolderView(text: "Bottom")],
+                                    alignments: [.bottom],
+                                    indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)] )
                     }
                 }
             }
@@ -48,5 +53,3 @@ struct ExampleView1: View {
         }
     }
 }
-
-
