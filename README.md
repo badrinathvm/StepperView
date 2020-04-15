@@ -31,7 +31,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView'
+pod 'StepperView','~> 1.1.3'
 ```
 
 ## Swift Package Manager

@@ -57,15 +57,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACE41AFB9204008FA782"
-            BuildableName = "StepperView_Tests.xctest"
-            BlueprintName = "StepperView_Tests"
-            ReferencedContainer = "container:StepperView.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
