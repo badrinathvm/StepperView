@@ -12,6 +12,8 @@ import SwiftUI
 struct ExampleView: View {
     var body: some View {
         TabView {
+            ExampleView5()
+                .tabItem { Text("Horizontal") .foregroundColor(Color.black) }
             ExampleView1()
                 .tabItem { Text("Basic").foregroundColor(Color.black) }
             ExampleView2()

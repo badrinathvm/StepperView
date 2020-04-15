@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B76A0602446C9DB00749ACD /* ExampleView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76A05F2446C9DB00749ACD /* ExampleView5.swift */; };
 		1BA315DD243D1D8F0026C37E /* TextHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA315DC243D1D8F0026C37E /* TextHolderView.swift */; };
 		1BD7CB6A243F9AC500F17698 /* NumberedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB69243F9AC500F17698 /* NumberedCircleView.swift */; };
 		1BD7CB6C243FC0CE00F17698 /* ExampleView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6B243FC0CE00F17698 /* ExampleView3.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		15E48D7C4930C791708D715C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1B76A05F2446C9DB00749ACD /* ExampleView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView5.swift; sourceTree = "<group>"; };
 		1BA315DC243D1D8F0026C37E /* TextHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHolderView.swift; sourceTree = "<group>"; };
 		1BD7CB69243F9AC500F17698 /* NumberedCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberedCircleView.swift; sourceTree = "<group>"; };
 		1BD7CB6B243FC0CE00F17698 /* ExampleView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView3.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				1BD7CB6B243FC0CE00F17698 /* ExampleView3.swift */,
 				1BD7CB73244102C700F17698 /* ExampleView4.swift */,
 				1BD7CB75244103A100F17698 /* ExampleView.swift */,
+				1B76A05F2446C9DB00749ACD /* ExampleView5.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				1BF933B7243D24EB00F2FEA6 /* StepperContentView.swift in Sources */,
 				1BF0B9EE2439BB7D00492C74 /* ExampleView1.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				1B76A0602446C9DB00749ACD /* ExampleView5.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
