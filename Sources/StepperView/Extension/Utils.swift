@@ -11,4 +11,5 @@ import SwiftUI
 public struct Utils {
     static let standardSpacing: CGFloat = 10.0
     static let halfSpacing:CGFloat = 5.0
+    static let offsetConstant:CGFloat = 40.0
 }

@@ -144,7 +144,7 @@ extension StepperView {
                         self.cells[index]
                             .heightPreference(column: index)
                     }.setAlignment(type: self.alignments[index])
-                        .offset(x: -40)
+                        .offset(x: -Utils.offsetConstant)
                 }
             }.verticalHeightPreference()
                 // Intermediate height of the Line View
@@ -169,7 +169,7 @@ extension StepperView {
     // MARK: - Returns the Stepper View in horizontal mode
     func horizontalStepperView() -> some View {
         return VStack {
-            HorizontalLineView(dividerWidth: $lineWidth,lineYOffsetPosition: $lineYOffsetPosition, options: self.lineOptions)
+            HorizontalLineView(dividerWidth: $lineWidth, lineYOffsetPosition: $lineYOffsetPosition, options: self.lineOptions)
             VStack {
                 HStack(spacing: verticalSpacing) {
                     ForEach(self.cells.indices) { index in
@@ -193,7 +193,7 @@ extension StepperView {
                         }
                     }
                 }.widthKey()
-            }.offset(y: -40)
+            }.offset(y: -Utils.offsetConstant)
              .heightKey()
             .onPreferenceChange(WidthKey.self) { (value) in
                 self.lineWidth = value ?? 0.0

@@ -14,8 +14,6 @@ struct ExampleView: View {
         TabView {
             ExampleView6()
                 .tabItem { Text("Horizontal") .foregroundColor(Color.black) }
-            ExampleView5()
-                .tabItem { Text("Horizontal1") .foregroundColor(Color.black) }
             ExampleView1()
                 .tabItem { Text("Basic").foregroundColor(Color.black) }
             ExampleView2()
