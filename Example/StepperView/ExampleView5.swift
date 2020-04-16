@@ -21,11 +21,16 @@ struct ExampleView5: View {
     var body: some View {
         VStack {
             
-          Divider()
-                .background(Color.gray)
-                .frame(width: dividerWidth)
-                .padding()
-                .eraseToAnyView()
+//          Divider()
+//                .background(Color.gray)
+//                .frame(width: dividerWidth)
+//                .padding()
+//                .eraseToAnyView()
+            
+            Rectangle()
+                .fill(Color.black)
+                .frame(width: dividerWidth, height: 1)
+            .eraseToAnyView()
             
             VStack {
                 HStack(spacing: horizontalSpacing) {
@@ -67,11 +72,11 @@ struct ExampleView5: View {
             print("Height Value \(String(describing: $0))")
             self.height = $0
         }
-        .onPreferenceChange(FrameWidthPreference.self) { (dict) in
-            print("Width values \(dict)")
-            self.stateWidths = dict
-            self.width = Array(dict.values).max()
-        }
+//        .onPreferenceChange(FrameWidthPreference.self) { (dict) in
+//            print("Width values \(dict)")
+//            self.stateWidths = dict
+//            self.width = Array(dict.values).max()
+//        }
         .frame(height: self.height)
     }
     
@@ -101,7 +106,8 @@ struct TextView: View {
     var body: some View {
             Text(text)
                 .font(.caption)
-                .frameWidthPref(column: index)
+                //.frameWidthPref(column: index)
+                .frame(height: 50)
     }
 }
 

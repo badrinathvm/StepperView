@@ -45,6 +45,8 @@ public struct StepperView<Cell>: View where Cell:View {
     
     //horizontal mode elements
     @State private var lineWidth:CGFloat = 0
+    @State private var height:CGFloat = 0
+    @State private var lineYOffsetPosition:CGFloat = 0
     
     //constructor parameters
     public var cells:[Cell]
@@ -167,7 +169,7 @@ extension StepperView {
     // MARK: - Returns the Stepper View in horizontal mode
     func horizontalStepperView() -> some View {
         return VStack {
-            HorizontalLineView(dividerWidth: $lineWidth)
+            HorizontalLineView(dividerWidth: $lineWidth,lineYOffsetPosition: $lineYOffsetPosition, options: self.lineOptions)
             VStack {
                 HStack(spacing: verticalSpacing) {
                     ForEach(self.cells.indices) { index in
@@ -178,20 +180,32 @@ extension StepperView {
                                 GeometryReader { proxy in
                                     prefereces.map {
                                         self.cells[index]
+                                            .frame(height: 50)
                                             .frame(width: proxy[$0].width * 2.5,
                                                    height: proxy[$0].height)
-                                            .padding(.vertical, 10)
+                                            .padding(.vertical, Utils.standardSpacing)
                                             .offset(x: proxy[$0].minX - proxy[$0].midX, y: proxy[$0].maxY)
                                             .allowsTightening(true)
                                             .multilineTextAlignment(.center)
+                                            .widthPreference(column: 0)
                                     }
                                 }
                         }
                     }
                 }.widthKey()
             }.offset(y: -40)
+             .heightKey()
             .onPreferenceChange(WidthKey.self) { (value) in
                 self.lineWidth = value ?? 0.0
+            }
+            // height of complete stepper Indicator
+            .onPreferenceChange(HeightKey.self) {
+                print("Height Value \(String(describing: $0))")
+                self.height = $0 ?? 0.0
+            }.frame(height: self.height)
+                
+            .onPreferenceChange(WidthPreference.self) {
+                self.lineYOffsetPosition = ($0.values.first ?? 12) / 2
             }
         }
     }
