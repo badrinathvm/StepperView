@@ -75,3 +75,21 @@ struct CGRectData: Equatable, Identifiable {
         lhs.id == rhs.id
     }
 }
+
+// MARK: - Width Key
+struct WidthKey: PreferenceKey {
+    static let defaultValue: CGFloat? = nil
+    static func reduce(value: inout CGFloat?,
+                       nextValue: () -> CGFloat?) {
+        value = value ?? nextValue()
+    }
+}
+
+// MARK: - Height Key
+struct HeightKey: PreferenceKey {
+    static let defaultValue: CGFloat? = nil
+    static func reduce(value: inout CGFloat?,
+                       nextValue: () -> CGFloat?) {
+        value = value ?? nextValue()
+    }
+}

@@ -29,67 +29,52 @@ public enum StepperLineOptions {
     case custom(CGFloat, Color)
 }
 
+public enum StepperMode:String, CaseIterable {
+    case vertical
+    case horizontal
+}
+
 // MARK: - Stepper View Implementation
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct StepperView<Cell>: View where Cell:View {
+    //vertical mode elements
     @State private var lineHeight:CGFloat = 0
     @State private var lineXPosition:CGFloat = 0
     @State private var columnHeights: [Int: CGFloat] = [:]
     @State private var lineYPosition: CGFloat = 0
+    
+    //horizontal mode elements
+    @State private var lineWidth:CGFloat = 0
+    @State private var height:CGFloat = 0
+    @State private var lineYOffsetPosition:CGFloat = 0
+    
+    //constructor parameters
     public var cells:[Cell]
     public var alignments:[StepperAlignment]
     public var indicationType: [StepperIndicationType<AnyView>]
     public var lineOptions:StepperLineOptions
     public var verticalSpacing: CGFloat
+    public var stepperMode:StepperMode
     
     public init(cells: [Cell], alignments: [StepperAlignment] = [],
                 indicationType: [StepperIndicationType<AnyView>],
                 lineOptions: StepperLineOptions = .defaults,
-                verticalSpacing:CGFloat = 30.0) {
+                verticalSpacing:CGFloat = 30.0, stepperMode: StepperMode = .vertical) {
         self.cells = cells
         self.alignments = alignments.isEmpty ? (0..<cells.count).map {_ in  StepperAlignment.center } : alignments
         self.indicationType = indicationType
         self.lineOptions = lineOptions
         self.verticalSpacing = verticalSpacing
+        self.stepperMode = stepperMode
     }
-        
+    
     public var body: some View {
-        HStack {
-            //line view to host indicator to point
-            LineView(lineHeight: $lineHeight,
-                     lineXPosition: $lineXPosition,
-                     lineYPosition: $lineYPosition,
-                     options: self.lineOptions,
-                     alignments: (self.firstAlignment, self.lastAlignment))
-            VStack(spacing: verticalSpacing) {
-                ForEach(self.cells.indices) { index in
-                    HStack(alignment: self.getAlignment(type: self.alignments[index])) {
-                        IndicatorView(type: self.indicationType[index], indexofIndicator: index)
-                                .padding(.horizontal, Utils.standardSpacing)
-                                .eraseToAnyView()
-                        self.cells[index]
-                            .heightPreference(column: index)
-                    }.setAlignment(type: self.alignments[index])
-                    .offset(x: -40)
-                }
-            }.verticalHeightPreference()
-            // Intermediate height of the Line View
-            .onPreferenceChange(HeightPreference.self) {
-                self.lineYPosition = self.getYPosition(for: self.firstAlignment)
-                self.calculateIntermediateHeights(value: $0)
-            }
-             // Width of the Indicator View
-            .onPreferenceChange(WidthPreference.self) {
-                self.lineXPosition = $0.values.first ?? 12
-            }
-             // Height of the Line View
-            .onPreferenceChange(VerticalHeightPreference.self) {
-                print("Height of Divider \($0)")
-                let finalHeight = $0.values.max() ?? 0.0
-                self.lineHeight = finalHeight - self.calculateHeightsForFirstAndLastAlignments()
-                print("Final Line Height \(self.lineHeight)")
-            }
-        }.padding()
+        switch stepperMode {
+        case .vertical:
+            return verticalStepperView().eraseToAnyView()
+        case .horizontal:
+            return horizontalStepperView().eraseToAnyView()
+        }
     }
     
     // Calculate intermediate heights of the view.
@@ -139,5 +124,89 @@ extension StepperView {
         } else {
             return self.getYPosition(for: self.firstAlignment)
        }
+    }
+    
+    // MARK: - Returns the Stepper View in vertical mode
+    func verticalStepperView() -> some View {
+        return HStack {
+            //line view to host indicator to point
+            VerticalLineView(lineHeight: $lineHeight,
+                     lineXPosition: $lineXPosition,
+                     lineYPosition: $lineYPosition,
+                     options: self.lineOptions,
+                     alignments: (self.firstAlignment, self.lastAlignment))
+            VStack(spacing: verticalSpacing) {
+                ForEach(self.cells.indices) { index in
+                    HStack(alignment: self.getAlignment(type: self.alignments[index])) {
+                        IndicatorView(type: self.indicationType[index], indexofIndicator: index)
+                            .padding(.horizontal, Utils.standardSpacing)
+                            .eraseToAnyView()
+                        self.cells[index]
+                            .heightPreference(column: index)
+                    }.setAlignment(type: self.alignments[index])
+                        .offset(x: -Utils.offsetConstant)
+                }
+            }.verticalHeightPreference()
+                // Intermediate height of the Line View
+                .onPreferenceChange(HeightPreference.self) {
+                    self.lineYPosition = self.getYPosition(for: self.firstAlignment)
+                    self.calculateIntermediateHeights(value: $0)
+            }
+                // Width of the Indicator View
+                .onPreferenceChange(WidthPreference.self) {
+                    self.lineXPosition = $0.values.first ?? 12
+            }
+                // Height of the Line View
+                .onPreferenceChange(VerticalHeightPreference.self) {
+                    print("Height of Divider \($0)")
+                    let finalHeight = $0.values.max() ?? 0.0
+                    self.lineHeight = finalHeight - self.calculateHeightsForFirstAndLastAlignments()
+                    print("Final Line Height \(self.lineHeight)")
+            }
+        }.padding()
+    }
+    
+    // MARK: - Returns the Stepper View in horizontal mode
+    func horizontalStepperView() -> some View {
+        return VStack {
+            HorizontalLineView(dividerWidth: $lineWidth, lineYOffsetPosition: $lineYOffsetPosition, options: self.lineOptions)
+            VStack {
+                HStack(spacing: verticalSpacing) {
+                    ForEach(self.cells.indices) { index in
+                        IndicatorView(type: self.indicationType[index], indexofIndicator: index)
+                            .anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { $0 }
+                            .eraseToAnyView()
+                            .overlayPreferenceValue(BoundsPreferenceKey.self) { (prefereces) in
+                                GeometryReader { proxy in
+                                    prefereces.map {
+                                        self.cells[index]
+                                            .frame(height: 50)
+                                            .frame(width: proxy[$0].width * 2.5,
+                                                   height: proxy[$0].height)
+                                            .padding(.vertical, Utils.standardSpacing)
+                                            .offset(x: proxy[$0].minX - proxy[$0].midX, y: proxy[$0].maxY)
+                                            .allowsTightening(true)
+                                            .multilineTextAlignment(.center)
+                                            .widthPreference(column: 0)
+                                    }
+                                }
+                        }
+                    }
+                }.widthKey()
+            }.offset(y: -Utils.offsetConstant)
+             .heightKey()
+            .onPreferenceChange(WidthKey.self) { (value) in
+                self.lineWidth = value ?? 0.0
+            }
+            // height of complete stepper Indicator
+            .onPreferenceChange(HeightKey.self) {
+                print("Height Value \(String(describing: $0))")
+                self.height = $0 ?? 0.0
+            }.frame(height: self.height)
+                
+            .onPreferenceChange(WidthPreference.self) {
+                self.lineYOffsetPosition = ($0.values.first ?? 12) / 2
+            }
+        }
     }
 }

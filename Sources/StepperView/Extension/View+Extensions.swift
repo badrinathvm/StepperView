@@ -25,6 +25,20 @@ public extension View {
         })
     }
     
+    // Stores the width which will be passed as part of onPreference change to parent view.
+    func widthKey() -> some View {
+        background(GeometryReader { proxy in
+            Color.clear.preference(key: WidthKey.self, value:  proxy.size.width)
+        })
+    }
+    
+    // Stores the height for each of column which will be passed as part of onPreference change to parent view.
+    func heightKey() -> some View {
+        background(GeometryReader { proxy in
+            Color.clear.preference(key: HeightKey.self, value:  proxy.size.height)
+        })
+    }
+    
     // Stores the height for each of column which will be passed as part of onPreferenceChange to parent view.
     func verticalHeightPreference(column: Int? = 0) -> some View {
         background(GeometryReader { proxy in

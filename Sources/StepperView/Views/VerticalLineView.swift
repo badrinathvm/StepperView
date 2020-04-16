@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: - Line View for Stepper
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct LineView: View {
+struct VerticalLineView: View {
     @Binding var lineHeight:CGFloat
     @Binding var lineXPosition:CGFloat
     @Binding var lineYPosition:CGFloat
