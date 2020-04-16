@@ -11,10 +11,13 @@
 SwiftUI iOS component for Step Indications.
 
 ## Usecase
-
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="200" alt="example1" align="left" hspace= "100"/>
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="200" alt="example2"  hspace= "100"/>
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="200" alt="example2"/>
+<table align= "center">
+ <tr>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"     alt="example1" align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
+ </tr>
+</table>
 
 ## Example
 
