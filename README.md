@@ -13,7 +13,8 @@ SwiftUI iOS component for Step Indications.
 ## Usecase
 
 <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="200" alt="example1" align="left" hspace= "100"/>
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2" align = "center"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="200" alt="example2"  hspace= "100"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="200" alt="example2"/>
 
 ## Example
 
@@ -59,7 +60,8 @@ var body: some View {
       StepperView(cells: [cellBody, cellBody , cellBody], 
                 alignments: alignments,
                 indicationType:indicatorTypes,
-                lineOptions: StepperLineOptions.custom(1,Colors.gray.rawValue))
+                lineOptions: StepperLineOptions.custom(1,Colors.gray.rawValue),
+                stepperMode: StepperMode.vertical)
      }
 }
 
@@ -83,6 +85,7 @@ var cellBody:some View {
 - indicatorTypes: enum provides the options to use .circle(color, width) , .image(Image, width) or .custom(AnyView)
 - lineOptions: optional parameter to customize the line for thickness and color options.
 - verticalSpacing: optional parameter for vertical spacing
+- stepperMode: enum provides the option of vertical or horizontal node for display step indications.
 
 <p>
     <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">Refer Example for more details on usage of StepperView</a>
