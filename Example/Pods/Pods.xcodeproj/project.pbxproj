@@ -13,6 +13,7 @@
 		18ED84EFAF015095FCCF61A8E494F325 /* AssertSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B5B926D044224F3DA48ECA54B90036 /* AssertSnapshot.swift */; };
 		1A1F20E176923FF03A0EAEA886703719 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F2FB477A620A3E602AB638D67BB48 /* NSView.swift */; };
 		1AF9376455879F66C02A9DFE65D84904 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B09B55AE3135C35D87AAD2C9D0AF81F /* IndicatorView.swift */; };
+		1BA9B80A2447DB58007A6BB9 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9B8092447DB58007A6BB9 /* HorizontalLineView.swift */; };
 		1D6331CC771AD3193441CDA6584DA3EF /* StepperView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7797AB8F85139D700B4FDCFF39AABC39 /* StepperView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D991DC78F8F9BAF7FA5A4D28B11349A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
 		2371CFDF095282B1D6935C36C81E46FC /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE17308B6D5521A72838599CD74F8F5 /* UIImage.swift */; };
@@ -31,7 +32,7 @@
 		6466CB6250CBD3F61D35E1132618C759 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C061463250766C9C05995AB8EE63E66 /* XCTest.framework */; };
 		6658F9FE5EEFD579907F946DD9FDD8E3 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB3C5BC42B48ECADA5C15E4D7300320 /* URLRequest.swift */; };
 		67C39A754A360A5EFC7FE0037CECE5C3 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C853A3716219DC38964698A3639F3829 /* CALayer.swift */; };
-		7084A380260A4506548723AB29E5B6C4 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE191A8E42B07D564CCE6D47267F722 /* LineView.swift */; };
+		7084A380260A4506548723AB29E5B6C4 /* VerticalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE191A8E42B07D564CCE6D47267F722 /* VerticalLineView.swift */; };
 		7335838BC805D1385641B470D1240371 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1791065F237E117081EFEE13DC4E955A /* View+Extensions.swift */; };
 		734DF31D35E552E09A5A942D09E67B77 /* PreferenceKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F573E2C4259C7BCE51F9CB30C73824 /* PreferenceKey+Extension.swift */; };
 		8003323F07F7A6F822902979CE092B88 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324481A591879B18B7505E9303723469 /* Wait.swift */; };
@@ -98,6 +99,7 @@
 		17E2D56C483E81CEF9848DE97231F414 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/SnapshotTesting/Snapshotting/String.swift; sourceTree = "<group>"; };
 		1A3E414A2122C3BC3532C12EFE05AD71 /* Pods-StepperView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Tests.modulemap"; sourceTree = "<group>"; };
 		1B5607D0E6C665BF1FD799000DA9A62E /* Pods-StepperView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Tests-dummy.m"; sourceTree = "<group>"; };
+		1BA9B8092447DB58007A6BB9 /* HorizontalLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
 		1D3FAD366B69D1860608FB5353B2355E /* SpriteKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpriteKit.swift; path = Sources/SnapshotTesting/Snapshotting/SpriteKit.swift; sourceTree = "<group>"; };
 		1E6041318F668A00834BD8F78AC546F5 /* Pods-StepperView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Example.modulemap"; sourceTree = "<group>"; };
 		1EB3C5BC42B48ECADA5C15E4D7300320 /* URLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = Sources/SnapshotTesting/Snapshotting/URLRequest.swift; sourceTree = "<group>"; };
@@ -110,7 +112,7 @@
 		417A7579BFF992EA59F7C5168F53DCB1 /* Colors+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
 		4969F046453FA46D6F0B372554F6F1B9 /* Pods-StepperView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		49C0B1898D58FE2F51A28B05A0F81AE1 /* StepperView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = StepperView.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		4BE191A8E42B07D564CCE6D47267F722 /* LineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		4BE191A8E42B07D564CCE6D47267F722 /* VerticalLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticalLineView.swift; sourceTree = "<group>"; };
 		4E72AAD93917F47E3D524310C84F7909 /* Diff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diff.swift; path = Sources/SnapshotTesting/Diff.swift; sourceTree = "<group>"; };
 		4EA5DAFB8EA20FA670B63AC5FCD0523C /* Pods_StepperView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		558D17434AAE6FD860B82C9D48690C5D /* Pods-StepperView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StepperView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -236,8 +238,9 @@
 			isa = PBXGroup;
 			children = (
 				7B09B55AE3135C35D87AAD2C9D0AF81F /* IndicatorView.swift */,
-				4BE191A8E42B07D564CCE6D47267F722 /* LineView.swift */,
+				4BE191A8E42B07D564CCE6D47267F722 /* VerticalLineView.swift */,
 				0B6D2A67E5F988F8F852F27DD3270822 /* StepperView.swift */,
+				1BA9B8092447DB58007A6BB9 /* HorizontalLineView.swift */,
 			);
 			name = Views;
 			path = Sources/StepperView/Views;
@@ -597,9 +600,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA9B80A2447DB58007A6BB9 /* HorizontalLineView.swift in Sources */,
 				C9F9367DDC224D3D91ADE9AA99A09C5E /* Colors+Extension.swift in Sources */,
 				1AF9376455879F66C02A9DFE65D84904 /* IndicatorView.swift in Sources */,
-				7084A380260A4506548723AB29E5B6C4 /* LineView.swift in Sources */,
+				7084A380260A4506548723AB29E5B6C4 /* VerticalLineView.swift in Sources */,
 				734DF31D35E552E09A5A942D09E67B77 /* PreferenceKey+Extension.swift in Sources */,
 				BBA906F649C2D2BF2D808DF4C7775007 /* StepperView-dummy.m in Sources */,
 				DEAC753314211001E4DF3D411DE096B2 /* StepperView.swift in Sources */,

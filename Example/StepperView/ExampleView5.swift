@@ -102,11 +102,6 @@ struct TextView: View {
             Text(text)
                 .font(.caption)
                 .frameWidthPref(column: index)
-//                .onPreferenceChange(FrameWidthPreference.self) { (dict) in
-//                    print("Width values \(dict)")
-//                    self.width = Array(dict.values).reduce(0, +)
-//                }
-                .frame(height: 50)
     }
 }
 
