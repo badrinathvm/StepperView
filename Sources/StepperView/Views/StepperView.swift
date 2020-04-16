@@ -166,6 +166,18 @@ extension StepperView {
         }.padding()
     }
     
+    // MARK: - draws a label for the given index based ont he bouhnds calclulated by the anchor preference.
+    fileprivate func drawLabel(for index: Int, proxy: GeometryProxy, value: Anchor<CGRect>) -> some View {
+        return self.cells[index]
+            .frame(height: 50)
+            .frame(width: proxy[value].width * 2.5,
+                   height: proxy[value].height)
+            .padding(.vertical, Utils.standardSpacing)
+            .offset(x: proxy[value].minX - proxy[value].midX, y: proxy[value].maxY)
+            .allowsTightening(true)
+            .multilineTextAlignment(.center)
+    }
+    
     // MARK: - Returns the Stepper View in horizontal mode
     func horizontalStepperView() -> some View {
         return VStack {
@@ -174,37 +186,34 @@ extension StepperView {
                 HStack(spacing: verticalSpacing) {
                     ForEach(self.cells.indices) { index in
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
+                            //for calclulating the height of the indictor view to offset the divider.
+                            .heightPreference(column: index)
+                            // to get bounds of the indicator view to find the startung position to draw a label.
                             .anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { $0 }
-                            .eraseToAnyView()
-                            .overlayPreferenceValue(BoundsPreferenceKey.self) { (prefereces) in
+                            .overlayPreferenceValue(BoundsPreferenceKey.self) { (preferences) in
                                 GeometryReader { proxy in
-                                    prefereces.map {
-                                        self.cells[index]
-                                            .frame(height: 50)
-                                            .frame(width: proxy[$0].width * 2.5,
-                                                   height: proxy[$0].height)
-                                            .padding(.vertical, Utils.standardSpacing)
-                                            .offset(x: proxy[$0].minX - proxy[$0].midX, y: proxy[$0].maxY)
-                                            .allowsTightening(true)
-                                            .multilineTextAlignment(.center)
-                                            .widthPreference(column: 0)
+                                    preferences.map { value in
+                                        //draws label below the indicator.
+                                        self.drawLabel(for: index, proxy: proxy, value: value)
                                     }
                                 }
-                        }
+                        }.eraseToAnyView()
                     }
                 }.widthKey()
             }.offset(y: -Utils.offsetConstant)
              .heightKey()
+             // calclulate the width of the bar.
             .onPreferenceChange(WidthKey.self) { (value) in
                 self.lineWidth = value ?? 0.0
             }
             // height of complete stepper Indicator
             .onPreferenceChange(HeightKey.self) {
-                print("Height Value \(String(describing: $0))")
+                //print("Height of the divider \(String(describing: $0))")
                 self.height = $0 ?? 0.0
             }.frame(height: self.height)
-                
-            .onPreferenceChange(WidthPreference.self) {
+             // calclulate the offset position of the bar to move it to center.
+            .onPreferenceChange(HeightPreference.self) {
+                print("lineYOffsetPosition \(self.lineYOffsetPosition)")
                 self.lineYOffsetPosition = ($0.values.first ?? 12) / 2
             }
         }

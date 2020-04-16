@@ -23,7 +23,7 @@ struct HorizontalLineView: View {
         case .custom(let height, let color):
             return Rectangle()
             .fill(color)
-                .frame(width: dividerWidth, height: height)
+            .frame(width: dividerWidth, height: height)
             .offset(y: -(lineYOffsetPosition + 1))
             .eraseToAnyView()
         }
