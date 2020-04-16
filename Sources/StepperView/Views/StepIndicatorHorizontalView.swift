@@ -20,7 +20,8 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
     var lineOptions: StepperLineOptions
     var verticalSpacing:CGFloat
     
-    init(cells: [Cell], alignments: [StepperAlignment] = [], indicationType: [StepperIndicationType<AnyView>], lineOptions: StepperLineOptions = .defaults, verticalSpacing:CGFloat = 50.0) {
+    init(cells: [Cell], alignments: [StepperAlignment] = [], indicationType: [StepperIndicationType<AnyView>],
+         lineOptions: StepperLineOptions = .defaults, verticalSpacing:CGFloat = 50.0) {
            self.cells = cells
            self.alignments = alignments
            self.indicationType = indicationType
