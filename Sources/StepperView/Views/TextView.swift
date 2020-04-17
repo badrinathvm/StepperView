@@ -12,7 +12,7 @@ public struct TextView: View {
     public var text:String
     public var font:Font
     
-    public init(text:String, font: Font = .caption) {
+    public init(text:String, font:Font = .caption) {
         self.text = text
         self.font = font
     }

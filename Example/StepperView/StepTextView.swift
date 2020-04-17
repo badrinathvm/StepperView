@@ -15,7 +15,7 @@ struct StepTextView: View {
     var text:String
     var body: some View {
         VStack {
-            TextView(text: text, font: .system(size: 16, weight: Font.Weight.medium))
+            TextView(text: text, font: Font.system(size: 16, weight: Font.Weight.medium))
                 .foregroundColor(Colors.blue(.teal).rawValue)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 10)
