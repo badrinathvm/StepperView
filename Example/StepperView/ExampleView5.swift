@@ -31,6 +31,12 @@ struct ExampleView5: View {
                   Text("Delivery").font(.caption),
                   Text("Tracking").font(.caption)]
     
+    let set3 = [ TextView(text:"Approval"),
+                  TextView(text:"Processing"),
+                  TextView(text:"Shipping"),
+                  TextView(text:"Delivery"),
+                  TextView(text:"Tracking")]
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 100) {
@@ -40,14 +46,30 @@ struct ExampleView5: View {
                             verticalSpacing: 50,
                             stepperMode: StepperMode.horizontal)
                 
-                StepperView(cells: self.set2,
-                            indicationType:indicationTypes,
-                            lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
-                            verticalSpacing: 50,
-                            stepperMode: StepperMode.horizontal)
+                HStack {
+                    StepperView(cells: self.set3,
+                    indicationType:indicationTypes,
+                    lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
+                    verticalSpacing: 30,
+                    stepperMode: StepperMode.vertical)
+                    
+                    StepperView(cells: self.set3,
+                                       indicationType:indicationTypes,
+                                       lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
+                                       verticalSpacing: 30,
+                                       stepperMode: StepperMode.vertical)
+                }
                 
             }
             .navigationBarTitle("StepperView")
         }
+    }
+}
+
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+struct TextView: View {
+    var text:String
+    var body: some View {
+        Text(text).font(.caption).frame(maxWidth: .infinity, alignment: .leading)
     }
 }
