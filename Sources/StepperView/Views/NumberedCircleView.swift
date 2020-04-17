@@ -7,12 +7,17 @@
 //
 
 import SwiftUI
-import StepperView
 
+// MARK: - Helper view to warp text inside the circle
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct NumberedCircleView: View {
-    var text:String
-    var body: some View {
+public struct NumberedCircleView: View {
+    public var text:String
+    
+    public init(text:String) {
+        self.text = text
+    }
+    
+    public var body: some View {
         Circle()
             .foregroundColor(Color.white)
             .frame(width: 28, height: 28)
