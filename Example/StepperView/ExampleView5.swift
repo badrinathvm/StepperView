@@ -25,17 +25,17 @@ struct ExampleView5: View {
                   Text("Payment Method").font(.caption),
                   Text("Track").font(.caption)]
     
-    let set2 = [ Text("Approval").font(.caption),
-                  Text("Processing").font(.caption),
-                  Text("Shipping").font(.caption),
-                  Text("Delivery").font(.caption),
-                  Text("Tracking").font(.caption)]
-    
-    let set3 = [ TextView(text:"Approval"),
-                  TextView(text:"Processing"),
+    let set2 = [TextView(text:"Approval"),
+                 TextView(text:"Processing"),
                   TextView(text:"Shipping"),
                   TextView(text:"Delivery"),
                   TextView(text:"Tracking")]
+    
+    let set3 = [ TextView(text:"Account"),
+                  TextView(text:"Profile"),
+                  TextView(text:"Band"),
+                  TextView(text:"Membership"),
+                  TextView(text:"Dashboard")]
     
     var body: some View {
         NavigationView {
@@ -47,19 +47,18 @@ struct ExampleView5: View {
                             stepperMode: StepperMode.horizontal)
                 
                 HStack {
-                    StepperView(cells: self.set3,
-                    indicationType:indicationTypes,
-                    lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
-                    verticalSpacing: 30,
-                    stepperMode: StepperMode.vertical)
+                    StepperView(cells: self.set2,
+                                indicationType:indicationTypes,
+                                lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
+                                verticalSpacing: 30,
+                                stepperMode: StepperMode.vertical)
                     
                     StepperView(cells: self.set3,
-                                       indicationType:indicationTypes,
-                                       lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
-                                       verticalSpacing: 30,
-                                       stepperMode: StepperMode.vertical)
+                                indicationType:indicationTypes,
+                                lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
+                                verticalSpacing: 30,
+                                stepperMode: StepperMode.vertical)
                 }
-                
             }
             .navigationBarTitle("StepperView")
         }
