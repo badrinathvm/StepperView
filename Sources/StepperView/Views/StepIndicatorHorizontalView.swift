@@ -69,12 +69,11 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
         }
     }
     
-    // MARK: - draws a label for the given index based ont he bouhnds calclulated by the anchor preference.
+    // MARK: - draws a label for the given index based ont he bouhnds calculated by the anchor preference.
     fileprivate func drawLabel(for index: Int, proxy: GeometryProxy, value: Anchor<CGRect>) -> some View {
          return self.cells[index]
-             .frame(height: 50)
-             .frame(width: proxy[value].width * 2.5,
-                    height: proxy[value].height)
+             .frame(height: proxy[value].width * 2.5)
+             .frame(width: proxy[value].width * 2.5, height: proxy[value].height)
              .padding(.vertical, Utils.standardSpacing)
              .offset(x: proxy[value].minX - proxy[value].midX, y: proxy[value].maxY)
              .allowsTightening(true)
