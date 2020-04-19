@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BA315DD243D1D8F0026C37E /* TextHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA315DC243D1D8F0026C37E /* TextHolderView.swift */; };
 		1BA9B80C2447DCC8007A6BB9 /* ExampleView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9B80B2447DCC8007A6BB9 /* ExampleView5.swift */; };
 		1BD7CB6C243FC0CE00F17698 /* ExampleView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6B243FC0CE00F17698 /* ExampleView3.swift */; };
-		1BD7CB70243FCD4800F17698 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6F243FCD4800F17698 /* CustomView.swift */; };
+		1BD7CB70243FCD4800F17698 /* ImageTextRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6F243FCD4800F17698 /* ImageTextRowView.swift */; };
 		1BD7CB74244102C700F17698 /* ExampleView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB73244102C700F17698 /* ExampleView4.swift */; };
 		1BD7CB76244103A100F17698 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB75244103A100F17698 /* ExampleView.swift */; };
-		1BD7CB902446509200F17698 /* TextHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA315DC243D1D8F0026C37E /* TextHolderView.swift */; };
-		1BD7CB9524465A0B00F17698 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6F243FCD4800F17698 /* CustomView.swift */; };
+		1BD7CB9524465A0B00F17698 /* ImageTextRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6F243FCD4800F17698 /* ImageTextRowView.swift */; };
 		1BD7CB9624465AC700F17698 /* StepperContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF933B6243D24EB00F2FEA6 /* StepperContentView.swift */; };
 		1BF00786244A489B00DE5BF9 /* StepTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB912446585500F17698 /* StepTextView.swift */; };
 		1BF00787244A48A700DE5BF9 /* StepTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB912446585500F17698 /* StepTextView.swift */; };
@@ -43,10 +41,9 @@
 
 /* Begin PBXFileReference section */
 		15E48D7C4930C791708D715C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1BA315DC243D1D8F0026C37E /* TextHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHolderView.swift; sourceTree = "<group>"; };
 		1BA9B80B2447DCC8007A6BB9 /* ExampleView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView5.swift; sourceTree = "<group>"; };
 		1BD7CB6B243FC0CE00F17698 /* ExampleView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView3.swift; sourceTree = "<group>"; };
-		1BD7CB6F243FCD4800F17698 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		1BD7CB6F243FCD4800F17698 /* ImageTextRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextRowView.swift; sourceTree = "<group>"; };
 		1BD7CB73244102C700F17698 /* ExampleView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView4.swift; sourceTree = "<group>"; };
 		1BD7CB75244103A100F17698 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		1BD7CB912446585500F17698 /* StepTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTextView.swift; sourceTree = "<group>"; };
@@ -108,8 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				1BF933B6243D24EB00F2FEA6 /* StepperContentView.swift */,
-				1BA315DC243D1D8F0026C37E /* TextHolderView.swift */,
-				1BD7CB6F243FCD4800F17698 /* CustomView.swift */,
+				1BD7CB6F243FCD4800F17698 /* ImageTextRowView.swift */,
 				1BD7CB912446585500F17698 /* StepTextView.swift */,
 			);
 			name = SupportingViews;
@@ -425,8 +421,7 @@
 				1BD7CB74244102C700F17698 /* ExampleView4.swift in Sources */,
 				1BD7CB76244103A100F17698 /* ExampleView.swift in Sources */,
 				1BF00787244A48A700DE5BF9 /* StepTextView.swift in Sources */,
-				1BA315DD243D1D8F0026C37E /* TextHolderView.swift in Sources */,
-				1BD7CB70243FCD4800F17698 /* CustomView.swift in Sources */,
+				1BD7CB70243FCD4800F17698 /* ImageTextRowView.swift in Sources */,
 				1BF933B7243D24EB00F2FEA6 /* StepperContentView.swift in Sources */,
 				1BF0B9EE2439BB7D00492C74 /* ExampleView1.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
@@ -438,10 +433,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BD7CB9524465A0B00F17698 /* CustomView.swift in Sources */,
+				1BD7CB9524465A0B00F17698 /* ImageTextRowView.swift in Sources */,
 				1BF00786244A489B00DE5BF9 /* StepTextView.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* StepperViewTests.swift in Sources */,
-				1BD7CB902446509200F17698 /* TextHolderView.swift in Sources */,
 				1BD7CB9624465AC700F17698 /* StepperContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -34,14 +34,16 @@ struct ExampleView4: View {
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
                         //Stepper Indicator with Circle pointers
-                        StepperView(cells: self.cells,
-                                    alignments: self.alignments,
-                                    indicationType : self.circleIndicators)
+                        StepperView()
+                            .addSteps(self.cells)
+                            .alignments(self.alignments)
+                            .indicators(self.circleIndicators)
                         
                         //Stepper Indicator with custom pointers
-                        StepperView(cells: self.cells,
-                                    alignments: self.alignments,
-                                    indicationType : self.mixMatchIndicators)
+                        StepperView()
+                            .addSteps(self.cells)
+                            .alignments(self.alignments)
+                            .indicators(self.mixMatchIndicators)
                     }
                 }
             }

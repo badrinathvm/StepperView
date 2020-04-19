@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 // MARK: - Helper function of View to operate on.
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
@@ -99,5 +100,41 @@ public extension View {
         case .bottom:
             return VerticalAlignment.bottomValue
         }
+    }
+    
+    // Configures Steps to environment value
+    func addSteps<Cell:View>(_ steps: [Cell]) -> some View {
+        self.environment(\EnvironmentValues.steps, steps.map { $0.eraseToAnyView() })
+    }
+    
+    // Sets alignments to environment value
+    func alignments(_ alignments: [StepperAlignment] = []) -> some View {
+        self.environment(\EnvironmentValues.alignments, alignments)
+    }
+    
+    // Sets indicators to environment value
+    func indicators<Cell:View>(_ indicators: [StepperIndicationType<Cell>] = []) -> some View {
+        self.environment(\EnvironmentValues.indicationType, indicators.map { value  in
+            switch value {
+            case .custom(let view): return StepperIndicationType.custom(view.eraseToAnyView())
+            case .circle(let color, let width): return StepperIndicationType.circle(color, width)
+            case .image(let image, let width): return StepperIndicationType.image(image, width)
+            }
+        })
+    }
+    
+    // Configures step Indicator mode to environment value
+    func stepIndicatorMode(_ mode: StepperMode) -> some View {
+        self.environment(\EnvironmentValues.stepperMode, mode)
+    }
+    
+    // Configures spacing to environment value
+    func spacing(_ value: CGFloat) -> some View {
+        self.environment(\EnvironmentValues.spacing, value)
+    }
+    
+    // Configures line options to environment value
+    func lineOptions(_ options: StepperLineOptions) -> some View {
+        self.environment(\EnvironmentValues.lineOptions, options)
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 import StepperView
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct CustomView: View {
+struct ImageTextRowView: View {
     var text:String
     var imageName:String
     var body: some View {
@@ -21,11 +21,13 @@ struct CustomView: View {
                     .padding(.leading, 7)
                     .frame(width: 30, height: 30)
                     .aspectRatio(contentMode: .fit)
+                
                 Text(text)
                     .foregroundColor(Colors.blue(.teal).rawValue)
                     .font(.system(size: 16, weight: Font.Weight.medium))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(EdgeInsets(top: 10, leading: 2, bottom: 10, trailing: 10))
+                
             }.padding(.horizontal, 5)
                 .offset(x: -5)
                 .padding(.vertical, 10)

@@ -4,7 +4,7 @@
 //
 //  Created by Venkatnarayansetty, Badarinath on 4/8/20.
 //  Copyright © 2020 CocoaPods. All rights reserved.
-//
+
 import SwiftUI
 import StepperView
 
@@ -17,7 +17,7 @@ struct ExampleView2:View {
                   StepTextView(text: "Select the Type of Account"),
                   StepTextView(text: "Enter the withdrawal amount"),
                   StepTextView(text: "Collect the Cash"),
-                  StepTextView(text:"Take a printed receipt")
+                  StepTextView(text: "Take a printed receipt")
                 ]
     
     let indicationTypes = [
@@ -35,8 +35,10 @@ struct ExampleView2:View {
             VStack(spacing: 5) {
                 ScrollView(Axis.Set.vertical, showsIndicators: false) {
                     HStack {
-                        StepperView(cells: self.cells, indicationType :indicationTypes,
-                                    lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                        StepperView()
+                            .addSteps(self.cells)
+                            .indicators(indicationTypes)
+                            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                     }
                 }
             }.padding(.vertical, 50)
