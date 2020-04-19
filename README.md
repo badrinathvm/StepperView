@@ -51,35 +51,29 @@ StepperView is available through Swift Package Manager. To install it, simply ad
 ```
 import StepperView
 
-let alignments = [StepperAlignment.top,.center,.bottom]
+let steps = [ Text("Cart").font(.caption),
+              Text("Delivery Address").font(.caption),
+              Text("Order Summary").font(.caption),
+              Text("Payment Method").font(.caption),
+              Text("Track").font(.caption)]
 
-let indicatorTypes = [  StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
-                        StepperIndicationType.image(Image(systemName: "arrow.right.circle", 12)),
-                        StepperIndicationType.image(Image(systemName: "arrow.uturn.right", 12))
-                    ]
+let alignments = [StepperAlignment.center,.center,.center, .center, .center]
 
+let indicationTypes = [StepperIndicationType.custom(NumberedCircleView(text: "1")),
+                        .custom(NumberedCircleView(text: "2")),
+                        .custom(NumberedCircleView(text: "3")),
+                        .custom(NumberedCircleView(text: "4")),
+                        .custom(NumberedCircleView(text: "5"))]
+    
 var body: some View {
      var body: some View {
-      StepperView(cells: [cellBody, cellBody , cellBody], 
-                alignments: alignments,
-                indicationType:indicatorTypes,
-                lineOptions: StepperLineOptions.custom(1,Colors.gray.rawValue),
-                stepperMode: StepperMode.vertical)
+         StepperView()
+            .addSteps(self.set1)
+            .indicators(self.indicationTypes)
+            .stepIndicatorMode(StepperMode.horizontal)
+            .spacing(50)
+            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
      }
-}
-
-var cellBody:some View {
-    VStack(alignment: .leading) {
-        ForEach(["Top","Center","Bottom"], id:\.self) { value in
-            HStack {
-                Text(value)
-                    .foregroundColor(Color.gray)
-                    .padding(.vertical , 10)
-                    .padding(.horizontal, 5)
-                Spacer()
-            }
-        }
-    }
 }
 ```
 ## Parameters

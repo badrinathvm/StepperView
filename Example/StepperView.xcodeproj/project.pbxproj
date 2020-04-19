@@ -50,7 +50,7 @@
 		1BF0B9ED2439BB7D00492C74 /* ExampleView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleView1.swift; sourceTree = "<group>"; };
 		1BF933B6243D24EB00F2FEA6 /* StepperContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperContentView.swift; sourceTree = "<group>"; };
 		1BF933BE243E5C8800F2FEA6 /* ExampleView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView2.swift; sourceTree = "<group>"; };
-		23D198B1D4FB48AC074EF6A1 /* StepperView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StepperView.podspec; path = ../StepperView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		23D198B1D4FB48AC074EF6A1 /* StepperView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StepperView.podspec; path = ../StepperView.podspec; sourceTree = "<group>"; };
 		58E04154CDCE5465A0DF0C50 /* Pods-StepperView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepperView_Example.release.xcconfig"; path = "Target Support Files/Pods-StepperView_Example/Pods-StepperView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StepperView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepperView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
