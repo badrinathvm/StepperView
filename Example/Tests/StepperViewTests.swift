@@ -25,52 +25,62 @@ class StepperViewTests: XCTestCase {
     
     func testExampleView1() {
         //top alignment test
-        let topView = StepperView(cells: [ TextHolderView(text: "Top") ],
-                               alignments: [StepperAlignment.top],
-                               indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)])
+        let topView = StepperView()
+            .addSteps([TextView(text: "Top")])
+            .alignments([StepperAlignment.top])
+            .indicators([StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)])
         
         let topVC = UIHostingController(rootView: topView)
         topVC.view.frame = UIScreen.main.bounds
         assertSnapshot(matching: topVC, as: .image)
         
         //center alignment test
-        let centerView = StepperView(cells: [ TextHolderView(text: "Center") ],
-                                      alignments: [StepperAlignment.center],
-                                      indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)])
+        let centerView = StepperView()
+                            .addSteps([TextView(text: "Center")])
+                            .alignments([StepperAlignment.center])
+                            .indicators([StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)])
                
         let centerVC = UIHostingController(rootView: centerView)
         centerVC.view.frame = UIScreen.main.bounds
         assertSnapshot(matching: centerVC, as: .image)
         
         //bottom alignment test
-        let bottomView = StepperView(cells: [ TextHolderView(text: "Bottom") ],
-                                      alignments: [StepperAlignment.bottom],
-                                      indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)])
-               
+        let bottomView = StepperView()
+                            .addSteps([TextView(text: "Bottom")])
+                            .alignments([StepperAlignment.bottom])
+                            .indicators([StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)])
+        
         let bottomVC = UIHostingController(rootView: bottomView)
         bottomVC.view.frame = UIScreen.main.bounds
         assertSnapshot(matching: bottomVC, as: .image)
     }
     
     func testExampleView2() {
-        let stepperView = StepperView(cells: [StepTextView(text: "Insert ATM Card"),
-                                              StepTextView(text: "Enter 4-Digit ATM Pin")],
-                        indicationType : [StepperIndicationType.custom(NumberedCircleView(text: "1").eraseToAnyView()),
-                                              .custom(NumberedCircleView(text: "2").eraseToAnyView())])
+        let steps = [StepTextView(text: "Insert ATM Card"), StepTextView(text: "Enter 4-Digit ATM Pin")]
+        let indicators = [StepperIndicationType.custom(NumberedCircleView(text: "1").eraseToAnyView()),
+        .custom(NumberedCircleView(text: "2").eraseToAnyView())]
+        
+        let stepperView = StepperView()
+                            .addSteps(steps)
+                            .indicators(indicators)
+        
         let vc = UIHostingController(rootView: stepperView)
         vc.view.frame = UIScreen.main.bounds
         assertSnapshot(matching: vc, as: .image)
     }
     
     func testExampleView3() {
-       let stepperView =  StepperView(cells: [CustomView(text: "Insert ATM Card", imageName: "cc"),
-                                              CustomView(text: "Select transaction and enter pin",
-                                                         imageName: "transaction")],
-                                           indicationType:[
-                                                StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
-                                                StepperIndicationType.circle(Colors.teal.rawValue, 12)
-                                            ],
-                                           lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+        
+     let steps = [ImageTextRowView(text: "Insert ATM Card", imageName: "cc"),
+                  ImageTextRowView(text: "Select transaction and enter pin", imageName: "transaction")]
+        
+     let indictors = [ StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
+                       StepperIndicationType.circle(Colors.teal.rawValue, 12)]
+        
+      let stepperView = StepperView()
+        .addSteps(steps)
+        .indicators(indictors)
+        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
         
       let vc = UIHostingController(rootView: stepperView)
       vc.view.frame = UIScreen.main.bounds
@@ -78,13 +88,42 @@ class StepperViewTests: XCTestCase {
     }
     
     func testExampleView4() {
-        let stepperView = StepperView(cells: [StepperContentView(), StepperContentView()],
-                                      alignments: [.center, .bottom],
-                                      indicationType: [
-                                            StepperIndicationType
-                                                .image(Image(systemName: "arrowshape.turn.up.right.fill"), 12),
-                                            StepperIndicationType
-                                                .custom(ImageView(name: "arrow.uturn.right").eraseToAnyView())])
+        let steps = [StepperContentView(), StepperContentView()]
+        let indicators = [StepperIndicationType.image(Image(systemName: "arrowshape.turn.up.right.fill"), 12),
+                         StepperIndicationType.custom(ImageView(name: "arrow.uturn.right").eraseToAnyView())]
+        
+        let stepperView = StepperView()
+                                .addSteps(steps)
+                                .indicators(indicators)
+                                .spacing(30)
+                                .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+        
+        let vc = UIHostingController(rootView: stepperView)
+        vc.view.frame = UIScreen.main.bounds
+        assertSnapshot(matching: vc, as: .image)
+    }
+    
+    func testExampleView5() {
+        let steps = [TextView(text:"Approval"),
+                     TextView(text:"Processing"),
+                     TextView(text:"Shipping"),
+                     TextView(text:"Delivery"),
+                     TextView(text:"Tracking")]
+        
+        let indicationTypes = [
+            StepperIndicationType.custom(NumberedCircleView(text: "1")),
+            .custom(NumberedCircleView(text: "2")),
+            .custom(NumberedCircleView(text: "3")),
+            .custom(NumberedCircleView(text: "4")),
+            .custom(NumberedCircleView(text: "5"))]
+        
+        let stepperView = StepperView()
+            .addSteps(steps)
+            .indicators(indicationTypes)
+            .stepIndicatorMode(StepperMode.horizontal)
+            .spacing(50)
+            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+        
         let vc = UIHostingController(rootView: stepperView)
         vc.view.frame = UIScreen.main.bounds
         assertSnapshot(matching: vc, as: .image)

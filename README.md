@@ -35,7 +35,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.1.4'
+pod 'StepperView','~> 1.2.0'
 ```
 
 ## Swift Package Manager
@@ -43,7 +43,7 @@ pod 'StepperView','~> 1.1.4'
 StepperView is available through Swift Package Manager. To install it, simply add the following dependency to your Package.swift
 
 ```ruby
-.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.1.4")
+.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.2.0")
 ```
 
 ## Usage
@@ -51,44 +51,38 @@ StepperView is available through Swift Package Manager. To install it, simply ad
 ```
 import StepperView
 
-let alignments = [StepperAlignment.top,.center,.bottom]
+let steps = [ Text("Cart").font(.caption),
+              Text("Delivery Address").font(.caption),
+              Text("Order Summary").font(.caption),
+              Text("Payment Method").font(.caption),
+              Text("Track").font(.caption)]
 
-let indicatorTypes = [  StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
-                        StepperIndicationType.image(Image(systemName: "arrow.right.circle", 12)),
-                        StepperIndicationType.image(Image(systemName: "arrow.uturn.right", 12))
-                    ]
+let alignments = [StepperAlignment.center,.center,.center, .center, .center]
 
+let indicationTypes = [StepperIndicationType.custom(NumberedCircleView(text: "1")),
+                        .custom(NumberedCircleView(text: "2")),
+                        .custom(NumberedCircleView(text: "3")),
+                        .custom(NumberedCircleView(text: "4")),
+                        .custom(NumberedCircleView(text: "5"))]
+    
 var body: some View {
      var body: some View {
-      StepperView(cells: [cellBody, cellBody , cellBody], 
-                alignments: alignments,
-                indicationType:indicatorTypes,
-                lineOptions: StepperLineOptions.custom(1,Colors.gray.rawValue),
-                stepperMode: StepperMode.vertical)
+         StepperView()
+            .addSteps(self.set1)
+            .indicators(self.indicationTypes)
+            .stepIndicatorMode(StepperMode.horizontal)
+            .spacing(50)
+            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
      }
 }
-
-var cellBody:some View {
-    VStack(alignment: .leading) {
-        ForEach(["Top","Center","Bottom"], id:\.self) { value in
-            HStack {
-                Text(value)
-                    .foregroundColor(Color.gray)
-                    .padding(.vertical , 10)
-                    .padding(.horizontal, 5)
-                Spacer()
-            }
-        }
-    }
-}
 ```
-## Parameters
-- cells : array of views to be rendered next to step Indicator 
-- alignments: defaults to .center, for custom options pass list of view alignments to be pointed for eg: can be  .top , .center , .bottom sections
-- indicatorTypes: enum provides the options to use .circle(color, width) , .image(Image, width) or .custom(AnyView)
-- lineOptions: optional parameter to customize the line for thickness and color options.
-- verticalSpacing: optional parameter for vertical spacing
-- stepperMode: enum provides the option of vertical or horizontal node for display step indications.
+## Methods ( View Modifiers )
+- .addSteps(_ steps: [View]) : array of views to be rendered next to step Indicator 
+- .alignments(_ alignments: [StepperAlignment]) : optional defaults to .center, for custom options it can be either  .top, .center, or .bottom sections
+- .indicatorTypes(_ indicators:[StepperIndicationType]): enum provides the options to use .circle(color, width) , .image(Image, width) or .custom(AnyView)
+- .lineOptions(_ options: StepperLineOptions):  to customize the line for thickness and color options.
+- .spacing(_ value: CGFloat): spacing between each of the step views.
+- .stepIndicatorMode(_ mode: StepperMode): enum provides the option of vertical or horizontal node for display step indications.
 
 <p>
     <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">Refer Example for more details on usage of StepperView</a>

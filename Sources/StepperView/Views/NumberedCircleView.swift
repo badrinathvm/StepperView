@@ -8,26 +8,30 @@
 
 import SwiftUI
 
-// MARK: - Helper view to warp text inside the circle
+// MARK: - Circle view with text inside
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct NumberedCircleView: View {
     public var text:String
+    public var width:CGFloat
+    public var color:Color
     
-    public init(text:String) {
+    public init(text:String, width:CGFloat = 28.0, color: Color = Colors.blue(.teal).rawValue) {
         self.text = text
+        self.width = width
+        self.color = color
     }
     
     public var body: some View {
         Circle()
             .foregroundColor(Color.white)
-            .frame(width: 28, height: 28)
+            .frame(width: width, height: width)
         .overlay(
             Circle()
                 .stroke(Colors.blue(.teal).rawValue, lineWidth: 1)
                 .overlay(
                     Text(text)
-                    .foregroundColor(Colors.blue(.teal).rawValue)
-                    .font(.system(size: 12, weight: Font.Weight.bold)))
+                    .foregroundColor(color)
+                        .font(.subheadline))
         )
     }
 }

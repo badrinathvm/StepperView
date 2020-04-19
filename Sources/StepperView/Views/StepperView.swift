@@ -37,38 +37,27 @@ public enum StepperMode:String, CaseIterable {
 
 // MARK: - Stepper View Implementation
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-public struct StepperView<Cell>: View where Cell:View {
-    //constructor parameters
-    public var cells:[Cell]
-    public var alignments:[StepperAlignment]
-    public var indicationType: [StepperIndicationType<AnyView>]
-    public var lineOptions:StepperLineOptions
-    public var verticalSpacing: CGFloat
-    public var stepperMode:StepperMode
+public struct StepperView: View {
+    @Environment(\.steps) var steps
+    @Environment(\.alignments) var alignments
+    @Environment(\.indicationType) var indicationType
+    @Environment(\.lineOptions) var lineOptions
+    @Environment(\.stepperMode) var stepperMode
+    @Environment(\.spacing) var verticalSpacing
     
-    public init(cells: [Cell], alignments: [StepperAlignment] = [],
-                indicationType: [StepperIndicationType<AnyView>],
-                lineOptions: StepperLineOptions = .defaults,
-                verticalSpacing:CGFloat = 30.0, stepperMode: StepperMode = .vertical) {
-        self.cells = cells
-        self.alignments = alignments.isEmpty ? (0..<cells.count).map {_ in  StepperAlignment.center } : alignments
-        self.indicationType = indicationType
-        self.lineOptions = lineOptions
-        self.verticalSpacing = verticalSpacing
-        self.stepperMode = stepperMode
-    }
+    public init() { }
     
     public var body: some View {
         switch stepperMode {
         case .vertical:
-            return StepIndicatorVerticalView(cells: cells,
-                                             alignments: alignments,
+            return StepIndicatorVerticalView(cells: steps,
+                                             alignments: alignments.isEmpty ? (0..<steps.count).map {_ in  StepperAlignment.center } : alignments,
                                              indicationType: indicationType,
                                              lineOptions: lineOptions,
                                              verticalSpacing: verticalSpacing)
                 .eraseToAnyView()
         case .horizontal:
-            return StepIndicatorHorizontalView(cells: cells,
+            return StepIndicatorHorizontalView(cells: steps,
                                                alignments: alignments,
                                                indicationType: indicationType,
                                                lineOptions: lineOptions,

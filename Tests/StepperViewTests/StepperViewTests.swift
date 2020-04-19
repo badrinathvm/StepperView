@@ -10,11 +10,13 @@ final class StepperViewTests: XCTestCase {
     }
     
     func testStepperViewParameters() {
-        let topView = StepperView(cells: [ Text("Top") ],
-                               alignments: [StepperAlignment.top],
-                               indicationType: [StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)])
+        let topView = StepperView()
+                .addSteps([ Text("Top") ])
+                .alignments([StepperAlignment.top])
+                .stepIndicatorMode(StepperMode.vertical)
+                .indicators([StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12)])
         
-        XCTAssertTrue(topView.verticalSpacing == 30.0)
+        XCTAssertNotNil(topView)
     }
 
     static var allTests = [

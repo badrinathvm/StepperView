@@ -12,10 +12,10 @@ import StepperView
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ExampleView3:View {
     
-    let cells = [ CustomView(text: "Insert ATM Card", imageName: "cc"),
-                  CustomView(text: "Select transaction and enter pin", imageName: "transaction"),
-                  CustomView(text: "Collect Cash", imageName: "cash"),
-                  CustomView(text: "Select type of Account", imageName: "cash")
+    let cells = [ ImageTextRowView(text: "Insert ATM Card", imageName: "cc"),
+                  ImageTextRowView(text: "Select transaction and enter pin", imageName: "transaction"),
+                  ImageTextRowView(text: "Collect Cash", imageName: "cash"),
+                  ImageTextRowView(text: "Select type of Account", imageName: "cash")
                 ]
     
     let alignments = [StepperAlignment.center, .center, .center, .center]
@@ -32,10 +32,11 @@ struct ExampleView3:View {
             ScrollView(Axis.Set.vertical, showsIndicators: false) {
                 VStack {
                     HStack {
-                        StepperView(cells: self.cells,
-                                    alignments: alignments,
-                                    indicationType:indicationTypes,
-                                    lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                        StepperView()
+                            .addSteps(self.cells)
+                            .alignments(alignments)
+                            .indicators(indicationTypes)
+                            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                     }
                 }.padding(.vertical, 50)
             }

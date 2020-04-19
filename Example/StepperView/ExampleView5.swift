@@ -13,11 +13,11 @@ import StepperView
 struct ExampleView5: View {
     
     let indicationTypes = [
-                 StepperIndicationType.custom(NumberedCircleView(text: "1").eraseToAnyView()),
-                     .custom(NumberedCircleView(text: "2").eraseToAnyView()),
-    .custom(NumberedCircleView(text: "3").eraseToAnyView()),
-    .custom(NumberedCircleView(text: "4").eraseToAnyView()),
-     .custom(NumberedCircleView(text: "5").eraseToAnyView())]
+        StepperIndicationType.custom(NumberedCircleView(text: "1")),
+                     .custom(NumberedCircleView(text: "2")),
+    .custom(NumberedCircleView(text: "3")),
+    .custom(NumberedCircleView(text: "4")),
+     .custom(NumberedCircleView(text: "5"))]
         
     let set1 = [ Text("Cart").font(.caption),
                   Text("Delivery Address").font(.caption),
@@ -26,38 +26,40 @@ struct ExampleView5: View {
                   Text("Track").font(.caption)]
     
     let set2 = [TextView(text:"Approval"),
-                 TextView(text:"Processing"),
-                  TextView(text:"Shipping"),
-                  TextView(text:"Delivery"),
-                  TextView(text:"Tracking")]
+                TextView(text:"Processing"),
+                TextView(text:"Shipping"),
+                TextView(text:"Delivery"),
+                TextView(text:"Tracking")]
     
     let set3 = [ TextView(text:"Account"),
-                  TextView(text:"Profile"),
-                  TextView(text:"Band"),
-                  TextView(text:"Membership"),
-                  TextView(text:"Dashboard")]
+                 TextView(text:"Profile"),
+                 TextView(text:"Band"),
+                 TextView(text:"Membership"),
+                 TextView(text:"Dashboard")]
     
     var body: some View {
         NavigationView {
             VStack(spacing: 100) {
-                StepperView(cells: self.set1,
-                            indicationType:indicationTypes,
-                            lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
-                            verticalSpacing: 50,
-                            stepperMode: StepperMode.horizontal)
+                
+                StepperView()
+                    .addSteps(self.set1)
+                    .indicators(self.indicationTypes)
+                    .stepIndicatorMode(StepperMode.horizontal)
+                    .spacing(50)
+                    .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                 
                 HStack {
-                    StepperView(cells: self.set2,
-                                indicationType:indicationTypes,
-                                lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
-                                verticalSpacing: 30,
-                                stepperMode: StepperMode.vertical)
+                    StepperView()
+                        .addSteps(self.set2)
+                        .indicators(self.indicationTypes)
+                        .spacing(30)
+                        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                     
-                    StepperView(cells: self.set3,
-                                indicationType:indicationTypes,
-                                lineOptions: StepperLineOptions.custom(1, Colors.blue(.teal).rawValue),
-                                verticalSpacing: 30,
-                                stepperMode: StepperMode.vertical)
+                    StepperView()
+                        .addSteps(self.set3)
+                        .indicators(self.indicationTypes)
+                        .spacing(30)
+                        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                 }
             }
             .navigationBarTitle("StepperView")
