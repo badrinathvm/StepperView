@@ -31,8 +31,7 @@ Please let us know if you have tested your PR and if we need to reproduce the is
 
  - [ ] My code follows the style guidelines of this project
  - [ ] I have performed a self-review of my own code
- - [ ] I have commented my code, particularly in hard-to-understand areas
+ - [ ] Add comments to code particularly in hard-to-understand areas
  - [ ] My changes generate no new warnings
  - [ ] I have added tests that prove my fix is effective or that my feature works
  - [ ] New and existing unit tests pass locally with my changes before pushing the pull request
- - [ ] I have made sure all dependent downstream changes impacted by my pull request are working 

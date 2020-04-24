@@ -78,12 +78,19 @@ var body: some View {
 }
 ```
 ## Methods ( View Modifiers )
-- .addSteps(_ steps: [View]) : array of views to be rendered next to step Indicator 
-- .alignments(_ alignments: [StepperAlignment]) : optional defaults to .center, for custom options it can be either  .top, .center, or .bottom sections
-- .indicatorTypes(_ indicators:[StepperIndicationType]): enum provides the options to use .circle(color, width) , .image(Image, width) or .custom(AnyView)
-- .lineOptions(_ options: StepperLineOptions):  to customize the line for thickness and color options.
-- .spacing(_ value: CGFloat): spacing between each of the step views.
-- .stepIndicatorMode(_ mode: StepperMode): enum provides the option of vertical or horizontal node for display step indications.
+```ruby
+.addSteps(_ steps: [View]) : array of views to be rendered closer to indicator
+
+.alignments(_ alignments: [StepperAlignment]) : optional defaults to .center, available with custom options either .top, .center, .bottom sections
+
+.indicatorTypes(_ indicators:[StepperIndicationType]): enum provides the options to use .circle(color, width) , .image(Image, width) , .custom(AnyView)
+
+.lineOptions(_ options: StepperLineOptions): color, thickness line customization.
+
+.spacing(_ value: CGFloat): spacing between each of the step views.
+
+.stepIndicatorMode(_ mode: StepperMode): vertical, horizontal doisplay modes.
+```
 
 <p>
     <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">Refer Example for more details on usage of StepperView</a>
