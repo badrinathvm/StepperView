@@ -15,6 +15,8 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     @State private var columnHeights: [Int: CGFloat] = [:]
     @State private var lineYPosition: CGFloat = 0
     
+    @Environment(\.pitstopSteps) var pitstopSteps
+    
     //constructor parameters
     var cells:[Cell]
     var alignments:[StepperAlignment]
@@ -44,6 +46,17 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                     HStack(alignment: self.getAlignment(type: self.alignments[index])) {
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
                             .padding(.horizontal, Utils.standardSpacing)
+                            //for drawing pit stops.
+                            .ifTrue(self.pitstopSteps.count > 0, content: { view in
+                                view.anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { $0 }
+                                .overlayPreferenceValue(BoundsPreferenceKey.self, { (preferences) in
+                                    GeometryReader { proxy in
+                                        preferences.map { anchor in
+                                            self.drawAnchors(proxy: proxy, value: anchor)
+                                        }
+                                    }
+                                })
+                            })
                             .eraseToAnyView()
                         self.cells[index]
                             .heightPreference(column: index)
@@ -117,5 +130,10 @@ extension StepIndicatorVerticalView {
         } else {
             return self.getYPosition(for: self.firstAlignment)
        }
+    }
+    
+    // draws pitstops for each of the step indicators.
+    func drawAnchors(proxy: GeometryProxy, value: Anchor<CGRect>) -> some View {
+        return PitStopView(proxy: proxy, value: value, lineXPosition: $lineXPosition)
     }
 }

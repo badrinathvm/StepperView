@@ -15,6 +15,7 @@
 		185FF80F5AEF3D4BE606CEADB466669C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FEEF36622FF2242DAEDC957810553B /* View+Extensions.swift */; };
 		18ED84EFAF015095FCCF61A8E494F325 /* AssertSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B5B926D044224F3DA48ECA54B90036 /* AssertSnapshot.swift */; };
 		1A1F20E176923FF03A0EAEA886703719 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F2FB477A620A3E602AB638D67BB48 /* NSView.swift */; };
+		1BD42F2824561926008D4DAB /* PitstopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD42F2724561926008D4DAB /* PitstopView.swift */; };
 		1D991DC78F8F9BAF7FA5A4D28B11349A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
 		2371CFDF095282B1D6935C36C81E46FC /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE17308B6D5521A72838599CD74F8F5 /* UIImage.swift */; };
 		23B3D1B39D273F7B43BA45F255EDE5C5 /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40629037FE01DF51592340BAF30DC5 /* CaseIterable.swift */; };
@@ -93,24 +94,25 @@
 		0211A231C93E1810BFC3F09AEE0A37F3 /* Pods-StepperView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Example-Info.plist"; sourceTree = "<group>"; };
 		033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		03FEEF36622FF2242DAEDC957810553B /* View+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		05C028F74B9508FE72717D3BB2BD7B7A /* Pods_StepperView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StepperView_Example.framework; path = "Pods-StepperView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C028F74B9508FE72717D3BB2BD7B7A /* Pods_StepperView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D83F2BA4549B3364873D6DAF0538C7 /* SnapshotTesting.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapshotTesting.modulemap; sourceTree = "<group>"; };
 		0A403528B052BA8621971EFA63AD571D /* EnvironmentValues+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Extension.swift"; sourceTree = "<group>"; };
 		0A59CAA1C4417F7FCE99E24861C906A8 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Sources/SnapshotTesting/Snapshotting/UIView.swift; sourceTree = "<group>"; };
-		0B76BC7D0C2C3FA2DB609CE53D5C0C37 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StepperView.framework; path = StepperView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B76BC7D0C2C3FA2DB609CE53D5C0C37 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepperView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF0820A43B8503E664BF525626B23C1 /* Pods-StepperView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StepperView_Example-umbrella.h"; sourceTree = "<group>"; };
 		141F2FB477A620A3E602AB638D67BB48 /* NSView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSView.swift; path = Sources/SnapshotTesting/Snapshotting/NSView.swift; sourceTree = "<group>"; };
 		16DB3DA01A0576482CDA320DF528D0B2 /* SnapshotTesting-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-prefix.pch"; sourceTree = "<group>"; };
 		17E2D56C483E81CEF9848DE97231F414 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/SnapshotTesting/Snapshotting/String.swift; sourceTree = "<group>"; };
 		1A3E414A2122C3BC3532C12EFE05AD71 /* Pods-StepperView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Tests.modulemap"; sourceTree = "<group>"; };
 		1B5607D0E6C665BF1FD799000DA9A62E /* Pods-StepperView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Tests-dummy.m"; sourceTree = "<group>"; };
+		1BD42F2724561926008D4DAB /* PitstopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitstopView.swift; sourceTree = "<group>"; };
 		1D3FAD366B69D1860608FB5353B2355E /* SpriteKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpriteKit.swift; path = Sources/SnapshotTesting/Snapshotting/SpriteKit.swift; sourceTree = "<group>"; };
 		1E6041318F668A00834BD8F78AC546F5 /* Pods-StepperView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Example.modulemap"; sourceTree = "<group>"; };
 		1EB3C5BC42B48ECADA5C15E4D7300320 /* URLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = Sources/SnapshotTesting/Snapshotting/URLRequest.swift; sourceTree = "<group>"; };
 		1EEABA81F7593A21B2E970A69B3D8DD0 /* Colors+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
 		217BBF2A08BF66EC383489A450C139FC /* StepperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		25581B126AAAD9DEFF7716FA261BAECB /* SnapshotTesting-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapshotTesting-Info.plist"; sourceTree = "<group>"; };
-		262F145D2516F14626DDA7692278C4B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		262F145D2516F14626DDA7692278C4B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		26401BE80305F2B813E06AD190053957 /* Diffing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diffing.swift; path = Sources/SnapshotTesting/Diffing.swift; sourceTree = "<group>"; };
 		28398308229A27402CE44F5D1ABD7BEF /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/SnapshotTesting/Common/View.swift; sourceTree = "<group>"; };
 		290FA5B7B6496DE2E5DF0177F09159C6 /* PlistEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlistEncoder.swift; path = Sources/SnapshotTesting/Common/PlistEncoder.swift; sourceTree = "<group>"; };
@@ -121,8 +123,8 @@
 		4969F046453FA46D6F0B372554F6F1B9 /* Pods-StepperView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4E2EA88020282E1F9D2075A3D724B2A9 /* StepperView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StepperView.modulemap; sourceTree = "<group>"; };
 		4E72AAD93917F47E3D524310C84F7909 /* Diff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diff.swift; path = Sources/SnapshotTesting/Diff.swift; sourceTree = "<group>"; };
-		4EA5DAFB8EA20FA670B63AC5FCD0523C /* Pods_StepperView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StepperView_Tests.framework; path = "Pods-StepperView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		503A28766569D1F9D59CB5B13FB0C284 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4EA5DAFB8EA20FA670B63AC5FCD0523C /* Pods_StepperView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		503A28766569D1F9D59CB5B13FB0C284 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		52DFA139A5912D727F79FA66988E112F /* NumberedCircleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NumberedCircleView.swift; sourceTree = "<group>"; };
 		558D17434AAE6FD860B82C9D48690C5D /* Pods-StepperView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StepperView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		586C6F81CDE2EE0C700EEE84C928BA89 /* StepperView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepperView-dummy.m"; sourceTree = "<group>"; };
@@ -142,8 +144,8 @@
 		9380FC7FFD42204CB2F2F13CD1FB470C /* SnapshotTesting-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapshotTesting-dummy.m"; sourceTree = "<group>"; };
 		944F2019296B1F7DDD06622D8C99123A /* HorizontalLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
 		982D9F593A29A12ECA4ED0A024179571 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/SnapshotTesting/Async.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapshotTesting.framework; path = SnapshotTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapshotTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB85FA938239E012A52C0169153D16DF /* Pods-StepperView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Example-dummy.m"; sourceTree = "<group>"; };
 		AD06679E9264E5DC810E417061FE621C /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Sources/SnapshotTesting/Snapshotting/UIViewController.swift; sourceTree = "<group>"; };
 		B0E615119D7A9419BEB8DF45F970D780 /* Snapshotting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snapshotting.swift; path = Sources/SnapshotTesting/Snapshotting.swift; sourceTree = "<group>"; };
@@ -151,7 +153,7 @@
 		B1630497B2704712ABCE10FD83364049 /* SnapshotTesting-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-umbrella.h"; sourceTree = "<group>"; };
 		B514CD42DBF48A0FAACB2F0851E29143 /* StepIndicatorHorizontalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepIndicatorHorizontalView.swift; sourceTree = "<group>"; };
 		B6424C77359567D7ECCA77680B178384 /* SnapshotTesting.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotTesting.xcconfig; sourceTree = "<group>"; };
-		B67D3755D9355D89664629573C95C57B /* StepperView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = StepperView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B67D3755D9355D89664629573C95C57B /* StepperView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = StepperView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B704FB069134D9829D1DB0887FE74FE9 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestCase.swift; path = Sources/SnapshotTesting/SnapshotTestCase.swift; sourceTree = "<group>"; };
 		C628A88C84BB4C63A7BBA03A2241BDFF /* Pods-StepperView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C853A3716219DC38964698A3639F3829 /* CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CALayer.swift; path = Sources/SnapshotTesting/Snapshotting/CALayer.swift; sourceTree = "<group>"; };
@@ -268,7 +270,6 @@
 				E49037AFDC2D0C73BAEDA9B67BB45FD4 /* XCTAttachment.swift */,
 				1D9DFA3972120FFEE602A2500E6CFC04 /* Support Files */,
 			);
-			name = SnapshotTesting;
 			path = SnapshotTesting;
 			sourceTree = "<group>";
 		};
@@ -341,6 +342,7 @@
 				217BBF2A08BF66EC383489A450C139FC /* StepperView.swift */,
 				E812D382B51E3381533CEA01AEE141C4 /* TextView.swift */,
 				F74FC12BC4BF2278F8C60ED20E1E2EE4 /* VerticalLineView.swift */,
+				1BD42F2724561926008D4DAB /* PitstopView.swift */,
 			);
 			name = Views;
 			path = Sources/StepperView/Views;
@@ -663,6 +665,7 @@
 			files = (
 				847783A188EDD2CBEE91836F51E78A50 /* Colors+Extension.swift in Sources */,
 				F59384A32FD2504B7F5EB676077C96B8 /* EnvironmentValues+Extension.swift in Sources */,
+				1BD42F2824561926008D4DAB /* PitstopView.swift in Sources */,
 				610CC850BF4D287830CF344158726BA8 /* HorizontalLineView.swift in Sources */,
 				CDEAC89FE869929C7AC3C08E2A587928 /* IndicatorView.swift in Sources */,
 				B72D3EC604F0A8BF7327E1EE193830A4 /* NumberedCircleView.swift in Sources */,
@@ -824,8 +827,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

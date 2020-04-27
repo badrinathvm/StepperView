@@ -35,9 +35,9 @@ struct VerticalHeightPreference: PreferenceKey {
 struct WidthPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
     static let defaultValue: Value = [:]
-    
     static func reduce(value: inout Value, nextValue: () -> Value) {
-        value.merge(nextValue(), uniquingKeysWith: max)
+       //value = nextValue()
+       value.merge(nextValue(), uniquingKeysWith: max)
     }
 }
 

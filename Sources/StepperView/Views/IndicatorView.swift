@@ -11,6 +11,7 @@ import SwiftUI
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct IndicatorView: View {
     @State private var width:CGFloat = 0.0
+    @State private var horizontalWidth:CGFloat = 0.0
     
     var type: StepperIndicationType<AnyView>
     var indexofIndicator:Int
@@ -21,7 +22,7 @@ struct IndicatorView: View {
                 .foregroundColor(Color.white)
                 .overlay(self.getViewForOverlay(of: self.type, for: self.indexofIndicator))
         }
-        .onPreferenceChange(WidthPreference.self) {
+        .onPreferenceChange( WidthPreference.self) {
             self.width = $0.values.first ?? 12
         }
     }
@@ -29,7 +30,8 @@ struct IndicatorView: View {
     func getViewForOverlay(of type: StepperIndicationType<AnyView>, for index: Int) -> some View {
         switch type {
         case .circle(let color, let width):
-            return Circle()
+            return
+             Circle()
                 .frame(width: width, height: width)
                 .foregroundColor(color)
                 .eraseToAnyView()

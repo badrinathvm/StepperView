@@ -134,7 +134,26 @@ public extension View {
     }
     
     // Configures line options to environment value
-    func lineOptions(_ options: StepperLineOptions) -> some View {
-        self.environment(\EnvironmentValues.lineOptions, options)
+    func stepLineOptions(_ options: StepperLineOptions) -> some View {
+        self.environment(\EnvironmentValues.stepLineOptions, options)
     }
+    
+    // Conditional modifier
+    func ifTrue<Content: View>(_ conditional: Bool, content: (Self) -> Content) -> some View {
+        if conditional {
+            return content(self).eraseToAnyView()
+        } else {
+            return self.eraseToAnyView()
+        }
+    }
+
+    // Views for adding PitStops
+    func addPitstops<Content:View>(_ steps: [Content]) -> some View {
+        self.environment(\EnvironmentValues.pitstopSteps, steps.map { $0.eraseToAnyView() })
+    }
+    
+    // Configures pit stop line options to environment value
+     func pitStopLineOptions(_ options: PitStopLineOptions) -> some View {
+         self.environment(\EnvironmentValues.pitStopLineOptions, options)
+     }
 }
