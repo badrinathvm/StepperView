@@ -137,4 +137,18 @@ public extension View {
     func lineOptions(_ options: StepperLineOptions) -> some View {
         self.environment(\EnvironmentValues.lineOptions, options)
     }
+    
+    // Conditional modifier
+    func ifTrue<Content: View>(_ conditional: Bool, content: (Self) -> Content) -> some View {
+        if conditional {
+            return content(self).eraseToAnyView()
+        } else {
+            return self.eraseToAnyView()
+        }
+    }
+
+    // Custom behavior for PitStops.
+    func addPitStops(_ steps: [PitStopSteps]) -> some View {
+        self.environment(\EnvironmentValues.pitStopOptions, steps)
+    }
 }

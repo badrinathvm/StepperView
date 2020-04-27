@@ -27,18 +27,23 @@ extension EnvironmentValues {
     }
     
     var stepperMode: StepperMode {
-        get { self[StepIndicatorMode.self] }
-        set { self[StepIndicatorMode.self] = newValue }
+        get { self[StepIndicatorModeKey.self] }
+        set { self[StepIndicatorModeKey.self] = newValue }
     }
     
     var spacing: CGFloat {
-        get { self[Spacing.self] }
-        set { self[Spacing.self] = newValue }
+        get { self[SpacingKey.self] }
+        set { self[SpacingKey.self] = newValue }
     }
     
     var lineOptions: StepperLineOptions {
-        get { self[LineOptions.self] }
-        set { self[LineOptions.self] = newValue }
+        get { self[LineOptionsKey.self] }
+        set { self[LineOptionsKey.self] = newValue }
+    }
+        
+    var pitStopOptions: [PitStopSteps] {
+        get { self[PitStopOptionsKey.self] }
+        set { self[PitStopOptionsKey.self] = newValue }
     }
 }
 
@@ -62,18 +67,24 @@ struct IndicatorKey: EnvironmentKey {
 
 // MARK: - Environment Key for StepIndicatorMode
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct StepIndicatorMode: EnvironmentKey {
+struct StepIndicatorModeKey: EnvironmentKey {
     static var defaultValue = StepperMode.vertical
 }
 
 // MARK: - Environment Key for Spacing
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct Spacing: EnvironmentKey {
+struct SpacingKey: EnvironmentKey {
     static var defaultValue:CGFloat = 30.0
 }
 
 // MARK: - Environment Key for Line Options
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct LineOptions: EnvironmentKey {
+struct LineOptionsKey: EnvironmentKey {
     static var defaultValue:StepperLineOptions = StepperLineOptions.defaults
+}
+
+// MARK: - Environment Key for pit stop line options.
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+struct PitStopOptionsKey: EnvironmentKey {
+    static var defaultValue:[PitStopSteps] = []
 }

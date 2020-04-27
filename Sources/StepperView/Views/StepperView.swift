@@ -22,7 +22,7 @@ public enum StepperIndicationType<Content:View> {
     case custom(Content)
 }
 
-// MARK: - Line Options for Customization
+// MARK: - Line Options for Step Customization
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum StepperLineOptions {
     case defaults

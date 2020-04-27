@@ -47,7 +47,7 @@ struct ExampleView5: View {
                     .stepIndicatorMode(StepperMode.horizontal)
                     .spacing(50)
                     .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-                
+
                 HStack {
                     StepperView()
                         .addSteps(self.set2)

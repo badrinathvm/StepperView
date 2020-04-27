@@ -21,5 +21,7 @@ public struct TextView: View {
         Text(text)
             .font(font)
             .frame(maxWidth: .infinity, alignment: .leading)
+            .fixedSize(horizontal: false, vertical: true)
+            .lineLimit(nil)
     }
 }

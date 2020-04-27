@@ -14,14 +14,14 @@ struct ExampleView: View {
         TabView {
             ExampleView5()
                 .tabItem { Text("Horizontal") .foregroundColor(Color.black) }
-            ExampleView1()
-                .tabItem { Text("Basic").foregroundColor(Color.black) }
             ExampleView2()
                 .tabItem { Text("Usecase") .foregroundColor(Color.black) }
             ExampleView3()
                 .tabItem { Text("Card") .foregroundColor(Color.black) }
-            ExampleView4()
-                .tabItem { Text("Multiple") .foregroundColor(Color.black) }
+            ExampleView6()
+                .tabItem { Text("PitStops") .foregroundColor(Color.black) }
+            ExampleView1()
+                .tabItem { Text("Basic").foregroundColor(Color.black) }
         }
     }
 }
