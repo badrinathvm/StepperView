@@ -46,20 +46,20 @@ struct ExampleView5: View {
                     .indicators(self.indicationTypes)
                     .stepIndicatorMode(StepperMode.horizontal)
                     .spacing(50)
-                    .stepLineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                    .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
 
                 HStack {
                     StepperView()
                         .addSteps(self.set2)
                         .indicators(self.indicationTypes)
                         .spacing(30)
-                        .stepLineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                     
                     StepperView()
                         .addSteps(self.set3)
                         .indicators(self.indicationTypes)
                         .spacing(30)
-                        .stepLineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                 }
             }
             .navigationBarTitle("StepperView")

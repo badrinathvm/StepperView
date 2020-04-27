@@ -12,21 +12,23 @@ public struct CircledIconView: View {
     public var image:Image
     public var width:CGFloat
     public var color:Color
+    public var strokeColor:Color
     
-    public init(image:Image, width:CGFloat, color: Color) {
+    public init(image:Image, width:CGFloat, color: Color = Color.white, strokeColor: Color = Colors.gray(.light).rawValue) {
         self.image = image
         self.width = width
         self.color = color
+        self.strokeColor = strokeColor
     }
     
     public var body: some View {
         VStack {
             Circle()
-                .foregroundColor(Color.white)
+                .foregroundColor(self.color)
                 .frame(width: width, height: width)
                 .overlay(Circle()
-                    .stroke(color, lineWidth: 1)
-                    .foregroundColor(Color.white)
+                    .stroke(strokeColor, lineWidth: 1)
+                    .foregroundColor(self.color)
                     .overlay(image
                         .resizable()
                         .frame(width: width/2, height: width/2)

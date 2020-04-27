@@ -80,7 +80,7 @@ class StepperViewTests: XCTestCase {
       let stepperView = StepperView()
         .addSteps(steps)
         .indicators(indictors)
-        .stepLineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
         
       let vc = UIHostingController(rootView: stepperView)
       vc.view.frame = UIScreen.main.bounds
@@ -96,7 +96,7 @@ class StepperViewTests: XCTestCase {
                                 .addSteps(steps)
                                 .indicators(indicators)
                                 .spacing(30)
-                                .stepLineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                                .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
         
         let vc = UIHostingController(rootView: stepperView)
         vc.view.frame = UIScreen.main.bounds
@@ -122,7 +122,7 @@ class StepperViewTests: XCTestCase {
             .indicators(indicationTypes)
             .stepIndicatorMode(StepperMode.horizontal)
             .spacing(50)
-            .stepLineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
         
         let vc = UIHostingController(rootView: stepperView)
         vc.view.frame = UIScreen.main.bounds

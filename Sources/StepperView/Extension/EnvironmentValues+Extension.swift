@@ -36,19 +36,14 @@ extension EnvironmentValues {
         set { self[SpacingKey.self] = newValue }
     }
     
-    var stepLineOptions: StepperLineOptions {
-        get { self[StepLineOptionsKey.self] }
-        set { self[StepLineOptionsKey.self] = newValue }
+    var lineOptions: StepperLineOptions {
+        get { self[LineOptionsKey.self] }
+        set { self[LineOptionsKey.self] = newValue }
     }
         
-    var pitStopSteps: [AnyView] {
-        get { self[PitStopsKey.self] }
-        set { self[PitStopsKey.self] = newValue }
-    }
-    
-    var pitStopLineOptions: PitStopLineOptions {
-        get { self[PitStopLineOptionsKey.self] }
-        set { self[PitStopLineOptionsKey.self] = newValue }
+    var pitStopOptions: [PitStopSteps] {
+        get { self[PitStopOptionsKey.self] }
+        set { self[PitStopOptionsKey.self] = newValue }
     }
 }
 
@@ -84,18 +79,12 @@ struct SpacingKey: EnvironmentKey {
 
 // MARK: - Environment Key for Line Options
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct StepLineOptionsKey: EnvironmentKey {
+struct LineOptionsKey: EnvironmentKey {
     static var defaultValue:StepperLineOptions = StepperLineOptions.defaults
-}
-
-// MARK: - Environment Key for PitStop Indicators
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct PitStopsKey: EnvironmentKey {
-    static var defaultValue = [AnyView]()
 }
 
 // MARK: - Environment Key for pit stop line options.
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct PitStopLineOptionsKey: EnvironmentKey {
-    static var defaultValue:PitStopLineOptions = PitStopLineOptions.defaults
+struct PitStopOptionsKey: EnvironmentKey {
+    static var defaultValue:[PitStopSteps] = []
 }

@@ -41,7 +41,7 @@ public struct StepperView: View {
     @Environment(\.steps) var steps
     @Environment(\.alignments) var alignments
     @Environment(\.indicationType) var indicationType
-    @Environment(\.stepLineOptions) var lineOptions
+    @Environment(\.lineOptions) var lineOptions
     @Environment(\.stepperMode) var stepperMode
     @Environment(\.spacing) var verticalSpacing
     

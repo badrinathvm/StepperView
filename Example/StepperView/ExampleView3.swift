@@ -36,7 +36,7 @@ struct ExampleView3:View {
                             .addSteps(self.cells)
                             .alignments(alignments)
                             .indicators(indicationTypes)
-                            .stepLineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                     }
                 }.padding(.vertical, 50)
             }
