@@ -14,40 +14,22 @@ import StepperView
 struct ExampleView6: View {
     
     let circleIndicators = [
-        StepperIndicationType<AnyView>.custom(IconIndicator(name:"flag", color: Colors.red(.normal).rawValue).eraseToAnyView()),
-        StepperIndicationType.custom(IconIndicator(name: "like", color: Colors.green(.dark).rawValue).eraseToAnyView()),
-        StepperIndicationType.custom(IconIndicator(name: "book", color: Colors.gray(.light).rawValue).eraseToAnyView())
+        StepperIndicationType<AnyView>.custom(
+            CircledIconView(image: Image("flag"), width: 40, color: Colors.gray(.light).rawValue).eraseToAnyView().eraseToAnyView()),
+        StepperIndicationType.custom(CircledIconView(image: Image("like"), width: 40, color: Colors.gray(.light).rawValue).eraseToAnyView().eraseToAnyView()),
+        StepperIndicationType.custom(CircledIconView(image: Image("book"), width: 40, color: Colors.gray(.light).rawValue).eraseToAnyView())
                             ]
     
     var body: some View {
         VStack {
             StepperView()
-                .addSteps([TextView(text:"Welcome to pitstop, questions to be asked for wondeful community"), TextView(text:"Answer"), TextView(text:"References")])
+                .addSteps([
+                    TextView(text:"Welcome to pitstop, questions to be asked for wondeful community"), TextView(text:"Answer"), TextView(text:"References")])
                 .indicators(circleIndicators)
                 .stepLineOptions(StepperLineOptions.custom(1, Colors.gray(.light).rawValue))
-                .addPitstops([TextView(text:"Answer")])
+                .addPitstops([TextView(text:"PitStop 1"), TextView(text:"PitStop 2"), TextView(text:"PitStop 3")])
                 .pitStopLineOptions(PitStopLineOptions.custom(1, Colors.red(.normal).rawValue))
                 .spacing(100)
-        }
-    }
-}
-
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct IconIndicator:View {
-    var name:String
-    var color:Color
-    var body: some View {
-        VStack {
-            Circle()
-            .foregroundColor(Color.white)
-            .frame(width: 40, height: 40)
-            .overlay( Circle()
-                           .stroke(color, lineWidth: 1)
-                           .foregroundColor(Color.white)
-                           .overlay(Image(name)
-                               .resizable()
-                                   .frame(width: 20, height: 20)
-                               .aspectRatio(contentMode: .fit)))
         }
     }
 }

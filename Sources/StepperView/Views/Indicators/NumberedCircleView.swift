@@ -15,7 +15,7 @@ public struct NumberedCircleView: View {
     public var width:CGFloat
     public var color:Color
     
-    public init(text:String, width:CGFloat = 28.0, color: Color = Colors.blue(.teal).rawValue) {
+    public init(text:String, width:CGFloat = 28.0, color: Color = Colors.teal.rawValue) {
         self.text = text
         self.width = width
         self.color = color

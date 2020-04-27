@@ -27,21 +27,21 @@ extension EnvironmentValues {
     }
     
     var stepperMode: StepperMode {
-        get { self[StepIndicatorMode.self] }
-        set { self[StepIndicatorMode.self] = newValue }
+        get { self[StepIndicatorModeKey.self] }
+        set { self[StepIndicatorModeKey.self] = newValue }
     }
     
     var spacing: CGFloat {
-        get { self[Spacing.self] }
-        set { self[Spacing.self] = newValue }
+        get { self[SpacingKey.self] }
+        set { self[SpacingKey.self] = newValue }
     }
     
     var stepLineOptions: StepperLineOptions {
-        get { self[StepLineOptions.self] }
-        set { self[StepLineOptions.self] = newValue }
+        get { self[StepLineOptionsKey.self] }
+        set { self[StepLineOptionsKey.self] = newValue }
     }
         
-    var pitstopSteps: [AnyView] {
+    var pitStopSteps: [AnyView] {
         get { self[PitStopsKey.self] }
         set { self[PitStopsKey.self] = newValue }
     }
@@ -72,29 +72,29 @@ struct IndicatorKey: EnvironmentKey {
 
 // MARK: - Environment Key for StepIndicatorMode
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct StepIndicatorMode: EnvironmentKey {
+struct StepIndicatorModeKey: EnvironmentKey {
     static var defaultValue = StepperMode.vertical
 }
 
 // MARK: - Environment Key for Spacing
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct Spacing: EnvironmentKey {
+struct SpacingKey: EnvironmentKey {
     static var defaultValue:CGFloat = 30.0
 }
 
 // MARK: - Environment Key for Line Options
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct StepLineOptions: EnvironmentKey {
+struct StepLineOptionsKey: EnvironmentKey {
     static var defaultValue:StepperLineOptions = StepperLineOptions.defaults
 }
 
-// MARK: - Environment Key for Steps
+// MARK: - Environment Key for PitStop Indicators
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopsKey: EnvironmentKey {
     static var defaultValue = [AnyView]()
 }
 
-// MARK: - Environment Key for Steps
+// MARK: - Environment Key for pit stop line options.
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopLineOptionsKey: EnvironmentKey {
     static var defaultValue:PitStopLineOptions = PitStopLineOptions.defaults

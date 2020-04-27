@@ -12,8 +12,6 @@ import SwiftUI
 struct ExampleView: View {
     var body: some View {
         TabView {
-            ExampleView6()
-                    .tabItem { Text("PitStops") .foregroundColor(Color.black) }
             ExampleView5()
                 .tabItem { Text("Horizontal") .foregroundColor(Color.black) }
             ExampleView1()
@@ -22,8 +20,8 @@ struct ExampleView: View {
                 .tabItem { Text("Usecase") .foregroundColor(Color.black) }
             ExampleView3()
                 .tabItem { Text("Card") .foregroundColor(Color.black) }
-//            ExampleView5()
-//                .tabItem { Text("Multiple") .foregroundColor(Color.black) }
+            ExampleView6()
+                .tabItem { Text("PitStops") .foregroundColor(Color.black) }
         }
     }
 }

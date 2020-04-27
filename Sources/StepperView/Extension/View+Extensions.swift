@@ -149,7 +149,7 @@ public extension View {
 
     // Views for adding PitStops
     func addPitstops<Content:View>(_ steps: [Content]) -> some View {
-        self.environment(\EnvironmentValues.pitstopSteps, steps.map { $0.eraseToAnyView() })
+        self.environment(\EnvironmentValues.pitStopSteps, steps.map { $0.eraseToAnyView() })
     }
     
     // Configures pit stop line options to environment value

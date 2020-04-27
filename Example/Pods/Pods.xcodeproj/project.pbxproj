@@ -16,6 +16,8 @@
 		18ED84EFAF015095FCCF61A8E494F325 /* AssertSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B5B926D044224F3DA48ECA54B90036 /* AssertSnapshot.swift */; };
 		1A1F20E176923FF03A0EAEA886703719 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F2FB477A620A3E602AB638D67BB48 /* NSView.swift */; };
 		1BD42F2824561926008D4DAB /* PitstopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD42F2724561926008D4DAB /* PitstopView.swift */; };
+		1BD42F2A24568585008D4DAB /* CircledIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD42F2924568585008D4DAB /* CircledIconView.swift */; };
+		1BD42F2E245689D6008D4DAB /* PitStopLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD42F2D245689D6008D4DAB /* PitStopLineView.swift */; };
 		1D991DC78F8F9BAF7FA5A4D28B11349A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
 		2371CFDF095282B1D6935C36C81E46FC /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE17308B6D5521A72838599CD74F8F5 /* UIImage.swift */; };
 		23B3D1B39D273F7B43BA45F255EDE5C5 /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40629037FE01DF51592340BAF30DC5 /* CaseIterable.swift */; };
@@ -106,6 +108,8 @@
 		1A3E414A2122C3BC3532C12EFE05AD71 /* Pods-StepperView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Tests.modulemap"; sourceTree = "<group>"; };
 		1B5607D0E6C665BF1FD799000DA9A62E /* Pods-StepperView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Tests-dummy.m"; sourceTree = "<group>"; };
 		1BD42F2724561926008D4DAB /* PitstopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitstopView.swift; sourceTree = "<group>"; };
+		1BD42F2924568585008D4DAB /* CircledIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledIconView.swift; sourceTree = "<group>"; };
+		1BD42F2D245689D6008D4DAB /* PitStopLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitStopLineView.swift; sourceTree = "<group>"; };
 		1D3FAD366B69D1860608FB5353B2355E /* SpriteKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpriteKit.swift; path = Sources/SnapshotTesting/Snapshotting/SpriteKit.swift; sourceTree = "<group>"; };
 		1E6041318F668A00834BD8F78AC546F5 /* Pods-StepperView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Example.modulemap"; sourceTree = "<group>"; };
 		1EB3C5BC42B48ECADA5C15E4D7300320 /* URLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = Sources/SnapshotTesting/Snapshotting/URLRequest.swift; sourceTree = "<group>"; };
@@ -222,6 +226,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1BD42F2B2456893D008D4DAB /* Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				52DFA139A5912D727F79FA66988E112F /* NumberedCircleView.swift */,
+				1BD42F2924568585008D4DAB /* CircledIconView.swift */,
+				73ED8456FB1F2A1292E704D2E9EBABA2 /* IndicatorView.swift */,
+			);
+			path = Indicators;
+			sourceTree = "<group>";
+		};
+		1BD42F2C24568960008D4DAB /* Lines */ = {
+			isa = PBXGroup;
+			children = (
+				F74FC12BC4BF2278F8C60ED20E1E2EE4 /* VerticalLineView.swift */,
+				944F2019296B1F7DDD06622D8C99123A /* HorizontalLineView.swift */,
+				1BD42F2D245689D6008D4DAB /* PitStopLineView.swift */,
+			);
+			path = Lines;
+			sourceTree = "<group>";
+		};
 		1D9DFA3972120FFEE602A2500E6CFC04 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,14 +358,12 @@
 		86DE4ACAA69C000BB46E5E3E8F084BF2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				944F2019296B1F7DDD06622D8C99123A /* HorizontalLineView.swift */,
-				73ED8456FB1F2A1292E704D2E9EBABA2 /* IndicatorView.swift */,
-				52DFA139A5912D727F79FA66988E112F /* NumberedCircleView.swift */,
+				1BD42F2C24568960008D4DAB /* Lines */,
+				1BD42F2B2456893D008D4DAB /* Indicators */,
 				B514CD42DBF48A0FAACB2F0851E29143 /* StepIndicatorHorizontalView.swift */,
 				7AC36774A0D5F9D304F78BF041593C5F /* StepIndicatorVerticalView.swift */,
 				217BBF2A08BF66EC383489A450C139FC /* StepperView.swift */,
 				E812D382B51E3381533CEA01AEE141C4 /* TextView.swift */,
-				F74FC12BC4BF2278F8C60ED20E1E2EE4 /* VerticalLineView.swift */,
 				1BD42F2724561926008D4DAB /* PitstopView.swift */,
 			);
 			name = Views;
@@ -675,9 +697,11 @@
 				013333354C23CFE3B69BA87DCE0F3729 /* StepperView-dummy.m in Sources */,
 				81926E24F89299AA44BA3EA3CB1D1B48 /* StepperView.swift in Sources */,
 				B825D1FA1F18CA1D81F4E891C3A8FF49 /* TextView.swift in Sources */,
+				1BD42F2A24568585008D4DAB /* CircledIconView.swift in Sources */,
 				E5859ED98C7EB8856F80E9FBAAB46072 /* Utils.swift in Sources */,
 				FB220956470B45E6F9697B27947EB546 /* VerticalAlignment+Extension.swift in Sources */,
 				4BBF3B783B6F04CBB6A16F4C7818F182 /* VerticalLineView.swift in Sources */,
+				1BD42F2E245689D6008D4DAB /* PitStopLineView.swift in Sources */,
 				185FF80F5AEF3D4BE606CEADB466669C /* View+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

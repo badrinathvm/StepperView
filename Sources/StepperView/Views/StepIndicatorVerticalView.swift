@@ -15,7 +15,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     @State private var columnHeights: [Int: CGFloat] = [:]
     @State private var lineYPosition: CGFloat = 0
     
-    @Environment(\.pitstopSteps) var pitstopSteps
+    @Environment(\.pitStopSteps) var pitStopSteps
     
     //constructor parameters
     var cells:[Cell]
@@ -47,12 +47,12 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
                             .padding(.horizontal, Utils.standardSpacing)
                             //for drawing pit stops.
-                            .ifTrue(self.pitstopSteps.count > 0, content: { view in
+                            .ifTrue(self.pitStopSteps.count > 0, content: { view in
                                 view.anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { $0 }
                                 .overlayPreferenceValue(BoundsPreferenceKey.self, { (preferences) in
                                     GeometryReader { proxy in
                                         preferences.map { anchor in
-                                            self.drawAnchors(proxy: proxy, value: anchor)
+                                            self.drawAnchors(proxy: proxy, value: anchor, pitStop: self.pitStopSteps[index])
                                         }
                                     }
                                 })
@@ -133,7 +133,7 @@ extension StepIndicatorVerticalView {
     }
     
     // draws pitstops for each of the step indicators.
-    func drawAnchors(proxy: GeometryProxy, value: Anchor<CGRect>) -> some View {
-        return PitStopView(proxy: proxy, value: value, lineXPosition: $lineXPosition)
+    func drawAnchors<PitStop:View>(proxy: GeometryProxy, value: Anchor<CGRect>, pitStop: PitStop) -> some View {
+        return PitStopView(proxy: proxy, value: value, lineXPosition: $lineXPosition, pitStop: pitStop)
     }
 }
