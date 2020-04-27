@@ -128,4 +128,37 @@ class StepperViewTests: XCTestCase {
         vc.view.frame = UIScreen.main.bounds
         assertSnapshot(matching: vc, as: .image)
     }
+    
+    func testExampleView6() {
+        let steps = [TextView(text:"Question"),
+                     TextView(text:"Expected Answer"),
+                     TextView(text:"Red Flags"),
+                     TextView(text:"Further Reading")]
+        
+        let indicators = [
+               StepperIndicationType<AnyView>.custom(NumberedCircleView(text: "1", width: 40).eraseToAnyView()),
+               .custom(CircledIconView(image: Image("like"), width: 40,
+                                                            strokeColor: Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))
+                                   .eraseToAnyView()),
+               .custom(CircledIconView(image: Image("flag"), width: 40,
+                                                            strokeColor: Color.red).eraseToAnyView()),
+                .custom(CircledIconView(image: Image("book"), width: 40,
+                                                            strokeColor: Colors.gray(.darkSilver).rawValue).eraseToAnyView())]
+        let pitStops = [
+            PitStopSteps(view: TextView(text: "Pitstop 1").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.teal.rawValue)),
+            PitStopSteps(view: TextView(text:"Pitstop 2").eraseToAnyView(),
+                        lineOptions: PitStopLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))),
+            PitStopSteps(view: TextView(text:"Pitstop 3").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Color.red)),
+            PitStopSteps(view: TextView(text:"References").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.gray(.darkSilver).rawValue))]
+        
+       let stepperView = StepperView()
+                            .addSteps(steps)
+                            .indicators(indicators)
+                            .addPitStops(pitStops)
+                            .spacing(100)
+        
+        let vc = UIHostingController(rootView: stepperView)
+        vc.view.frame = UIScreen.main.bounds
+        assertSnapshot(matching: vc, as: .image)
+    }
 }

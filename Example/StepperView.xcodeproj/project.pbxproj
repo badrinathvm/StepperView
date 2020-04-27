@@ -16,6 +16,7 @@
 		1BD7CB9524465A0B00F17698 /* ImageTextRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6F243FCD4800F17698 /* ImageTextRowView.swift */; };
 		1BD7CB9624465AC700F17698 /* StepperContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF933B6243D24EB00F2FEA6 /* StepperContentView.swift */; };
 		1BED688324577722000035BD /* FurtherReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED688224577722000035BD /* FurtherReadingView.swift */; };
+		1BED68842457818B000035BD /* FurtherReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED688224577722000035BD /* FurtherReadingView.swift */; };
 		1BF00786244A489B00DE5BF9 /* StepTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB912446585500F17698 /* StepTextView.swift */; };
 		1BF00787244A48A700DE5BF9 /* StepTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB912446585500F17698 /* StepTextView.swift */; };
 		1BF0B9EE2439BB7D00492C74 /* ExampleView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0B9ED2439BB7D00492C74 /* ExampleView1.swift */; };
@@ -442,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BD7CB9524465A0B00F17698 /* ImageTextRowView.swift in Sources */,
+				1BED68842457818B000035BD /* FurtherReadingView.swift in Sources */,
 				1BF00786244A489B00DE5BF9 /* StepTextView.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* StepperViewTests.swift in Sources */,
 				1BD7CB9624465AC700F17698 /* StepperContentView.swift in Sources */,

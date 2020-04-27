@@ -45,7 +45,6 @@ struct ExampleView6: View {
             StepperView()
                 .addSteps(steps)
                 .indicators(indicators)
-                .lineOptions(StepperLineOptions.custom(1, Colors.gray(.light).rawValue))
                 .addPitStops(pitStops)
                 .spacing(100)
         }
