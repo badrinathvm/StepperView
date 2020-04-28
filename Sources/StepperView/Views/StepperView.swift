@@ -27,6 +27,7 @@ public struct StepperView: View {
     
     public init() { }
     
+    /// Provides the content and behavior of this view.
     public var body: some View {
         switch stepperMode {
         case .vertical:
@@ -46,7 +47,6 @@ public struct StepperView: View {
         }
     }
 }
-
 
 // MARK: - Stepper View alignments
 /**
@@ -88,7 +88,7 @@ public enum StepperIndicationType<Content:View> {
 
 // MARK: - Line Options for Step Customization
 /**
-   Options for customizing line with either 1defaults` or  custom `Width` and `Color`
+   Options for customizing line with either  `defaults` or  custom `Width`  and `Color`
 
    ````
    case defaults

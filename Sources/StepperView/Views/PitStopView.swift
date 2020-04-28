@@ -8,6 +8,14 @@
 import SwiftUI
 
 // MARK: - Line Options for Step Customization
+/**
+   Options for customizing pitstop line with either  `defaults` or  custom `Width`  and `Color`
+
+   ````
+   case defaults
+   case custom(CGFloat, Color)
+   ````
+*/
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum PitStopLineOptions {
     case defaults
@@ -22,16 +30,22 @@ public enum PitStopLineOptions {
 }
 
 // MARK: - PitStop View
+/// A View for setting up a pitstop for eg: line with a `circle`  or  `custom` view
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopView<PitStop:View>: View {
     @State private var width:CGFloat = 0.0
-    
+    /// co-ordinates to draw the pitsop view.
     var proxy:GeometryProxy
+    /// bounds value of the rendered step indicator
     var value:Anchor<CGRect>
+    /// x-axis position of the line
     @Binding var lineXPosition:CGFloat
+    /// A pitsop view to render
     var pitStop:PitStop
+    /// to customise the `width ` , `Color` of the line
     var lineOptions:PitStopLineOptions
-        
+      
+    /// Provides the content and behavior of this view.
     var body: some View {
         VStack(spacing:0) {
             PitStopLineView(options: lineOptions, proxy: proxy, value: value, width: self.$width)
@@ -58,6 +72,8 @@ struct PitStopView<PitStop:View>: View {
         }
     }
     
+    /// Returns the `Color` from the line options provided.
+    /// - Parameter lineOptions: contains options to customize `width`  and `Color` of the line
     func getColor(from lineOptions: PitStopLineOptions) -> Color {
         if case .custom(_, let color) = lineOptions {
             return color
