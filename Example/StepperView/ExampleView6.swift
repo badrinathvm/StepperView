@@ -34,11 +34,11 @@ struct ExampleView6: View {
                 TextView(text:"Red Flags", font: .system(size: 14, weight: .semibold)),
                 TextView(text:"Further Reading", font: .system(size: 14, weight: .semibold))]
     
-    let pitStops = [PitStopSteps(view: TextView(text:PitStopText.p1).eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.teal.rawValue)),
-                    PitStopSteps(view: TextView(text:PitStopText.p2).eraseToAnyView(),
+    let pitStops = [PitStopStep(view: TextView(text:PitStopText.p1).eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.teal.rawValue)),
+                    PitStopStep(view: TextView(text:PitStopText.p2).eraseToAnyView(),
                                     lineOptions: PitStopLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))),
-                    PitStopSteps(view: TextView(text:PitStopText.p3).eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Color.red)),
-                    PitStopSteps(view: FurtherReadingView().eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.gray(.darkSilver).rawValue))]
+                    PitStopStep(view: TextView(text:PitStopText.p3).eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Color.red)),
+                    PitStopStep(view: FurtherReadingView().eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.gray(.darkSilver).rawValue))]
     
     var body: some View {
         VStack {

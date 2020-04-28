@@ -22,9 +22,9 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     /// state variable to hold y-axis position  to render  `View`  when values changes
     @State private var lineYPosition: CGFloat = 0
     
+    /// environment variable to access pitstop options
     @Environment(\.pitStopOptions) var pitStopsOptions
     
-    //constructor parameters
     /// list  of `View's` to display step indictor content
     var cells:[Cell]
     /// list of alignments to display the step indicator position  can be `top` or  `center` or  `bottom`

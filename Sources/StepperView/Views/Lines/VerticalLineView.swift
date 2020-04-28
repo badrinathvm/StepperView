@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-// MARK: - Line View for Step Indicator
-/// Line View for Step Indictor
+/// Vertical Line View for Step Indictor
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct VerticalLineView: View {
     /// binding variable to hold lineHeight

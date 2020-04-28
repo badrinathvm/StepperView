@@ -48,7 +48,7 @@ extension EnvironmentValues {
     }
       
     /// property wrapper  for `PitStopOptionsKey`
-    var pitStopOptions: [PitStopSteps] {
+    var pitStopOptions: [PitStopStep] {
         get { self[PitStopOptionsKey.self] }
         set { self[PitStopOptionsKey.self] = newValue }
     }
@@ -100,5 +100,5 @@ struct LineOptionsKey: EnvironmentKey {
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopOptionsKey: EnvironmentKey {
     /// provide a default value for custom dependency
-    static var defaultValue:[PitStopSteps] = []
+    static var defaultValue:[PitStopStep] = []
 }

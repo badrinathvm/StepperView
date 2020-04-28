@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: - PitStop Line View
+/// pitstop Line View for each of the step indicator
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopLineView: View {
     /// options for customizing pitstop line with either  `defaults` or  custom `width`  and `Color`

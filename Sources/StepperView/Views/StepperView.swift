@@ -25,9 +25,10 @@ public struct StepperView: View {
     /// spacing between each of the step indicators
     @Environment(\.spacing) var spacing
     
+    /// empty initilazer
     public init() { }
     
-    /// Provides the content and behavior of this view.
+    /// provides the content and behavior of this view.
     public var body: some View {
         switch stepperMode {
         case .vertical:
@@ -48,7 +49,6 @@ public struct StepperView: View {
     }
 }
 
-// MARK: - Stepper View alignments
 /**
     Options for stepper view alignments
  
@@ -68,7 +68,6 @@ public enum StepperAlignment: String, CaseIterable {
     case bottom = "Bottom"
 }
 
-// MARK: - Stepper Indication options
 /**
     Options for displaying step indications can be either `Circle` or `Image`or `custom(View)`
  
@@ -80,13 +79,16 @@ public enum StepperAlignment: String, CaseIterable {
  */
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum StepperIndicationType<Content:View> {
+    /// alias to `Width`
     public typealias Width = CGFloat
+    /// option to customize  `Circle` indicator  `Color` and `width`
     case circle(Color, Width)
+    /// option to  use  `image` indicator
     case image(Image, Width)
+    /// option to use custom `View` as step indicator
     case custom(Content)
 }
 
-// MARK: - Line Options for Step Customization
 /**
    Options for customizing line with either  `defaults` or  custom `width`  and `Color`
 
@@ -97,11 +99,12 @@ public enum StepperIndicationType<Content:View> {
 */
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum StepperLineOptions {
+    /// default line option
     case defaults
+    /// custom line option with thickness  and  `Color`
     case custom(CGFloat, Color)
 }
 
-// MARK: - Indicates the types of Setp Indicator mode
 /**
    Options for aligns the step indicator either in `vertical` or `horizontal`
 
@@ -111,6 +114,8 @@ public enum StepperLineOptions {
    ````
 */
 public enum StepperMode:String, CaseIterable {
+    /// portrait mode
     case vertical
+    /// landscape mode
     case horizontal
 }
