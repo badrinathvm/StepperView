@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 # OS X
 .DS_Store
 
-# Xcode
-build/
-=======
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -19,8 +15,12 @@ xcuserdata/
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 build/
 DerivedData/
+
+## Jazzy
+docs/**/undocumented.json
+
+## Various other settings
 *.moved-aside
->>>>>>> 3e847dc12c04b0a05e19092425ebde0f94cc3dc1
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -29,7 +29,7 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-<<<<<<< HEAD
+
 xcuserdata/
 *.xccheckout
 profile
@@ -115,11 +115,3 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
-
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
-iOSInjectionProject/
->>>>>>> 3e847dc12c04b0a05e19092425ebde0f94cc3dc1
