@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: - Line Options for Step Customization
 /**
-   Options for customizing pitstop line with either  `defaults` or  custom `Width`  and `Color`
+   Options for customizing pitstop line with either  `defaults` or  custom `width`  and `Color`
 
    ````
    case defaults

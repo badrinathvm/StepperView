@@ -9,9 +9,14 @@ import SwiftUI
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct HorizontalLineView: View {
+    /// binding variable to hold the divider width
     @Binding var dividerWidth: CGFloat
+    /// binding variable to hold line y-axis position
     @Binding var lineYOffsetPosition:CGFloat
+    /// options for customizing line with either  `defaults` or  custom `width`  and `Color`
     var options:StepperLineOptions
+    
+    /// provides the content and behavior of this view.
     var body: some View {
         switch options {
         case .defaults:

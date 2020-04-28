@@ -7,13 +7,19 @@
 
 import SwiftUI
 
+/// A  Circled Icon `View ` for Step Indicator
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct CircledIconView: View {
+    /// icon for the step indicator
     public var image:Image
+    /// width for step indicator
     public var width:CGFloat
+    /// color for step indicator
     public var color:Color
+    /// stroke color for step indicator
     public var strokeColor:Color
     
+    /// initiazes `image` , `width` , `color` and  `strokeColor`
     public init(image:Image, width:CGFloat, color: Color = Color.white, strokeColor: Color = Colors.gray(.light).rawValue) {
         self.image = image
         self.width = width
@@ -21,6 +27,7 @@ public struct CircledIconView: View {
         self.strokeColor = strokeColor
     }
     
+    /// provides the content and behavior of this view.
     public var body: some View {
         VStack {
             Circle()

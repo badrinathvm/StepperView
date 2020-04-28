@@ -7,14 +7,22 @@
 
 import SwiftUI
 
-// MARK: - Line View for Stepper
+// MARK: - Line View for Step Indicator
+/// Line View for Step Indictor
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct VerticalLineView: View {
+    /// binding variable to hold lineHeight
     @Binding var lineHeight:CGFloat
+    /// binding variable to linx x-axis position
     @Binding var lineXPosition:CGFloat
+    /// binding variable to linx y-axis position
     @Binding var lineYPosition:CGFloat
+    /// options for customizing line with either  `defaults` or  custom `width`  and `Color`
     var options:StepperLineOptions
+    /// tuple holding first and last stepper alignment
     var alignments:(StepperAlignment, StepperAlignment)
+    
+    /// provides the content and behavior of this view.
     var body:some View {
         switch options {
         case .defaults:
@@ -38,8 +46,13 @@ struct VerticalLineView: View {
         }
     }
     
-    // returns Y offset position based on first and last alignments.
-    func getYOffsetPosition(for first: StepperAlignment, last: StepperAlignment, and offset: CGFloat ) -> CGFloat {
+
+    /// returns Y offset position based on first and last alignments.
+    /// - Parameters:
+    ///   - first: alignment of the first step indicator
+    ///   - last: alignment of the last step indicator
+    ///   - offset: offset value between position of first and last
+    private func getYOffsetPosition(for first: StepperAlignment, last: StepperAlignment, and offset: CGFloat ) -> CGFloat {
         switch (first, last) {
         //top variations
         case (.top, .top): return -VerticalAlignment.centerValue

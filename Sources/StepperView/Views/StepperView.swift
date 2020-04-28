@@ -88,7 +88,7 @@ public enum StepperIndicationType<Content:View> {
 
 // MARK: - Line Options for Step Customization
 /**
-   Options for customizing line with either  `defaults` or  custom `Width`  and `Color`
+   Options for customizing line with either  `defaults` or  custom `width`  and `Color`
 
    ````
    case defaults
