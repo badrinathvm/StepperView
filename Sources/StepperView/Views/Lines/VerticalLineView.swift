@@ -45,7 +45,6 @@ struct VerticalLineView: View {
         }
     }
     
-
     /// returns Y offset position based on first and last alignments.
     /// - Parameters:
     ///   - first: alignment of the first step indicator
