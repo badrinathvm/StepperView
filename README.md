@@ -112,7 +112,7 @@ var body: some View {
           
 .addPitStops(_ steps: [PitStopStep])
           1. optional modifier
-          2. `PitStopStep` - structure that provides option to provide `View` and line customizations
+          2. `PitStopStep` - structure that provides option to provide `View`, line customizations
 ```
 
 <p>
