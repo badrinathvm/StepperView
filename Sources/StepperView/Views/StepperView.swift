@@ -23,7 +23,7 @@ public struct StepperView: View {
     /// aligns the step indicator either in `vertical` or `horizontal`
     @Environment(\.stepperMode) var stepperMode
     /// spacing between each of the step indicators
-    @Environment(\.spacing) var verticalSpacing
+    @Environment(\.spacing) var spacing
     
     public init() { }
     
@@ -35,14 +35,14 @@ public struct StepperView: View {
                                              alignments: alignments.isEmpty ? (0..<steps.count).map {_ in  StepperAlignment.center } : alignments,
                                              indicationType: indicationType,
                                              lineOptions: lineOptions,
-                                             verticalSpacing: verticalSpacing)
+                                             verticalSpacing: spacing)
                 .eraseToAnyView()
         case .horizontal:
             return StepIndicatorHorizontalView(cells: steps,
                                                alignments: alignments,
                                                indicationType: indicationType,
                                                lineOptions: lineOptions,
-                                               verticalSpacing: verticalSpacing)
+                                               horizontalSpacing: spacing)
                 .eraseToAnyView()
         }
     }

@@ -7,33 +7,46 @@
 
 import SwiftUI
 
+/// A Step Indications View in `horizontal`  direction
+///
+/// creates step indicator view either in `horizontal` mode
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepIndicatorHorizontalView<Cell:View>: View {
+    /// state variable to hold width to render  `View`  when values changes
     @State private var lineWidth:CGFloat = 0
+    /// state variable to hold line y-axis position to render  `View`  when values changes
     @State private var lineYOffsetPosition:CGFloat = 0
+    /// state variable to hold height to render  `View`  when values changes
     @State private var height:CGFloat = 0
     
     //constructor parameters
+    /// list  of `View's` to display step indictor content
     var cells:[Cell]
+    /// list of alignments to display the step indicator position  can be `top` or  `center` or  `bottom`
     var alignments:[StepperAlignment]
+    /// step indicator type can be a `Circle` , `Image` or `Custom`
     var indicationType: [StepperIndicationType<AnyView>]
+    /// options to customize  `width ` , `Color` of the line
     var lineOptions: StepperLineOptions
-    var verticalSpacing:CGFloat
+    /// spacing between each of the step indicators
+    var horizontalSpacing:CGFloat
     
+    /// initilazes cells, alignments , indicators and spacing
     init(cells: [Cell], alignments: [StepperAlignment] = [], indicationType: [StepperIndicationType<AnyView>],
-         lineOptions: StepperLineOptions = .defaults, verticalSpacing:CGFloat = 50.0) {
+         lineOptions: StepperLineOptions = .defaults, horizontalSpacing:CGFloat = 50.0) {
            self.cells = cells
            self.alignments = alignments
            self.indicationType = indicationType
            self.lineOptions = lineOptions
-           self.verticalSpacing = verticalSpacing
+           self.horizontalSpacing = horizontalSpacing
     }
     
+    /// Provides the content and behavior of this view.
     var body: some View {
         VStack {
             HorizontalLineView(dividerWidth: $lineWidth, lineYOffsetPosition: $lineYOffsetPosition, options: self.lineOptions)
             VStack {
-                HStack(spacing: verticalSpacing) {
+                HStack(spacing: horizontalSpacing) {
                     ForEach(self.cells.indices) { index in
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
                             //for calclulating the height of the indictor view to offset the divider.
@@ -70,6 +83,12 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
     }
     
     // MARK: - draws a label for the given index based ont he bouhnds calculated by the anchor preference.
+    
+    /// draws a label for the given index based ont he bouhnds calculated by the anchor preference.
+    /// - Parameters:
+    ///   - index: Index position of step indicator
+    ///   - proxy: co-ordinates values of step indicator
+    ///   - value: bound values of step indicator
     fileprivate func drawLabel(for index: Int, proxy: GeometryProxy, value: Anchor<CGRect>) -> some View {
          return self.cells[index]
              .frame(height: proxy[value].width * 2.5)
