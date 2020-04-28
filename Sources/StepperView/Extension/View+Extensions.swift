@@ -9,45 +9,46 @@ import SwiftUI
 import Combine
 
 // MARK: - Helper function of View to operate on.
+/// Helper function of  `View`  to operate on
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public extension View {
     
-    // Stores the height for each of column which will be passed as part of onPreference change parent view.
+    /// Stores the height for each of column which will be passed as part of onPreference change parent view.
     func heightPreference(column: Int) -> some View {
         background(GeometryReader { proxy in
             Color.clear.preference(key: HeightPreference.self, value: [column: proxy.size.height])
         })
     }
     
-    // Stores the width for each of column which will be passed as part of onPreference change to parent view.
+    /// Stores the width for each of column which will be passed as part of onPreference change to parent view.
     func widthPreference(column: Int) -> some View {
         background(GeometryReader { proxy in
             Color.clear.preference(key: WidthPreference.self, value: [column: proxy.size.width])
         })
     }
     
-    // Stores the width which will be passed as part of onPreference change to parent view.
+    /// Stores the width which will be passed as part of onPreference change to parent view.
     func widthKey() -> some View {
         background(GeometryReader { proxy in
             Color.clear.preference(key: WidthKey.self, value:  proxy.size.width)
         })
     }
     
-    // Stores the height for each of column which will be passed as part of onPreference change to parent view.
+    /// Stores the height for each of column which will be passed as part of onPreference change to parent view.
     func heightKey() -> some View {
         background(GeometryReader { proxy in
             Color.clear.preference(key: HeightKey.self, value:  proxy.size.height)
         })
     }
     
-    // Stores the height for each of column which will be passed as part of onPreferenceChange to parent view.
+    /// Stores the height for each of column which will be passed as part of onPreferenceChange to parent view.
     func verticalHeightPreference(column: Int? = 0) -> some View {
         background(GeometryReader { proxy in
             Color.clear.preference(key: VerticalHeightPreference.self, value: [column!: proxy.size.height])
         })
     }
     
-    // Stores CGRect data for each cell which will be passed as part of onPreferenceChange to the parent view.
+    /// Stores CGRect data for each cell which will be passed as part of onPreferenceChange to the parent view.
     func cgRectPreference() -> some View {
         background(GeometryReader { proxy in
             Color.clear.preference(key: CGRectPreferenceKey.self, value: CGRectData(rect: proxy.frame(in: .global)))
@@ -80,17 +81,17 @@ public extension View {
         }
     }
     
-    // Embeds the view in navigationView
+    /// Embeds the view in navigationView
     func embedINNavigationView() -> some View {
         NavigationView { self }
     }
     
-    // Wrapper to  AnyView
+    /// Wrapper to  AnyView
     func eraseToAnyView() -> AnyView {
         AnyView(self)
     }
     
-    // Returns either .top, .center. .bottom bound positions
+    /// Returns either `top`,  `center`  `bottom`  bound positions
     func getYPosition(for alignment: StepperAlignment) -> CGFloat {
         switch alignment {
         case .top:
@@ -102,17 +103,17 @@ public extension View {
         }
     }
     
-    // Configures Steps to environment value
+    /// Configures Steps to environment value
     func addSteps<Cell:View>(_ steps: [Cell]) -> some View {
         self.environment(\EnvironmentValues.steps, steps.map { $0.eraseToAnyView() })
     }
     
-    // Sets alignments to environment value
+    /// Sets alignments to environment value
     func alignments(_ alignments: [StepperAlignment] = []) -> some View {
         self.environment(\EnvironmentValues.alignments, alignments)
     }
     
-    // Sets indicators to environment value
+    /// Sets indicators to environment value
     func indicators<Cell:View>(_ indicators: [StepperIndicationType<Cell>] = []) -> some View {
         self.environment(\EnvironmentValues.indicationType, indicators.map { value  in
             switch value {
@@ -123,22 +124,22 @@ public extension View {
         })
     }
     
-    // Configures step Indicator mode to environment value
+    /// Configures step Indicator mode to environment value
     func stepIndicatorMode(_ mode: StepperMode) -> some View {
         self.environment(\EnvironmentValues.stepperMode, mode)
     }
     
-    // Configures spacing to environment value
+    /// Configures spacing to environment value
     func spacing(_ value: CGFloat) -> some View {
         self.environment(\EnvironmentValues.spacing, value)
     }
     
-    // Configures line options to environment value
+    /// Configures line options to environment value
     func lineOptions(_ options: StepperLineOptions) -> some View {
         self.environment(\EnvironmentValues.lineOptions, options)
     }
     
-    // Conditional modifier
+    /// Conditional modifier
     func ifTrue<Content: View>(_ conditional: Bool, content: (Self) -> Content) -> some View {
         if conditional {
             return content(self).eraseToAnyView()
@@ -147,7 +148,8 @@ public extension View {
         }
     }
 
-    // Custom behavior for PitStops.
+    /// Custom behavior for pitstops
+    /// - Parameter steps: list of pitstop step views
     func addPitStops(_ steps: [PitStopSteps]) -> some View {
         self.environment(\EnvironmentValues.pitStopOptions, steps)
     }

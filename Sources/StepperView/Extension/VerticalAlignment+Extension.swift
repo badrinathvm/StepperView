@@ -8,8 +8,10 @@
 import SwiftUI
 
 // MARK: - Custom alignments
+/// custom alignments for positioning
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension VerticalAlignment {
+    /// custom top alignment
     private enum CustomTopAlignment: AlignmentID {
         static func defaultValue(in context: ViewDimensions) -> CGFloat {
             topValue = context[.top]
@@ -17,6 +19,7 @@ extension VerticalAlignment {
         }
     }
     
+    /// custom bottom alignment
     private enum CustomBottomAlignment: AlignmentID {
         static func defaultValue(in context: ViewDimensions) -> CGFloat {
             bottomValue = context[.bottom]
@@ -24,6 +27,7 @@ extension VerticalAlignment {
         }
     }
     
+    /// custom center alignment
     private enum CustomCenterAlignment: AlignmentID {
         static func defaultValue(in context: ViewDimensions) -> CGFloat {
             centerValue = context[VerticalAlignment.center]
