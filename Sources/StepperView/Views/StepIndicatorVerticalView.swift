@@ -7,23 +7,36 @@
 
 import SwiftUI
 
+/// A Step Indications View in `vertical`  direction
+///
+/// creates step indicator view either in `vertical` mode
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     //vertical mode elements
+    /// state variable to hold  height of line to render  `View`  when values changes
     @State private var lineHeight:CGFloat = 0
+    /// state variable to hold x-axis position of line to render  `View`  when values changes
     @State private var lineXPosition:CGFloat = 0
+    /// state variable to hold each step heights to render  `View`  when values changes
     @State private var columnHeights: [Int: CGFloat] = [:]
+    /// state variable to hold y-axis position  to render  `View`  when values changes
     @State private var lineYPosition: CGFloat = 0
     
     @Environment(\.pitStopOptions) var pitStopsOptions
     
     //constructor parameters
+    /// list  of `View's` to display step indictor content
     var cells:[Cell]
+    /// list of alignments to display the step indicator position  can be `top` or  `center` or  `bottom`
     var alignments:[StepperAlignment]
+    /// step indicator type can be a `Circle` , `Image` or `Custom`
     var indicationType: [StepperIndicationType<AnyView>]
+    /// options to customize  `width ` , `Color` of the line
     var lineOptions:StepperLineOptions
+    /// spacing between each of the step indicators
     var verticalSpacing: CGFloat
     
+    /// initilazes cells, alignments , indicators and spacing
     init(cells: [Cell], alignments: [StepperAlignment] = [], indicationType: [StepperIndicationType<AnyView>],
          lineOptions: StepperLineOptions = .defaults, verticalSpacing:CGFloat = 30.0) {
            self.cells = cells
@@ -33,6 +46,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
            self.verticalSpacing = verticalSpacing
     }
     
+    /// Provides the content and behavior of this view.
     var body: some View {
         HStack {
             //line view to host indicator to point
@@ -87,25 +101,26 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
 // MARK: - Helper methods to constrcut step indicator vertical view.
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension StepIndicatorVerticalView {
-    // Calculate intermediate heights of the view.
+
+    /// Calculate intermediate heights of the view.
     /// - Parameter value: dictionary to hold the index and height values.
     private func calculateIntermediateHeights( value: [Int:CGFloat] ) {
         self.columnHeights = value
         print("Intermediate Divider Height \(self.columnHeights)")
     }
     
-    // returns the first alignemnt from the array else .center by default
+    /// returns the first alignment from array else `.center`  by default
     private var firstAlignment: StepperAlignment {
         return self.alignments.first ?? .center
     }
     
-    // returns the last alignemnt from the array else .center by default
-    public var lastAlignment: StepperAlignment {
+    /// returns the last alignment from array else  `center`  by default
+    private var lastAlignment: StepperAlignment {
         return self.alignments.last ?? .center
     }
     
-    // Calculates the height based on first and last alignments.
-    func calculateHeightsForFirstAndLastAlignments() -> CGFloat {
+    /// Calculates the height based on first and last alignments.
+    private func calculateHeightsForFirstAndLastAlignments() -> CGFloat {
         if self.alignments.count > 1 {
             switch (firstAlignment, lastAlignment) {
                 //Reduce 3 times to get actual height
@@ -132,8 +147,12 @@ extension StepIndicatorVerticalView {
        }
     }
     
-    // draws pitstops for each of the step indicators.
-    func drawAnchors(proxy: GeometryProxy, value: Anchor<CGRect>, pitStopIndex: Int) -> some View {
+    /// draws pitstops for each of the step indicators.
+    /// - Parameters:
+    ///   - proxy: co-ordinates values of step indicator
+    ///   - value: bound values of step indicator
+    ///   - pitStopIndex: Index position of step indicator
+    private func drawAnchors(proxy: GeometryProxy, value: Anchor<CGRect>, pitStopIndex: Int) -> some View {
         guard self.pitStopsOptions.indices.contains(pitStopIndex) else {
           return EmptyView().eraseToAnyView()
         }
@@ -143,23 +162,5 @@ extension StepIndicatorVerticalView {
                            lineXPosition: $lineXPosition,
                            pitStop: self.pitStopsOptions[pitStopIndex].view, lineOptions:self.pitStopsOptions[pitStopIndex].lineOptions)
             .eraseToAnyView()
-    }
-}
-
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct OptionalView<Value, Content>: View where Content: View {
-    var content: (Value) -> Content
-    var value: Value
-    
-    init?(_ value: Value?, @ViewBuilder content: @escaping (Value) -> Content) {
-        guard let value = value else {
-            return nil
-        }
-        self.value = value
-        self.content = content
-    }
-    
-    var body: some View {
-        content(value)
     }
 }

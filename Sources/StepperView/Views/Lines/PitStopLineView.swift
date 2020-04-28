@@ -10,12 +10,17 @@ import SwiftUI
 // MARK: - PitStop Line View
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopLineView: View {
+    /// options for customizing pitstop line with either  `defaults` or  custom `width`  and `Color`
     var options:PitStopLineOptions
+    /// co-ordinates values of step indicator
     var proxy:GeometryProxy
+    /// bound values of step indicator
     var value:Anchor<CGRect>
     
+    /// binding variable to hold width of the `View`
     @Binding var width:CGFloat
     
+    /// provides the content and behavior of this view.
     var body: some View {
         switch options {
         case .defaults:

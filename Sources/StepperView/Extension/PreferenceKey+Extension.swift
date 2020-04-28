@@ -8,10 +8,11 @@
 import Foundation
 import SwiftUI
 
-// MARK: - Collects height of all the cells, with reduce takes the maximum value for the given key
+/// Collects height of all the cells, with reduce takes the maximum value for the given key
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct HeightPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
+    /// provide a default value for custom dependency
     static let defaultValue: Value = [:]
     
     static func reduce(value: inout Value, nextValue: () -> Value) {
@@ -19,10 +20,11 @@ struct HeightPreference: PreferenceKey {
     }
 }
 
-// MARK: - Collects height of all the cells, with reduce takes the maximum value for the given key
+/// Collects height of all the cells, with reduce takes the maximum value for the given key
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct VerticalHeightPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
+    /// provide a default value for custom dependency
     static let defaultValue: Value = [:]
     
     static func reduce(value: inout Value, nextValue: () -> Value) {
@@ -30,22 +32,23 @@ struct VerticalHeightPreference: PreferenceKey {
     }
 }
 
-// MARK: - Collects width of all the cells, with reduce takes the maximum value for the given key
+/// Collects width of all the cells, with reduce takes the maximum value for the given key
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct WidthPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
+    /// provide a default value for custom dependency
     static let defaultValue: Value = [:]
     static func reduce(value: inout Value, nextValue: () -> Value) {
-       //value = nextValue()
-       value.merge(nextValue(), uniquingKeysWith: max)
+        value.merge(nextValue(), uniquingKeysWith: max)
     }
 }
 
-// MARK: - Collects bound, center coordinates and pass layout data to it's parent View
+/// Collects bound, center coordinates and pass layout data to it's parent View
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct BoundsPreferenceKey: PreferenceKey {
     public typealias Value = Anchor<CGRect>?
     
+    /// provide a default value for custom dependency
     public static var defaultValue: Value = nil
     
     public static func reduce(value: inout Value, nextValue: () -> Value) {
@@ -53,10 +56,11 @@ public struct BoundsPreferenceKey: PreferenceKey {
     }
 }
 
-// MARK: - CGRect Preference Key
+/// Preference Key for  `CGRect`
 struct CGRectPreferenceKey: PreferenceKey {
     typealias Value = CGRectData?
     
+    /// provide a default value for custom dependency
     static var defaultValue: Value?
     
     static func reduce(value: inout Value, nextValue: () -> Value) {
@@ -66,7 +70,7 @@ struct CGRectPreferenceKey: PreferenceKey {
     }
 }
 
-// MARK: - placeholder struct to hold CGRect data.
+/// placeholder struct to hold CGRect data.
 struct CGRectData: Equatable, Identifiable {
     let id = UUID()
     var rect: CGRect
@@ -76,8 +80,9 @@ struct CGRectData: Equatable, Identifiable {
     }
 }
 
-// MARK: - Width Key
+/// Preference Key for  `width`
 struct WidthKey: PreferenceKey {
+    /// provide a default value for custom dependency
     static let defaultValue: CGFloat? = nil
     static func reduce(value: inout CGFloat?,
                        nextValue: () -> CGFloat?) {
@@ -85,8 +90,9 @@ struct WidthKey: PreferenceKey {
     }
 }
 
-// MARK: - Height Key
+/// Preference Key for  `height`
 struct HeightKey: PreferenceKey {
+    /// provide a default value for custom dependency
     static let defaultValue: CGFloat? = nil
     static func reduce(value: inout CGFloat?,
                        nextValue: () -> CGFloat?) {
