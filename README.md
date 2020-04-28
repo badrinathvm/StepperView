@@ -46,7 +46,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.2.0'
+pod 'StepperView','~> 1.3.0'
 ```
 
 ## Swift Package Manager
@@ -54,7 +54,7 @@ pod 'StepperView','~> 1.2.0'
 StepperView is available through Swift Package Manager. To install it, simply add the following dependency to your Package.swift
 
 ```ruby
-.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.2.0")
+.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.3.0")
 ```
 
 ## Usage
@@ -75,7 +75,7 @@ let indicationTypes = [StepperIndicationType.custom(NumberedCircleView(text: "1"
                         .custom(NumberedCircleView(text: "3")),
                         .custom(NumberedCircleView(text: "4")),
                         .custom(NumberedCircleView(text: "5"))]
-    
+                        
 var body: some View {
      var body: some View {
          StepperView()
@@ -129,4 +129,3 @@ Follow and contact me on <a href="https://twitter.com/badrivm">Twitter</a> or <a
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
-
