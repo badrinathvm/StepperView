@@ -1,12 +1,16 @@
 # StepperView
 
-#### SwiftUI iOS component for Step Indications.
+#### SwiftUI iOS component for Step Indications
 
 [![CI Status](https://img.shields.io/travis/badrinathvm/StepperView.svg?style=flat)](https://travis-ci.org/badrinathvm/StepperView)
 [![Version](https://img.shields.io/cocoapods/v/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 [![License](https://img.shields.io/cocoapods/l/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 [![Platform](https://img.shields.io/badge/platform-ios-orange)](https://cocoapods.org/pods/StepperView)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-orange)](https://swift.org/package-manager/)
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" width="250" alt="StepperView"/>
+</p>
 
 <table>
   <tr>
@@ -19,7 +23,7 @@
 ## Usecase
 <table align= "center">
  <tr>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"     alt="example1" align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"  alt="example1"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
  </tr>
@@ -83,18 +87,31 @@ var body: some View {
 }
 ```
 ## Methods ( View Modifiers )
+
 ```ruby
-.addSteps(_ steps: [View]) : array of views to be rendered closer to indicator
+.addSteps(_ steps: [View]) : 
+          1. list of views to be closer to indicator
 
-.alignments(_ alignments: [StepperAlignment]) : optional defaults to .center, available with custom options either .top, .center, .bottom sections
-
-.indicatorTypes(_ indicators:[StepperIndicationType]): enum provides the options to use .circle(color, width) , .image(Image, width) , .custom(AnyView)
-
-.lineOptions(_ options: StepperLineOptions): color, thickness line customization.
-
-.spacing(_ value: CGFloat): spacing between each of the step views.
-
-.stepIndicatorMode(_ mode: StepperMode): vertical, horizontal doisplay modes.
+.alignments(_ alignments: [StepperAlignment])
+          1. optional modifier 
+          2. defaults to .center, available with custom options either .top, .center, .bottom
+          
+.indicatorTypes(_ indicators:[StepperIndicationType]): 
+          1. modifier to customize the step indications
+          2. provides enum with cases .circle(color, width), .image(Image, width) , .custom(AnyView)
+          
+.lineOptions(_ options: StepperLineOptions): 
+          1. line customization `Color` , `width`
+          
+.spacing(_ value: CGFloat): 
+          1. spacing between each of the step views either vertically horizontally
+          
+.stepIndicatorMode(_ mode: StepperMode): 
+          1. Step Indicator display modes either vertical, horizontal
+          
+.addPitStops(_ steps: [PitStopStep])
+          1. optional modifier
+          2. `PitStopStep` - structure that provides option to provide `View` and line customizations
 ```
 
 <p>

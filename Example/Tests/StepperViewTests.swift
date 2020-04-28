@@ -145,11 +145,11 @@ class StepperViewTests: XCTestCase {
                 .custom(CircledIconView(image: Image("book"), width: 40,
                                                             strokeColor: Colors.gray(.darkSilver).rawValue).eraseToAnyView())]
         let pitStops = [
-            PitStopSteps(view: TextView(text: "Pitstop 1").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.teal.rawValue)),
-            PitStopSteps(view: TextView(text:"Pitstop 2").eraseToAnyView(),
+            PitStopStep(view: TextView(text: "Pitstop 1").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.teal.rawValue)),
+            PitStopStep(view: TextView(text:"Pitstop 2").eraseToAnyView(),
                         lineOptions: PitStopLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))),
-            PitStopSteps(view: TextView(text:"Pitstop 3").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Color.red)),
-            PitStopSteps(view: TextView(text:"References").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.gray(.darkSilver).rawValue))]
+            PitStopStep(view: TextView(text:"Pitstop 3").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Color.red)),
+            PitStopStep(view: TextView(text:"References").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.gray(.darkSilver).rawValue))]
         
        let stepperView = StepperView()
                             .addSteps(steps)

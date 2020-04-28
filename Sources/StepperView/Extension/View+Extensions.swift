@@ -150,7 +150,7 @@ public extension View {
 
     /// Custom behavior for pitstops
     /// - Parameter steps: list of pitstop step views
-    func addPitStops(_ steps: [PitStopSteps]) -> some View {
+    func addPitStops(_ steps: [PitStopStep]) -> some View {
         self.environment(\EnvironmentValues.pitStopOptions, steps)
     }
 }

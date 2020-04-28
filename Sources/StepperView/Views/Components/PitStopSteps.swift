@@ -10,7 +10,7 @@ import SwiftUI
 
 /// Pitstop view and custom options
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-public struct PitStopSteps: Hashable {
+public struct PitStopStep: Hashable {
     /// placeholder  for `View` to render
     public var view:AnyView
     /// options to customise pitstop line for `width` and `Color`
@@ -35,7 +35,7 @@ public struct PitStopSteps: Hashable {
     /// - Parameters:
     ///   - lhs: lhs variable for comparison
     ///   - rhs: lhs variable for comparison
-    public static func == (lhs: PitStopSteps, rhs: PitStopSteps) -> Bool {
+    public static func == (lhs: PitStopStep, rhs: PitStopStep) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }
 }
