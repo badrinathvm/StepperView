@@ -8,8 +8,9 @@
 [![Platform](https://img.shields.io/badge/platform-ios-orange)](https://cocoapods.org/pods/StepperView)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-orange)](https://swift.org/package-manager/)
 
+<br/>
 <p align="center">
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" width="250" alt="StepperView"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" height="450" alt="StepperView"/>
 </p>
 
 <table>
