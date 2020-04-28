@@ -72,9 +72,15 @@ struct CGRectPreferenceKey: PreferenceKey {
 
 /// placeholder struct to hold CGRect data.
 struct CGRectData: Equatable, Identifiable {
+    /// placeholder to store id
     let id = UUID()
+    /// placeholder to CGRect data
     var rect: CGRect
     
+    /// equatable override
+    /// - Parameters:
+    ///   - lhs: lhs variable for comparison
+    ///   - rhs: lhs variable for comparison
     static func == (lhs: CGRectData, rhs: CGRectData) -> Bool {
         lhs.id == rhs.id
     }

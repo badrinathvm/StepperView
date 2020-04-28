@@ -7,29 +7,7 @@
 
 import SwiftUI
 
-// MARK: - Line Options for Step Customization
-/**
-   Options for customizing pitstop line with either  `defaults` or  custom `width`  and `Color`
 
-   ````
-   case defaults
-   case custom(CGFloat, Color)
-   ````
-*/
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-public enum PitStopLineOptions {
-    case defaults
-    case custom(CGFloat, Color)
-    
-    func hash(into hasher: inout Hasher) {
-        switch self {
-        case .defaults: hasher.combine(-1)
-        default: hasher.combine(-2)
-        }
-    }
-}
-
-// MARK: - PitStop View
 /// A View for setting up a pitstop for eg: line with a `circle`  or  `custom` view
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopView<PitStop:View>: View {
@@ -80,5 +58,30 @@ struct PitStopView<PitStop:View>: View {
             return color
         }
         return Color.gray.opacity(0.2)
+    }
+}
+
+/**
+   Options for customizing pitstop line with either  `defaults` or  custom `width`  and `Color`
+
+   ````
+   case defaults
+   case custom(CGFloat, Color)
+   ````
+*/
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+public enum PitStopLineOptions {
+     /// default line option
+    case defaults
+    /// custom line option with thickness  and  `Color`
+    case custom(CGFloat, Color)
+    
+    /// to generate hash
+    /// - Parameter hasher: hasger variable
+    func hash(into hasher: inout Hasher) {
+        switch self {
+        case .defaults: hasher.combine(-1)
+        default: hasher.combine(-2)
+        }
     }
 }

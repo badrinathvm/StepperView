@@ -8,84 +8,148 @@
 import Foundation
 import SwiftUI
 
+/// Color palette helper accessing colors and it's variations.
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum Colors {
+    /// red and it's associated variations
     case red(RedSubType)
+    /// green and it's associated variations
     case green(GreenSubType)
+    /// blue and it's associated variations
     case blue(BlueSubType)
+    /// gray and it's associated variations
     case gray(GraySubType)
+    /// teal color
     case teal
+    /// lavender color
     case lavendar
+    /// orange color
     case orange
+    /// black color
     case black
+    /// yellow and it's associated variations
     case yellow(YellowSubType)
+    /// cyan color
     case cyan
+    /// ploar color
     case polar
     
+    /// Color palette for all gray variations
     public enum GraySubType {
+        /// dark gray
         case dark
+        /// darker gray
         case darker
+        /// medium gray
         case medium
+        /// dim gray
         case dim
+        /// light gray
         case light
+        /// lighter gray
         case lighter
+        /// lightest gray
         case lightest
+        /// silver version of gray
         case silver
+        /// medium silver
         case mediumSilver
+        /// dark silver
         case darkSilver
+        /// pale gray
         case pale
+        /// battleShip gray
         case battleShip
+        /// slate gray
         case slate
+        /// charcoal gray
         case charcoal
+        /// bright gray
         case bright
+        /// pale sky gray
         case paleSky
+        /// iron gray
         case iron
+        /// cod gray
         case cod
     }
     
+    /// Color palette for all green variations
     public enum GreenSubType {
+        /// normal green
         case normal
+        /// dark green
         case dark
+        /// light green
         case light
+        /// lighter green
         case lighter
+        /// medium green
         case medium
+        /// fair green
         case fair
+        /// kiwi green
         case kiwi
+        /// dark lime green
         case darkLime
+        /// kermit green
         case kermit
+        /// teal green
         case teal
+        /// light teal green
         case lightTeal
+        /// lighter teal green
         case lighterTeal
+        /// regular green
         case regular
     }
     
+    /// Color palette for all blue variations
     public enum BlueSubType {
+        /// sky blue
         case sky
+        /// light sky blue
         case lightSky
+        /// tiffany blue
         case tiffany
+        /// aqua blue
         case aqua
+        /// aqua marine blue
         case aquaMarine
+        /// turquoise blue
         case turquoise
+        /// teal blue
         case teal
+        /// sea blue
         case sea
+        /// bright blue
         case bright
     }
     
+    /// Color palette for all yellow variations
     public enum YellowSubType {
+        /// regular yellow
         case regular
+        /// sunflower yellow
         case sunFlower
     }
     
+    /// Color palette for all red variations
     public enum RedSubType {
+        /// normal red
         case normal
+        /// light red
         case light
     }
 }
 
+/// Vvsualize Color palette for each color and it's sub type variation
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension Colors {
+    /// alias to `Color`
     public typealias RawValue = Color
     
+    /// returns the desired color based on the switch case matching criteria
     public var rawValue: RawValue {
         switch self {
         case .red(let variation):
