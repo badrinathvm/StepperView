@@ -29,6 +29,8 @@ Please let us know if you have tested your PR and if we need to reproduce the is
 
 ## Checklist:
 
+ For checklist items not applicable, mention NA in front of it with some comment if applicable.
+
  - [ ] My code follows the style guidelines of this project
  - [ ] I have performed a self-review of my own code
  - [ ] Add comments to code particularly in hard-to-understand areas
