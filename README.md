@@ -119,6 +119,10 @@ var body: some View {
     <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">Refer Example for more details on usage of StepperView</a>
 </p>
 
+## Mentions
+
+<a href="http://weekly.swiftwithmajid.com/issues/swiftui-weekly-issue-5-238795">SwiftUI Weekly #5</a>
+
 ## Author
 
 Badarinath Venkatnarayansetty
