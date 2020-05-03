@@ -119,6 +119,12 @@ var body: some View {
     <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">Refer Example for more details on usage of StepperView</a>
 </p>
 
+<h3>
+  <g-emoji class="g-emoji" alias="books" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png">📚</g-emoji> Documentation
+</h3>
+
+<a id="documentation" class="anchor" aria-hidden="true" href="https://badrinathvm.github.io/StepperView/">StepperView Reference</a>
+
 ## Mentions
 
 <a href="http://weekly.swiftwithmajid.com/issues/swiftui-weekly-issue-5-238795">SwiftUI Weekly #5</a>
