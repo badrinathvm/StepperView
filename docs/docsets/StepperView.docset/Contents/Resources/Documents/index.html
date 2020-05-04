@@ -180,7 +180,8 @@
 <a href="https://cocoapods.org/pods/StepperView"><img src="https://img.shields.io/cocoapods/v/StepperView.svg?style=flat" alt="Version"></a>
 <a href="https://cocoapods.org/pods/StepperView"><img src="https://img.shields.io/cocoapods/l/StepperView.svg?style=flat" alt="License"></a>
 <a href="https://cocoapods.org/pods/StepperView"><img src="https://img.shields.io/badge/platform-ios-orange" alt="Platform"></a>
-<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-orange" alt="Swift Package Manager compatible"></a></p>
+<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-orange" alt="Swift Package Manager compatible"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-orange" alt="Carthage compatible"></a></p>
 
 <p><br/></p>
 
@@ -216,15 +217,23 @@
 <li>CocoaPods 1.6.1+</li>
 </ul>
 <h2 id='installation' class='heading'>Installation</h2>
+<h2 id='cocoapods' class='heading'>CocoaPods</h2>
 
 <p>StepperView is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
 it, simply add the following line to your Podfile.</p>
 <pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'StepperView'</span><span class="p">,</span><span class="s1">'~&gt; 1.3.0'</span>
 </code></pre>
+<h2 id='carthage' class='heading'>Carthage</h2>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:</p>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"badrinathvm/stepperView"</span> <span class="o">==</span> <span class="mi">1</span><span class="o">.</span><span class="mi">3</span><span class="o">.</span><span class="mi">0</span>
+</code></pre>
 <h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
 
-<p>StepperView is available through Swift Package Manager. To install it, simply add the following dependency to your Package.swift</p>
-<pre class="highlight ruby"><code><span class="p">.</span><span class="nf">package</span><span class="p">(</span><span class="ss">url: </span><span class="s2">"https://github.com/badrinathvm/StepperView.git"</span><span class="p">,</span> <span class="ss">from: </span><span class="s2">"1.3.0"</span><span class="p">)</span>
+<p>StepperView is available through <a href="https://swift.org/package-manager/">Swift Package Manager</a>. To install it, simply add it to the <code>dependencies</code> of your <code>Package.swift</code></p>
+<pre class="highlight ruby"><code><span class="ss">dependencies: </span><span class="p">[</span>
+    <span class="p">.</span><span class="nf">package</span><span class="p">(</span><span class="ss">url: </span><span class="s2">"https://github.com/badrinathvm/StepperView.git"</span><span class="p">,</span> <span class="ss">from: </span><span class="s2">"1.3.0"</span><span class="p">)</span>
+<span class="p">]</span>
 </code></pre>
 <h2 id='usage' class='heading'>Usage</h2>
 <pre class="highlight plaintext"><code>import StepperView
@@ -277,12 +286,21 @@ var body: some View {
 
 <span class="p">.</span><span class="nf">addPitStops</span><span class="p">(</span><span class="n">_</span> <span class="ss">steps: </span><span class="p">[</span><span class="no">PitStopStep</span><span class="p">])</span>
           <span class="mi">1</span><span class="p">.</span> <span class="nf">optional</span> <span class="n">modifier</span>
-          <span class="mi">2</span><span class="p">.</span> <span class="nf">`</span><span class="no">PitStopStep</span><span class="sb">` - structure that provides option to provide `</span><span class="no">View</span><span class="sb">` and line customizations
+          <span class="mi">2</span><span class="p">.</span> <span class="nf">`</span><span class="no">PitStopStep</span><span class="sb">` - structure that provides option to provide `</span><span class="no">View</span><span class="sb">`, line customizations
 </span></code></pre>
 
 <p>
     <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">Refer Example for more details on usage of StepperView</a>
 </p>
+
+<h3>
+  <g-emoji class="g-emoji" alias="books" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png">📚</g-emoji> Documentation
+</h3>
+
+<p><a id="documentation" class="anchor" aria-hidden="true" href="https://badrinathvm.github.io/StepperView/">StepperView Reference</a></p>
+<h2 id='mentions' class='heading'>Mentions</h2>
+
+<p><a href="http://weekly.swiftwithmajid.com/issues/swiftui-weekly-issue-5-238795">SwiftUI Weekly #5</a></p>
 <h2 id='author' class='heading'>Author</h2>
 
 <p>Badarinath Venkatnarayansetty</p>
@@ -296,7 +314,7 @@ var body: some View {
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2020-04-28)</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2020-05-03)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

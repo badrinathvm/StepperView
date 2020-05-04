@@ -7,6 +7,7 @@
 [![License](https://img.shields.io/cocoapods/l/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 [![Platform](https://img.shields.io/badge/platform-ios-orange)](https://cocoapods.org/pods/StepperView)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-orange)](https://swift.org/package-manager/)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-orange)](https://github.com/Carthage/Carthage)
 
 <br/>
 <p align="center">
@@ -42,19 +43,31 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
+## CocoaPods
+
 StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.3.0'
+pod 'StepperView','~> 1.3.1'
+```
+
+## Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:
+
+```ruby
+github "badrinathvm/stepperView" == 1.3.1
 ```
 
 ## Swift Package Manager
 
-StepperView is available through Swift Package Manager. To install it, simply add the following dependency to your Package.swift
+StepperView is available through [Swift Package Manager](https://swift.org/package-manager/). To install it, simply add it to the `dependencies` of your `Package.swift`
 
 ```ruby
-.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.3.0")
+dependencies: [
+    .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.3.1")
+]
 ```
 
 ## Usage
@@ -139,3 +152,4 @@ Follow and contact me on <a href="https://twitter.com/badrivm">Twitter</a> or <a
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
+
