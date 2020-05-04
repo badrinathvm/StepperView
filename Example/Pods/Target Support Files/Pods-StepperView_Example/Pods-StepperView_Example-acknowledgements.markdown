@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## StepperView
 
-Copyright (c) 2020 badrinathvm <Badarinath_Venkatnarayansetty@intuit.com>
+Copyright (c) 2020 Badarinath Venkatnarayansetty <badrinathvm@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
