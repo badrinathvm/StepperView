@@ -139,6 +139,7 @@ var body: some View {
 ## Mentions
 
 <a href="http://weekly.swiftwithmajid.com/issues/swiftui-weekly-issue-5-238795">SwiftUI Weekly #5</a><br>
+<a href="https://ios-goodies.com/post/617487329928626176/week-333">iOS Goodies #333</a><br>
 <a href="https://juanpe.github.io/About-SwiftUI/">About-SwiftUI Articles</a>
 
 
