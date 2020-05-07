@@ -32,6 +32,9 @@
  </tr>
 </table>
 
+## 📚 Documentation
+**[StepperView Reference](https://badrinathvm.github.io/StepperView/)**
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -132,12 +135,6 @@ var body: some View {
 <p>
     <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">Refer Example for more details on usage of StepperView</a>
 </p>
-
-<h3>
-  <g-emoji class="g-emoji" alias="books" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png">📚</g-emoji> Documentation
-</h3>
-
-<a id="documentation" class="anchor" aria-hidden="true" href="https://badrinathvm.github.io/StepperView/">StepperView Reference</a>
 
 ## Mentions
 
