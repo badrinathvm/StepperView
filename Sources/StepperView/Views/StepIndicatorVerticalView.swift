@@ -75,7 +75,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                         self.cells[index]
                             .heightPreference(column: index)
                     }.setAlignment(type: self.alignments[index])
-                        .offset(x: -Utils.offsetConstant)
+                        .offset(x: self.getOffset())
                 }
             }.verticalHeightPreference()
                 // Intermediate height of the Line View
@@ -162,5 +162,14 @@ extension StepIndicatorVerticalView {
                            lineXPosition: $lineXPosition,
                            pitStop: self.pitStopsOptions[pitStopIndex].view, lineOptions:self.pitStopsOptions[pitStopIndex].lineOptions)
             .eraseToAnyView()
+    }
+    
+    /// returns offset value to align the the line view
+    private func getOffset() -> CGFloat {
+       #if os(watchOS)
+            return -Utils.watchoffsetConstant
+        #else
+            return -Utils.offsetConstant
+        #endif
     }
 }

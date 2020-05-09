@@ -11,6 +11,7 @@ import Foundation
 import StepperView
 import SwiftUI
 
+/// Hosting Controller to embed SwiftUI view
 class HostingController: WKHostingController<WatchExampleView> {
     override var body: WatchExampleView {
         return WatchExampleView()
@@ -20,16 +21,17 @@ class HostingController: WKHostingController<WatchExampleView> {
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct WatchExampleView: View {
     
+    //step indications types
     let indicationTypes = [
-        StepperIndicationType.custom(NumberedCircleView(text: "1")),
-                        .custom(NumberedCircleView(text: "2")),
-       .custom(NumberedCircleView(text: "3")),
-       .custom(NumberedCircleView(text: "4"))]
+        StepperIndicationType.custom(NumberedCircleView(text: "1", color: Colors.blue(.lightSky).rawValue)),
+                        .custom(NumberedCircleView(text: "2", color: Colors.blue(.lightSky).rawValue)),
+       .custom(NumberedCircleView(text: "3", color: Colors.blue(.lightSky).rawValue)),
+       .custom(NumberedCircleView(text: "4", color: Colors.blue(.lightSky).rawValue))]
     
-    let set1 = [TextView(text:"Approval"),
-                   TextView(text:"Processing"),
-                   TextView(text:"Shipping"),
-                   TextView(text:"Tracking")]
+    let set1 = [TextView(text:"Approval", font: Font.system(size: 14, weight: Font.Weight.medium)),
+                   TextView(text:"Processing", font:Font.system(size: 14, weight: Font.Weight.medium)),
+                   TextView(text:"Shipping", font:Font.system(size: 14, weight: Font.Weight.medium)),
+                   TextView(text:"Tracking", font:Font.system(size: 14, weight: Font.Weight.medium))]
     
     var body: some View {
         ScrollView(Axis.Set.vertical, showsIndicators: true) {
@@ -38,8 +40,8 @@ struct WatchExampleView: View {
                    .indicators(self.indicationTypes)
                    .stepIndicatorMode(StepperMode.vertical)
                    .spacing(30)
-                   .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-                   .padding(.leading, 30)
+                   .lineOptions(StepperLineOptions.custom(1, Colors.blue(.lightSky).rawValue))
+                   .padding(.leading, 10)
          }
     }
 }
