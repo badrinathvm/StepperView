@@ -7,6 +7,6 @@ before_install:
   - gem install cocoapods
   - gem install jazzy
   - pod repo update
-script: xcodebuild test -workspace Example/StepperView.xcworkspace -scheme StepperView-Example -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO -quiet
+script: xcodebuild test -workspace Example/StepperView.xcworkspace -scheme StepperView-Example -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO -quiet
 
 

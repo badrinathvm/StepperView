@@ -83,7 +83,11 @@ public extension View {
     
     /// Embeds the view in navigationView
     func embedINNavigationView() -> some View {
-        NavigationView { self }
+        #if os(iOS)
+         return NavigationView { self }
+        #else
+         return EmptyView()
+        #endif
     }
     
     /// Wrapper to  AnyView

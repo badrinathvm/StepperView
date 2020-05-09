@@ -11,3 +11,12 @@ target 'StepperView_Example' do
     pod 'SnapshotTesting', '~> 1.7.2', :inhibit_warnings => true
   end
 end
+
+
+target 'StepperView_Watch' do
+  pod 'StepperView', :path => '../'
+end
+
+target 'StepperView_Watch Extension' do
+  pod 'StepperView', :path => '../'
+end

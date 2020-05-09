@@ -1,6 +1,6 @@
 PODS:
   - SnapshotTesting (1.7.2)
-  - StepperView (1.3.0)
+  - StepperView (1.3.1)
 
 DEPENDENCIES:
   - SnapshotTesting (~> 1.7.2)
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SnapshotTesting: 8caa6661fea7c8019d5b46de77c16bab99c36c5c
-  StepperView: bd33ee6d29e2c80ba6515c9c78da2959640a8d95
+  StepperView: b08d5cd8590c5c140cc33a74f2fe68c45e74fe7b
 
-PODFILE CHECKSUM: f5a99c8518c38c24e820cc7e8f085cbe692e9c77
+PODFILE CHECKSUM: 8b713604471a4b42c3cfe96f708359ac25857036
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

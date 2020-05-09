@@ -33,7 +33,7 @@ public struct NumberedCircleView: View {
             .frame(width: width, height: width)
         .overlay(
             Circle()
-                .stroke(Colors.blue(.teal).rawValue, lineWidth: 1)
+                .stroke(color, lineWidth: 1)
                 .overlay(
                     Text(text)
                     .foregroundColor(color)
