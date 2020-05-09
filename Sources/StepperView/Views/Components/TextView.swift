@@ -28,6 +28,5 @@ public struct TextView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .fixedSize(horizontal: false, vertical: true)
             .lineLimit(nil)
-            .padding(.leading, 4)
     }
 }
