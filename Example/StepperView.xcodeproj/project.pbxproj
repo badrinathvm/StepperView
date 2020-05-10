@@ -10,12 +10,15 @@
 		1B4874B42467175200B253C6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4874B22467175200B253C6 /* Interface.storyboard */; };
 		1B4874B62467175300B253C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4874B52467175300B253C6 /* Assets.xcassets */; };
 		1B4874BD2467175400B253C6 /* StepperView_Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1B4874BC2467175400B253C6 /* StepperView_Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1B4874C22467175400B253C6 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4874C12467175400B253C6 /* HostingController.swift */; };
+		1B4874C22467175400B253C6 /* WatchHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4874C12467175400B253C6 /* WatchHostingController.swift */; };
 		1B4874C42467175400B253C6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4874C32467175400B253C6 /* ExtensionDelegate.swift */; };
 		1B4874C62467175400B253C6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4874C52467175400B253C6 /* NotificationController.swift */; };
 		1B4874C82467175400B253C6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4874C72467175400B253C6 /* ComplicationController.swift */; };
 		1B4874CA2467175400B253C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4874C92467175400B253C6 /* Assets.xcassets */; };
 		1B4874D02467175400B253C6 /* StepperView_Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1B4874B02467175200B253C6 /* StepperView_Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1B4874DB2467B56900B253C6 /* WatchExampleView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4874DA2467B56900B253C6 /* WatchExampleView1.swift */; };
+		1B4874DD2467B59400B253C6 /* WatchExampleView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4874DC2467B59400B253C6 /* WatchExampleView2.swift */; };
+		1B4874DF2467B70600B253C6 /* WatchExampleView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4874DE2467B70600B253C6 /* WatchExampleView3.swift */; };
 		1BA9B80C2447DCC8007A6BB9 /* ExampleView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9B80B2447DCC8007A6BB9 /* ExampleView5.swift */; };
 		1BD42F2624552D3F008D4DAB /* ExampleView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD42F2524552D3F008D4DAB /* ExampleView6.swift */; };
 		1BD7CB6C243FC0CE00F17698 /* ExampleView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6B243FC0CE00F17698 /* ExampleView3.swift */; };
@@ -100,13 +103,16 @@
 		1B4874B52467175300B253C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4874B72467175300B253C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4874BC2467175400B253C6 /* StepperView_Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StepperView_Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B4874C12467175400B253C6 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		1B4874C12467175400B253C6 /* WatchHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHostingController.swift; sourceTree = "<group>"; };
 		1B4874C32467175400B253C6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		1B4874C52467175400B253C6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		1B4874C72467175400B253C6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		1B4874C92467175400B253C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4874CB2467175400B253C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4874CC2467175400B253C6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1B4874DA2467B56900B253C6 /* WatchExampleView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExampleView1.swift; sourceTree = "<group>"; };
+		1B4874DC2467B59400B253C6 /* WatchExampleView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExampleView2.swift; sourceTree = "<group>"; };
+		1B4874DE2467B70600B253C6 /* WatchExampleView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExampleView3.swift; sourceTree = "<group>"; };
 		1BA9B80B2447DCC8007A6BB9 /* ExampleView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView5.swift; sourceTree = "<group>"; };
 		1BD42F2524552D3F008D4DAB /* ExampleView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView6.swift; sourceTree = "<group>"; };
 		1BD7CB6B243FC0CE00F17698 /* ExampleView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView3.swift; sourceTree = "<group>"; };
@@ -207,7 +213,8 @@
 		1B4874C02467175400B253C6 /* StepperView_Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1B4874C12467175400B253C6 /* HostingController.swift */,
+				1B4874D92467B55500B253C6 /* Views */,
+				1B4874C12467175400B253C6 /* WatchHostingController.swift */,
 				1B4874C32467175400B253C6 /* ExtensionDelegate.swift */,
 				1B4874C52467175400B253C6 /* NotificationController.swift */,
 				1B4874C72467175400B253C6 /* ComplicationController.swift */,
@@ -216,6 +223,16 @@
 				1B4874CC2467175400B253C6 /* PushNotificationPayload.apns */,
 			);
 			path = "StepperView_Watch Extension";
+			sourceTree = "<group>";
+		};
+		1B4874D92467B55500B253C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B4874DA2467B56900B253C6 /* WatchExampleView1.swift */,
+				1B4874DC2467B59400B253C6 /* WatchExampleView2.swift */,
+				1B4874DE2467B70600B253C6 /* WatchExampleView3.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1BD7CB68243F950A00F17698 /* SupportingViews */ = {
@@ -671,8 +688,11 @@
 			files = (
 				1B4874C62467175400B253C6 /* NotificationController.swift in Sources */,
 				1B4874C82467175400B253C6 /* ComplicationController.swift in Sources */,
+				1B4874DF2467B70600B253C6 /* WatchExampleView3.swift in Sources */,
 				1B4874C42467175400B253C6 /* ExtensionDelegate.swift in Sources */,
-				1B4874C22467175400B253C6 /* HostingController.swift in Sources */,
+				1B4874C22467175400B253C6 /* WatchHostingController.swift in Sources */,
+				1B4874DD2467B59400B253C6 /* WatchExampleView2.swift in Sources */,
+				1B4874DB2467B56900B253C6 /* WatchExampleView1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

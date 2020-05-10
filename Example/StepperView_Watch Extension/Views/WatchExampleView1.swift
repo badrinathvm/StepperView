@@ -1,25 +1,16 @@
 //
-//  InterfaceController.swift
+//  WatchExampleView1.swift
 //  StepperView_Watch Extension
 //
 //  Created by Venkatnarayansetty, Badarinath on 5/9/20.
 //  Copyright © 2020 CocoaPods. All rights reserved.
 //
 
-import WatchKit
-import Foundation
-import StepperView
 import SwiftUI
-
-/// Hosting Controller to embed SwiftUI view
-class HostingController: WKHostingController<WatchExampleView> {
-    override var body: WatchExampleView {
-        return WatchExampleView()
-    }
-}
+import StepperView
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct WatchExampleView: View {
+struct WatchExampleView1: View {
     
     //step indications types
     let indicationTypes = [
