@@ -24,13 +24,19 @@
 </table>
 
 ## Usecase
-<table align= "center">
+<table>
  <tr>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"  alt="example1"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
  </tr>
 </table>
+
+## Apple Watch Support
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_Combined.png" width="500"  alt="watch_stepperView" align="center">
+ </p>
 
 ## 📚 Documentation
 **[StepperView Reference](https://badrinathvm.github.io/StepperView/)**
@@ -132,9 +138,9 @@ var body: some View {
           2. `PitStopStep` - structure that provides option to provide `View`, line customizations
 ```
 
-<p>
-    <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">Refer Example for more details on usage of StepperView</a>
-</p>
+## More Examples
+   <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">iOS Usecases</a><br>
+   <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView_Watch%20Extension">watchOS Usecases</a>
 
 ## Mentions
 
@@ -156,4 +162,3 @@ Follow and contact me on <a href="https://twitter.com/badrivm">Twitter</a> or <a
 ## License
 
 StepperView is available under the MIT license. See the LICENSE file for more info.
-
