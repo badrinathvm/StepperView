@@ -6,10 +6,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
-        <!--Hosting Controller-->
+        <!--Watch Hosting Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="HostingController" customModule="StepperView_Watch_Extension"/>
+                <controller id="AgC-eL-Hgc" customClass="WatchHostingController" customModule="StepperView_Watch_Extension"/>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>

@@ -18,6 +18,8 @@ public struct NumberedCircleView: View {
     public var width:CGFloat
     /// color of the step indicator
     public var color:Color
+    /// detect the color scheme i.e., light or dark mode
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     ///initilazes `text` , `width`  and  `color`
     public init(text:String, width:CGFloat = 28.0, color: Color = Colors.teal.rawValue) {
@@ -29,7 +31,7 @@ public struct NumberedCircleView: View {
     /// provides the content and behavior of this view.
     public var body: some View {
         Circle()
-            .foregroundColor(Color.white)
+            .foregroundColor(colorScheme == .light ? Color.white : Color.black)
             .frame(width: width, height: width)
         .overlay(
             Circle()
