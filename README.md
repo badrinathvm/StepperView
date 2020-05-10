@@ -23,6 +23,12 @@
   </tr>
 </table>
 
+## Apple Watch Support
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_Combined.png" width="500"  alt="watch_stepperView" align="center">
+</p>
+
 ## Usecase
 <table>
  <tr>
@@ -31,12 +37,6 @@
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
  </tr>
 </table>
-
-## Apple Watch Support
-
-<p align="center">
-    <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_Combined.png" width="500"  alt="watch_stepperView" align="center">
- </p>
 
 ## 📚 Documentation
 **[StepperView Reference](https://badrinathvm.github.io/StepperView/)**
