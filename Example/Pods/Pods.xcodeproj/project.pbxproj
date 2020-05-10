@@ -8,37 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		01757E29DF92738C1D5D0528F1EB4824 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912642063EA0830CFF13B31BF711D13 /* View.swift */; };
-		03E4DBAC06FB7F008264F85E687F9B51 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B747218A145097FB28843B8C6A8509 /* TextView.swift */; };
+		03E4DBAC06FB7F008264F85E687F9B51 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6936067A766008A87D96AD10EE23C69 /* TextView.swift */; };
 		0B8E76C9B6DBEB82C16F53D47E3D938B /* Pods-StepperView_Watch Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E753134DBAC9E58D31D4D4950BA6E89 /* Pods-StepperView_Watch Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11F2134521037184F745C9010217B501 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321EEBF8992813520D43041AF4164EA /* Description.swift */; };
-		14160D4A17E15B79D9B1D08A3075A259 /* PitStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47FC149CF575352319A301703D79F5 /* PitStopView.swift */; };
+		14160D4A17E15B79D9B1D08A3075A259 /* PitStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA87A2E0A0991E58DE911B67F14E2B /* PitStopView.swift */; };
 		14CC16A84D0558FF9DC6927E1BA82F02 /* Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5CB9BA70CE2A0FB3E198A4FB9A5437 /* Any.swift */; };
-		1613EF41826965E1DC7E2B1B7E06AC6B /* PitStopSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383F3E09FF9BFCFD042268922320579 /* PitStopSteps.swift */; };
-		169AC4826AD1F662E9B1C1EB8B6CA34C /* StepperView-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3090ABD5CC6227620BC6FAB88A5828C /* StepperView-iOS-dummy.m */; };
-		17A7B883E6AD4C7B94D0A9EAEE4D69D5 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005096B1AC7758FCE71AAB06EC2EFDA8 /* IndicatorView.swift */; };
-		17BCC45B1737A1A0BDB3A781908C0C14 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC669ECAAEC933A7AD7E63E5A288DE25 /* Colors+Extension.swift */; };
+		1613EF41826965E1DC7E2B1B7E06AC6B /* PitStopSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2269BE6183C2BDE3F477C90A57C03F /* PitStopSteps.swift */; };
+		169AC4826AD1F662E9B1C1EB8B6CA34C /* StepperView-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CAB5E2D4217ADB99C2D2545667F5A9 /* StepperView-iOS-dummy.m */; };
+		17A7B883E6AD4C7B94D0A9EAEE4D69D5 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE531E4B79705DA45A057D1A3CE290 /* IndicatorView.swift */; };
+		17BCC45B1737A1A0BDB3A781908C0C14 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F58D5B9352CC10E6CDEA242D34133C /* Colors+Extension.swift */; };
 		18ED84EFAF015095FCCF61A8E494F325 /* AssertSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DFDE88834F7E40014E803B6B644499 /* AssertSnapshot.swift */; };
 		1A1F20E176923FF03A0EAEA886703719 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34051EC87A66DF65C7B3D8627594429 /* NSView.swift */; };
 		1D991DC78F8F9BAF7FA5A4D28B11349A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573A7972CACA0CBB42B5D9EBE39B8F26 /* Foundation.framework */; };
-		2173D347DC98555CD7DCCCFB521DC7A5 /* PreferenceKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD11C557D390D82F778D70456431841 /* PreferenceKey+Extension.swift */; };
+		2173D347DC98555CD7DCCCFB521DC7A5 /* PreferenceKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEC9B26D7A9084ACCC25A0B8136B4FE /* PreferenceKey+Extension.swift */; };
 		2371CFDF095282B1D6935C36C81E46FC /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D19BF7BAEB7DA2481EF41D28AFEFD /* UIImage.swift */; };
 		23B3D1B39D273F7B43BA45F255EDE5C5 /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F974148746ADF47725F16E8AE8D554F /* CaseIterable.swift */; };
-		25F35320050FC7B163D7D078812BE944 /* VerticalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBFBCD278A07AEB39040784B5749900 /* VerticalLineView.swift */; };
+		25F35320050FC7B163D7D078812BE944 /* VerticalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C73D723EE01EE21B0990E99654362 /* VerticalLineView.swift */; };
 		29F37DB8A1899894CA87E8E8381E2C11 /* NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9C38ACEC8EF6779198630A964BC9E8 /* NSViewController.swift */; };
 		2A09946556A0739B5C229E3F7608BBC6 /* Pods-StepperView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C34891961FC441E1A021D5CE301AB7 /* Pods-StepperView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B006BBB09919BA8ED743F2185D6C6C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573A7972CACA0CBB42B5D9EBE39B8F26 /* Foundation.framework */; };
-		2C29103A7EE1849EDD8BBCA8D8E10B3C /* VerticalAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9B7DA813C51B0CD399EEA7923DF356 /* VerticalAlignment+Extension.swift */; };
+		2C29103A7EE1849EDD8BBCA8D8E10B3C /* VerticalAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783174AE3DB94E5C0F20DB0BD9C4FC4C /* VerticalAlignment+Extension.swift */; };
 		2D877591CA97ED2DEFD12460A66E8E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F1E3501EE0EE229AFC92FE011CA6A4 /* Foundation.framework */; };
-		333E868E352BA91AFF824D456A77B810 /* StepIndicatorVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8C737963DEEA8659877942AE2E072 /* StepIndicatorVerticalView.swift */; };
+		333E868E352BA91AFF824D456A77B810 /* StepIndicatorVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C85CF3DD9EC881C442667CF1B8158C /* StepIndicatorVerticalView.swift */; };
 		33432CD4B8F83F0C678B5C67CAF13414 /* String+SpecialCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B910A7CADF2217BFBFDB9C98EC114A /* String+SpecialCharacters.swift */; };
-		38AFFF5778434779E234A0BC9EB714DB /* VerticalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBFBCD278A07AEB39040784B5749900 /* VerticalLineView.swift */; };
-		398E8BB4A89B750ED3F3859BD5EAF980 /* PitStopLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6FB77DD3024E23BDB7B8757A2D92E /* PitStopLineView.swift */; };
+		38AFFF5778434779E234A0BC9EB714DB /* VerticalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C73D723EE01EE21B0990E99654362 /* VerticalLineView.swift */; };
+		398E8BB4A89B750ED3F3859BD5EAF980 /* PitStopLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448C5E5AD92C690A21F426ED473C4F41 /* PitStopLineView.swift */; };
 		440314FEC8EC90F865D8D20910989A69 /* Diffing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD26E8685603ED773645E9748DE892 /* Diffing.swift */; };
 		46B2A4686C72C29C24576FC6FF56A7BE /* AssertInlineSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19BCC9495D48049049450AADB9A50C /* AssertInlineSnapshot.swift */; };
-		46FD01CFAA083EA77458367D636D4355 /* PitStopLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6FB77DD3024E23BDB7B8757A2D92E /* PitStopLineView.swift */; };
-		48507418DBE50E1A262507C39EBF1CB7 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B747218A145097FB28843B8C6A8509 /* TextView.swift */; };
+		46FD01CFAA083EA77458367D636D4355 /* PitStopLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448C5E5AD92C690A21F426ED473C4F41 /* PitStopLineView.swift */; };
+		48507418DBE50E1A262507C39EBF1CB7 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6936067A766008A87D96AD10EE23C69 /* TextView.swift */; };
 		4E5AA162D02372A80FABE033AD6BFFE6 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8552C0F4E4AF5BB803C0393CE438BA28 /* Diff.swift */; };
-		4EF723676173A7F8D4E012BEF7A73F4E /* EnvironmentValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F7C0A17969271CC4D0C41BB1631D8A /* EnvironmentValues+Extension.swift */; };
+		4EF723676173A7F8D4E012BEF7A73F4E /* EnvironmentValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F8C7F75FF28F692D1C0294031468B /* EnvironmentValues+Extension.swift */; };
 		4F03BBCA0FCF5903B46F72BE0BADDF34 /* SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CA527311E8D6053CD18C45F669B32 /* SceneKit.swift */; };
 		509FAAD85506B9E1BCCA50505B8C93DB /* SpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C213B490DAAF188ECBD5D1BF7BC777E6 /* SpriteKit.swift */; };
 		56B2D76BD27EAA69A1BED0113B7F9F51 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444F03C0C7E948C8C4716A1692A121F3 /* UIView.swift */; };
@@ -49,50 +49,50 @@
 		6658F9FE5EEFD579907F946DD9FDD8E3 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A3274FB1B6B5844F8D1A124BE5B0EE /* URLRequest.swift */; };
 		67C39A754A360A5EFC7FE0037CECE5C3 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10704D670BE755E3C1A04C482F14BB /* CALayer.swift */; };
 		697B331F84C40463362A7DAB3F8D907B /* Pods-StepperView_Watch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB364750AEF9F684ED1A0611680B9F3 /* Pods-StepperView_Watch-dummy.m */; };
-		6A54E5F76D246CB03C6495F8532A85FB /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005096B1AC7758FCE71AAB06EC2EFDA8 /* IndicatorView.swift */; };
-		6C5D53B89D89A75FC5D72BEBC85979A6 /* StepperView-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F999BEA4F97F1724E7C20AC9FCE1E6 /* StepperView-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F7A7E665E1D1A96E5D4AFF8B40438FD /* VerticalAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9B7DA813C51B0CD399EEA7923DF356 /* VerticalAlignment+Extension.swift */; };
+		6A54E5F76D246CB03C6495F8532A85FB /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE531E4B79705DA45A057D1A3CE290 /* IndicatorView.swift */; };
+		6C5D53B89D89A75FC5D72BEBC85979A6 /* StepperView-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E3AB347C94EC70B0FEA70B0B758801 /* StepperView-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F7A7E665E1D1A96E5D4AFF8B40438FD /* VerticalAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783174AE3DB94E5C0F20DB0BD9C4FC4C /* VerticalAlignment+Extension.swift */; };
 		7C439CE32122CF6C075DB678E3EF6809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F1E3501EE0EE229AFC92FE011CA6A4 /* Foundation.framework */; };
-		7DD37A33D9B05961406D3125F585FEDE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C01A215D9E07475340F085A99DD00 /* Utils.swift */; };
+		7DD37A33D9B05961406D3125F585FEDE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5C1B8618BF6C074CC13654A56FA8F4 /* Utils.swift */; };
 		7F3933323072CF3B17C383C95CA50ACD /* Pods-StepperView_Watch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C719024204C3A03223697AF4003AF2E9 /* Pods-StepperView_Watch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F465A81F39530285F7994041DE7C3C2 /* CircledIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE044E8550A0B128DEA4DF3D8787D /* CircledIconView.swift */; };
+		7F465A81F39530285F7994041DE7C3C2 /* CircledIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6FCFA95C328F5E3765883A0B039218 /* CircledIconView.swift */; };
 		8003323F07F7A6F822902979CE092B88 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85F63F6F0616F7FE7949F7EE63BD175 /* Wait.swift */; };
 		83F3ABC0C9467C50BC156242D02B16F2 /* Pods-StepperView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B0368E9352383AFBEDC872B3AA718E /* Pods-StepperView_Tests-dummy.m */; };
 		84432746DEB076256002FB7BABDAAAA5 /* SnapshotTesting-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE54E0EE77832C01DC96FA42213EFA34 /* SnapshotTesting-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85F19845A7ED053900C8E524066BCAEA /* PreferenceKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD11C557D390D82F778D70456431841 /* PreferenceKey+Extension.swift */; };
+		85F19845A7ED053900C8E524066BCAEA /* PreferenceKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEC9B26D7A9084ACCC25A0B8136B4FE /* PreferenceKey+Extension.swift */; };
 		8CD5CB3FDF05526DBF034B61F696BA93 /* PlistEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB353159037433B43D06771A808670A2 /* PlistEncoder.swift */; };
 		8E1FBD13A74F689CFC06054841BFC596 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A786374E297AD3E72EF898FE0FE8DC2A /* UIViewController.swift */; };
 		94B06A4DE8BCB01CA76781FB2FCDD131 /* Pods-StepperView_Watch Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6DA9948C40DFA0B1A3AC3BBBDE7E5 /* Pods-StepperView_Watch Extension-dummy.m */; };
-		9575D16DFCC5836E3289136BB1356730 /* StepIndicatorVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8C737963DEEA8659877942AE2E072 /* StepIndicatorVerticalView.swift */; };
-		9A5934F6059D9992880341DB1DF46B92 /* StepperView-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C30FC4E9FA5A2B4D398C0809CD1C8 /* StepperView-watchOS-dummy.m */; };
-		9E8E4BE3C92F9919539E1A9A7591875C /* EnvironmentValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F7C0A17969271CC4D0C41BB1631D8A /* EnvironmentValues+Extension.swift */; };
+		9575D16DFCC5836E3289136BB1356730 /* StepIndicatorVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C85CF3DD9EC881C442667CF1B8158C /* StepIndicatorVerticalView.swift */; };
+		9A5934F6059D9992880341DB1DF46B92 /* StepperView-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C29043CFC0E5B2ED755B69AA4328245 /* StepperView-watchOS-dummy.m */; };
+		9E8E4BE3C92F9919539E1A9A7591875C /* EnvironmentValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F8C7F75FF28F692D1C0294031468B /* EnvironmentValues+Extension.swift */; };
 		A455E5B77A019CEAEEA0F9D26B1B74E6 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F639EA9C06D0891A723A57418F598 /* Codable.swift */; };
-		A6A48EE07459D621B5E8D8EAF35F0BA8 /* StepIndicatorHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB7EBDFAB8A3B6695DE5C4496B9791 /* StepIndicatorHorizontalView.swift */; };
-		A8777FA7D237E66A5B64E77FD67F3FE4 /* PitStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D47FC149CF575352319A301703D79F5 /* PitStopView.swift */; };
-		AA3A9F63364AD27BE8FE15803F12E786 /* CircledIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE044E8550A0B128DEA4DF3D8787D /* CircledIconView.swift */; };
+		A6A48EE07459D621B5E8D8EAF35F0BA8 /* StepIndicatorHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB39A00EF91B560B16AB891E5F988D /* StepIndicatorHorizontalView.swift */; };
+		A8777FA7D237E66A5B64E77FD67F3FE4 /* PitStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA87A2E0A0991E58DE911B67F14E2B /* PitStopView.swift */; };
+		AA3A9F63364AD27BE8FE15803F12E786 /* CircledIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6FCFA95C328F5E3765883A0B039218 /* CircledIconView.swift */; };
 		AA6612CD34134596239652A299AC0F76 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C5BFB2709ACA3DB976330C93F0F0B0 /* Async.swift */; };
-		AE92AFDE10AB35A52DDEC2CA09E9A6B8 /* NumberedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDE20641B6A96705391BAE24D6086E /* NumberedCircleView.swift */; };
+		AE92AFDE10AB35A52DDEC2CA09E9A6B8 /* NumberedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D21AA134E8B9D18C5ABA01BA45C861 /* NumberedCircleView.swift */; };
 		B04CA17471143BEDA50779BE9660BD2A /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDA2CFF4FC644BF0BA1960AF77E401 /* SnapshotTestCase.swift */; };
-		BAEF26BDB7389F234E6D77118E44FDF7 /* PitStopSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383F3E09FF9BFCFD042268922320579 /* PitStopSteps.swift */; };
-		BBABB2A0610111FCB88BA564C5EE89A0 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC669ECAAEC933A7AD7E63E5A288DE25 /* Colors+Extension.swift */; };
+		BAEF26BDB7389F234E6D77118E44FDF7 /* PitStopSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2269BE6183C2BDE3F477C90A57C03F /* PitStopSteps.swift */; };
+		BBABB2A0610111FCB88BA564C5EE89A0 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F58D5B9352CC10E6CDEA242D34133C /* Colors+Extension.swift */; };
 		BDFAF00F9FE360EAFD864F290030A2D0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB757B0C569052CF1DBEC733FFD737 /* Data.swift */; };
 		BE068F001E2344449F6E193DFB12B1D1 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4286727440DD327DE2AE95BF9D44E0 /* NSImage.swift */; };
-		BFA9D544ABB911E3B14146B43E9066A3 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3487B23A829B5E4ADDA21BE1FED84 /* HorizontalLineView.swift */; };
+		BFA9D544ABB911E3B14146B43E9066A3 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE204C74DFE570E9C197CE5C40D79B /* HorizontalLineView.swift */; };
 		C2B818BE2E57EF9A8CE51775FCB33C2B /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF05570F4FC5530B25624B36D5BBC7F /* Internal.swift */; };
-		C2C5DD37EF66F811E1110190442AA85B /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFFA10BF0A6EE1B632372363D1F209 /* StepperView.swift */; };
-		C2E0F801018379EBFBC425B9958D8A3E /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AFFA10BF0A6EE1B632372363D1F209 /* StepperView.swift */; };
+		C2C5DD37EF66F811E1110190442AA85B /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE60AA0C75AEEDBDD7A9F4B926ABA476 /* StepperView.swift */; };
+		C2E0F801018379EBFBC425B9958D8A3E /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE60AA0C75AEEDBDD7A9F4B926ABA476 /* StepperView.swift */; };
 		CA01726BE8D9E5D3144CD62CD9A748D1 /* Pods-StepperView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7C6F0E5A7E5F2F3E4BA214F0586F85 /* Pods-StepperView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D56563764E24224FB95BC77EC18F7D9E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584C27168F70A918E4F29362FCBCFF00 /* String.swift */; };
 		D6A43851802E3E81CF23D65CA9A81E4E /* SnapshotTesting-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D194AF3F49F0CAC373B258FBAD1C78 /* SnapshotTesting-dummy.m */; };
-		D7AC966E621F9C024258F0B118168741 /* StepIndicatorHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB7EBDFAB8A3B6695DE5C4496B9791 /* StepIndicatorHorizontalView.swift */; };
+		D7AC966E621F9C024258F0B118168741 /* StepIndicatorHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB39A00EF91B560B16AB891E5F988D /* StepIndicatorHorizontalView.swift */; };
 		DE7F89C8CEF0A086483E186B73DA99CF /* Pods-StepperView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F4DA1477939461442D642761C8158E /* Pods-StepperView_Example-dummy.m */; };
 		E0E24882EB538FB824D974FE6375F2F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573A7972CACA0CBB42B5D9EBE39B8F26 /* Foundation.framework */; };
-		E503DA9E35E8EA05EA984A39E25C67E7 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3487B23A829B5E4ADDA21BE1FED84 /* HorizontalLineView.swift */; };
-		E9E66A153EBD2289B3FF2D163BDDEABC /* StepperView-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B55A8A8A7BA66D2788AFA6256CA3BC /* StepperView-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA9F4BEDE47BF8B0A69905FED2405039 /* NumberedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDE20641B6A96705391BAE24D6086E /* NumberedCircleView.swift */; };
-		F3332E5FDE1E17310C7CC1DE1AAD0684 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C01A215D9E07475340F085A99DD00 /* Utils.swift */; };
-		F33B01D0FA0656B2EF9CBC8F327AAACE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E0CA62194E3D67E94AFE60078C85E /* View+Extensions.swift */; };
-		F58A154C4F184B66B1FDE4B9501564F5 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E0CA62194E3D67E94AFE60078C85E /* View+Extensions.swift */; };
+		E503DA9E35E8EA05EA984A39E25C67E7 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE204C74DFE570E9C197CE5C40D79B /* HorizontalLineView.swift */; };
+		E9E66A153EBD2289B3FF2D163BDDEABC /* StepperView-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E173BF6B31B11AC1736741FC97FDC78A /* StepperView-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA9F4BEDE47BF8B0A69905FED2405039 /* NumberedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D21AA134E8B9D18C5ABA01BA45C861 /* NumberedCircleView.swift */; };
+		F3332E5FDE1E17310C7CC1DE1AAD0684 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5C1B8618BF6C074CC13654A56FA8F4 /* Utils.swift */; };
+		F33B01D0FA0656B2EF9CBC8F327AAACE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C7E33B8041344A46BDEFC924CC449 /* View+Extensions.swift */; };
+		F58A154C4F184B66B1FDE4B9501564F5 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C7E33B8041344A46BDEFC924CC449 /* View+Extensions.swift */; };
 		FDAD70506FFFD578C1327E64876A08E3 /* XCTAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410FC8A7EC948E73AC72E902BE6E37E3 /* XCTAttachment.swift */; };
 /* End PBXBuildFile section */
 
@@ -135,241 +135,241 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005096B1AC7758FCE71AAB06EC2EFDA8 /* IndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
-		005C01A215D9E07475340F085A99DD00 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		02055DA4FB85E105C18807998643AD95 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/badge.svg; sourceTree = "<group>"; };
-		02C435E3F6B2B2232345B1E3C7A0EAB6 /* PitStopSteps.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopSteps.html; path = docs/Structs/PitStopSteps.html; sourceTree = "<group>"; };
-		04A8C737963DEEA8659877942AE2E072 /* StepIndicatorVerticalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepIndicatorVerticalView.swift; sourceTree = "<group>"; };
-		05C028F74B9508FE72717D3BB2BD7B7A /* Pods_StepperView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StepperView_Example.framework; path = "Pods-StepperView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0650A35914B01E8D459E45E7B62CA1B0 /* PitStopLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopLineView.html; path = docs/Structs/PitStopLineView.html; sourceTree = "<group>"; };
-		07E8A71CA0D8F5A6D385F359C938C4F5 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
+		003A21F01B9C99B6915C76A438C6075D /* NumberedCircleView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NumberedCircleView.html; path = docs/Structs/NumberedCircleView.html; sourceTree = "<group>"; };
+		0473BDFAF6F27FAAAFC78CDC0305FCAB /* SpacingKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = SpacingKey.html; path = docs/Structs/SpacingKey.html; sourceTree = "<group>"; };
+		0477511067818C28CC272B4A86508958 /* VerticalAlignment.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = VerticalAlignment.html; path = docs/Extensions/VerticalAlignment.html; sourceTree = "<group>"; };
+		04A90B97B31629A9C4D720398764B96B /* StepperView-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-iOS-prefix.pch"; sourceTree = "<group>"; };
+		053A8E517FBAA479E6A79D86F66EF211 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
+		05C028F74B9508FE72717D3BB2BD7B7A /* Pods_StepperView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		075401D12C4660A61955CDF4DCBC4AA0 /* CircledIconView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = CircledIconView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/CircledIconView.html; sourceTree = "<group>"; };
+		09323D654DBCDB3B557B10B3FEC8943E /* HorizontalLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = HorizontalLineView.html; path = docs/Structs/HorizontalLineView.html; sourceTree = "<group>"; };
 		09FD26E8685603ED773645E9748DE892 /* Diffing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diffing.swift; path = Sources/SnapshotTesting/Diffing.swift; sourceTree = "<group>"; };
 		0B1AF4EE96053C3B0D8314A16AAA6B2E /* Pods-StepperView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0B8779FA7393CB18BFDA2EED47AC4427 /* StepperView-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-iOS-prefix.pch"; sourceTree = "<group>"; };
-		0CE5403F621597687FDCC025D4ECCE38 /* WidthPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WidthPreference.html; path = docs/Structs/WidthPreference.html; sourceTree = "<group>"; };
-		0CFF6913DCECB3C756DC75E27C595A07 /* StepperLineOptions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperLineOptions.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/StepperLineOptions.html; sourceTree = "<group>"; };
 		0D55D1033AA5478F71538396CDD100DF /* Pods-StepperView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Example-Info.plist"; sourceTree = "<group>"; };
-		0DB5612F815E641475C49C06977AF3E1 /* PitStopLineOptions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopLineOptions.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/PitStopLineOptions.html; sourceTree = "<group>"; };
-		116BF80E2ECA8E8175385A0956809570 /* VerticalHeightPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; name = VerticalHeightPreference.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/VerticalHeightPreference.html; sourceTree = "<group>"; };
 		1253A303ED2B11912261F6EAD3625F1A /* Pods-StepperView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StepperView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		130074E17A55E508DD509C4C1157C47C /* StepperView-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "StepperView-watchOS-prefix.pch"; path = "../StepperView-watchOS/StepperView-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		129CADF8F7E5435903F16E82F3D8C1FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		149F86A59BE37D783B31167CDF3C05EC /* StepIndicatorHorizontalView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = StepIndicatorHorizontalView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepIndicatorHorizontalView.html; sourceTree = "<group>"; };
+		181F8C7F75FF28F692D1C0294031468B /* EnvironmentValues+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Extension.swift"; sourceTree = "<group>"; };
+		1838CD0C4A668694BD82C1F62B6337AB /* View.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = View.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Extensions/View.html; sourceTree = "<group>"; };
 		19D794AFA885DAF5937D46F11AB03470 /* Pods-StepperView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1A5F00404DBCAFAF292A31A057652EF8 /* IndicatorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = IndicatorView.html; path = docs/Structs/IndicatorView.html; sourceTree = "<group>"; };
-		1B9B715FDE7F6B6BC1C2288DC7308023 /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Enums.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums.html; sourceTree = "<group>"; };
 		1E1FBE49D989987B3AF4D994A0029CF2 /* Pods-StepperView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Tests.modulemap"; sourceTree = "<group>"; };
-		1E35132387A01BF6418B815210B677B4 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StepperView.framework; path = "StepperView-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E907DCB4928CEFF0BF7C4030CECCCD6 /* Colors.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Colors.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors.html; sourceTree = "<group>"; };
-		208464BC94C2DA9FFA3B3860E83CE4C3 /* StepIndicatorModeKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepIndicatorModeKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepIndicatorModeKey.html; sourceTree = "<group>"; };
-		210C3FF178F1F2C206A83B76C1F3AA96 /* StepperView-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "StepperView-watchOS.release.xcconfig"; path = "../StepperView-watchOS/StepperView-watchOS.release.xcconfig"; sourceTree = "<group>"; };
-		21B747218A145097FB28843B8C6A8509 /* TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
-		21E4F50CEE8E79129FC4D7FB2B888706 /* YellowSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = YellowSubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/YellowSubType.html; sourceTree = "<group>"; };
+		1E35132387A01BF6418B815210B677B4 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepperView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FA315ABE27D7DE0FD7B793A4222387 /* Pods-StepperView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		23931FE0F5A6DEF4FC040D6784128D40 /* SpacingKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SpacingKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/SpacingKey.html; sourceTree = "<group>"; };
+		22CF01871C3CD548FAE5CCB31DEE9499 /* StepsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = StepsKey.html; path = docs/Structs/StepsKey.html; sourceTree = "<group>"; };
+		23B4DBD7E6B43FDC30FF421AF47A4082 /* LineOptionsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = LineOptionsKey.html; path = docs/Structs/LineOptionsKey.html; sourceTree = "<group>"; };
+		2402AF6D19C5B468EAAC6F0B8393BA28 /* CGRectPreferenceKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = CGRectPreferenceKey.html; path = docs/Structs/CGRectPreferenceKey.html; sourceTree = "<group>"; };
 		24B910A7CADF2217BFBFDB9C98EC114A /* String+SpecialCharacters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SpecialCharacters.swift"; path = "Sources/SnapshotTesting/Common/String+SpecialCharacters.swift"; sourceTree = "<group>"; };
-		25F8858FA6D1EC42513CC1EFA50FC4AC /* StepperMode.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperMode.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/StepperMode.html; sourceTree = "<group>"; };
-		2771E96478F111509A19FA4AF979E512 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
-		278C421C57DC66DE2586C46FB222A758 /* VerticalLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = VerticalLineView.html; path = docs/Structs/VerticalLineView.html; sourceTree = "<group>"; };
-		279C30FC4E9FA5A2B4D398C0809CD1C8 /* StepperView-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "StepperView-watchOS-dummy.m"; path = "../StepperView-watchOS/StepperView-watchOS-dummy.m"; sourceTree = "<group>"; };
+		257F15CC7DCB2DD8B1A1F1B85595AE14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/StepperView.docset/Contents/Info.plist; sourceTree = "<group>"; };
+		284E2BAA807CBEE0695648E12C69525E /* WidthKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = WidthKey.html; path = docs/Structs/WidthKey.html; sourceTree = "<group>"; };
+		28DF8FAD963F7A81DA8B124708919994 /* PitStopView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PitStopView.html; path = docs/Structs/PitStopView.html; sourceTree = "<group>"; };
+		29C85CF3DD9EC881C442667CF1B8158C /* StepIndicatorVerticalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepIndicatorVerticalView.swift; sourceTree = "<group>"; };
+		29FFEE4C2325DA5E0B990C14762A0E4B /* CGRectPreferenceKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = CGRectPreferenceKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/CGRectPreferenceKey.html; sourceTree = "<group>"; };
 		2A7C6F0E5A7E5F2F3E4BA214F0586F85 /* Pods-StepperView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StepperView_Example-umbrella.h"; sourceTree = "<group>"; };
-		2AD6841DE2D60E516C4FC62A279537C1 /* GreenSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = GreenSubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/GreenSubType.html; sourceTree = "<group>"; };
+		2ABB39A00EF91B560B16AB891E5F988D /* StepIndicatorHorizontalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepIndicatorHorizontalView.swift; sourceTree = "<group>"; };
+		2ACE3EA50ADD2AE09E7E9644EFE9414A /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
+		2C29043CFC0E5B2ED755B69AA4328245 /* StepperView-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "StepperView-watchOS-dummy.m"; path = "../StepperView-watchOS/StepperView-watchOS-dummy.m"; sourceTree = "<group>"; };
+		2C5A82F182FAB951A57852A84BB6A0E1 /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Structs.html; path = docs/Structs.html; sourceTree = "<group>"; };
+		2D9FB57ADFF4277924B8FA8E930986A6 /* StepperIndicationType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = StepperIndicationType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/StepperIndicationType.html; sourceTree = "<group>"; };
 		2E2CA03B708D8424B73A38D4C8C250F5 /* SnapshotTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotTesting.debug.xcconfig; sourceTree = "<group>"; };
-		2E935BEC4B9F7F7CEA8CB0D2D1BBCE09 /* StepIndicatorHorizontalView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepIndicatorHorizontalView.html; path = docs/Structs/StepIndicatorHorizontalView.html; sourceTree = "<group>"; };
-		2F32F10B588EA864A033968B689A24DD /* PitStopView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopView.html; path = docs/Structs/PitStopView.html; sourceTree = "<group>"; };
+		30A1D3154B68DF67BF30CE318CE61EE9 /* Utils.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Utils.html; path = docs/Structs/Utils.html; sourceTree = "<group>"; };
 		314A21CD4CA38212B1C9361BB856ED68 /* SnapshotTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotTesting.release.xcconfig; sourceTree = "<group>"; };
-		3160200FB61EBD02F49B76542746F583 /* StepperView-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "StepperView-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		32ABD895D4D19578F4B2043695A2F76A /* StepperView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperView.html; path = docs/Structs/StepperView.html; sourceTree = "<group>"; };
+		33CCF241FEDCDC20433EE71A831FBEAC /* IndicatorView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = IndicatorView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/IndicatorView.html; sourceTree = "<group>"; };
 		34A0A3CC14396D2DA1E2D3FD64DEDAED /* SnapshotTesting-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-prefix.pch"; sourceTree = "<group>"; };
-		34A6913DDD0C76798288FA46F74C3D69 /* StepperView-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "StepperView-watchOS.debug.xcconfig"; path = "../StepperView-watchOS/StepperView-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		34AEC2F5A8412D232548452DB405F39C /* IndicatorView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = IndicatorView.html; path = docs/Structs/IndicatorView.html; sourceTree = "<group>"; };
 		353AACBC0866DF85C19BF4739696B13D /* Pods-StepperView_Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Watch.debug.xcconfig"; sourceTree = "<group>"; };
-		356F6EF06623D181B7E8BD2E449628CE /* BlueSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BlueSubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/BlueSubType.html; sourceTree = "<group>"; };
-		3696BE376F4DE21D84CE19E0B10DBD25 /* View.html */ = {isa = PBXFileReference; includeInIndex = 1; name = View.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Extensions/View.html; sourceTree = "<group>"; };
+		3648CF110CC5501CE1F65E430CFEEDB0 /* StepperView-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "StepperView-watchOS.release.xcconfig"; path = "../StepperView-watchOS/StepperView-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		37F09254145DBD97A3FD67111A15EFA7 /* CGRectData.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = CGRectData.html; path = docs/Structs/CGRectData.html; sourceTree = "<group>"; };
 		3912642063EA0830CFF13B31BF711D13 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/SnapshotTesting/Common/View.swift; sourceTree = "<group>"; };
 		39389C40BF1E4F29AFA9E00EF4AA7CFA /* Pods-StepperView_Watch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StepperView_Watch-frameworks.sh"; sourceTree = "<group>"; };
-		3A1C9A0691013EDE96E7ECDAA6BA726A /* TextView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TextView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/TextView.html; sourceTree = "<group>"; };
-		3AAC5EA749B17383C58FB270D5DB34F7 /* EnvironmentValues.html */ = {isa = PBXFileReference; includeInIndex = 1; name = EnvironmentValues.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Extensions/EnvironmentValues.html; sourceTree = "<group>"; };
+		3B1654BF48FF45029FB945D665B1B999 /* YellowSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = YellowSubType.html; path = docs/Enums/Colors/YellowSubType.html; sourceTree = "<group>"; };
 		3BF08A054DB2EFFB34A02DB28C737D50 /* Pods-StepperView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StepperView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3CCC0DDC804EC095744C5B5E4FF3B741 /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; name = docSet.dsidx; path = docs/docsets/StepperView.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
+		3CBA87A2E0A0991E58DE911B67F14E2B /* PitStopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PitStopView.swift; sourceTree = "<group>"; };
 		3DB364750AEF9F684ED1A0611680B9F3 /* Pods-StepperView_Watch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Watch-dummy.m"; sourceTree = "<group>"; };
-		3F67E7AC212DABDF49FEC3651669CA0A /* Pods_StepperView_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StepperView_Watch.framework; path = "Pods-StepperView_Watch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		409DD5241CCD698AB8134F75AE844B4F /* StepIndicatorHorizontalView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepIndicatorHorizontalView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepIndicatorHorizontalView.html; sourceTree = "<group>"; };
+		3F67E7AC212DABDF49FEC3651669CA0A /* Pods_StepperView_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		410FC8A7EC948E73AC72E902BE6E37E3 /* XCTAttachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCTAttachment.swift; path = Sources/SnapshotTesting/Common/XCTAttachment.swift; sourceTree = "<group>"; };
-		41A008AA9025409E9F8AE480F429890F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/StepperView.docset/Contents/Info.plist; sourceTree = "<group>"; };
-		42FC65560A740E67F033C3DEE3A0AE8D /* HorizontalLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = HorizontalLineView.html; path = docs/Structs/HorizontalLineView.html; sourceTree = "<group>"; };
+		414979EACB8A6711F8A8CD913FCE2C39 /* HeightKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = HeightKey.html; path = docs/Structs/HeightKey.html; sourceTree = "<group>"; };
+		414A7E85FF280AD0FA5444EE3A12D963 /* StepIndicatorVerticalView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = StepIndicatorVerticalView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepIndicatorVerticalView.html; sourceTree = "<group>"; };
+		42EAAD85CB238717172D975113168467 /* CGRectData.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = CGRectData.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/CGRectData.html; sourceTree = "<group>"; };
 		4375A694F5270ED1FEE5FD35BAF8BD4E /* Pods-StepperView_Watch Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StepperView_Watch Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		43D681B20E6D558C8F25796D11AB72C2 /* StepperAlignment.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperAlignment.html; path = docs/Enums/StepperAlignment.html; sourceTree = "<group>"; };
-		43EB2DF9E3F9265ADE0F26C2C117A286 /* RedSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RedSubType.html; path = docs/Enums/Colors/RedSubType.html; sourceTree = "<group>"; };
+		4395FB49164F85E56A21141E928CAAE8 /* HorizontalLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = HorizontalLineView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/HorizontalLineView.html; sourceTree = "<group>"; };
 		444F03C0C7E948C8C4716A1692A121F3 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Sources/SnapshotTesting/Snapshotting/UIView.swift; sourceTree = "<group>"; };
+		44799525E8A776F4DB5A1C2F13110699 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
+		448C5E5AD92C690A21F426ED473C4F41 /* PitStopLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PitStopLineView.swift; sourceTree = "<group>"; };
 		44E083363A4248B2AE63427EE12EBE61 /* Pods-StepperView_Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
-		48AA6F4603243636B065D34E034B03AF /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
-		49B36460203C5E4EB33D8D9DA2426FE9 /* Utils.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Utils.html; path = docs/Structs/Utils.html; sourceTree = "<group>"; };
+		453F571E50C91574DB675A4C00A17FA9 /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Structs.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs.html; sourceTree = "<group>"; };
+		459F411390F0E980D596A4B7DC788D02 /* BoundsPreferenceKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BoundsPreferenceKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/BoundsPreferenceKey.html; sourceTree = "<group>"; };
+		4738989BC4D53B625F4894FE90DE1421 /* StepperView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = StepperView.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		48078B40C23A0B309A50A3138FEBD348 /* StepIndicatorVerticalView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = StepIndicatorVerticalView.html; path = docs/Structs/StepIndicatorVerticalView.html; sourceTree = "<group>"; };
+		4AA7092AC21CB736EF04E4532E1BAF0D /* IndicatorKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = IndicatorKey.html; path = docs/Structs/IndicatorKey.html; sourceTree = "<group>"; };
 		4B555C4FC5FF01432A5B9B4EB2313510 /* SnapshotTesting-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapshotTesting-Info.plist"; sourceTree = "<group>"; };
 		4C0CA527311E8D6053CD18C45F669B32 /* SceneKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneKit.swift; path = Sources/SnapshotTesting/Snapshotting/SceneKit.swift; sourceTree = "<group>"; };
-		4D3C2739F36A5B4F9348944B4C6C46EE /* VerticalAlignment.html */ = {isa = PBXFileReference; includeInIndex = 1; name = VerticalAlignment.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Extensions/VerticalAlignment.html; sourceTree = "<group>"; };
+		4C16E650210432EFDFE68EF6B5934950 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = highlight.css; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
+		4C6FCFA95C328F5E3765883A0B039218 /* CircledIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CircledIconView.swift; sourceTree = "<group>"; };
+		4D1734D9FE4C49EFC47BE57055A98922 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = undocumented.json; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/undocumented.json; sourceTree = "<group>"; };
+		4D5EADBD3B8891AB75CD1DD9E90B30E5 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
 		4E753134DBAC9E58D31D4D4950BA6E89 /* Pods-StepperView_Watch Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StepperView_Watch Extension-umbrella.h"; sourceTree = "<group>"; };
-		4EA5DAFB8EA20FA670B63AC5FCD0523C /* Pods_StepperView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StepperView_Tests.framework; path = "Pods-StepperView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F135DA846C0BF3EA0A5E2AF0995DD31 /* PitStopLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopLineView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopLineView.html; sourceTree = "<group>"; };
-		5102CCB07C33FD9321199ABE7B31F0E2 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
+		4EA5DAFB8EA20FA670B63AC5FCD0523C /* Pods_StepperView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB150295B7DA934B26EDADE1B35637C /* StepperIndicationType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = StepperIndicationType.html; path = docs/Enums/StepperIndicationType.html; sourceTree = "<group>"; };
+		4FE56ED21ED2FE5A486528D38C7146A5 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
+		506C73D723EE01EE21B0990E99654362 /* VerticalLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticalLineView.swift; sourceTree = "<group>"; };
 		51DFDE88834F7E40014E803B6B644499 /* AssertSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertSnapshot.swift; path = Sources/SnapshotTesting/AssertSnapshot.swift; sourceTree = "<group>"; };
-		52E5CCC0DADB32480E883710821F1BD0 /* BoundsPreferenceKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BoundsPreferenceKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/BoundsPreferenceKey.html; sourceTree = "<group>"; };
+		5239EAC12F12AB34386EECF3204F0313 /* WidthKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = WidthKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/WidthKey.html; sourceTree = "<group>"; };
 		52EA42F1ACA479FCD8CEA179F3D02A68 /* Pods-StepperView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5383F3E09FF9BFCFD042268922320579 /* PitStopSteps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PitStopSteps.swift; sourceTree = "<group>"; };
+		54F9F8FB6DACD8609375C6C8CFBE28DE /* HeightPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = HeightPreference.html; path = docs/Structs/HeightPreference.html; sourceTree = "<group>"; };
+		556133DECC7F481EE332CDAFD6E221F4 /* VerticalAlignment.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = VerticalAlignment.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Extensions/VerticalAlignment.html; sourceTree = "<group>"; };
+		55A3EF5D435AF928455B2FF37F1999E9 /* PitStopSteps.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PitStopSteps.html; path = docs/Structs/PitStopSteps.html; sourceTree = "<group>"; };
 		55C34891961FC441E1A021D5CE301AB7 /* Pods-StepperView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StepperView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		55F7C0A17969271CC4D0C41BB1631D8A /* EnvironmentValues+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Extension.swift"; sourceTree = "<group>"; };
-		56C42F781C434AE80F1FD1864F171567 /* CGRectData.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CGRectData.html; path = docs/Structs/CGRectData.html; sourceTree = "<group>"; };
+		56D87A407FC8A4155AC98BFFADB26FAF /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
 		56DB778555062E61C5669596213B83F1 /* Pods-StepperView_Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		573A7972CACA0CBB42B5D9EBE39B8F26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		57E7B6275AF06F19AA184D3DE390AA48 /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Enums.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums.html; sourceTree = "<group>"; };
 		584C27168F70A918E4F29362FCBCFF00 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/SnapshotTesting/Snapshotting/String.swift; sourceTree = "<group>"; };
-		5BE30D0E2084F8402CB122D67A9FF253 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
-		5C52C609D3A9B2A1184A2B516A1B31CB /* StepperView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepperView.html; sourceTree = "<group>"; };
+		5A6C7E33B8041344A46BDEFC924CC449 /* View+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		5AAB434938E381E791BA0A85312665FA /* EnvironmentValues.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = EnvironmentValues.html; path = docs/Extensions/EnvironmentValues.html; sourceTree = "<group>"; };
+		5B1643E030F7EF0237D5EFAED2421EBB /* VerticalHeightPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = VerticalHeightPreference.html; path = docs/Structs/VerticalHeightPreference.html; sourceTree = "<group>"; };
+		5C8A736E6AE5D65C09067273EF6DA575 /* StepperMode.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = StepperMode.html; path = docs/Enums/StepperMode.html; sourceTree = "<group>"; };
+		5D59E980660C0C42C304F23E785D0595 /* WidthPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = WidthPreference.html; path = docs/Structs/WidthPreference.html; sourceTree = "<group>"; };
+		5D79390C11A6F8588D32F34705BFFECD /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Extensions.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
 		5E38BC9FC611939CA46A2BBAE9FCDA5F /* Pods-StepperView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StepperView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5EF93B7B7A04759533BEA936CF29D5F8 /* StepperIndicationType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperIndicationType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/StepperIndicationType.html; sourceTree = "<group>"; };
+		5E448E470A4873408E5E8981A2C1B8AB /* WidthPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = WidthPreference.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/WidthPreference.html; sourceTree = "<group>"; };
+		5F6321D1FB51B97E15D6AD6BAE3EA0EF /* PitStopStep.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PitStopStep.html; path = docs/Structs/PitStopStep.html; sourceTree = "<group>"; };
 		5F974148746ADF47725F16E8AE8D554F /* CaseIterable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaseIterable.swift; path = Sources/SnapshotTesting/Snapshotting/CaseIterable.swift; sourceTree = "<group>"; };
+		6191A1DBFFED69F78A80CE157704ED7B /* PitStopLineOptions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PitStopLineOptions.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/PitStopLineOptions.html; sourceTree = "<group>"; };
 		61B0368E9352383AFBEDC872B3AA718E /* Pods-StepperView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Tests-dummy.m"; sourceTree = "<group>"; };
-		629B34B3C654E3537FB4064A332BA5CE /* CGRectPreferenceKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CGRectPreferenceKey.html; path = docs/Structs/CGRectPreferenceKey.html; sourceTree = "<group>"; };
+		629CA5992BC5273631A7684070EB4C23 /* AlignmentKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = AlignmentKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/AlignmentKey.html; sourceTree = "<group>"; };
 		62D194AF3F49F0CAC373B258FBAD1C78 /* SnapshotTesting-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapshotTesting-dummy.m"; sourceTree = "<group>"; };
-		649F76D00A902280A03D6F0C1B0FA4FE /* CGRectPreferenceKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CGRectPreferenceKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/CGRectPreferenceKey.html; sourceTree = "<group>"; };
-		64E23FF7E371B4D5007D22D00B478D97 /* PitStopSteps.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopSteps.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopSteps.html; sourceTree = "<group>"; };
+		650638B71F29E938C7585BFF0C63EFEE /* IndicatorKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = IndicatorKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/IndicatorKey.html; sourceTree = "<group>"; };
 		677F639EA9C06D0891A723A57418F598 /* Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Codable.swift; path = Sources/SnapshotTesting/Snapshotting/Codable.swift; sourceTree = "<group>"; };
-		685BF5DC291FB0B1661784F337F6B898 /* StepsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepsKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepsKey.html; sourceTree = "<group>"; };
-		698A704B9BC01F59C1A97FEA39D945C4 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
-		69BDE20641B6A96705391BAE24D6086E /* NumberedCircleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NumberedCircleView.swift; sourceTree = "<group>"; };
+		6872746F6F6ECF60E288678AB61AEE2F /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
+		68C8912E9131D1B1051BD43B80AAAA01 /* NumberedCircleView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = NumberedCircleView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/NumberedCircleView.html; sourceTree = "<group>"; };
+		68E325DB8BA9690674902C8C124C66E7 /* StepperView-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "StepperView-watchOS-Info.plist"; path = "../StepperView-watchOS/StepperView-watchOS-Info.plist"; sourceTree = "<group>"; };
 		6A0D19BF7BAEB7DA2481EF41D28AFEFD /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Sources/SnapshotTesting/Snapshotting/UIImage.swift; sourceTree = "<group>"; };
-		6A0D7DF7C52223F63360C99EF5B5B8B6 /* GreenSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = GreenSubType.html; path = docs/Enums/Colors/GreenSubType.html; sourceTree = "<group>"; };
-		6A3E98EDED48FBBAAFF44BF487922CD5 /* IndicatorKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = IndicatorKey.html; path = docs/Structs/IndicatorKey.html; sourceTree = "<group>"; };
+		6A0E8131A65ABEE4E8935F52F90D8BC2 /* Utils.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Utils.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/Utils.html; sourceTree = "<group>"; };
+		6A5589AE0D8A0D936BC0806AEFD3C1E7 /* LineOptionsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = LineOptionsKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/LineOptionsKey.html; sourceTree = "<group>"; };
 		6AC4FA4D04AF052243FB0DD9AA68574C /* SnapshotTesting.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapshotTesting.modulemap; sourceTree = "<group>"; };
-		6B9B885874AF47FC50062253932D2A1C /* OptionalView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = OptionalView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/OptionalView.html; sourceTree = "<group>"; };
-		6BCD5EC40F85FA0EA65F41A8F91E96E7 /* PitStopLineOptions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopLineOptions.html; path = docs/Enums/PitStopLineOptions.html; sourceTree = "<group>"; };
+		6B9E0EDCF9B4D7097C7BF3FB37B7F671 /* YellowSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = YellowSubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/YellowSubType.html; sourceTree = "<group>"; };
 		6CEE61257AE2E38506BEBD035401EBF7 /* Pods-StepperView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6EBFBCD278A07AEB39040784B5749900 /* VerticalLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticalLineView.swift; sourceTree = "<group>"; };
-		7135E5846BF73EF9C0DC2147FEA59A6E /* BoundsPreferenceKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BoundsPreferenceKey.html; path = docs/Structs/BoundsPreferenceKey.html; sourceTree = "<group>"; };
-		71B55A8A8A7BA66D2788AFA6256CA3BC /* StepperView-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "StepperView-watchOS-umbrella.h"; path = "../StepperView-watchOS/StepperView-watchOS-umbrella.h"; sourceTree = "<group>"; };
-		7291AD225A0C161B1727DF818F5E680E /* CircledIconView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CircledIconView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/CircledIconView.html; sourceTree = "<group>"; };
-		746E37DB7AA5E0859D58885181785544 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		755193B79A432DDE3DCE9EED178D2AF7 /* StepIndicatorVerticalView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepIndicatorVerticalView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepIndicatorVerticalView.html; sourceTree = "<group>"; };
-		7995127A56C71436C101A08AC293ABA3 /* StepperView-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "StepperView-watchOS.modulemap"; path = "../StepperView-watchOS/StepperView-watchOS.modulemap"; sourceTree = "<group>"; };
-		7A74465E5FFC1DD8559719AD1EC7B70A /* StepperView-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "StepperView-iOS.modulemap"; sourceTree = "<group>"; };
+		6EDEC7D826AA4AF6E7FB0E6F4E1831D4 /* StepperView-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "StepperView-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		71806C13275A2DAF9111760714B6065A /* PitStopSteps.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PitStopSteps.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopSteps.html; sourceTree = "<group>"; };
+		783174AE3DB94E5C0F20DB0BD9C4FC4C /* VerticalAlignment+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "VerticalAlignment+Extension.swift"; sourceTree = "<group>"; };
+		78A1B024EB783917EF028BB4F17C2746 /* StepperView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = StepperView.html; path = docs/Structs/StepperView.html; sourceTree = "<group>"; };
+		7B0E970D8048C36680F78A174CA68602 /* PitStopOptionsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PitStopOptionsKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopOptionsKey.html; sourceTree = "<group>"; };
 		7B493584ABAFFEF709138B46A49D89B2 /* Pods-StepperView_Watch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Watch.modulemap"; sourceTree = "<group>"; };
-		7B4D19C570CDA299158B9071BCDCD417 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
-		7C04BD4C1F3A8484D95F098C81A108C1 /* GraySubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = GraySubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/GraySubType.html; sourceTree = "<group>"; };
-		7C431FB181ACBA92F7D9838A5CEA4027 /* Utils.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Utils.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/Utils.html; sourceTree = "<group>"; };
+		7BFA6032A7F8A1176867174B97084BEE /* AlignmentKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = AlignmentKey.html; path = docs/Structs/AlignmentKey.html; sourceTree = "<group>"; };
+		7C3B413EEA2566C06AFAC72CCC553AC5 /* Colors.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Colors.html; path = docs/Enums/Colors.html; sourceTree = "<group>"; };
+		7C7614F070798A1C08C868D4478370E5 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jazzy.js; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
+		7D2269BE6183C2BDE3F477C90A57C03F /* PitStopSteps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PitStopSteps.swift; sourceTree = "<group>"; };
+		7DC6E4EA43FF4B74EC983E0625B95D1B /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
 		7FA6DA9948C40DFA0B1A3AC3BBBDE7E5 /* Pods-StepperView_Watch Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Watch Extension-dummy.m"; sourceTree = "<group>"; };
-		82D521C9167E7C75FD30C266CB2CB429 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
+		7FFF11D9ADDFF934E5440D190B81699B /* StepperLineOptions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = StepperLineOptions.html; path = docs/Enums/StepperLineOptions.html; sourceTree = "<group>"; };
+		800340E2DF6AEAE1339AF43ADAC0F0B1 /* Colors.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Colors.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors.html; sourceTree = "<group>"; };
+		80CAB5E2D4217ADB99C2D2545667F5A9 /* StepperView-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepperView-iOS-dummy.m"; sourceTree = "<group>"; };
+		81600506C8CC38E313298B99BC9ACEF5 /* StepperLineOptions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = StepperLineOptions.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/StepperLineOptions.html; sourceTree = "<group>"; };
 		82F1E3501EE0EE229AFC92FE011CA6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		853242EF3D39D1BB1DC319DD023FC28B /* NumberedCircleView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = NumberedCircleView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/NumberedCircleView.html; sourceTree = "<group>"; };
 		8552C0F4E4AF5BB803C0393CE438BA28 /* Diff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diff.swift; path = Sources/SnapshotTesting/Diff.swift; sourceTree = "<group>"; };
-		886676B22E4DDAADA9D15C7897ADE203 /* EnvironmentValues.html */ = {isa = PBXFileReference; includeInIndex = 1; name = EnvironmentValues.html; path = docs/Extensions/EnvironmentValues.html; sourceTree = "<group>"; };
-		88D498B75095B135DBE070233A0B489C /* VerticalAlignment.html */ = {isa = PBXFileReference; includeInIndex = 1; name = VerticalAlignment.html; path = docs/Extensions/VerticalAlignment.html; sourceTree = "<group>"; };
-		89418313165ABC1A5F56CA293F4615EF /* LineOptionsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LineOptionsKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/LineOptionsKey.html; sourceTree = "<group>"; };
-		8A6D1191009D94C4378ABFA1B5944327 /* TextView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TextView.html; path = docs/Structs/TextView.html; sourceTree = "<group>"; };
-		8B9AD7880DD4079BA44421B2B84ABC60 /* CircledIconView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CircledIconView.html; path = docs/Structs/CircledIconView.html; sourceTree = "<group>"; };
-		8D321BF6212627F5C951843A9B28BB14 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StepperView.framework; path = "StepperView-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8648B803DAE78ED1B7DE48FB189360A4 /* GraySubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = GraySubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/GraySubType.html; sourceTree = "<group>"; };
+		8B304D26AFFD429897EA7BF0A0044A7E /* VerticalLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = VerticalLineView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/VerticalLineView.html; sourceTree = "<group>"; };
+		8C499E1790A1903D8BB078950AE25784 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = search.json; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
+		8C5AF6ECA14957DF2C07B781864F7CB1 /* StepIndicatorHorizontalView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = StepIndicatorHorizontalView.html; path = docs/Structs/StepIndicatorHorizontalView.html; sourceTree = "<group>"; };
+		8D321BF6212627F5C951843A9B28BB14 /* StepperView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepperView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B7D519E7041F6D73780ACD5D2BE26 /* StepperView-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "StepperView-watchOS-prefix.pch"; path = "../StepperView-watchOS/StepperView-watchOS-prefix.pch"; sourceTree = "<group>"; };
 		8D819FD4CFE2D9AE1135737C473BB56E /* Pods-StepperView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8EFCE0F2C03B781BFC7E1C14B375BD12 /* Colors.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Colors.html; path = docs/Enums/Colors.html; sourceTree = "<group>"; };
-		91C14392F0DAF9F3F59A14C5A8486698 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
+		8E5C1B8618BF6C074CC13654A56FA8F4 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9321EEBF8992813520D43041AF4164EA /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = Sources/SnapshotTesting/Snapshotting/Description.swift; sourceTree = "<group>"; };
-		93CC047E780D805470D02DC5CBD6117F /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
-		94C4CB20D93F0343B35016EBEF738D2C /* LineOptionsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LineOptionsKey.html; path = docs/Structs/LineOptionsKey.html; sourceTree = "<group>"; };
-		95DB3B5AD58DBDAFF47B30C98D63B9FD /* WidthKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WidthKey.html; path = docs/Structs/WidthKey.html; sourceTree = "<group>"; };
-		964E2B9C4DEF154BCADD843EC74A265B /* View.html */ = {isa = PBXFileReference; includeInIndex = 1; name = View.html; path = docs/Extensions/View.html; sourceTree = "<group>"; };
-		985E98408DFE500A87EF2ECB995FA13F /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Structs.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs.html; sourceTree = "<group>"; };
+		93D9674DA0D5444DED983FBE676C961B /* GraySubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = GraySubType.html; path = docs/Enums/Colors/GraySubType.html; sourceTree = "<group>"; };
+		93F58D5B9352CC10E6CDEA242D34133C /* Colors+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
+		94C8967658D23A417C9D95939178FCDA /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Enums.html; path = docs/Enums.html; sourceTree = "<group>"; };
+		960D971346FE5E8A8CF65734C1F7C761 /* StepperView-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "StepperView-watchOS.modulemap"; path = "../StepperView-watchOS/StepperView-watchOS.modulemap"; sourceTree = "<group>"; };
+		97D354E6388150EC3520148AD1BEB5D5 /* BlueSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BlueSubType.html; path = docs/Enums/Colors/BlueSubType.html; sourceTree = "<group>"; };
+		997EBBCED7CD73CDEB2391CDE1E67132 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
+		9A1763F33C3C4C1D1CACA42C8647CE9D /* TextView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = TextView.html; path = docs/Structs/TextView.html; sourceTree = "<group>"; };
+		9A4445265299F27EAE32B01E9AF1E3C2 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
 		9AA2B725F50F1985BB7A4940E3948BD3 /* Pods-StepperView_Watch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Watch-acknowledgements.plist"; sourceTree = "<group>"; };
-		9B1B16B539FF89D6070579BE2FE4F44C /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
 		9B607C869CD98E4D57AC06BA6CD01226 /* Pods-StepperView_Watch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StepperView_Watch-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9BEFFF016F98307C019DCE029B2AB808 /* PitStopOptionsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopOptionsKey.html; path = docs/Structs/PitStopOptionsKey.html; sourceTree = "<group>"; };
+		9BB337430361B5914403364B7021239E /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
+		9BE676F7594CC850470394ACAB2EB682 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = index.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
 		9BF05570F4FC5530B25624B36D5BBC7F /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Sources/SnapshotTesting/Common/Internal.swift; sourceTree = "<group>"; };
-		9C7C2F8F96C6E5AFB7FF41DE8514464E /* HeightPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; name = HeightPreference.html; path = docs/Structs/HeightPreference.html; sourceTree = "<group>"; };
-		9C9B7DA813C51B0CD399EEA7923DF356 /* VerticalAlignment+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "VerticalAlignment+Extension.swift"; sourceTree = "<group>"; };
-		9D47FC149CF575352319A301703D79F5 /* PitStopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PitStopView.swift; sourceTree = "<group>"; };
-		9D6F0815FC3E03E561D11643D9F8849E /* YellowSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = YellowSubType.html; path = docs/Enums/Colors/YellowSubType.html; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EBD3FF8C5CAA712C32F0FD63931554A /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
-		A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapshotTesting.framework; path = SnapshotTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A08E9CACD956589E8BB071D912436F65 /* StepsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepsKey.html; path = docs/Structs/StepsKey.html; sourceTree = "<group>"; };
-		A0F51C5816B88F9E31B81E6D19A275F1 /* AlignmentKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AlignmentKey.html; path = docs/Structs/AlignmentKey.html; sourceTree = "<group>"; };
-		A3223FFB5A28EE1FB8A8A5A92FF2331B /* StepperView-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StepperView-iOS-Info.plist"; sourceTree = "<group>"; };
-		A3C49757B7C5A80FCAAE485203E87A1A /* HorizontalLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = HorizontalLineView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/HorizontalLineView.html; sourceTree = "<group>"; };
-		A3CAA83B2A8E3E758B9E411E404A1676 /* VerticalLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = VerticalLineView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/VerticalLineView.html; sourceTree = "<group>"; };
-		A3E037BE80D31FEA79CA093ABAD1A490 /* BlueSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BlueSubType.html; path = docs/Enums/Colors/BlueSubType.html; sourceTree = "<group>"; };
-		A43CCF0B941D43441BFC57B1103EF312 /* WidthKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WidthKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/WidthKey.html; sourceTree = "<group>"; };
-		A5F6CADF3C36203FC152F737B26025A2 /* StepperView-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "StepperView-watchOS-Info.plist"; path = "../StepperView-watchOS/StepperView-watchOS-Info.plist"; sourceTree = "<group>"; };
-		A750F4D0B9E250FE4EE59FC8FE3BD0C8 /* NumberedCircleView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = NumberedCircleView.html; path = docs/Structs/NumberedCircleView.html; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapshotTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03E2454D2B2AEBB42F13E3A0D9E0EED /* VerticalHeightPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = VerticalHeightPreference.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/VerticalHeightPreference.html; sourceTree = "<group>"; };
+		A40BD21589039107091DDDA123FD4048 /* SpacingKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = SpacingKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/SpacingKey.html; sourceTree = "<group>"; };
+		A482643AFF9C3EAF9558CB305C085000 /* CircledIconView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = CircledIconView.html; path = docs/Structs/CircledIconView.html; sourceTree = "<group>"; };
 		A786374E297AD3E72EF898FE0FE8DC2A /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Sources/SnapshotTesting/Snapshotting/UIViewController.swift; sourceTree = "<group>"; };
 		A7CCD67A742041597540C020D68418B5 /* Pods-StepperView_Watch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Watch-Info.plist"; sourceTree = "<group>"; };
+		A83B62B9FAD974781F12865E0C0E75E0 /* PitStopLineOptions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PitStopLineOptions.html; path = docs/Enums/PitStopLineOptions.html; sourceTree = "<group>"; };
 		A86F0DD6C92051D8A83077FC4673DDC2 /* Snapshotting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snapshotting.swift; path = Sources/SnapshotTesting/Snapshotting.swift; sourceTree = "<group>"; };
-		A91ADC6A01A4CA02F0F1B39BC0A055BD /* StepperLineOptions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperLineOptions.html; path = docs/Enums/StepperLineOptions.html; sourceTree = "<group>"; };
-		AAFF2B40EFA4567F71FE48AFDA1591AB /* StepperMode.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperMode.html; path = docs/Enums/StepperMode.html; sourceTree = "<group>"; };
+		A94F2741AD33F9CF44AC84374EC1DA63 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
+		A9824078EA7AB8787EC0D78D411D8D16 /* StepperView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = StepperView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepperView.html; sourceTree = "<group>"; };
 		AB914074C9FB52A54B0D276DDC120FD0 /* Pods-StepperView_Watch Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Watch Extension.modulemap"; sourceTree = "<group>"; };
-		AC568433C1B415B16F4AF2604B09A3B2 /* HeightPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; name = HeightPreference.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/HeightPreference.html; sourceTree = "<group>"; };
-		AD58FAF42403DC16E69F63576700B173 /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Enums.html; path = docs/Enums.html; sourceTree = "<group>"; };
-		AEC7C3A4C3FE9073F54B0F22ADDCE611 /* StepperIndicationType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperIndicationType.html; path = docs/Enums/StepperIndicationType.html; sourceTree = "<group>"; };
+		ADEC9B26D7A9084ACCC25A0B8136B4FE /* PreferenceKey+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PreferenceKey+Extension.swift"; sourceTree = "<group>"; };
+		B009DD3406CB5B8E37783C9B176282B4 /* RedSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = RedSubType.html; path = docs/Enums/Colors/RedSubType.html; sourceTree = "<group>"; };
+		B09ADAC8FF1B0C923C840572B815078F /* StepperView-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StepperView-iOS-Info.plist"; sourceTree = "<group>"; };
 		B0F01D10EAA958C6B1007C37FA512146 /* Pods-StepperView_Watch Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Watch Extension-Info.plist"; sourceTree = "<group>"; };
-		B183A08E5BC9C530F860965043E40494 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
-		B1A427CCCCE915495CDCEED64DC40395 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
-		B278D380BCEF7705396F57D92C07690E /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
-		B5D3487B23A829B5E4ADDA21BE1FED84 /* HorizontalLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
-		B6EDDCE233C79FD9E6C724BB7D14A96A /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
+		B257976C02F8E66AB5048367E2F92A7A /* PitStopLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PitStopLineView.html; path = docs/Structs/PitStopLineView.html; sourceTree = "<group>"; };
+		B3F15A3A7FB4EE8A47DC47DB20C3C922 /* StepperView-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "StepperView-iOS.modulemap"; sourceTree = "<group>"; };
+		B6936067A766008A87D96AD10EE23C69 /* TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		B7F4DA1477939461442D642761C8158E /* Pods-StepperView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StepperView_Example-dummy.m"; sourceTree = "<group>"; };
 		B85F63F6F0616F7FE7949F7EE63BD175 /* Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wait.swift; path = Sources/SnapshotTesting/Extensions/Wait.swift; sourceTree = "<group>"; };
-		BE7F529A66976F742A73F3BD4001F275 /* StepperView.tgz */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperView.tgz; path = docs/docsets/StepperView.tgz; sourceTree = "<group>"; };
+		BADE531E4B79705DA45A057D1A3CE290 /* IndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		BC693716B860206CA91F54132AC8E741 /* PitStopStep.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PitStopStep.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopStep.html; sourceTree = "<group>"; };
+		BF065D5B34AC2AA7EB5182E8F8CE84CA /* EnvironmentValues.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = EnvironmentValues.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Extensions/EnvironmentValues.html; sourceTree = "<group>"; };
 		BF4286727440DD327DE2AE95BF9D44E0 /* NSImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSImage.swift; path = Sources/SnapshotTesting/Snapshotting/NSImage.swift; sourceTree = "<group>"; };
-		C01A7930FF8C8DFD7FBD5F557CD998F3 /* HeightKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = HeightKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/HeightKey.html; sourceTree = "<group>"; };
-		C10B82FE336C4835D38D25FBD6749DE4 /* PitStopView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopView.html; sourceTree = "<group>"; };
+		C0CB73E0CF1DA212FDE8EBB8ED4F8BA9 /* PitStopOptionsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PitStopOptionsKey.html; path = docs/Structs/PitStopOptionsKey.html; sourceTree = "<group>"; };
+		C103E5AA5F06C4D8417E747117850B82 /* VerticalLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = VerticalLineView.html; path = docs/Structs/VerticalLineView.html; sourceTree = "<group>"; };
+		C1D4CA456994CD02876D97E2DA70FEB5 /* BoundsPreferenceKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BoundsPreferenceKey.html; path = docs/Structs/BoundsPreferenceKey.html; sourceTree = "<group>"; };
 		C20E55F7ABE13B5F0371BFEB6C4FF34C /* Pods-StepperView_Watch Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Watch Extension-acknowledgements.plist"; sourceTree = "<group>"; };
 		C213B490DAAF188ECBD5D1BF7BC777E6 /* SpriteKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpriteKit.swift; path = Sources/SnapshotTesting/Snapshotting/SpriteKit.swift; sourceTree = "<group>"; };
 		C359AED391F6ADA8E24CD9A124DA371E /* Pods-StepperView_Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepperView_Watch.release.xcconfig"; sourceTree = "<group>"; };
-		C3CF91545400F1F06C99E344A1C665A5 /* StepperView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = StepperView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C3F999BEA4F97F1724E7C20AC9FCE1E6 /* StepperView-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-iOS-umbrella.h"; sourceTree = "<group>"; };
-		C42E0CA62194E3D67E94AFE60078C85E /* View+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		C4BB757B0C569052CF1DBEC733FFD737 /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Sources/SnapshotTesting/Snapshotting/Data.swift; sourceTree = "<group>"; };
 		C719024204C3A03223697AF4003AF2E9 /* Pods-StepperView_Watch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StepperView_Watch-umbrella.h"; sourceTree = "<group>"; };
+		C7356471F9B4B8098D3F413774339BBD /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
+		C7C6A5871E7495251E238096D8846CB7 /* StepperView.tgz */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = StepperView.tgz; path = docs/docsets/StepperView.tgz; sourceTree = "<group>"; };
 		C836B8F59D3DBBAF3C72EC3E04029F40 /* Pods-StepperView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StepperView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D0254A960ADBEBC2917123912E9ED230 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
+		C9D21AA134E8B9D18C5ABA01BA45C861 /* NumberedCircleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NumberedCircleView.swift; sourceTree = "<group>"; };
+		CA34BF10D2A81C5EA9024C7DA455E7E9 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
+		D1993EFD1B49A89A4D09950F2824940C /* StepIndicatorModeKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = StepIndicatorModeKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepIndicatorModeKey.html; sourceTree = "<group>"; };
 		D1EDA2CFF4FC644BF0BA1960AF77E401 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestCase.swift; path = Sources/SnapshotTesting/SnapshotTestCase.swift; sourceTree = "<group>"; };
+		D3055DC13E4B840ACB6960C0540C40AE /* HeightPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = HeightPreference.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/HeightPreference.html; sourceTree = "<group>"; };
 		D34051EC87A66DF65C7B3D8627594429 /* NSView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSView.swift; path = Sources/SnapshotTesting/Snapshotting/NSView.swift; sourceTree = "<group>"; };
-		D42269459FFAC1220426DC703B78743F /* StepIndicatorModeKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepIndicatorModeKey.html; path = docs/Structs/StepIndicatorModeKey.html; sourceTree = "<group>"; };
-		D4BF79468F719B270348C4E8445D6F8D /* PitStopStep.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopStep.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopStep.html; sourceTree = "<group>"; };
 		D542F6AA8CFDC07A16382785E7895C41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5E3AB347C94EC70B0FEA70B0B758801 /* StepperView-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepperView-iOS-umbrella.h"; sourceTree = "<group>"; };
 		D68BA769606C404F7BC02E5F4D74C67A /* Pods-StepperView_Watch Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StepperView_Watch Extension-frameworks.sh"; sourceTree = "<group>"; };
+		D8A7586D1E70414ABA33BC29B79FD7C6 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = badge.svg; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/badge.svg; sourceTree = "<group>"; };
+		DA51F1FEC303E4B8FC1A78E719C551E5 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
 		DA9C38ACEC8EF6779198630A964BC9E8 /* NSViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSViewController.swift; path = Sources/SnapshotTesting/Snapshotting/NSViewController.swift; sourceTree = "<group>"; };
-		DD8870B9A5DEF426D83B30477E64EE1D /* VerticalHeightPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; name = VerticalHeightPreference.html; path = docs/Structs/VerticalHeightPreference.html; sourceTree = "<group>"; };
-		DDC1B5D70DCC56EA21B2B96273D20326 /* GraySubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = GraySubType.html; path = docs/Enums/Colors/GraySubType.html; sourceTree = "<group>"; };
+		DC0C009C82F0726C8FFA22303FBDA56D /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = docSet.dsidx; path = docs/docsets/StepperView.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
+		DE30E1A54928886E285C3031F6843066 /* RedSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = RedSubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/RedSubType.html; sourceTree = "<group>"; };
 		DE5CB9BA70CE2A0FB3E198A4FB9A5437 /* Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Any.swift; path = Sources/SnapshotTesting/Snapshotting/Any.swift; sourceTree = "<group>"; };
-		DEB4C1A453ED0178A52AD163E1984199 /* StepIndicatorVerticalView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepIndicatorVerticalView.html; path = docs/Structs/StepIndicatorVerticalView.html; sourceTree = "<group>"; };
+		DE60AA0C75AEEDBDD7A9F4B926ABA476 /* StepperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		DE7812FAAC8719D06C1B71E1AB90C0F5 /* StepperAlignment.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = StepperAlignment.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/StepperAlignment.html; sourceTree = "<group>"; };
+		DE7CAD2549E8EC007F44C1B49D049FBD /* TextView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = TextView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/TextView.html; sourceTree = "<group>"; };
 		DF19BCC9495D48049049450AADB9A50C /* AssertInlineSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertInlineSnapshot.swift; path = Sources/SnapshotTesting/AssertInlineSnapshot.swift; sourceTree = "<group>"; };
-		DFA92ED965E69EEAF5E191A5E52971D2 /* RedSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RedSubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/RedSubType.html; sourceTree = "<group>"; };
-		E0DD9739BCC23E88BE6E12625C0BD2F5 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
-		E1609C5792D0DD6923DB5577AEDABB82 /* IndicatorKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = IndicatorKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/IndicatorKey.html; sourceTree = "<group>"; };
-		E2B6FB77DD3024E23BDB7B8757A2D92E /* PitStopLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PitStopLineView.swift; sourceTree = "<group>"; };
-		E3090ABD5CC6227620BC6FAB88A5828C /* StepperView-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepperView-iOS-dummy.m"; sourceTree = "<group>"; };
-		E4AFB6D44CAA20FD1B929673E91315FD /* SpacingKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SpacingKey.html; path = docs/Structs/SpacingKey.html; sourceTree = "<group>"; };
-		E67253B08E7DFCBC0A310FA25304B144 /* CGRectData.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CGRectData.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/CGRectData.html; sourceTree = "<group>"; };
+		E173BF6B31B11AC1736741FC97FDC78A /* StepperView-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "StepperView-watchOS-umbrella.h"; path = "../StepperView-watchOS/StepperView-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		E1B6FB5AC7E94B9E8335982A55887DA8 /* StepperAlignment.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = StepperAlignment.html; path = docs/Enums/StepperAlignment.html; sourceTree = "<group>"; };
+		E5562ABD49E121B40E814686EBBE08C6 /* StepperView-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "StepperView-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E6A3274FB1B6B5844F8D1A124BE5B0EE /* URLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = Sources/SnapshotTesting/Snapshotting/URLRequest.swift; sourceTree = "<group>"; };
-		E7307604D80AC1B39914EFDE679341DD /* OptionalView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = OptionalView.html; path = docs/Structs/OptionalView.html; sourceTree = "<group>"; };
-		E84EE044E8550A0B128DEA4DF3D8787D /* CircledIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CircledIconView.swift; sourceTree = "<group>"; };
-		EAD11C557D390D82F778D70456431841 /* PreferenceKey+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PreferenceKey+Extension.swift"; sourceTree = "<group>"; };
+		E9E17C52822C847C1DD9F974D1FE0D36 /* StepperMode.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = StepperMode.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/StepperMode.html; sourceTree = "<group>"; };
 		EB353159037433B43D06771A808670A2 /* PlistEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlistEncoder.swift; path = Sources/SnapshotTesting/Common/PlistEncoder.swift; sourceTree = "<group>"; };
-		ED89836E37B882BC597EE6FD1A0E7D83 /* StepperAlignment.html */ = {isa = PBXFileReference; includeInIndex = 1; name = StepperAlignment.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/StepperAlignment.html; sourceTree = "<group>"; };
-		EDE0C95F94834F498B854A81A11681D9 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
+		EC1F2FF0508A6974F2BE5B1A4726C8C9 /* StepsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = StepsKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/StepsKey.html; sourceTree = "<group>"; };
+		ED97FCBC6D8F2E526F2B9A8B77C094A6 /* BlueSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BlueSubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/BlueSubType.html; sourceTree = "<group>"; };
 		EEAE8840A67B4CB05ECDAF5A85E24B50 /* Pods-StepperView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StepperView_Tests-Info.plist"; sourceTree = "<group>"; };
-		EFAB7EBDFAB8A3B6695DE5C4496B9791 /* StepIndicatorHorizontalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepIndicatorHorizontalView.swift; sourceTree = "<group>"; };
-		F093B921CA53E09F7E47DF9F273956B8 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
-		F32465CB1DC4CEE4D8DA9B89FAA899FE /* PitStopOptionsKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopOptionsKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopOptionsKey.html; sourceTree = "<group>"; };
-		F4BA38CAE30AB08F94AC483D1F09AFE5 /* HeightKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = HeightKey.html; path = docs/Structs/HeightKey.html; sourceTree = "<group>"; };
-		F5671558B1861D634ED1EB7D3D24F56B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F5A521CD8CC04151EBE7E39DD735143B /* IndicatorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = IndicatorView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/IndicatorView.html; sourceTree = "<group>"; };
-		F631A9742E4B7230AEBCE296A7A92738 /* Pods_StepperView_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StepperView_Watch_Extension.framework; path = "Pods-StepperView_Watch Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F681439A53D738F4131868324AC27D33 /* WidthPreference.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WidthPreference.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/WidthPreference.html; sourceTree = "<group>"; };
+		EFE00DB3F58F9684C291F2AE0472ACB7 /* GreenSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = GreenSubType.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Enums/Colors/GreenSubType.html; sourceTree = "<group>"; };
+		EFF18025A3728E66A24796EAAAA00F7C /* StepperView-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "StepperView-watchOS.debug.xcconfig"; path = "../StepperView-watchOS/StepperView-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F035612ECDC24812AE8C4ED39D0B0A92 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = jazzy.css; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
+		F0AE204C74DFE570E9C197CE5C40D79B /* HorizontalLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
+		F60B374CCC4B2070135196954DA0D446 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F631A9742E4B7230AEBCE296A7A92738 /* Pods_StepperView_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D0F381CFC2E71B5848DDF3C61525EA /* Pods-StepperView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StepperView_Example.modulemap"; sourceTree = "<group>"; };
-		F7143456EC736EBB7206FA5865BAF1B7 /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Structs.html; path = docs/Structs.html; sourceTree = "<group>"; };
-		F7A28990EE289B57785092FC0B58A4AF /* PitStopStep.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PitStopStep.html; path = docs/Structs/PitStopStep.html; sourceTree = "<group>"; };
-		F87050A5C8B54201E473D666FC0711F3 /* StepperView-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "StepperView-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		F8AFFA10BF0A6EE1B632372363D1F209 /* StepperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		F7E85C24A5E69BC3F280FEE293739ED0 /* View.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = View.html; path = docs/Extensions/View.html; sourceTree = "<group>"; };
 		F8C5BFB2709ACA3DB976330C93F0F0B0 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/SnapshotTesting/Async.swift; sourceTree = "<group>"; };
-		F9CAB536D3FC9CA5CAEA36FFD33994AF /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
-		FC669ECAAEC933A7AD7E63E5A288DE25 /* Colors+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
+		FA0D27B1479BF5A720DCE5122731AEF6 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
+		FAEF3AAD6B481E7AADA012D73A55C946 /* PitStopView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PitStopView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopView.html; sourceTree = "<group>"; };
+		FB90C35EE2380FAD9C9F7CDC1FE915AC /* GreenSubType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = GreenSubType.html; path = docs/Enums/Colors/GreenSubType.html; sourceTree = "<group>"; };
+		FC11420E1636A1F8BCE34DCB75AF6893 /* HeightKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = HeightKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/HeightKey.html; sourceTree = "<group>"; };
 		FD10704D670BE755E3C1A04C482F14BB /* CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CALayer.swift; path = Sources/SnapshotTesting/Snapshotting/CALayer.swift; sourceTree = "<group>"; };
-		FD87B3E7E757CBD7683012A07BF448A0 /* AlignmentKey.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AlignmentKey.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/AlignmentKey.html; sourceTree = "<group>"; };
+		FD640CFF072E9FE2CA0A60617C2DB689 /* PitStopLineView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PitStopLineView.html; path = docs/docsets/StepperView.docset/Contents/Resources/Documents/Structs/PitStopLineView.html; sourceTree = "<group>"; };
 		FE54E0EE77832C01DC96FA42213EFA34 /* SnapshotTesting-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-umbrella.h"; sourceTree = "<group>"; };
+		FFA2146014BF27A9D2BD9341FF5B67F5 /* StepIndicatorModeKey.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = StepIndicatorModeKey.html; path = docs/Structs/StepIndicatorModeKey.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,52 +442,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		09B7F8627D91A14A2621897EBA3768BE /* StepperView */ = {
+		2D193C47FA59CB78A93970817171B738 /* Lines */ = {
 			isa = PBXGroup;
 			children = (
-				BE28066C243EAEFCCDAF0C4A0E62E737 /* Extension */,
-				AD920554478EBCE604478676817479F1 /* Pod */,
-				6A7FB5EE36C4442D9A51706DA24EB39A /* Support Files */,
-				25A4E308DBDF6EAC1830773A4157E38A /* Views */,
+				F0AE204C74DFE570E9C197CE5C40D79B /* HorizontalLineView.swift */,
+				448C5E5AD92C690A21F426ED473C4F41 /* PitStopLineView.swift */,
+				506C73D723EE01EE21B0990E99654362 /* VerticalLineView.swift */,
 			);
-			name = StepperView;
-			path = ../..;
+			path = Lines;
 			sourceTree = "<group>";
 		};
-		1F66429769D40B115CFC1765F2A46F00 /* Components */ = {
+		5522F35DBC32AA393C4574382F04D8CA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5383F3E09FF9BFCFD042268922320579 /* PitStopSteps.swift */,
-				21B747218A145097FB28843B8C6A8509 /* TextView.swift */,
+				93F58D5B9352CC10E6CDEA242D34133C /* Colors+Extension.swift */,
+				181F8C7F75FF28F692D1C0294031468B /* EnvironmentValues+Extension.swift */,
+				ADEC9B26D7A9084ACCC25A0B8136B4FE /* PreferenceKey+Extension.swift */,
+				8E5C1B8618BF6C074CC13654A56FA8F4 /* Utils.swift */,
+				783174AE3DB94E5C0F20DB0BD9C4FC4C /* VerticalAlignment+Extension.swift */,
+				5A6C7E33B8041344A46BDEFC924CC449 /* View+Extensions.swift */,
 			);
-			name = Components;
-			path = Components;
-			sourceTree = "<group>";
-		};
-		25A4E308DBDF6EAC1830773A4157E38A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9D47FC149CF575352319A301703D79F5 /* PitStopView.swift */,
-				EFAB7EBDFAB8A3B6695DE5C4496B9791 /* StepIndicatorHorizontalView.swift */,
-				04A8C737963DEEA8659877942AE2E072 /* StepIndicatorVerticalView.swift */,
-				F8AFFA10BF0A6EE1B632372363D1F209 /* StepperView.swift */,
-				1F66429769D40B115CFC1765F2A46F00 /* Components */,
-				35293F828059C759F2B03B4976B36F3B /* Indicators */,
-				947E880EB159D9184E5AFC23BF22A100 /* Lines */,
-			);
-			name = Views;
-			path = Sources/StepperView/Views;
-			sourceTree = "<group>";
-		};
-		35293F828059C759F2B03B4976B36F3B /* Indicators */ = {
-			isa = PBXGroup;
-			children = (
-				E84EE044E8550A0B128DEA4DF3D8787D /* CircledIconView.swift */,
-				005096B1AC7758FCE71AAB06EC2EFDA8 /* IndicatorView.swift */,
-				69BDE20641B6A96705391BAE24D6086E /* NumberedCircleView.swift */,
-			);
-			name = Indicators;
-			path = Indicators;
+			name = Extension;
+			path = Sources/StepperView/Extension;
 			sourceTree = "<group>";
 		};
 		6797754039C8529BEAA26885B066DAA5 /* Pods-StepperView_Example */ = {
@@ -505,28 +481,6 @@
 			);
 			name = "Pods-StepperView_Example";
 			path = "Target Support Files/Pods-StepperView_Example";
-			sourceTree = "<group>";
-		};
-		6A7FB5EE36C4442D9A51706DA24EB39A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7A74465E5FFC1DD8559719AD1EC7B70A /* StepperView-iOS.modulemap */,
-				E3090ABD5CC6227620BC6FAB88A5828C /* StepperView-iOS-dummy.m */,
-				A3223FFB5A28EE1FB8A8A5A92FF2331B /* StepperView-iOS-Info.plist */,
-				0B8779FA7393CB18BFDA2EED47AC4427 /* StepperView-iOS-prefix.pch */,
-				C3F999BEA4F97F1724E7C20AC9FCE1E6 /* StepperView-iOS-umbrella.h */,
-				3160200FB61EBD02F49B76542746F583 /* StepperView-iOS.debug.xcconfig */,
-				F87050A5C8B54201E473D666FC0711F3 /* StepperView-iOS.release.xcconfig */,
-				7995127A56C71436C101A08AC293ABA3 /* StepperView-watchOS.modulemap */,
-				279C30FC4E9FA5A2B4D398C0809CD1C8 /* StepperView-watchOS-dummy.m */,
-				A5F6CADF3C36203FC152F737B26025A2 /* StepperView-watchOS-Info.plist */,
-				130074E17A55E508DD509C4C1157C47C /* StepperView-watchOS-prefix.pch */,
-				71B55A8A8A7BA66D2788AFA6256CA3BC /* StepperView-watchOS-umbrella.h */,
-				34A6913DDD0C76798288FA46F74C3D69 /* StepperView-watchOS.debug.xcconfig */,
-				210C3FF178F1F2C206A83B76C1F3AA96 /* StepperView-watchOS.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/StepperView-iOS";
 			sourceTree = "<group>";
 		};
 		6FC9AF4CEA617D29D9D2246CB9DCCBEA /* Targets Support Files */ = {
@@ -560,7 +514,7 @@
 		74DB3E6AC107DA3A151CA4896272A583 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				09B7F8627D91A14A2621897EBA3768BE /* StepperView */,
+				E5D3BA720E8E95F324EFD8B5C9F832CC /* StepperView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -605,17 +559,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		947E880EB159D9184E5AFC23BF22A100 /* Lines */ = {
-			isa = PBXGroup;
-			children = (
-				B5D3487B23A829B5E4ADDA21BE1FED84 /* HorizontalLineView.swift */,
-				E2B6FB77DD3024E23BDB7B8757A2D92E /* PitStopLineView.swift */,
-				6EBFBCD278A07AEB39040784B5749900 /* VerticalLineView.swift */,
-			);
-			name = Lines;
-			path = Lines;
-			sourceTree = "<group>";
-		};
 		9659C94C85FA0FD9A56D413149C89233 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -629,6 +572,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SnapshotTesting";
+			sourceTree = "<group>";
+		};
+		965DBFC4F65E747EFCF69805564AD021 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7D2269BE6183C2BDE3F477C90A57C03F /* PitStopSteps.swift */,
+				B6936067A766008A87D96AD10EE23C69 /* TextView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		9CBC708B97F0A9B01A63E047528FEC7D /* Pods-StepperView_Watch */ = {
@@ -682,7 +634,6 @@
 				410FC8A7EC948E73AC72E902BE6E37E3 /* XCTAttachment.swift */,
 				9659C94C85FA0FD9A56D413149C89233 /* Support Files */,
 			);
-			name = SnapshotTesting;
 			path = SnapshotTesting;
 			sourceTree = "<group>";
 		};
@@ -694,145 +645,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		AD920554478EBCE604478676817479F1 /* Pod */ = {
+		BAFCCD24942389188F9BF8957773E98E /* Indicators */ = {
 			isa = PBXGroup;
 			children = (
-				FD87B3E7E757CBD7683012A07BF448A0 /* AlignmentKey.html */,
-				A0F51C5816B88F9E31B81E6D19A275F1 /* AlignmentKey.html */,
-				02055DA4FB85E105C18807998643AD95 /* badge.svg */,
-				B278D380BCEF7705396F57D92C07690E /* badge.svg */,
-				A3E037BE80D31FEA79CA093ABAD1A490 /* BlueSubType.html */,
-				356F6EF06623D181B7E8BD2E449628CE /* BlueSubType.html */,
-				7135E5846BF73EF9C0DC2147FEA59A6E /* BoundsPreferenceKey.html */,
-				52E5CCC0DADB32480E883710821F1BD0 /* BoundsPreferenceKey.html */,
-				7B4D19C570CDA299158B9071BCDCD417 /* carat.png */,
-				F093B921CA53E09F7E47DF9F273956B8 /* carat.png */,
-				56C42F781C434AE80F1FD1864F171567 /* CGRectData.html */,
-				E67253B08E7DFCBC0A310FA25304B144 /* CGRectData.html */,
-				629B34B3C654E3537FB4064A332BA5CE /* CGRectPreferenceKey.html */,
-				649F76D00A902280A03D6F0C1B0FA4FE /* CGRectPreferenceKey.html */,
-				8B9AD7880DD4079BA44421B2B84ABC60 /* CircledIconView.html */,
-				7291AD225A0C161B1727DF818F5E680E /* CircledIconView.html */,
-				8EFCE0F2C03B781BFC7E1C14B375BD12 /* Colors.html */,
-				1E907DCB4928CEFF0BF7C4030CECCCD6 /* Colors.html */,
-				2771E96478F111509A19FA4AF979E512 /* dash.png */,
-				B6EDDCE233C79FD9E6C724BB7D14A96A /* dash.png */,
-				3CCC0DDC804EC095744C5B5E4FF3B741 /* docSet.dsidx */,
-				1B9B715FDE7F6B6BC1C2288DC7308023 /* Enums.html */,
-				AD58FAF42403DC16E69F63576700B173 /* Enums.html */,
-				3AAC5EA749B17383C58FB270D5DB34F7 /* EnvironmentValues.html */,
-				886676B22E4DDAADA9D15C7897ADE203 /* EnvironmentValues.html */,
-				82D521C9167E7C75FD30C266CB2CB429 /* Extensions.html */,
-				F9CAB536D3FC9CA5CAEA36FFD33994AF /* Extensions.html */,
-				48AA6F4603243636B065D34E034B03AF /* gh.png */,
-				91C14392F0DAF9F3F59A14C5A8486698 /* gh.png */,
-				7C04BD4C1F3A8484D95F098C81A108C1 /* GraySubType.html */,
-				DDC1B5D70DCC56EA21B2B96273D20326 /* GraySubType.html */,
-				2AD6841DE2D60E516C4FC62A279537C1 /* GreenSubType.html */,
-				6A0D7DF7C52223F63360C99EF5B5B8B6 /* GreenSubType.html */,
-				C01A7930FF8C8DFD7FBD5F557CD998F3 /* HeightKey.html */,
-				F4BA38CAE30AB08F94AC483D1F09AFE5 /* HeightKey.html */,
-				9C7C2F8F96C6E5AFB7FF41DE8514464E /* HeightPreference.html */,
-				AC568433C1B415B16F4AF2604B09A3B2 /* HeightPreference.html */,
-				93CC047E780D805470D02DC5CBD6117F /* highlight.css */,
-				5BE30D0E2084F8402CB122D67A9FF253 /* highlight.css */,
-				A3C49757B7C5A80FCAAE485203E87A1A /* HorizontalLineView.html */,
-				42FC65560A740E67F033C3DEE3A0AE8D /* HorizontalLineView.html */,
-				9B1B16B539FF89D6070579BE2FE4F44C /* index.html */,
-				B183A08E5BC9C530F860965043E40494 /* index.html */,
-				E1609C5792D0DD6923DB5577AEDABB82 /* IndicatorKey.html */,
-				6A3E98EDED48FBBAAFF44BF487922CD5 /* IndicatorKey.html */,
-				1A5F00404DBCAFAF292A31A057652EF8 /* IndicatorView.html */,
-				F5A521CD8CC04151EBE7E39DD735143B /* IndicatorView.html */,
-				41A008AA9025409E9F8AE480F429890F /* Info.plist */,
-				EDE0C95F94834F498B854A81A11681D9 /* jazzy.css */,
-				B1A427CCCCE915495CDCEED64DC40395 /* jazzy.css */,
-				E0DD9739BCC23E88BE6E12625C0BD2F5 /* jazzy.js */,
-				07E8A71CA0D8F5A6D385F359C938C4F5 /* jazzy.js */,
-				D0254A960ADBEBC2917123912E9ED230 /* jquery.min.js */,
-				698A704B9BC01F59C1A97FEA39D945C4 /* jquery.min.js */,
-				F5671558B1861D634ED1EB7D3D24F56B /* LICENSE */,
-				94C4CB20D93F0343B35016EBEF738D2C /* LineOptionsKey.html */,
-				89418313165ABC1A5F56CA293F4615EF /* LineOptionsKey.html */,
-				A750F4D0B9E250FE4EE59FC8FE3BD0C8 /* NumberedCircleView.html */,
-				853242EF3D39D1BB1DC319DD023FC28B /* NumberedCircleView.html */,
-				E7307604D80AC1B39914EFDE679341DD /* OptionalView.html */,
-				6B9B885874AF47FC50062253932D2A1C /* OptionalView.html */,
-				0DB5612F815E641475C49C06977AF3E1 /* PitStopLineOptions.html */,
-				6BCD5EC40F85FA0EA65F41A8F91E96E7 /* PitStopLineOptions.html */,
-				0650A35914B01E8D459E45E7B62CA1B0 /* PitStopLineView.html */,
-				4F135DA846C0BF3EA0A5E2AF0995DD31 /* PitStopLineView.html */,
-				F32465CB1DC4CEE4D8DA9B89FAA899FE /* PitStopOptionsKey.html */,
-				9BEFFF016F98307C019DCE029B2AB808 /* PitStopOptionsKey.html */,
-				D4BF79468F719B270348C4E8445D6F8D /* PitStopStep.html */,
-				F7A28990EE289B57785092FC0B58A4AF /* PitStopStep.html */,
-				64E23FF7E371B4D5007D22D00B478D97 /* PitStopSteps.html */,
-				02C435E3F6B2B2232345B1E3C7A0EAB6 /* PitStopSteps.html */,
-				C10B82FE336C4835D38D25FBD6749DE4 /* PitStopView.html */,
-				2F32F10B588EA864A033968B689A24DD /* PitStopView.html */,
-				746E37DB7AA5E0859D58885181785544 /* README.md */,
-				43EB2DF9E3F9265ADE0F26C2C117A286 /* RedSubType.html */,
-				DFA92ED965E69EEAF5E191A5E52971D2 /* RedSubType.html */,
-				9EBD3FF8C5CAA712C32F0FD63931554A /* search.json */,
-				5102CCB07C33FD9321199ABE7B31F0E2 /* search.json */,
-				E4AFB6D44CAA20FD1B929673E91315FD /* SpacingKey.html */,
-				23931FE0F5A6DEF4FC040D6784128D40 /* SpacingKey.html */,
-				409DD5241CCD698AB8134F75AE844B4F /* StepIndicatorHorizontalView.html */,
-				2E935BEC4B9F7F7CEA8CB0D2D1BBCE09 /* StepIndicatorHorizontalView.html */,
-				208464BC94C2DA9FFA3B3860E83CE4C3 /* StepIndicatorModeKey.html */,
-				D42269459FFAC1220426DC703B78743F /* StepIndicatorModeKey.html */,
-				755193B79A432DDE3DCE9EED178D2AF7 /* StepIndicatorVerticalView.html */,
-				DEB4C1A453ED0178A52AD163E1984199 /* StepIndicatorVerticalView.html */,
-				43D681B20E6D558C8F25796D11AB72C2 /* StepperAlignment.html */,
-				ED89836E37B882BC597EE6FD1A0E7D83 /* StepperAlignment.html */,
-				AEC7C3A4C3FE9073F54B0F22ADDCE611 /* StepperIndicationType.html */,
-				5EF93B7B7A04759533BEA936CF29D5F8 /* StepperIndicationType.html */,
-				0CFF6913DCECB3C756DC75E27C595A07 /* StepperLineOptions.html */,
-				A91ADC6A01A4CA02F0F1B39BC0A055BD /* StepperLineOptions.html */,
-				AAFF2B40EFA4567F71FE48AFDA1591AB /* StepperMode.html */,
-				25F8858FA6D1EC42513CC1EFA50FC4AC /* StepperMode.html */,
-				32ABD895D4D19578F4B2043695A2F76A /* StepperView.html */,
-				5C52C609D3A9B2A1184A2B516A1B31CB /* StepperView.html */,
-				C3CF91545400F1F06C99E344A1C665A5 /* StepperView.podspec */,
-				BE7F529A66976F742A73F3BD4001F275 /* StepperView.tgz */,
-				A08E9CACD956589E8BB071D912436F65 /* StepsKey.html */,
-				685BF5DC291FB0B1661784F337F6B898 /* StepsKey.html */,
-				985E98408DFE500A87EF2ECB995FA13F /* Structs.html */,
-				F7143456EC736EBB7206FA5865BAF1B7 /* Structs.html */,
-				8A6D1191009D94C4378ABFA1B5944327 /* TextView.html */,
-				3A1C9A0691013EDE96E7ECDAA6BA726A /* TextView.html */,
-				49B36460203C5E4EB33D8D9DA2426FE9 /* Utils.html */,
-				7C431FB181ACBA92F7D9838A5CEA4027 /* Utils.html */,
-				88D498B75095B135DBE070233A0B489C /* VerticalAlignment.html */,
-				4D3C2739F36A5B4F9348944B4C6C46EE /* VerticalAlignment.html */,
-				116BF80E2ECA8E8175385A0956809570 /* VerticalHeightPreference.html */,
-				DD8870B9A5DEF426D83B30477E64EE1D /* VerticalHeightPreference.html */,
-				278C421C57DC66DE2586C46FB222A758 /* VerticalLineView.html */,
-				A3CAA83B2A8E3E758B9E411E404A1676 /* VerticalLineView.html */,
-				3696BE376F4DE21D84CE19E0B10DBD25 /* View.html */,
-				964E2B9C4DEF154BCADD843EC74A265B /* View.html */,
-				A43CCF0B941D43441BFC57B1103EF312 /* WidthKey.html */,
-				95DB3B5AD58DBDAFF47B30C98D63B9FD /* WidthKey.html */,
-				0CE5403F621597687FDCC025D4ECCE38 /* WidthPreference.html */,
-				F681439A53D738F4131868324AC27D33 /* WidthPreference.html */,
-				21E4F50CEE8E79129FC4D7FB2B888706 /* YellowSubType.html */,
-				9D6F0815FC3E03E561D11643D9F8849E /* YellowSubType.html */,
+				4C6FCFA95C328F5E3765883A0B039218 /* CircledIconView.swift */,
+				BADE531E4B79705DA45A057D1A3CE290 /* IndicatorView.swift */,
+				C9D21AA134E8B9D18C5ABA01BA45C861 /* NumberedCircleView.swift */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		BE28066C243EAEFCCDAF0C4A0E62E737 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				FC669ECAAEC933A7AD7E63E5A288DE25 /* Colors+Extension.swift */,
-				55F7C0A17969271CC4D0C41BB1631D8A /* EnvironmentValues+Extension.swift */,
-				EAD11C557D390D82F778D70456431841 /* PreferenceKey+Extension.swift */,
-				005C01A215D9E07475340F085A99DD00 /* Utils.swift */,
-				9C9B7DA813C51B0CD399EEA7923DF356 /* VerticalAlignment+Extension.swift */,
-				C42E0CA62194E3D67E94AFE60078C85E /* View+Extensions.swift */,
-			);
-			name = Extension;
-			path = Sources/StepperView/Extension;
+			path = Indicators;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -853,6 +673,182 @@
 				82F1E3501EE0EE229AFC92FE011CA6A4 /* Foundation.framework */,
 			);
 			name = watchOS;
+			sourceTree = "<group>";
+		};
+		E5D3BA720E8E95F324EFD8B5C9F832CC /* StepperView */ = {
+			isa = PBXGroup;
+			children = (
+				5522F35DBC32AA393C4574382F04D8CA /* Extension */,
+				EDE807797C3612794A45BA9303A6B30F /* Pod */,
+				FE1C820DC8EF29A2881D563DB776119A /* Support Files */,
+				F0E53E7104E9358181BCC0B9C9E21755 /* Views */,
+			);
+			name = StepperView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EDE807797C3612794A45BA9303A6B30F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				629CA5992BC5273631A7684070EB4C23 /* AlignmentKey.html */,
+				7BFA6032A7F8A1176867174B97084BEE /* AlignmentKey.html */,
+				DA51F1FEC303E4B8FC1A78E719C551E5 /* badge.svg */,
+				D8A7586D1E70414ABA33BC29B79FD7C6 /* badge.svg */,
+				97D354E6388150EC3520148AD1BEB5D5 /* BlueSubType.html */,
+				ED97FCBC6D8F2E526F2B9A8B77C094A6 /* BlueSubType.html */,
+				459F411390F0E980D596A4B7DC788D02 /* BoundsPreferenceKey.html */,
+				C1D4CA456994CD02876D97E2DA70FEB5 /* BoundsPreferenceKey.html */,
+				44799525E8A776F4DB5A1C2F13110699 /* carat.png */,
+				997EBBCED7CD73CDEB2391CDE1E67132 /* carat.png */,
+				37F09254145DBD97A3FD67111A15EFA7 /* CGRectData.html */,
+				42EAAD85CB238717172D975113168467 /* CGRectData.html */,
+				29FFEE4C2325DA5E0B990C14762A0E4B /* CGRectPreferenceKey.html */,
+				2402AF6D19C5B468EAAC6F0B8393BA28 /* CGRectPreferenceKey.html */,
+				075401D12C4660A61955CDF4DCBC4AA0 /* CircledIconView.html */,
+				A482643AFF9C3EAF9558CB305C085000 /* CircledIconView.html */,
+				7C3B413EEA2566C06AFAC72CCC553AC5 /* Colors.html */,
+				800340E2DF6AEAE1339AF43ADAC0F0B1 /* Colors.html */,
+				053A8E517FBAA479E6A79D86F66EF211 /* dash.png */,
+				4D5EADBD3B8891AB75CD1DD9E90B30E5 /* dash.png */,
+				DC0C009C82F0726C8FFA22303FBDA56D /* docSet.dsidx */,
+				57E7B6275AF06F19AA184D3DE390AA48 /* Enums.html */,
+				94C8967658D23A417C9D95939178FCDA /* Enums.html */,
+				BF065D5B34AC2AA7EB5182E8F8CE84CA /* EnvironmentValues.html */,
+				5AAB434938E381E791BA0A85312665FA /* EnvironmentValues.html */,
+				9BB337430361B5914403364B7021239E /* Extensions.html */,
+				5D79390C11A6F8588D32F34705BFFECD /* Extensions.html */,
+				2ACE3EA50ADD2AE09E7E9644EFE9414A /* gh.png */,
+				C7356471F9B4B8098D3F413774339BBD /* gh.png */,
+				93D9674DA0D5444DED983FBE676C961B /* GraySubType.html */,
+				8648B803DAE78ED1B7DE48FB189360A4 /* GraySubType.html */,
+				EFE00DB3F58F9684C291F2AE0472ACB7 /* GreenSubType.html */,
+				FB90C35EE2380FAD9C9F7CDC1FE915AC /* GreenSubType.html */,
+				FC11420E1636A1F8BCE34DCB75AF6893 /* HeightKey.html */,
+				414979EACB8A6711F8A8CD913FCE2C39 /* HeightKey.html */,
+				D3055DC13E4B840ACB6960C0540C40AE /* HeightPreference.html */,
+				54F9F8FB6DACD8609375C6C8CFBE28DE /* HeightPreference.html */,
+				6872746F6F6ECF60E288678AB61AEE2F /* highlight.css */,
+				4C16E650210432EFDFE68EF6B5934950 /* highlight.css */,
+				09323D654DBCDB3B557B10B3FEC8943E /* HorizontalLineView.html */,
+				4395FB49164F85E56A21141E928CAAE8 /* HorizontalLineView.html */,
+				FA0D27B1479BF5A720DCE5122731AEF6 /* index.html */,
+				9BE676F7594CC850470394ACAB2EB682 /* index.html */,
+				4AA7092AC21CB736EF04E4532E1BAF0D /* IndicatorKey.html */,
+				650638B71F29E938C7585BFF0C63EFEE /* IndicatorKey.html */,
+				34AEC2F5A8412D232548452DB405F39C /* IndicatorView.html */,
+				33CCF241FEDCDC20433EE71A831FBEAC /* IndicatorView.html */,
+				257F15CC7DCB2DD8B1A1F1B85595AE14 /* Info.plist */,
+				7DC6E4EA43FF4B74EC983E0625B95D1B /* jazzy.css */,
+				F035612ECDC24812AE8C4ED39D0B0A92 /* jazzy.css */,
+				7C7614F070798A1C08C868D4478370E5 /* jazzy.js */,
+				A94F2741AD33F9CF44AC84374EC1DA63 /* jazzy.js */,
+				9A4445265299F27EAE32B01E9AF1E3C2 /* jquery.min.js */,
+				4FE56ED21ED2FE5A486528D38C7146A5 /* jquery.min.js */,
+				129CADF8F7E5435903F16E82F3D8C1FD /* LICENSE */,
+				23B4DBD7E6B43FDC30FF421AF47A4082 /* LineOptionsKey.html */,
+				6A5589AE0D8A0D936BC0806AEFD3C1E7 /* LineOptionsKey.html */,
+				68C8912E9131D1B1051BD43B80AAAA01 /* NumberedCircleView.html */,
+				003A21F01B9C99B6915C76A438C6075D /* NumberedCircleView.html */,
+				A83B62B9FAD974781F12865E0C0E75E0 /* PitStopLineOptions.html */,
+				6191A1DBFFED69F78A80CE157704ED7B /* PitStopLineOptions.html */,
+				B257976C02F8E66AB5048367E2F92A7A /* PitStopLineView.html */,
+				FD640CFF072E9FE2CA0A60617C2DB689 /* PitStopLineView.html */,
+				7B0E970D8048C36680F78A174CA68602 /* PitStopOptionsKey.html */,
+				C0CB73E0CF1DA212FDE8EBB8ED4F8BA9 /* PitStopOptionsKey.html */,
+				BC693716B860206CA91F54132AC8E741 /* PitStopStep.html */,
+				5F6321D1FB51B97E15D6AD6BAE3EA0EF /* PitStopStep.html */,
+				71806C13275A2DAF9111760714B6065A /* PitStopSteps.html */,
+				55A3EF5D435AF928455B2FF37F1999E9 /* PitStopSteps.html */,
+				FAEF3AAD6B481E7AADA012D73A55C946 /* PitStopView.html */,
+				28DF8FAD963F7A81DA8B124708919994 /* PitStopView.html */,
+				F60B374CCC4B2070135196954DA0D446 /* README.md */,
+				DE30E1A54928886E285C3031F6843066 /* RedSubType.html */,
+				B009DD3406CB5B8E37783C9B176282B4 /* RedSubType.html */,
+				56D87A407FC8A4155AC98BFFADB26FAF /* search.json */,
+				8C499E1790A1903D8BB078950AE25784 /* search.json */,
+				0473BDFAF6F27FAAAFC78CDC0305FCAB /* SpacingKey.html */,
+				A40BD21589039107091DDDA123FD4048 /* SpacingKey.html */,
+				149F86A59BE37D783B31167CDF3C05EC /* StepIndicatorHorizontalView.html */,
+				8C5AF6ECA14957DF2C07B781864F7CB1 /* StepIndicatorHorizontalView.html */,
+				FFA2146014BF27A9D2BD9341FF5B67F5 /* StepIndicatorModeKey.html */,
+				D1993EFD1B49A89A4D09950F2824940C /* StepIndicatorModeKey.html */,
+				414A7E85FF280AD0FA5444EE3A12D963 /* StepIndicatorVerticalView.html */,
+				48078B40C23A0B309A50A3138FEBD348 /* StepIndicatorVerticalView.html */,
+				DE7812FAAC8719D06C1B71E1AB90C0F5 /* StepperAlignment.html */,
+				E1B6FB5AC7E94B9E8335982A55887DA8 /* StepperAlignment.html */,
+				2D9FB57ADFF4277924B8FA8E930986A6 /* StepperIndicationType.html */,
+				4EB150295B7DA934B26EDADE1B35637C /* StepperIndicationType.html */,
+				7FFF11D9ADDFF934E5440D190B81699B /* StepperLineOptions.html */,
+				81600506C8CC38E313298B99BC9ACEF5 /* StepperLineOptions.html */,
+				E9E17C52822C847C1DD9F974D1FE0D36 /* StepperMode.html */,
+				5C8A736E6AE5D65C09067273EF6DA575 /* StepperMode.html */,
+				A9824078EA7AB8787EC0D78D411D8D16 /* StepperView.html */,
+				78A1B024EB783917EF028BB4F17C2746 /* StepperView.html */,
+				4738989BC4D53B625F4894FE90DE1421 /* StepperView.podspec */,
+				C7C6A5871E7495251E238096D8846CB7 /* StepperView.tgz */,
+				22CF01871C3CD548FAE5CCB31DEE9499 /* StepsKey.html */,
+				EC1F2FF0508A6974F2BE5B1A4726C8C9 /* StepsKey.html */,
+				453F571E50C91574DB675A4C00A17FA9 /* Structs.html */,
+				2C5A82F182FAB951A57852A84BB6A0E1 /* Structs.html */,
+				DE7CAD2549E8EC007F44C1B49D049FBD /* TextView.html */,
+				9A1763F33C3C4C1D1CACA42C8647CE9D /* TextView.html */,
+				4D1734D9FE4C49EFC47BE57055A98922 /* undocumented.json */,
+				CA34BF10D2A81C5EA9024C7DA455E7E9 /* undocumented.json */,
+				6A0E8131A65ABEE4E8935F52F90D8BC2 /* Utils.html */,
+				30A1D3154B68DF67BF30CE318CE61EE9 /* Utils.html */,
+				0477511067818C28CC272B4A86508958 /* VerticalAlignment.html */,
+				556133DECC7F481EE332CDAFD6E221F4 /* VerticalAlignment.html */,
+				A03E2454D2B2AEBB42F13E3A0D9E0EED /* VerticalHeightPreference.html */,
+				5B1643E030F7EF0237D5EFAED2421EBB /* VerticalHeightPreference.html */,
+				8B304D26AFFD429897EA7BF0A0044A7E /* VerticalLineView.html */,
+				C103E5AA5F06C4D8417E747117850B82 /* VerticalLineView.html */,
+				1838CD0C4A668694BD82C1F62B6337AB /* View.html */,
+				F7E85C24A5E69BC3F280FEE293739ED0 /* View.html */,
+				284E2BAA807CBEE0695648E12C69525E /* WidthKey.html */,
+				5239EAC12F12AB34386EECF3204F0313 /* WidthKey.html */,
+				5D59E980660C0C42C304F23E785D0595 /* WidthPreference.html */,
+				5E448E470A4873408E5E8981A2C1B8AB /* WidthPreference.html */,
+				6B9E0EDCF9B4D7097C7BF3FB37B7F671 /* YellowSubType.html */,
+				3B1654BF48FF45029FB945D665B1B999 /* YellowSubType.html */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F0E53E7104E9358181BCC0B9C9E21755 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CBA87A2E0A0991E58DE911B67F14E2B /* PitStopView.swift */,
+				2ABB39A00EF91B560B16AB891E5F988D /* StepIndicatorHorizontalView.swift */,
+				29C85CF3DD9EC881C442667CF1B8158C /* StepIndicatorVerticalView.swift */,
+				DE60AA0C75AEEDBDD7A9F4B926ABA476 /* StepperView.swift */,
+				965DBFC4F65E747EFCF69805564AD021 /* Components */,
+				BAFCCD24942389188F9BF8957773E98E /* Indicators */,
+				2D193C47FA59CB78A93970817171B738 /* Lines */,
+			);
+			name = Views;
+			path = Sources/StepperView/Views;
+			sourceTree = "<group>";
+		};
+		FE1C820DC8EF29A2881D563DB776119A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3F15A3A7FB4EE8A47DC47DB20C3C922 /* StepperView-iOS.modulemap */,
+				80CAB5E2D4217ADB99C2D2545667F5A9 /* StepperView-iOS-dummy.m */,
+				B09ADAC8FF1B0C923C840572B815078F /* StepperView-iOS-Info.plist */,
+				04A90B97B31629A9C4D720398764B96B /* StepperView-iOS-prefix.pch */,
+				D5E3AB347C94EC70B0FEA70B0B758801 /* StepperView-iOS-umbrella.h */,
+				E5562ABD49E121B40E814686EBBE08C6 /* StepperView-iOS.debug.xcconfig */,
+				6EDEC7D826AA4AF6E7FB0E6F4E1831D4 /* StepperView-iOS.release.xcconfig */,
+				960D971346FE5E8A8CF65734C1F7C761 /* StepperView-watchOS.modulemap */,
+				2C29043CFC0E5B2ED755B69AA4328245 /* StepperView-watchOS-dummy.m */,
+				68E325DB8BA9690674902C8C124C66E7 /* StepperView-watchOS-Info.plist */,
+				8D5B7D519E7041F6D73780ACD5D2BE26 /* StepperView-watchOS-prefix.pch */,
+				E173BF6B31B11AC1736741FC97FDC78A /* StepperView-watchOS-umbrella.h */,
+				EFF18025A3728E66A24796EAAAA00F7C /* StepperView-watchOS.debug.xcconfig */,
+				3648CF110CC5501CE1F65E430CFEEDB0 /* StepperView-watchOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/StepperView-iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1055,7 +1051,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1293,9 +1289,8 @@
 /* Begin XCBuildConfiguration section */
 		03A960910951843FD210362AFFCA9CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3160200FB61EBD02F49B76542746F583 /* StepperView-iOS.debug.xcconfig */;
+			baseConfigurationReference = E5562ABD49E121B40E814686EBBE08C6 /* StepperView-iOS.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1326,7 +1321,7 @@
 		};
 		089E4A31B264955189E7736F2F81BC89 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 210C3FF178F1F2C206A83B76C1F3AA96 /* StepperView-watchOS.release.xcconfig */;
+			baseConfigurationReference = 3648CF110CC5501CE1F65E430CFEEDB0 /* StepperView-watchOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1362,7 +1357,6 @@
 			baseConfigurationReference = 8D819FD4CFE2D9AE1135737C473BB56E /* Pods-StepperView_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1397,7 +1391,6 @@
 			baseConfigurationReference = 21FA315ABE27D7DE0FD7B793A4222387 /* Pods-StepperView_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1431,7 +1424,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2CA03B708D8424B73A38D4C8C250F5 /* SnapshotTesting.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1531,7 +1523,7 @@
 		};
 		A875CA2105022DA9F6DB0E99BACEBA80 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34A6913DDD0C76798288FA46F74C3D69 /* StepperView-watchOS.debug.xcconfig */;
+			baseConfigurationReference = EFF18025A3728E66A24796EAAAA00F7C /* StepperView-watchOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1565,7 +1557,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 314A21CD4CA38212B1C9361BB856ED68 /* SnapshotTesting.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1648,8 +1639,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
@@ -1761,7 +1751,6 @@
 			baseConfigurationReference = 6CEE61257AE2E38506BEBD035401EBF7 /* Pods-StepperView_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1828,9 +1817,8 @@
 		};
 		EFB084F485B44AA32E9192DE6B525FFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F87050A5C8B54201E473D666FC0711F3 /* StepperView-iOS.release.xcconfig */;
+			baseConfigurationReference = 6EDEC7D826AA4AF6E7FB0E6F4E1831D4 /* StepperView-iOS.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1865,7 +1853,6 @@
 			baseConfigurationReference = 0B1AF4EE96053C3B0D8314A16AAA6B2E /* Pods-StepperView_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

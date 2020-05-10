@@ -25,5 +25,3 @@ class WatchHostingController: WKHostingController<AnyView> {
         return WatchExampleView3().eraseToAnyView()
     }
 }
-
-
