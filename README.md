@@ -26,7 +26,7 @@
 ## Apple Watch Support
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_Combined.png" width="500"  alt="watch_stepperView" align="center">
+    <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_Combined.png" width="800"  alt="watch_stepperView" align="center">
 </p>
 
 ## Usecase
