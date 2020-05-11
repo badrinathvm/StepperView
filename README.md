@@ -27,10 +27,10 @@
 
 <table>
  <tr>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_1.png" width="250"  alt="Watch_StepperView_Vertical"  align="center"/></td>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_2.png" width="250" alt="Watch_StepperView_Icon"  align="center"/></td>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_3.png" width="250" alt="Watch_StepperView_Horizontal"  align="center"/></td>
-   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_4.png" width="250" alt="Watch_StepperView_Pitstop"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_1.png" width="250"  alt="Watch_StepperView_Vertical" align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_2.png" width="250" alt="Watch_StepperView_Icon" align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_3.png" width="250" alt="Watch_StepperView_Horizontal" align="center"/></td>
+   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_4.png" width="250" alt="Watch_StepperView_Pitstop" align="center"/></td>
  </tr>
 </table>
 
