@@ -12,18 +12,17 @@ import StepperView
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ExampleView: View {
     var body: some View {
-        ExampleView7()
-//        TabView {
-//            ExampleView5()
-//                .tabItem { Text("Horizontal") .foregroundColor(Color.black) }
-//            ExampleView2()
-//                .tabItem { Text("Usecase") .foregroundColor(Color.black) }
-//            ExampleView3()
-//                .tabItem { Text("Card") .foregroundColor(Color.black) }
-//            ExampleView6()
-//                .tabItem { Text("PitStops") .foregroundColor(Color.black) }
-//            ExampleView1()
-//                .tabItem { Text("Basic").foregroundColor(Color.black) }
-//        }
+        TabView {
+            ExampleView5()
+                .tabItem { Text("Horizontal") .foregroundColor(Color.black) }
+            ExampleView2()
+                .tabItem { Text("Usecase") .foregroundColor(Color.black) }
+            ExampleView3()
+                .tabItem { Text("Card") .foregroundColor(Color.black) }
+            ExampleView6()
+                .tabItem { Text("PitStops") .foregroundColor(Color.black) }
+            ExampleView1()
+                .tabItem { Text("Basic").foregroundColor(Color.black) }
+        }
     }
 }

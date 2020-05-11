@@ -18,4 +18,6 @@ public struct Utils {
     static let offsetConstant:CGFloat = 40.0
     /// constant value for watchOS offsets
     static let watchoffsetConstant:CGFloat = 32.0
+    /// constant value for angle of rotation
+    static let angleRotation:Double = 270.0
 }

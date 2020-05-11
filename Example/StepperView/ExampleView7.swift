@@ -13,25 +13,26 @@ import StepperView
 struct ExampleView7: View {
     
     let indicationTypes = [
-        StepperIndicationType.custom(AnimatedCircleView(text: "1", width: 30).eraseToAnyView()),
-        StepperIndicationType.custom(AnimatedCircleView(text: "2", width: 30).eraseToAnyView()),
-        StepperIndicationType.custom(AnimatedCircleView(text: "3", width: 30).eraseToAnyView()),
-        StepperIndicationType.custom(AnimatedCircleView(text: "4", width: 30).eraseToAnyView()),
-        StepperIndicationType.custom(AnimatedCircleView(text: "5", width: 30).eraseToAnyView())]
+        StepperIndicationType<NumberedCircleView>.animation(NumberedCircleView(text: "1")),
+                                                .animation(NumberedCircleView(text: "2")),
+                                                .animation(NumberedCircleView(text: "3")),
+                                                .animation(NumberedCircleView(text: "4")),
+                                                .animation(NumberedCircleView(text: "5"))]
     
-       let set1 = [ Text("Cart").font(.caption),
-                     Text("Delivery Address").font(.caption),
-                     Text("Order Summary").font(.caption),
-                     Text("Payment Method").font(.caption),
-                     Text("Track").font(.caption)]
+    let set = [ Text("Campaign").font(.caption),
+                     Text("Contents").font(.caption),
+                     Text("Recipients").font(.caption),
+                     Text("Delivery").font(.caption),
+                     Text("Tracking").font(.caption)]
     
     var body: some View {
         StepperView()
-            .addSteps(self.set1)
+            .addSteps(self.set)
             .indicators(self.indicationTypes)
             .stepIndicatorMode(StepperMode.horizontal)
             .spacing(50)
             .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-            .stepAnimations([0:true, 1:true])
+            .loadingAnimationTime(0.02)
+            .animateSteps(self.set.count)
     }
 }
