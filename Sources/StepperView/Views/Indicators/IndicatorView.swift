@@ -19,6 +19,9 @@ struct IndicatorView: View {
     /// index position of the indicator
     var indexofIndicator:Int
     
+    /// environment variable to access pitstop options
+    @Environment(\.stepAnimations) var animations
+    
     /// provides the content and behavior of this view.
     var body: some View {
         ZStack {
@@ -50,9 +53,16 @@ struct IndicatorView: View {
                 .frame(width: width, height: width)
                 .eraseToAnyView()
         case .custom(let view):
-            return view
+            if animations[index] != nil {
+                let delays = [0, 5, 10, 15, 20, 25]
+                return AnimatedCircleView(text: view.text, delay: Double(delays[index]), width: 30, triggerAnimation: true)
+                        .widthPreference(column: index)
+                        .eraseToAnyView()
+            } else {
+                return view
                 .widthPreference(column: index)
                 .eraseToAnyView()
+            }
         }
     }
 }

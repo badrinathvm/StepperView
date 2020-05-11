@@ -52,6 +52,12 @@ extension EnvironmentValues {
         get { self[PitStopOptionsKey.self] }
         set { self[PitStopOptionsKey.self] = newValue }
     }
+    
+    /// property wrapper  for `PitStopOptionsKey`
+    var stepAnimations: [Int:Bool] {
+        get { self[StepAnimationOptionsKey.self] }
+        set { self[StepAnimationOptionsKey.self] = newValue }
+    }
 }
 
 /// Environment Key for Steps
@@ -101,4 +107,11 @@ struct LineOptionsKey: EnvironmentKey {
 struct PitStopOptionsKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:[PitStopStep] = []
+}
+
+/// Environment Key for pit stop line options.
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+struct StepAnimationOptionsKey: EnvironmentKey {
+    /// provide a default value for custom dependency
+    static var defaultValue:[Int:Bool] = [:]
 }

@@ -21,6 +21,7 @@
 		1B4874DF2467B70600B253C6 /* WatchExampleView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4874DE2467B70600B253C6 /* WatchExampleView3.swift */; };
 		1BA9B80C2447DCC8007A6BB9 /* ExampleView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9B80B2447DCC8007A6BB9 /* ExampleView5.swift */; };
 		1BD0BECE2468C8EF005CE5FE /* WatchExampleView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0BECD2468C8EF005CE5FE /* WatchExampleView4.swift */; };
+		1BD0BED32469C574005CE5FE /* ExampleView7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0BED22469C574005CE5FE /* ExampleView7.swift */; };
 		1BD42F2624552D3F008D4DAB /* ExampleView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD42F2524552D3F008D4DAB /* ExampleView6.swift */; };
 		1BD7CB6C243FC0CE00F17698 /* ExampleView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6B243FC0CE00F17698 /* ExampleView3.swift */; };
 		1BD7CB70243FCD4800F17698 /* ImageTextRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD7CB6F243FCD4800F17698 /* ImageTextRowView.swift */; };
@@ -116,6 +117,7 @@
 		1B4874DE2467B70600B253C6 /* WatchExampleView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExampleView3.swift; sourceTree = "<group>"; };
 		1BA9B80B2447DCC8007A6BB9 /* ExampleView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView5.swift; sourceTree = "<group>"; };
 		1BD0BECD2468C8EF005CE5FE /* WatchExampleView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExampleView4.swift; sourceTree = "<group>"; };
+		1BD0BED22469C574005CE5FE /* ExampleView7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView7.swift; sourceTree = "<group>"; };
 		1BD42F2524552D3F008D4DAB /* ExampleView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView6.swift; sourceTree = "<group>"; };
 		1BD7CB6B243FC0CE00F17698 /* ExampleView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView3.swift; sourceTree = "<group>"; };
 		1BD7CB6F243FCD4800F17698 /* ImageTextRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextRowView.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				1BA9B80B2447DCC8007A6BB9 /* ExampleView5.swift */,
 				1BD7CB75244103A100F17698 /* ExampleView.swift */,
 				1BD42F2524552D3F008D4DAB /* ExampleView6.swift */,
+				1BD0BED22469C574005CE5FE /* ExampleView7.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 				1BD7CB74244102C700F17698 /* ExampleView4.swift in Sources */,
 				1BD7CB76244103A100F17698 /* ExampleView.swift in Sources */,
 				1BF00787244A48A700DE5BF9 /* StepTextView.swift in Sources */,
+				1BD0BED32469C574005CE5FE /* ExampleView7.swift in Sources */,
 				1BD42F2624552D3F008D4DAB /* ExampleView6.swift in Sources */,
 				1BD7CB70243FCD4800F17698 /* ImageTextRowView.swift in Sources */,
 				1BF933B7243D24EB00F2FEA6 /* StepperContentView.swift in Sources */,

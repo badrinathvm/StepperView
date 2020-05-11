@@ -157,4 +157,10 @@ public extension View {
     func addPitStops(_ steps: [PitStopStep]) -> some View {
         self.environment(\EnvironmentValues.pitStopOptions, steps)
     }
+    
+    /// Custom behavior for pitstops
+    /// - Parameter steps: list of pitstop step views
+    func stepAnimations(_ steps: [Int: Bool]) -> some View {
+        self.environment(\EnvironmentValues.stepAnimations, steps)
+    }
 }
