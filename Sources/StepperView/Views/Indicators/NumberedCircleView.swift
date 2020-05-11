@@ -108,14 +108,15 @@ struct AnimatedCircle: View {
     private var image: some View {
         Group {
             if self.completion {
+                 #if os(iOS) || os(watchOS)
                 Circle().frame(width: width, height: width)
                     .foregroundColor(colorScheme == .light ? Color.white : Color.black)
                     .overlay(
                             Image(systemName: "checkmark")
                             .resizable()
                             .frame(width: Utils.standardSpacing, height: Utils.standardSpacing, alignment: .center)
-                            .foregroundColor(Colors.teal.rawValue)
-                    )
+                            .foregroundColor(Colors.teal.rawValue))
+                #endif
             } else {
                Circle().frame(width: width, height: width)
                 .foregroundColor(colorScheme == .light ? Color.white : Color.black)
