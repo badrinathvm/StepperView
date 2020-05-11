@@ -16,12 +16,15 @@ class WatchHostingController: WKHostingController<AnyView> {
     
     override var body: AnyView {
         /// Vertical StepperView
-        //return WatchExampleView1().eraseToAnyView()
+        return WatchExampleView1().eraseToAnyView()
         
         // Horizontal StepperView
         //return WatchExampleView2().eraseToAnyView()
         
-        // Icon vertical StpperView
-        return WatchExampleView3().eraseToAnyView()
+        // Icon vertical StepperView
+        //return WatchExampleView3().eraseToAnyView()
+        
+        // Pitstop StepperView
+        //return WatchExampleView4().eraseToAnyView()
     }
 }
