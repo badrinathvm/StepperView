@@ -32,7 +32,6 @@ struct ExampleView7: View {
             .stepIndicatorMode(StepperMode.horizontal)
             .spacing(50)
             .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-            .loadingAnimationTime(0.02)
-            .animateSteps(self.set.count)
+            .loadingAnimationTime(0.02) //speed of the animation
     }
 }
