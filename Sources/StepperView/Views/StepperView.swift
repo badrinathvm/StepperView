@@ -85,6 +85,8 @@ public enum StepperIndicationType<Content:View> {
     case circle(Color, Width)
     /// option to  use  `image` indicator
     case image(Image, Width)
+    /// option for Animation
+    case animation(NumberedCircleView)
     /// option to use custom `View` as step indicator
     case custom(Content)
 }

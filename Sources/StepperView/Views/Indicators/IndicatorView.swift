@@ -19,6 +19,15 @@ struct IndicatorView: View {
     /// index position of the indicator
     var indexofIndicator:Int
     
+    /// environment variable to access pitstop options
+    @Environment(\.stepAnimations) var animations
+    
+    /// step indicator type can be a `Circle` , `Image` or `Custom`
+    @Environment(\.indicationType) var indicationType
+    
+    /// loading time for animations
+    @Environment(\.loadAnimationTime) var loadingTime
+    
     /// provides the content and behavior of this view.
     var body: some View {
         ZStack {
@@ -50,9 +59,23 @@ struct IndicatorView: View {
                 .frame(width: width, height: width)
                 .eraseToAnyView()
         case .custom(let view):
-            return view
+                return view
                 .widthPreference(column: index)
                 .eraseToAnyView()
+        case .animation(let view):
+                let delays = generateDelays()
+                return NumberedCircleView(text: view.text, width: view.width, delay: delays[index], triggerAnimation: true)
+                    .widthPreference(column: index)
+                    .eraseToAnyView()
         }
     }
+    
+    /// generates delay intervals based on the loading timer.
+    private func generateDelays() -> [Double] {
+            var delays = [Double]()
+            for data in indicationType.enumerated() {
+                delays.append(loadingTime * Double(data.offset) * 100.0)
+            }
+            return delays
+        }
 }

@@ -12,7 +12,7 @@ import Combine
 /// Helper function of  `View`  to operate on
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public extension View {
-    
+        
     /// Stores the height for each of column which will be passed as part of onPreference change parent view.
     func heightPreference(column: Int) -> some View {
         background(GeometryReader { proxy in
@@ -124,6 +124,7 @@ public extension View {
             case .custom(let view): return StepperIndicationType.custom(view.eraseToAnyView())
             case .circle(let color, let width): return StepperIndicationType.circle(color, width)
             case .image(let image, let width): return StepperIndicationType.image(image, width)
+            case .animation(let view):  return StepperIndicationType.animation(view)
             }
         })
     }
@@ -156,5 +157,17 @@ public extension View {
     /// - Parameter steps: list of pitstop step views
     func addPitStops(_ steps: [PitStopStep]) -> some View {
         self.environment(\EnvironmentValues.pitStopOptions, steps)
+    }
+    
+    /// Custom behavior for pitstops
+    /// - Parameter steps: list of pitstop step views
+    func animateSteps(_ count: Int) -> some View {
+        return self.environment(\EnvironmentValues.stepAnimations, count)
+    }
+    
+    /// Custom behavior for pitstops
+    /// - Parameter steps: list of pitstop step views
+    func loadingAnimationTime(_ time: Double) -> some View {
+        return self.environment(\EnvironmentValues.loadAnimationTime, time)
     }
 }
