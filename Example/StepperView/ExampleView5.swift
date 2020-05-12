@@ -73,8 +73,7 @@ struct ExampleView5: View {
                         .indicators(self.indicationTypes1)
                         .spacing(30)
                         .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-                        .loadingAnimationTime(0.02)
-                        .animateSteps(self.set3.count)
+                        .loadingAnimationTime(0.02) // speed of the animation.
                 }
             }
             .navigationBarTitle("StepperView")
