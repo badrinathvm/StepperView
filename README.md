@@ -108,7 +108,7 @@ dependencies: [
 
 ## Usage
 
-```
+``` swift
 import StepperView
 
 let steps = [ Text("Cart").font(.caption),
@@ -116,8 +116,6 @@ let steps = [ Text("Cart").font(.caption),
               Text("Order Summary").font(.caption),
               Text("Payment Method").font(.caption),
               Text("Track").font(.caption)]
-
-let alignments = [StepperAlignment.center,.center,.center, .center, .center]
 
 let indicationTypes = [StepperIndicationType.custom(NumberedCircleView(text: "1")),
                         .custom(NumberedCircleView(text: "2")),
