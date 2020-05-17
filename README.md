@@ -165,6 +165,14 @@ var body: some View {
 ## More Examples
    <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">iOS Usecases</a><br>
    <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView_Watch%20Extension/Views">watchOS Usecases</a>
+   
+  <table>
+  <tr>
+   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/pitstop.png" width="250" alt="StepperView_pistops" align="center"/> </td>
+  <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/github_workflow.png" width="350" alt="StepperView_github_workflow" align = "center"/> </td>
+   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/github_workflow_right.png" width="250" alt="StepperView_github_workflow" align = "center"/> </td>
+  </tr>
+</table>
 
 ## Mentions
 
