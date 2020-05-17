@@ -49,12 +49,14 @@ struct ExampleView8: View {
                     ]
     
     var body: some View {
-        StepperView()
+        List {
+            StepperView()
                 .addSteps(steps)
                 .indicators(indicators)
                 .addPitStops(pitStops)
                 .spacing(100)
-               .padding(.top, -30)
+        }.listSeparatorStyleNone()
+        .padding(.horizontal, -10)
     }
 }
 
@@ -64,4 +66,22 @@ struct GithubPitstops {
     static var p3 = "git add -p\ngit diff .\ngit commit -m\ngit push origin branch"
     static var p4 = "Open pull request\ngit checkout pr-branch\nReview and comment"
     static var p5 = "View checks\ngit rebase\ngit merge\ngit tag"
+}
+
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+public struct ListSeparatorStyleNoneModifier: ViewModifier {
+    public func body(content: Content) -> some View {
+        content.onAppear {
+            UITableView.appearance().separatorStyle = .none
+        }.onDisappear {
+            UITableView.appearance().separatorStyle = .singleLine
+        }
+    }
+}
+
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+extension View {
+    public func listSeparatorStyleNone() -> some View {
+        modifier(ListSeparatorStyleNoneModifier())
+    }
 }
