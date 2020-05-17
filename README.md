@@ -16,48 +16,32 @@
 <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" height="450" alt="StepperView"/>
 </p>
 
-<table>
-  <tr>
-   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView_with_usecases.gif" width="250" alt="StepperView" align="left"/> </td>
-   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView_pitStops.gif" width="250" alt="StepperViewWithPitStops" align = "center"/> </td>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView_multiple_options.gif" width="250" alt="StepperViewWithMultipleOptions" align = "center"/> </td>
-  </tr>
-</table>
+# Table of Contents
 
-## Apple Watch Support
+* [Documentation](#documentation)
+* [Installation](#installation)
+    * [CocoaPods](#cocoapods)
+    * [Carthage](#carthage)
+    * [Swift Package Manager](#swift-package-manager)
+* [Requirements](#requirements)
+* [Usecase](#usecase)
+    * [iPhone](#iphone)
+    * [Apple Watch](#apple-watch-support)
+    * [More Examples](#more-examples)
+* [Usage](#usage)
+* [View Modifiers](#view-modifiers)
+* [Mentions](#mentions)
+* [Contribution](#contribution)
+* [License](#license)
 
-<table>
- <tr>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_1.png" width="250"  alt="Watch_StepperView_Vertical" align="center"/></td>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_2.png" width="250" alt="Watch_StepperView_Icon" align="center"/></td>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_3.png" width="250" alt="Watch_StepperView_Horizontal" align="center"/></td>
-   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_4.png" width="250" alt="Watch_StepperView_Pitstop" align="center"/></td>
- </tr>
-</table>
 
-## Usecase
-<table>
- <tr>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"  alt="example1"  align="center"/></td>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
- </tr>
-</table>
-
-## 📚 Documentation
+## Documentation
 **[StepperView Reference](https://badrinathvm.github.io/StepperView/)**
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-- iOS 13.0+
-- Xcode 11.2+
-- Swift 5.0+
-- CocoaPods 1.6.1+
 
 ## Installation
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## CocoaPods
 
@@ -85,6 +69,42 @@ dependencies: [
 .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.4.0")
 ]
 ```
+
+## Requirements
+- iOS 13.0+
+- Xcode 11.2+
+- Swift 5.0+
+- CocoaPods 1.6.1+
+
+## Usecase
+<table>
+ <tr>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"  alt="example1"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
+ </tr>
+</table>
+
+## iPhone
+
+<table>
+  <tr>
+   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView_with_usecases.gif" width="250" alt="StepperView" align="left"/> </td>
+   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView_pitStops.gif" width="250" alt="StepperViewWithPitStops" align = "center"/> </td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/stepperView_multiple_options.gif" width="250" alt="StepperViewWithMultipleOptions" align = "center"/> </td>
+  </tr>
+</table>
+
+## Apple Watch Support
+
+<table>
+ <tr>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_1.png" width="250"  alt="Watch_StepperView_Vertical" align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_2.png" width="250" alt="Watch_StepperView_Icon" align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_3.png" width="250" alt="Watch_StepperView_Horizontal" align="center"/></td>
+   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_4.png" width="250" alt="Watch_StepperView_Pitstop" align="center"/></td>
+ </tr>
+</table>
 
 ## Usage
 
@@ -116,7 +136,7 @@ var body: some View {
      }
 }
 ```
-## Methods ( View Modifiers )
+## View Modifiers
 
 ```ruby
 .addSteps(_ steps: [View]) : 
@@ -169,4 +189,5 @@ Feature requests, bug reports, and pull requests are all welcome. Refer <a href=
 
 ## License
 
-StepperView is available under the MIT license. See the LICENSE file for more info.
+StepperView is available under the MIT license. See the [LICENSE](https://github.com/badrinathvm/StepperView/blob/master/LICENSE) file for more info.
+
