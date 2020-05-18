@@ -13,7 +13,7 @@
     <a title="StepperView  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">StepperView 1.4.0 Docs</a> (100% documented)</p>
+        <p><a href="index.html">StepperView 1.4.1 Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -199,6 +199,7 @@
 <a href="https://cocoapods.org/pods/StepperView"><img src="https://img.shields.io/cocoapods/v/StepperView.svg?style=flat" alt="Version"></a>
 <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-orange" alt="Swift Package Manager compatible"></a>
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-orange" alt="Carthage compatible"></a>
+<a href="https://badrinathvm.github.io/StepperView/"><img src="https://img.shields.io/badge/documentation-100%25-normalgreen" alt="documentation"></a>
 <a href="https://twitter.com/intent/tweet?text=SwiftUI%20iOS%20library%20for%20StepIndications%20is%20awesome:&url=https%3A%2F%2Fgithub.com%2Fbadrinathvm%2FStepperView"><img src="https://img.shields.io/twitter/url/https/github.com/Juanpe/About-SwiftUI.svg?style=social" alt="Twitter"></a></p>
 
 <p><br/></p>
@@ -206,6 +207,73 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" height="450" alt="StepperView"/>
 </p>
+<h1 id='table-of-contents' class='heading'>Table of Contents</h1>
+
+<ul>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#installation">Installation</a>
+
+<ul>
+<li><a href="#cocoapods">CocoaPods</a></li>
+<li><a href="#carthage">Carthage</a></li>
+<li><a href="#swift-package-manager">Swift Package Manager</a></li>
+</ul></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#usecase">Usecase</a>
+
+<ul>
+<li><a href="#iphone">iPhone</a></li>
+<li><a href="#apple-watch-support">Apple Watch</a></li>
+<li><a href="#more-examples">More Examples</a></li>
+</ul></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#view-modifiers">View Modifiers</a></li>
+<li><a href="#mentions">Mentions</a></li>
+<li><a href="#contribution">Contribution</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p><strong><a href="https://badrinathvm.github.io/StepperView/">StepperView Reference</a></strong></p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
+<h2 id='cocoapods' class='heading'>CocoaPods</h2>
+
+<p>StepperView is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile.</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'StepperView'</span><span class="p">,</span><span class="s1">'~&gt; 1.4.1'</span>
+</code></pre>
+<h2 id='carthage' class='heading'>Carthage</h2>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:</p>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"badrinathvm/stepperView"</span> <span class="o">==</span> <span class="mi">1</span><span class="o">.</span><span class="mi">4</span><span class="o">.</span><span class="mi">1</span>
+</code></pre>
+<h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
+
+<p>StepperView is available through <a href="https://swift.org/package-manager/">Swift Package Manager</a>. To install it, simply add it to the <code>dependencies</code> of your <code>Package.swift</code></p>
+<pre class="highlight ruby"><code><span class="ss">dependencies: </span><span class="p">[</span>
+      <span class="p">.</span><span class="nf">package</span><span class="p">(</span><span class="ss">url: </span><span class="s2">"https://github.com/badrinathvm/StepperView.git"</span><span class="p">,</span> <span class="ss">from: </span><span class="s2">"1.4.1"</span><span class="p">)</span>
+<span class="p">]</span>
+</code></pre>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 13.0+</li>
+<li>Xcode 11.2+</li>
+<li>Swift 5.0+</li>
+<li>CocoaPods 1.6.1+</li>
+</ul>
+<h2 id='usecase' class='heading'>Usecase</h2>
+
+<table>
+ <tr>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"  alt="example1"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
+ </tr>
+</table>
+<h2 id='iphone' class='heading'>iPhone</h2>
 
 <table>
   <tr>
@@ -224,77 +292,33 @@
    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Watch_StepperView_4.png" width="250" alt="Watch_StepperView_Pitstop" align="center"/></td>
  </tr>
 </table>
-<h2 id='usecase' class='heading'>Usecase</h2>
-
-<table>
- <tr>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"  alt="example1"  align="center"/></td>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
- </tr>
-</table>
-<h2 id='documentation' class='heading'>📚 Documentation</h2>
-
-<p><strong><a href="https://badrinathvm.github.io/StepperView/">StepperView Reference</a></strong></p>
-<h2 id='example' class='heading'>Example</h2>
-
-<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
-<h2 id='requirements' class='heading'>Requirements</h2>
-
-<ul>
-<li>iOS 13.0+</li>
-<li>Xcode 11.2+</li>
-<li>Swift 5.0+</li>
-<li>CocoaPods 1.6.1+</li>
-</ul>
-<h2 id='installation' class='heading'>Installation</h2>
-<h2 id='cocoapods' class='heading'>CocoaPods</h2>
-
-<p>StepperView is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
-it, simply add the following line to your Podfile.</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'StepperView'</span><span class="p">,</span><span class="s1">'~&gt; 1.4.0'</span>
-</code></pre>
-<h2 id='carthage' class='heading'>Carthage</h2>
-
-<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:</p>
-<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"badrinathvm/stepperView"</span> <span class="o">==</span> <span class="mi">1</span><span class="o">.</span><span class="mi">4</span><span class="o">.</span><span class="mi">0</span>
-</code></pre>
-<h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
-
-<p>StepperView is available through <a href="https://swift.org/package-manager/">Swift Package Manager</a>. To install it, simply add it to the <code>dependencies</code> of your <code>Package.swift</code></p>
-<pre class="highlight ruby"><code><span class="ss">dependencies: </span><span class="p">[</span>
-<span class="p">.</span><span class="nf">package</span><span class="p">(</span><span class="ss">url: </span><span class="s2">"https://github.com/badrinathvm/StepperView.git"</span><span class="p">,</span> <span class="ss">from: </span><span class="s2">"1.4.0"</span><span class="p">)</span>
-<span class="p">]</span>
-</code></pre>
 <h2 id='usage' class='heading'>Usage</h2>
-<pre class="highlight plaintext"><code>import StepperView
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">StepperView</span>
 
-let steps = [ Text("Cart").font(.caption),
-              Text("Delivery Address").font(.caption),
-              Text("Order Summary").font(.caption),
-              Text("Payment Method").font(.caption),
-              Text("Track").font(.caption)]
+<span class="k">let</span> <span class="nv">steps</span> <span class="o">=</span> <span class="p">[</span> <span class="kt">Text</span><span class="p">(</span><span class="s">"Cart"</span><span class="p">)</span><span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="o">.</span><span class="n">caption</span><span class="p">),</span>
+              <span class="kt">Text</span><span class="p">(</span><span class="s">"Delivery Address"</span><span class="p">)</span><span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="o">.</span><span class="n">caption</span><span class="p">),</span>
+              <span class="kt">Text</span><span class="p">(</span><span class="s">"Order Summary"</span><span class="p">)</span><span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="o">.</span><span class="n">caption</span><span class="p">),</span>
+              <span class="kt">Text</span><span class="p">(</span><span class="s">"Payment Method"</span><span class="p">)</span><span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="o">.</span><span class="n">caption</span><span class="p">),</span>
+              <span class="kt">Text</span><span class="p">(</span><span class="s">"Track"</span><span class="p">)</span><span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="o">.</span><span class="n">caption</span><span class="p">)]</span>
 
-let alignments = [StepperAlignment.center,.center,.center, .center, .center]
+<span class="k">let</span> <span class="nv">indicationTypes</span> <span class="o">=</span> <span class="p">[</span><span class="kt">StepperIndicationType</span><span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="kt">NumberedCircleView</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"1"</span><span class="p">)),</span>
+                        <span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="kt">NumberedCircleView</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"2"</span><span class="p">)),</span>
+                        <span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="kt">NumberedCircleView</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"3"</span><span class="p">)),</span>
+                        <span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="kt">NumberedCircleView</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"4"</span><span class="p">)),</span>
+                        <span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="kt">NumberedCircleView</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"5"</span><span class="p">))]</span>
 
-let indicationTypes = [StepperIndicationType.custom(NumberedCircleView(text: "1")),
-                        .custom(NumberedCircleView(text: "2")),
-                        .custom(NumberedCircleView(text: "3")),
-                        .custom(NumberedCircleView(text: "4")),
-                        .custom(NumberedCircleView(text: "5"))]
-
-var body: some View {
-     var body: some View {
-         StepperView()
-            .addSteps(steps)
-            .indicators(indicationTypes)
-            .stepIndicatorMode(StepperMode.horizontal)
-            .spacing(50)
-            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-     }
-}
+<span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
+     <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
+         <span class="kt">StepperView</span><span class="p">()</span>
+            <span class="o">.</span><span class="nf">addSteps</span><span class="p">(</span><span class="n">steps</span><span class="p">)</span>
+            <span class="o">.</span><span class="nf">indicators</span><span class="p">(</span><span class="n">indicationTypes</span><span class="p">)</span>
+            <span class="o">.</span><span class="nf">stepIndicatorMode</span><span class="p">(</span><span class="kt">StepperMode</span><span class="o">.</span><span class="n">horizontal</span><span class="p">)</span>
+            <span class="o">.</span><span class="nf">spacing</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+            <span class="o">.</span><span class="nf">lineOptions</span><span class="p">(</span><span class="kt">StepperLineOptions</span><span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="kt">Colors</span><span class="o">.</span><span class="nf">blue</span><span class="p">(</span><span class="o">.</span><span class="n">teal</span><span class="p">)</span><span class="o">.</span><span class="n">rawValue</span><span class="p">))</span>
+     <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
-<h2 id='methods-view-modifiers' class='heading'>Methods ( View Modifiers )</h2>
+<h2 id='view-modifiers' class='heading'>View Modifiers</h2>
 <pre class="highlight ruby"><code><span class="p">.</span><span class="nf">addSteps</span><span class="p">(</span><span class="n">_</span> <span class="ss">steps: </span><span class="p">[</span><span class="no">View</span><span class="p">])</span> <span class="p">:</span> 
           <span class="mi">1</span><span class="p">.</span> <span class="nf">list</span> <span class="n">of</span> <span class="n">views</span> <span class="n">to</span> <span class="n">be</span> <span class="n">closer</span> <span class="n">to</span> <span class="n">indicator</span>
 
@@ -323,6 +347,14 @@ var body: some View {
 
 <p><a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">iOS Usecases</a><br>
    <a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView_Watch%20Extension/Views">watchOS Usecases</a></p>
+
+<p><table>
+  <tr>
+   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/pitstop.png" width="250" alt="StepperView_pistops" align="center"/> </td>
+  <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/github_workflow.png" width="300" alt="StepperView_github_workflow" align = "center"/> </td>
+   <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/github_workflow_right.png" width="250" alt="StepperView_github_workflow" align = "center"/> </td>
+  </tr>
+</table></p>
 <h2 id='mentions' class='heading'>Mentions</h2>
 
 <p><a href="http://weekly.swiftwithmajid.com/issues/swiftui-weekly-issue-5-238795">SwiftUI Weekly #5</a><br>
@@ -340,12 +372,12 @@ var body: some View {
 <p>Feature requests, bug reports, and pull requests are all welcome. Refer <a href="https://github.com/badrinathvm/StepperView/blob/master/CONTRIBUTING.md">Contributing Guidelines</a> for more details.</p>
 <h2 id='license' class='heading'>License</h2>
 
-<p>StepperView is available under the MIT license. See the LICENSE file for more info.</p>
+<p>StepperView is available under the MIT license. See the <a href="https://github.com/badrinathvm/StepperView/blob/master/LICENSE">LICENSE</a> file for more info.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2020-05-11)</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2020-05-18)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
