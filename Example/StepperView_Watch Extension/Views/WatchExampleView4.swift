@@ -20,27 +20,35 @@ struct WatchExampleView4: View {
               StepperIndicationType.custom(CircledIconView(image: Image("star"),
                                                            width: 25,
                                                            strokeColor: Color.red)
-                                  .eraseToAnyView())]
+                                  .eraseToAnyView()),
+              StepperIndicationType.custom(CircledIconView(image: Image("pullrequest"),
+                                                        width: 25,
+                                                        strokeColor: Colors.gray(.darkSilver).rawValue)
+                               .eraseToAnyView())]
        
     let steps = [TextView(text:"Like", font: .system(size: 14, weight: .semibold)),
-                TextView(text:"Star", font: .system(size: 14, weight: .semibold))]
+                TextView(text:"Star", font: .system(size: 14, weight: .semibold)),
+                TextView(text:"Create", font: .system(size: 14, weight: .semibold))]
     
     let pitStops = [
-        PitStopStep(view: TextView(text: "StepperView",
+            PitStopStep(view: TextView(text: "StepperView",
                                    font: .system(size: 12, weight: .semibold)).eraseToAnyView(),
                                     lineOptions: PitStopLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))),
-        PitStopStep(view: TextView(text:"Repository", font: .system(size: 12, weight: .semibold)).eraseToAnyView(),
-                    lineOptions: PitStopLineOptions.custom(1, Colors.red(.normal).rawValue))]
+            PitStopStep(view: TextView(text:"Repository", font: .system(size: 12, weight: .semibold)).eraseToAnyView(),
+                        lineOptions: PitStopLineOptions.custom(1, Colors.red(.normal).rawValue)),
+            PitStopStep(view: TextView(text:"Pull Request", font: .system(size: 12, weight: .semibold)).eraseToAnyView(),
+                        lineOptions: PitStopLineOptions.custom(1, Colors.gray(.light).rawValue))]
     
     var body: some View {
-            VStack {
+            List {
                 StepperView()
                        .addSteps(steps)
                        .indicators(indicators)
                        .addPitStops(pitStops)
                        .spacing(60)
                        .padding(.leading, 10)
-                       .padding(.top, -15)
-            }
+                 .listRowBackground(Color.black)
+            }.padding(.leading, -20)
+               
     }
 }

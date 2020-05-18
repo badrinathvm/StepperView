@@ -25,9 +25,9 @@ class WatchHostingController: WKHostingController<AnyView> {
         //return WatchExampleView3().eraseToAnyView()
         
         // Pitstop StepperView
-        //return WatchExampleView4().eraseToAnyView()
+        return WatchExampleView4().eraseToAnyView()
         
         // animated step indicator stepper view
-        return WatchExampleView5().eraseToAnyView()
+        //return WatchExampleView5().eraseToAnyView()
     }
 }

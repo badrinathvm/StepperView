@@ -156,7 +156,7 @@ extension StepIndicatorVerticalView {
         guard self.pitStopsOptions.indices.contains(pitStopIndex) else {
           return EmptyView().eraseToAnyView()
         }
-        
+
         return PitStopView(proxy: proxy,
                            value: value,
                            lineXPosition: $lineXPosition,
