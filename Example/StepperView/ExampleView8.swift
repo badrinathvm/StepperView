@@ -60,6 +60,7 @@ struct ExampleView8: View {
         .onAppear {
             UITableView.appearance().separatorStyle = .none
         }
+   }
 }
 
 struct GithubPitstops {

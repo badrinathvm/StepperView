@@ -49,7 +49,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.4.0'
+pod 'StepperView','~> 1.4.1'
 ```
 
 ## Carthage
@@ -57,7 +57,7 @@ pod 'StepperView','~> 1.4.0'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```ruby
-github "badrinathvm/stepperView" == 1.4.0
+github "badrinathvm/stepperView" == 1.4.1
 ```
 
 ## Swift Package Manager
@@ -66,7 +66,7 @@ StepperView is available through [Swift Package Manager](https://swift.org/packa
 
 ```ruby
 dependencies: [
-      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.4.0")
+      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.4.1")
 ]
 ```
 
@@ -196,4 +196,3 @@ Feature requests, bug reports, and pull requests are all welcome. Refer <a href=
 ## License
 
 StepperView is available under the MIT license. See the [LICENSE](https://github.com/badrinathvm/StepperView/blob/master/LICENSE) file for more info.
-

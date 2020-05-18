@@ -13,7 +13,7 @@ import StepperView
 struct ExampleView: View {
     var body: some View {
         TabView {
-            ExampleView8()
+            ExampleView5()
                 .tabItem { Text("Horizontal") .foregroundColor(Color.black) }
             ExampleView2()
                 .tabItem { Text("Usecase") .foregroundColor(Color.black) }
