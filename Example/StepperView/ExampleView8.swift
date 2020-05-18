@@ -49,12 +49,17 @@ struct ExampleView8: View {
                     ]
     
     var body: some View {
-        StepperView()
+        List {
+            StepperView()
                 .addSteps(steps)
                 .indicators(indicators)
                 .addPitStops(pitStops)
                 .spacing(100)
-               .padding(.top, -30)
+        }
+        .padding(.horizontal, -10)
+        .onAppear {
+         UITableView.appearance().separatorStyle = .none
+        }
     }
 }
 
