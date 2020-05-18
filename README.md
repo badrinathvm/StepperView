@@ -66,7 +66,7 @@ StepperView is available through [Swift Package Manager](https://swift.org/packa
 
 ```ruby
 dependencies: [
-.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.4.0")
+      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.4.0")
 ]
 ```
 
