@@ -66,7 +66,7 @@ StepperView is available through [Swift Package Manager](https://swift.org/packa
 
 ```ruby
 dependencies: [
-.package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.4.0")
+      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.4.0")
 ]
 ```
 
@@ -169,7 +169,7 @@ var body: some View {
   <table>
   <tr>
    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/pitstop.png" width="250" alt="StepperView_pistops" align="center"/> </td>
-  <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/github_workflow.png" width="350" alt="StepperView_github_workflow" align = "center"/> </td>
+  <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/github_workflow.png" width="300" alt="StepperView_github_workflow" align = "center"/> </td>
    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/github_workflow_right.png" width="250" alt="StepperView_github_workflow" align = "center"/> </td>
   </tr>
 </table>
