@@ -82,6 +82,7 @@ dependencies: [
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"  alt="example1"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Indicator_Animation.gif" width="250" alt="example2"  align="center"/></td>
  </tr>
 </table>
 
