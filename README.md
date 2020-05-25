@@ -30,6 +30,9 @@
     * [More Examples](#more-examples)
 * [Usage](#usage)
 * [View Modifiers](#view-modifiers)
+* [Custom Step Indicators](#custom-step-indicators)
+   * [NumberedCircleView](#numberedcircleview)
+   * [CircledIconView](#circlediconview)
 * [Mentions](#mentions)
 * [Contribution](#contribution)
 * [License](#license)
@@ -147,7 +150,7 @@ var body: some View {
           
 .indicatorTypes(_ indicators:[StepperIndicationType]): 
           1. modifier to customize the step indications
-          2. provides enum with cases .circle(color, width), .image(Image, width) , .custom(AnyView)
+          2. provides enum with cases .circle(color, width), .image(Image, width) , .custom(AnyView) .animation(AnyView)
           
 .lineOptions(_ options: StepperLineOptions): 
           1. line customization `Color` , `width`
@@ -161,6 +164,25 @@ var body: some View {
 .addPitStops(_ steps: [PitStopStep])
           1. optional modifier
           2. `PitStopStep` - structure that provides option to provide `View`, line customizations
+          
+.loadingAnimationTime(_ time: Double)
+          1. controls the speed of the animation for step Indicator
+```
+
+## Custom Step Indicators
+
+## NumberedCircleView
+   This view places the number or any text inside the circle.
+
+```swift  
+      NumberedCircleView(text: "1", width: 40)
+```
+
+## CircledIconView
+   This view embeds a icon or image inside the circle.
+   
+```swift  
+      CircledIconView(image: Image("flag"), width: 40, strokeColor: Color.red)
 ```
 
 ## More Examples
