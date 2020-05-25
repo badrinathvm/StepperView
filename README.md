@@ -150,7 +150,7 @@ var body: some View {
           
 .indicatorTypes(_ indicators:[StepperIndicationType]): 
           1. modifier to customize the step indications
-          2. provides enum with cases .circle(color, width), .image(Image, width) , .custom(AnyView) .animation(AnyView)
+          2. provides enum with cases .circle(color, width), .image(Image, width), .custom(AnyView), .animation(AnyView)
           
 .lineOptions(_ options: StepperLineOptions): 
           1. line customization `Color` , `width`
