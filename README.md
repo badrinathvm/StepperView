@@ -136,14 +136,12 @@ let indicationTypes = [StepperIndicationType.custom(NumberedCircleView(text: "1"
                         .custom(NumberedCircleView(text: "5"))]
                         
 var body: some View {
-     var body: some View {
-         StepperView()
-            .addSteps(steps)
-            .indicators(indicationTypes)
-            .stepIndicatorMode(StepperMode.horizontal)
-            .spacing(50)
-            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-     }
+    StepperView()
+        .addSteps(steps)
+        .indicators(indicationTypes)
+        .stepIndicatorMode(StepperMode.horizontal)
+        .spacing(50)
+        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
 }
 ```
 ## View Modifiers
