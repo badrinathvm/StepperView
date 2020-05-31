@@ -41,7 +41,7 @@
 ## Features
 
 - Support for Vertical and Horizontal Alignments.
-- iOS and Apple Watch Support
+- iOS and WatchOS capabilities
 - Support for Circle, Image, Custom View, Animated Step Indicators
 - Customizable line,spacing & animation options.
 - Pitstop feature to add intermediate stages between Step Indicators
