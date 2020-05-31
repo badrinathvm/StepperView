@@ -18,6 +18,7 @@
 
 # Table of Contents
 
+* [Features](#features)
 * [Documentation](#documentation)
 * [Installation](#installation)
     * [CocoaPods](#cocoapods)
@@ -37,6 +38,13 @@
 * [Contribution](#contribution)
 * [License](#license)
 
+## Features
+
+- Support for Vertical and Horizontal Alignments.
+- iOS and Apple Watch Support
+- Support for Circle, Image, Custom View, Animated Step Indicators
+- Customizable line,spacing & animation options.
+- Pitstop feature to add intermediate stages between Step Indicators
 
 ## Documentation
 **[StepperView Reference](https://badrinathvm.github.io/StepperView/)**
