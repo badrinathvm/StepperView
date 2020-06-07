@@ -13,7 +13,7 @@
     <a title="StepperView  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">StepperView 1.5.0 Docs</a> (100% documented)</p>
+        <p><a href="index.html">StepperView 1.5.1 Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -210,6 +210,7 @@
 <h1 id='table-of-contents' class='heading'>Table of Contents</h1>
 
 <ul>
+<li><a href="#features">Features</a></li>
 <li><a href="#documentation">Documentation</a></li>
 <li><a href="#installation">Installation</a>
 
@@ -228,9 +229,24 @@
 </ul></li>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#view-modifiers">View Modifiers</a></li>
+<li><a href="#custom-step-indicators">Custom Step Indicators</a>
+
+<ul>
+<li><a href="#numberedcircleview">NumberedCircleView</a></li>
+<li><a href="#circlediconview">CircledIconView</a></li>
+</ul></li>
 <li><a href="#mentions">Mentions</a></li>
 <li><a href="#contribution">Contribution</a></li>
 <li><a href="#license">License</a></li>
+</ul>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>Support for Vertical and Horizontal Alignments.</li>
+<li>iOS and WatchOS capabilities</li>
+<li>Support for Circle, Image, Custom View, Animated Step Indicators</li>
+<li>Customizable line,spacing &amp; animation options.</li>
+<li>Pitstop feature to add intermediate stages between Step Indicators</li>
 </ul>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
@@ -242,18 +258,18 @@
 
 <p>StepperView is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
 it, simply add the following line to your Podfile.</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'StepperView'</span><span class="p">,</span><span class="s1">'~&gt; 1.5.0'</span>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'StepperView'</span><span class="p">,</span><span class="s1">'~&gt; 1.5.1'</span>
 </code></pre>
 <h2 id='carthage' class='heading'>Carthage</h2>
 
 <p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:</p>
-<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"badrinathvm/stepperView"</span> <span class="o">==</span> <span class="mi">1</span><span class="o">.</span><span class="mi">5</span><span class="o">.</span><span class="mi">0</span>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"badrinathvm/stepperView"</span> <span class="o">==</span> <span class="mi">1</span><span class="o">.</span><span class="mi">5</span><span class="o">.</span><span class="mi">1</span>
 </code></pre>
 <h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
 
 <p>StepperView is available through <a href="https://swift.org/package-manager/">Swift Package Manager</a>. To install it, simply add it to the <code>dependencies</code> of your <code>Package.swift</code></p>
 <pre class="highlight ruby"><code><span class="ss">dependencies: </span><span class="p">[</span>
-      <span class="p">.</span><span class="nf">package</span><span class="p">(</span><span class="ss">url: </span><span class="s2">"https://github.com/badrinathvm/StepperView.git"</span><span class="p">,</span> <span class="ss">from: </span><span class="s2">"1.5.0"</span><span class="p">)</span>
+      <span class="p">.</span><span class="nf">package</span><span class="p">(</span><span class="ss">url: </span><span class="s2">"https://github.com/badrinathvm/StepperView.git"</span><span class="p">,</span> <span class="ss">from: </span><span class="s2">"1.5.1"</span><span class="p">)</span>
 <span class="p">]</span>
 </code></pre>
 <h2 id='requirements' class='heading'>Requirements</h2>
@@ -271,6 +287,7 @@ it, simply add the following line to your Podfile.</p>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example1.png" width="250"  alt="example1"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Indicator_Animation.gif" width="250" alt="example2"  align="center"/></td>
  </tr>
 </table>
 <h2 id='iphone' class='heading'>iPhone</h2>
@@ -308,14 +325,12 @@ it, simply add the following line to your Podfile.</p>
                         <span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="kt">NumberedCircleView</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"5"</span><span class="p">))]</span>
 
 <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
-     <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
-         <span class="kt">StepperView</span><span class="p">()</span>
-            <span class="o">.</span><span class="nf">addSteps</span><span class="p">(</span><span class="n">steps</span><span class="p">)</span>
-            <span class="o">.</span><span class="nf">indicators</span><span class="p">(</span><span class="n">indicationTypes</span><span class="p">)</span>
-            <span class="o">.</span><span class="nf">stepIndicatorMode</span><span class="p">(</span><span class="kt">StepperMode</span><span class="o">.</span><span class="n">horizontal</span><span class="p">)</span>
-            <span class="o">.</span><span class="nf">spacing</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-            <span class="o">.</span><span class="nf">lineOptions</span><span class="p">(</span><span class="kt">StepperLineOptions</span><span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="kt">Colors</span><span class="o">.</span><span class="nf">blue</span><span class="p">(</span><span class="o">.</span><span class="n">teal</span><span class="p">)</span><span class="o">.</span><span class="n">rawValue</span><span class="p">))</span>
-     <span class="p">}</span>
+    <span class="kt">StepperView</span><span class="p">()</span>
+        <span class="o">.</span><span class="nf">addSteps</span><span class="p">(</span><span class="n">steps</span><span class="p">)</span>
+        <span class="o">.</span><span class="nf">indicators</span><span class="p">(</span><span class="n">indicationTypes</span><span class="p">)</span>
+        <span class="o">.</span><span class="nf">stepIndicatorMode</span><span class="p">(</span><span class="kt">StepperMode</span><span class="o">.</span><span class="n">horizontal</span><span class="p">)</span>
+        <span class="o">.</span><span class="nf">spacing</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+        <span class="o">.</span><span class="nf">lineOptions</span><span class="p">(</span><span class="kt">StepperLineOptions</span><span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="kt">Colors</span><span class="o">.</span><span class="nf">blue</span><span class="p">(</span><span class="o">.</span><span class="n">teal</span><span class="p">)</span><span class="o">.</span><span class="n">rawValue</span><span class="p">))</span>
 <span class="p">}</span>
 </code></pre>
 <h2 id='view-modifiers' class='heading'>View Modifiers</h2>
@@ -328,7 +343,7 @@ it, simply add the following line to your Podfile.</p>
 
 <span class="p">.</span><span class="nf">indicatorTypes</span><span class="p">(</span><span class="n">_</span> <span class="n">indicators</span><span class="p">:[</span><span class="no">StepperIndicationType</span><span class="p">]):</span> 
           <span class="mi">1</span><span class="p">.</span> <span class="nf">modifier</span> <span class="n">to</span> <span class="n">customize</span> <span class="n">the</span> <span class="n">step</span> <span class="n">indications</span>
-          <span class="mi">2</span><span class="p">.</span> <span class="nf">provides</span> <span class="n">enum</span> <span class="n">with</span> <span class="n">cases</span> <span class="p">.</span><span class="nf">circle</span><span class="p">(</span><span class="n">color</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="p">.</span><span class="nf">image</span><span class="p">(</span><span class="no">Image</span><span class="p">,</span> <span class="n">width</span><span class="p">)</span> <span class="p">,</span> <span class="p">.</span><span class="nf">custom</span><span class="p">(</span><span class="no">AnyView</span><span class="p">)</span>
+          <span class="mi">2</span><span class="p">.</span> <span class="nf">provides</span> <span class="n">enum</span> <span class="n">with</span> <span class="n">cases</span> <span class="p">.</span><span class="nf">circle</span><span class="p">(</span><span class="n">color</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="p">.</span><span class="nf">image</span><span class="p">(</span><span class="no">Image</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="p">.</span><span class="nf">custom</span><span class="p">(</span><span class="no">AnyView</span><span class="p">),</span> <span class="p">.</span><span class="nf">animation</span><span class="p">(</span><span class="no">AnyView</span><span class="p">)</span>
 
 <span class="p">.</span><span class="nf">lineOptions</span><span class="p">(</span><span class="n">_</span> <span class="ss">options: </span><span class="no">StepperLineOptions</span><span class="p">):</span> 
           <span class="mi">1</span><span class="p">.</span> <span class="nf">line</span> <span class="n">customization</span> <span class="sb">`Color`</span> <span class="p">,</span> <span class="sb">`width`</span>
@@ -342,7 +357,21 @@ it, simply add the following line to your Podfile.</p>
 <span class="p">.</span><span class="nf">addPitStops</span><span class="p">(</span><span class="n">_</span> <span class="ss">steps: </span><span class="p">[</span><span class="no">PitStopStep</span><span class="p">])</span>
           <span class="mi">1</span><span class="p">.</span> <span class="nf">optional</span> <span class="n">modifier</span>
           <span class="mi">2</span><span class="p">.</span> <span class="nf">`</span><span class="no">PitStopStep</span><span class="sb">` - structure that provides option to provide `</span><span class="no">View</span><span class="sb">`, line customizations
+
+.loadingAnimationTime(_ time: Double)
+          1. controls the speed of the animation for step Indicator
 </span></code></pre>
+<h2 id='custom-step-indicators' class='heading'>Custom Step Indicators</h2>
+<h2 id='numberedcircleview' class='heading'>NumberedCircleView</h2>
+
+<p>This view places the number or any text inside the circle.</p>
+<pre class="highlight swift"><code><span class="kt">NumberedCircleView</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"1"</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">40</span><span class="p">)</span>
+</code></pre>
+<h2 id='circlediconview' class='heading'>CircledIconView</h2>
+
+<p>This view embeds a icon or image inside the circle.</p>
+<pre class="highlight swift"><code><span class="kt">CircledIconView</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span> <span class="kt">Image</span><span class="p">(</span><span class="s">"flag"</span><span class="p">),</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> <span class="nv">strokeColor</span><span class="p">:</span> <span class="kt">Color</span><span class="o">.</span><span class="n">red</span><span class="p">)</span>
+</code></pre>
 <h2 id='more-examples' class='heading'>More Examples</h2>
 
 <p><a href="https://github.com/badrinathvm/StepperView/tree/master/Example/StepperView">iOS Usecases</a><br>
@@ -377,7 +406,7 @@ it, simply add the following line to your Podfile.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2020-05-25)</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2020-06-07)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

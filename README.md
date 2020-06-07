@@ -60,7 +60,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.5.0'
+pod 'StepperView','~> 1.5.1'
 ```
 
 ## Carthage
@@ -68,7 +68,7 @@ pod 'StepperView','~> 1.5.0'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```ruby
-github "badrinathvm/stepperView" == 1.5.0
+github "badrinathvm/stepperView" == 1.5.1
 ```
 
 ## Swift Package Manager
@@ -77,7 +77,7 @@ StepperView is available through [Swift Package Manager](https://swift.org/packa
 
 ```ruby
 dependencies: [
-      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.5.0")
+      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.5.1")
 ]
 ```
 
@@ -181,14 +181,14 @@ var body: some View {
    This view places the number or any text inside the circle.
 
 ```swift  
-      NumberedCircleView(text: "1", width: 40)
+NumberedCircleView(text: "1", width: 40)
 ```
 
 ## CircledIconView
    This view embeds a icon or image inside the circle.
    
 ```swift  
-      CircledIconView(image: Image("flag"), width: 40, strokeColor: Color.red)
+CircledIconView(image: Image("flag"), width: 40, strokeColor: Color.red)
 ```
 
 ## More Examples
