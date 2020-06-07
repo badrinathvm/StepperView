@@ -47,7 +47,7 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
             HorizontalLineView(dividerWidth: $lineWidth, lineYOffsetPosition: $lineYOffsetPosition, options: self.lineOptions)
             VStack {
                 HStack(spacing: horizontalSpacing) {
-                    ForEach(self.cells.indices) { index in
+                    ForEach(0..<self.cells.count, id:\.self) { index in
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
                             //for calclulating the height of the indictor view to offset the divider.
                             .heightPreference(column: index)

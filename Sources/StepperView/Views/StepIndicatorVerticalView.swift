@@ -56,7 +56,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                      options: self.lineOptions,
                      alignments: (self.firstAlignment, self.lastAlignment))
             VStack(spacing: verticalSpacing) {
-                ForEach(self.cells.indices) { index in
+                ForEach(0..<self.cells.count, id:\.self) { index in
                     HStack(alignment: self.getAlignment(type: self.alignments[index])) {
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
                             .padding(.horizontal, Utils.standardSpacing)
