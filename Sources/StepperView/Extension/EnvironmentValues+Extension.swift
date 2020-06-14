@@ -41,6 +41,12 @@ extension EnvironmentValues {
         set { self[SpacingKey.self] = newValue }
     }
     
+    /// property wrapper  for `AutoSpacingKey`
+    var autoSpacing: Bool {
+        get { self[AutoSpacingKey.self] }
+        set { self[AutoSpacingKey.self] = newValue }
+    }
+    
     /// property wrapper  for `LineOptionsKey`
     var lineOptions: StepperLineOptions {
         get { self[LineOptionsKey.self] }
@@ -99,6 +105,13 @@ struct StepIndicatorModeKey: EnvironmentKey {
 struct SpacingKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:CGFloat = 30.0
+}
+
+/// Environment Key for Auto Spacing
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+struct AutoSpacingKey: EnvironmentKey {
+    /// provide a default value for custom dependency
+    static var defaultValue:Bool = false
 }
 
 /// Environment Key for Line Options

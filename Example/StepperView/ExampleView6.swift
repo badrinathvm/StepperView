@@ -46,7 +46,8 @@ struct ExampleView6: View {
                 .addSteps(steps)
                 .indicators(indicators)
                 .addPitStops(pitStops)
-                .spacing(100)
+                //.spacing(100) // sets the spacingg to value specified.
+                .autoSpacing(true) // auto calculates spacing between steps based on the content.
         }
     }
 }

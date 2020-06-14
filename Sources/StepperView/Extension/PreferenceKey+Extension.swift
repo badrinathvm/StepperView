@@ -32,6 +32,18 @@ struct VerticalHeightPreference: PreferenceKey {
     }
 }
 
+/// Collects height of all pistop cells, with reduce takes the maximum value for the given key
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+struct PitstopHeightPreference: PreferenceKey {
+    typealias Value = [Int:CGFloat]
+    /// provide a default value for custom dependency
+    static let defaultValue: Value = [:]
+    
+    static func reduce(value: inout Value, nextValue: () -> Value) {
+        value.merge(nextValue(), uniquingKeysWith: max)
+    }
+}
+
 /// Collects width of all the cells, with reduce takes the maximum value for the given key
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct WidthPreference: PreferenceKey {

@@ -22,6 +22,11 @@ struct PitStopView<PitStop:View>: View {
     var pitStop:PitStop
     /// to customise the `width ` , `Color` of the line
     var lineOptions:PitStopLineOptions
+    /// Index position to calculate the height of the pitstop view
+    var heightIndex:Int
+    
+    /// environment variable to access pitstop options
+    @Environment(\.autoSpacing) var autoSpacing
       
     /// Provides the content and behavior of this view.
     var body: some View {
@@ -40,11 +45,13 @@ struct PitStopView<PitStop:View>: View {
             .overlayPreferenceValue(BoundsPreferenceKey.self) { (preferences) in
                 GeometryReader { reader in
                     preferences.map { value in
-                        self.pitStop
-                            .frame(width: self.proxy.size.width * Utils.halfSpacing, height: reader.size.height, alignment: .leading)
-                            .offset(x: self.lineXPosition + 30, y:  reader[value].maxY + Utils.halfSpacing)
-                            .font(.caption)
-                            .lineLimit(nil)
+                            self.pitStop
+                                .frame(width: self.proxy.size.width * Utils.halfSpacing, alignment: .leading)
+                                .offset(x: self.lineXPosition + 30, y:  reader[value].maxY + Utils.halfSpacing)
+                                .font(.caption)
+                                .lineLimit(nil)
+                                .padding(.bottom, self.autoSpacing ? 5 * Utils.standardSpacing : 0.0)
+                                .pitstopHeightPreference(column: self.heightIndex)
                     }
                 }
         }

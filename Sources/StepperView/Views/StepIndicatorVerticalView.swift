@@ -21,9 +21,14 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     @State private var columnHeights: [Int: CGFloat] = [:]
     /// state variable to hold y-axis position  to render  `View`  when values changes
     @State private var lineYPosition: CGFloat = 0
+    /// state variable for dyanmic spacing
+    @State private var dynamicSpace:CGFloat = Utils.standardSpacing
     
     /// environment variable to access pitstop options
     @Environment(\.pitStopOptions) var pitStopsOptions
+    
+    /// environment variable to access pitstop options
+    @Environment(\.autoSpacing) var autoSpacing
     
     /// list  of `View's` to display step indictor content
     var cells:[Cell]
@@ -55,7 +60,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                      lineYPosition: $lineYPosition,
                      options: self.lineOptions,
                      alignments: (self.firstAlignment, self.lastAlignment))
-            VStack(spacing: verticalSpacing) {
+            VStack(spacing: autoSpacing ? self.dynamicSpace : self.verticalSpacing) {
                 ForEach(0..<self.cells.count, id:\.self) { index in
                     HStack(alignment: self.getAlignment(type: self.alignments[index])) {
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
@@ -75,7 +80,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                         self.cells[index]
                             .heightPreference(column: index)
                     }.setAlignment(type: self.alignments[index])
-                        .offset(x: self.getOffset())
+                     .offset(x: self.getOffset())
                 }
             }.verticalHeightPreference()
                 // Intermediate height of the Line View
@@ -94,11 +99,17 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                     self.lineHeight = finalHeight - self.calculateHeightsForFirstAndLastAlignments()
                     print("Final Line Height \(self.lineHeight)")
             }
+                // auto spacing
+            .onPreferenceChange(PitstopHeightPreference.self) {
+                print("Pistop height value \($0)")
+                self.dynamicSpace = Array($0.values).max() ?? 0.0
+                print("Auto Spacing:: \(self.dynamicSpace)")
+            }
         }.padding()
     }
 }
 
-// MARK: - Helper methods to constrcut step indicator vertical view.
+// MARK: - Helper methods to construct step indicator vertical view.
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension StepIndicatorVerticalView {
 
@@ -107,6 +118,8 @@ extension StepIndicatorVerticalView {
     private func calculateIntermediateHeights( value: [Int:CGFloat] ) {
         self.columnHeights = value
         print("Intermediate Divider Height \(self.columnHeights)")
+        self.dynamicSpace = self.columnHeights.first?.value ?? 0.0
+        print("Auto Spacing:: \(self.dynamicSpace)")
     }
     
     /// returns the first alignment from array else `.center`  by default
@@ -160,8 +173,9 @@ extension StepIndicatorVerticalView {
         return PitStopView(proxy: proxy,
                            value: value,
                            lineXPosition: $lineXPosition,
-                           pitStop: self.pitStopsOptions[pitStopIndex].view, lineOptions:self.pitStopsOptions[pitStopIndex].lineOptions)
-            .eraseToAnyView()
+                           pitStop: self.pitStopsOptions[pitStopIndex].view, lineOptions:self.pitStopsOptions[pitStopIndex].lineOptions,
+                           heightIndex: pitStopIndex)
+             .eraseToAnyView()
     }
     
     /// returns offset value to align the the line view
