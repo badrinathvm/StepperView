@@ -27,7 +27,7 @@ struct ExampleView: View {
                 .tabItem { Text("Basic").foregroundColor(Color.black) }
         }
         
-        // to test dynamic way of addign steps, use ExampleView9
+        // to test dynamic way of addingg steps, use ExampleView9
         //ExampleView9()
     }
 }

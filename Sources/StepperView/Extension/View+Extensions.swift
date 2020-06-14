@@ -48,6 +48,13 @@ public extension View {
         })
     }
     
+    /// Stores the height for each of column which will be passed as part of onPreferenceChange to parent view.
+    func pitstopHeightPreference(column: Int? = 0) -> some View {
+        background(GeometryReader { proxy in
+            Color.clear.preference(key: PitstopHeightPreference.self, value: [column!: proxy.size.height])
+        })
+    }
+    
     /// Stores CGRect data for each cell which will be passed as part of onPreferenceChange to the parent view.
     func cgRectPreference() -> some View {
         background(GeometryReader { proxy in
@@ -139,6 +146,11 @@ public extension View {
         self.environment(\EnvironmentValues.spacing, value)
     }
     
+    /// Configures auto spacing to environment value
+    func autoSpacing(_ value: Bool) -> some View {
+        self.environment(\EnvironmentValues.autoSpacing, value)
+    }
+    
     /// Configures line options to environment value
     func lineOptions(_ options: StepperLineOptions) -> some View {
         self.environment(\EnvironmentValues.lineOptions, options)
@@ -169,5 +181,10 @@ public extension View {
     /// - Parameter steps: list of pitstop step views
     func loadingAnimationTime(_ time: Double) -> some View {
         return self.environment(\EnvironmentValues.loadAnimationTime, time)
+    }
+    
+    func log(_ log: String) -> EmptyView {
+        print("** \(log)")
+        return EmptyView()
     }
 }
