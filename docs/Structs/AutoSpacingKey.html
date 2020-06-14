@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>StepperAlignment Enumeration Reference</title>
+    <title>AutoSpacingKey Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/StepperAlignment" class="dashAnchor"></a>
-    <a title="StepperAlignment Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Struct/AutoSpacingKey" class="dashAnchor"></a>
+    <a title="AutoSpacingKey Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">StepperView 1.5.1 Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">StepperView Reference</a>
         <img id="carat" src="../img/carat.png" />
-        StepperAlignment Enumeration Reference
+        AutoSpacingKey Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -196,19 +196,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>StepperAlignment</h1>
+            <h1>AutoSpacingKey</h1>
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight swift"><code><span class="kd">@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)</span>
-<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">StepperAlignment</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CaseIterable</span></code></pre>
+<span class="kd">struct</span> <span class="kt">AutoSpacingKey</span> <span class="p">:</span> <span class="kt">EnvironmentKey</span></code></pre>
 
                 </div>
               </div>
-            <p>Options for stepper view alignments</p>
-<pre class="highlight swift"><code><span class="k">case</span> <span class="n">top</span>
-<span class="k">case</span> <span class="n">center</span>
-<span class="k">case</span> <span class="n">bottoom</span>
-</code></pre>
+            <p>Environment Key for Auto Spacing</p>
 
           </section>
           <section class="section task-group-section">
@@ -217,9 +213,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11StepperView0A9AlignmentO3topyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/top" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView0A9AlignmentO3topyA2CmF">top</a>
+                    <a name="/s:11StepperView14AutoSpacingKeyV12defaultValueSbvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11StepperView14AutoSpacingKeyV12defaultValueSbvpZ">defaultValue</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -227,68 +223,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>aligns step Indicator  to top</p>
+                        <p>provide a default value for custom dependency</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">top</span> <span class="o">=</span> <span class="s">"Top"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11StepperView0A9AlignmentO6centeryA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/center" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView0A9AlignmentO6centeryA2CmF">center</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>aligns step Indicator  to center</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">center</span> <span class="o">=</span> <span class="s">"Center"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11StepperView0A9AlignmentO6bottomyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/bottom" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView0A9AlignmentO6bottomyA2CmF">bottom</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>aligns step Indicator  to bottom</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">bottom</span> <span class="o">=</span> <span class="s">"Bottom"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultValue</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>

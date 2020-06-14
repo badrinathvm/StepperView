@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>StepperAlignment Enumeration Reference</title>
+    <title>PitstopHeightPreference Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/StepperAlignment" class="dashAnchor"></a>
-    <a title="StepperAlignment Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Struct/PitstopHeightPreference" class="dashAnchor"></a>
+    <a title="PitstopHeightPreference Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">StepperView 1.5.1 Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">StepperView Reference</a>
         <img id="carat" src="../img/carat.png" />
-        StepperAlignment Enumeration Reference
+        PitstopHeightPreference Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -196,19 +196,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>StepperAlignment</h1>
+            <h1>PitstopHeightPreference</h1>
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight swift"><code><span class="kd">@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)</span>
-<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">StepperAlignment</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CaseIterable</span></code></pre>
+<span class="kd">struct</span> <span class="kt">PitstopHeightPreference</span> <span class="p">:</span> <span class="kt">PreferenceKey</span></code></pre>
 
                 </div>
               </div>
-            <p>Options for stepper view alignments</p>
-<pre class="highlight swift"><code><span class="k">case</span> <span class="n">top</span>
-<span class="k">case</span> <span class="n">center</span>
-<span class="k">case</span> <span class="n">bottoom</span>
-</code></pre>
+            <p>Collects height of all pistop cells, with reduce takes the maximum value for the given key</p>
 
           </section>
           <section class="section task-group-section">
@@ -217,9 +213,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11StepperView0A9AlignmentO3topyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/top" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView0A9AlignmentO3topyA2CmF">top</a>
+                    <a name="/s:7SwiftUI13PreferenceKeyP5ValueQa"></a>
+                    <a name="//apple_ref/swift/Alias/Value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI13PreferenceKeyP5ValueQa">Value</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -227,14 +223,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>aligns step Indicator  to top</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">top</span> <span class="o">=</span> <span class="s">"Top"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Value</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">CGFloat</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -244,9 +239,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11StepperView0A9AlignmentO6centeryA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/center" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView0A9AlignmentO6centeryA2CmF">center</a>
+                    <a name="/s:11StepperView23PitstopHeightPreferenceV12defaultValueSDySi12CoreGraphics7CGFloatVGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11StepperView23PitstopHeightPreferenceV12defaultValueSDySi12CoreGraphics7CGFloatVGvpZ">defaultValue</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -254,14 +249,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>aligns step Indicator  to center</p>
+                        <p>provide a default value for custom dependency</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">center</span> <span class="o">=</span> <span class="s">"Center"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Structs/PitstopHeightPreference.html#/s:7SwiftUI13PreferenceKeyP5ValueQa">Value</a></span></code></pre>
 
                         </div>
                       </div>
@@ -271,9 +266,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11StepperView0A9AlignmentO6bottomyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/bottom" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView0A9AlignmentO6bottomyA2CmF">bottom</a>
+                    <a name="/s:7SwiftUI13PreferenceKeyP6reduce5value9nextValuey0H0Qzz_AHyXEtFZ"></a>
+                    <a name="//apple_ref/swift/Method/reduce(value:nextValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI13PreferenceKeyP6reduce5value9nextValuey0H0Qzz_AHyXEtFZ">reduce(value:<wbr>nextValue:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -281,14 +276,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>aligns step Indicator  to bottom</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">bottom</span> <span class="o">=</span> <span class="s">"Bottom"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">reduce</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="k">inout</span> <span class="kt"><a href="../Structs/PitstopHeightPreference.html#/s:7SwiftUI13PreferenceKeyP5ValueQa">Value</a></span><span class="p">,</span> <span class="nv">nextValue</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PitstopHeightPreference.html#/s:7SwiftUI13PreferenceKeyP5ValueQa">Value</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

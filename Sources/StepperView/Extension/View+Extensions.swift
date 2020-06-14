@@ -183,6 +183,8 @@ public extension View {
         return self.environment(\EnvironmentValues.loadAnimationTime, time)
     }
     
+    /// Method to add logging in View
+    /// - Parameter log: logging string to be displayed
     func log(_ log: String) -> EmptyView {
         print("** \(log)")
         return EmptyView()
