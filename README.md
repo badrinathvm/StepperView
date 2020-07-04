@@ -212,7 +212,8 @@ CircledIconView(image: Image("flag"), width: 40, strokeColor: Color.red)
 <a href="https://ios-goodies.com/post/617487329928626176/week-333">iOS Goodies #333</a><br>
 <a href="https://digest.mbltdev.ru/digests/302">MBLT DEV DIGEST #302</a><br>
 <a href="https://ios.libhunt.com/newsletter/201">Awesome iOS Newsletter #201</a><br>
-<a href="https://juanpe.github.io/About-SwiftUI/">About-SwiftUI Articles</a>
+<a href="https://juanpe.github.io/About-SwiftUI/">About-SwiftUI Articles</a><br>
+<a href="https://medium.com/better-programming/6-amazing-swiftui-libraries-to-use-in-your-next-project-part-2-df5fb94680bc">Better Programming Medium Article</a>
 
 
 ## Author
