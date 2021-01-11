@@ -60,7 +60,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                      lineYPosition: $lineYPosition,
                      options: self.lineOptions,
                      alignments: (self.firstAlignment, self.lastAlignment))
-            VStack(spacing: autoSpacing ? self.dynamicSpace : self.verticalSpacing) {
+            VStack(alignment: .leading, spacing: autoSpacing ? self.dynamicSpace : self.verticalSpacing) {
                 ForEach(0..<self.cells.count, id:\.self) { index in
                     HStack(alignment: self.getAlignment(type: self.alignments[index])) {
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
