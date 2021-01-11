@@ -27,7 +27,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     /// environment variable to access pitstop options
     @Environment(\.pitStopOptions) var pitStopsOptions
     
-    /// environment variable to access pitstop options
+    /// environment variable to access autospacing
     @Environment(\.autoSpacing) var autoSpacing
     
     /// list  of `View's` to display step indictor content

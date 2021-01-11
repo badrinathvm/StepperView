@@ -18,6 +18,11 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
     @State private var lineYOffsetPosition:CGFloat = 0
     /// state variable to hold height to render  `View`  when values changes
     @State private var height:CGFloat = 0
+    /// state variable for dyanmic spacing
+    @State private var dynamicSpace:CGFloat = Utils.standardSpacing * 10
+    
+    /// environment variable to autospacing
+    @Environment(\.autoSpacing) var autoSpacing
     
     //constructor parameters
     /// list  of `View's` to display step indictor content
@@ -46,7 +51,7 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
         VStack {
             HorizontalLineView(dividerWidth: $lineWidth, lineYOffsetPosition: $lineYOffsetPosition, options: self.lineOptions)
             VStack {
-                HStack(spacing: horizontalSpacing) {
+                HStack(spacing: autoSpacing ? self.dynamicSpace : self.horizontalSpacing) {
                     ForEach(0..<self.cells.count, id:\.self) { index in
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
                             //for calclulating the height of the indictor view to offset the divider.
@@ -92,7 +97,7 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
     fileprivate func drawLabel(for index: Int, proxy: GeometryProxy, value: Anchor<CGRect>) -> some View {
          return self.cells[index]
              .frame(height: proxy[value].width * 2.5)
-             .frame(width: proxy[value].width * 2.5, height: proxy[value].height)
+             .frame(width: proxy[value].width * 2.5, height: proxy[value].height, alignment: .center)
              .padding(.vertical, Utils.standardSpacing)
              .offset(x: proxy[value].minX - proxy[value].midX, y: proxy[value].maxY)
              .allowsTightening(true)
