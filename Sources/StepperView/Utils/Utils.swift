@@ -12,6 +12,8 @@ import SwiftUI
 public struct Utils {
     /// constant for standard spacing
     static let standardSpacing: CGFloat = 10.0
+    /// constant for minium spacing
+    static let minimumSpacing:CGFloat = 2.0
     /// constant for half the value of standard spacing
     static let halfSpacing:CGFloat = 5.0
     /// constant for three fourth the value of standard spacing
