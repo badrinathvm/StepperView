@@ -35,7 +35,7 @@ struct PitStopView<PitStop:View>: View {
             Circle()
                 .frame(width: self.lineXPosition/3, height: self.lineXPosition/3)
                 .foregroundColor(self.getColor(from: lineOptions))
-                .offset(x: proxy[value].midX - self.width / 2, y: proxy[value].maxY)
+                .offset(x: proxy[value].midX - self.width / 2 - Utils.minimumSpacing, y: proxy[value].maxY)
         }.widthKey()
             .onPreferenceChange(WidthKey.self, perform: { (value) in
                 self.width = value ?? 12

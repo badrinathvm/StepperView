@@ -28,7 +28,7 @@ struct VerticalLineView: View {
             return Divider()
                 .background(Color.gray)
                 .frame(height: lineHeight)
-                .offset(x: (lineXPosition/2 - Utils.halfSpacing) - 1, y: (lineYPosition - lineYPosition / 2 ))
+                .offset(x: lineXPosition/2 - Utils.threeFourthSpacing, y: (lineYPosition - lineYPosition / 2 ))
                 .padding()
                 .eraseToAnyView()
         case .custom(let width, let color):
@@ -37,8 +37,7 @@ struct VerticalLineView: View {
                     .frame(width: width, height: lineHeight)
                     // X: subtract one pixel only if the width is 1
                     // Y: subtract half of the lineYposition to set to it's center position.
-                    .offset(x: width == 1 ? lineXPosition/2 - Utils.halfSpacing - 1
-                                          : (lineXPosition/2 - Utils.halfSpacing),
+                    .offset(x: lineXPosition/2 - Utils.threeFourthSpacing,
                         y: getYOffsetPosition(for: alignments.0, last: alignments.1, and: lineYPosition))
                     .padding()
                     .eraseToAnyView()

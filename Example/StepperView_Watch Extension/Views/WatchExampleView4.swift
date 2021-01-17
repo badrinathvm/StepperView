@@ -48,7 +48,7 @@ struct WatchExampleView4: View {
                        .spacing(60)
                        .padding(.leading, 10)
                  .listRowBackground(Color.black)
-            }.padding(.leading, -20)
+            }.padding(.leading, 20)
                
     }
 }
