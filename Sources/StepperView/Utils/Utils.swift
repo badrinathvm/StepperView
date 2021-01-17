@@ -14,6 +14,8 @@ public struct Utils {
     static let standardSpacing: CGFloat = 10.0
     /// constant for half the value of standard spacing
     static let halfSpacing:CGFloat = 5.0
+    /// constant for three fourth the value of standard spacing
+    static let threeFourthSpacing:CGFloat = 8.0
     /// constant value for iOS offsets
     static let offsetConstant:CGFloat = 40.0
     /// constant value for watchOS offsets
