@@ -60,6 +60,26 @@
                BlueprintName = "StepperView_Tests"
                ReferencedContainer = "container:StepperView.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "StepperViewTests/testExampleView1()">
+               </Test>
+               <Test
+                  Identifier = "StepperViewTests/testExampleView2()">
+               </Test>
+               <Test
+                  Identifier = "StepperViewTests/testExampleView3()">
+               </Test>
+               <Test
+                  Identifier = "StepperViewTests/testExampleView4()">
+               </Test>
+               <Test
+                  Identifier = "StepperViewTests/testExampleView5()">
+               </Test>
+               <Test
+                  Identifier = "StepperViewTests/testExampleView6()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
