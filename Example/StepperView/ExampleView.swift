@@ -29,5 +29,8 @@ struct ExampleView: View {
         
         // to test dynamic way of addingg steps, use ExampleView9
         //ExampleView9()
+        
+        // if there are many steps , embed it in scroll view and then set frame to it.
+        //ExampleView7()
     }
 }

@@ -46,34 +46,35 @@ struct ExampleView5: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 50) {
-                
-                StepperView()
-                    .addSteps(self.set1)
-                    .indicators(self.indicationTypes)
-                    .stepIndicatorMode(StepperMode.horizontal)
-                    .spacing(50)
-                    .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-                    .padding(.top, 20)
-                
-                //animated stepper View
-                ExampleView7()
-                    .padding(.top, 20)
-
-                HStack(spacing: -10) {
+            ScrollView(Axis.Set.vertical, showsIndicators: false) {
+                VStack(spacing: 10) {
                     StepperView()
-                        .addSteps(self.set2)
+                        .addSteps(self.set1)
                         .indicators(self.indicationTypes)
-                        .spacing(30)
+                        .stepIndicatorMode(StepperMode.horizontal)
+                        .spacing(50)
                         .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                        .padding(.top, 50)
                     
-                    //animated stepper view
-                    StepperView()
-                        .addSteps(self.set3)
-                        .indicators(self.indicationTypes1)
-                        .spacing(30)
-                        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-                        .loadingAnimationTime(0.02) // speed of the animation.
+                    //animated stepper View
+                    ExampleView7()
+                        //.padding(.top, 20)
+
+                    HStack(spacing: -10) {
+                        StepperView()
+                            .addSteps(self.set2)
+                            .indicators(self.indicationTypes)
+                            .spacing(30)
+                            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                        
+                        //animated stepper view
+                        StepperView()
+                            .addSteps(self.set3)
+                            .indicators(self.indicationTypes1)
+                            .spacing(30)
+                            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                            .loadingAnimationTime(0.02) // speed of the animation.
+                    }.offset(y: -100)
                 }
             }
             .navigationBarTitle("StepperView")
