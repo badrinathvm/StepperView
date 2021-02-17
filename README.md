@@ -175,7 +175,7 @@ var body: some View {
           1. controls the speed of the animation for step Indicator
           
 .autoSpacing(true)
-          1. Dynamcially calclulates the spacing between each of the steps.
+          1. Dynamcially calculates the spacing between each of the steps.
 ```
 
 ## Custom Step Indicators
