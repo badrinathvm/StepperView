@@ -33,7 +33,7 @@ struct PitStopLineView: View {
             return Rectangle()
                 .fill(color)
                 .frame(width: width, height: proxy.size.height)
-                .offset(x: proxy[value].midX - self.width / 2, y: proxy[value].maxY)
+                .offset(x: proxy[value].midX - self.width / 2 - (width + 1), y: proxy[value].maxY)
                 .eraseToAnyView()
         }
     }

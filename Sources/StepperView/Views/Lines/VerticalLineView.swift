@@ -37,8 +37,8 @@ struct VerticalLineView: View {
                     .frame(width: width, height: lineHeight)
                     // X: subtract one pixel only if the width is 1
                     // Y: subtract half of the lineYposition to set to it's center position.
-                    .offset(x: lineXPosition/2 - Utils.threeFourthSpacing,
-                        y: getYOffsetPosition(for: alignments.0, last: alignments.1, and: lineYPosition))
+                    .offset(x: lineXPosition/2 - Utils.halfSpacing,
+                            y: getYOffsetPosition(for: alignments.0, last: alignments.1, and: lineYPosition))
                     .padding()
                     .eraseToAnyView()
         }
