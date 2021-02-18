@@ -37,6 +37,7 @@ struct ExampleView2:View {
                     HStack {
                         StepperView()
                             .addSteps(self.cells)
+                            .stepIndicatorMode(StepperMode.vertical)
                             .indicators(indicationTypes)
                             .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                             .padding(.leading, 10)
