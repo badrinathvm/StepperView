@@ -18,7 +18,7 @@ struct ExampleView3:View {
                   ImageTextRowView(text: "Select type of Account", imageName: "cash")
                 ]
     
-    let alignments = [StepperAlignment.center, .center, .center, .center]
+    let alignments = [StepperAlignment.center, .top, .center, .bottom]
     
     let indicationTypes = [
                 StepperIndicationType<AnyView>.circle(Colors.teal.rawValue, 12),
@@ -35,6 +35,7 @@ struct ExampleView3:View {
                         StepperView()
                             .addSteps(self.cells)
                             .alignments(alignments)
+                            .stepIndicatorMode(StepperMode.vertical)
                             .indicators(indicationTypes)
                             .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
                     }
