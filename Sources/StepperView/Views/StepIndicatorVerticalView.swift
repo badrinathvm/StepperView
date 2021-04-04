@@ -30,7 +30,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     /// environment variable to access autospacing
     @Environment(\.autoSpacing) var autoSpacing
     
-    /// environment variable to access autospacing
+    /// environment variable to access steplife cycles
     @Environment(\.stepLifeCycle) var stepLifeCycle
     
     /// list  of `View's` to display step indictor content
@@ -114,16 +114,16 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
             }
                 // Height of the Line View
                 .onPreferenceChange(VerticalHeightPreference.self) {
-                    print("Height of Divider \($0)")
+                    //print("Height of Divider \($0)")
                     let finalHeight = $0.values.max() ?? 0.0
                     self.lineHeight = finalHeight - self.calculateHeightsForFirstAndLastAlignments()
-                    print("Final Line Height \(self.lineHeight)")
+                    //print("Final Line Height \(self.lineHeight)")
             }
                 // auto spacing
             .onPreferenceChange(PitstopHeightPreference.self) {
-                print("Pistop height value \($0)")
+                //print("Pistop height value \($0)")
                 self.dynamicSpace = Array($0.values).max() ?? 0.0
-                print("Auto Spacing:: \(self.dynamicSpace)")
+                //print("Auto Spacing:: \(self.dynamicSpace)")
             }
         }.padding()
     }
@@ -137,9 +137,9 @@ extension StepIndicatorVerticalView {
     /// - Parameter value: dictionary to hold the index and height values.
     private func calculateIntermediateHeights( value: [Int:CGFloat] ) {
         self.columnHeights = value
-        print("Intermediate Divider Height \(self.columnHeights)")
+        //print("Intermediate Divider Height \(self.columnHeights)")
         self.dynamicSpace = self.columnHeights.first?.value ?? 0.0
-        print("Auto Spacing:: \(self.dynamicSpace)")
+        //print("Auto Spacing:: \(self.dynamicSpace)")
     }
     
     /// returns the first alignment from array else `.center`  by default

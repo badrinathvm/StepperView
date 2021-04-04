@@ -13,12 +13,12 @@ import StepperView
 struct ExampleView: View {
     var body: some View {
         TabView {
-            // Example5 is commeneted as it's known issue of GeometryReader breaking only on simulator on Xcode 11.4+ onwards,
-            // However this works perfectly on real device and on Xcode >= 11.2 && <= 11.3, feel free to uncomment and test it out.
-            ExampleView11()
+            ExampleView5()
                 .tabItem { Text("Horizontal") .foregroundColor(Color.black) }
-            ExampleView2()
-                .tabItem { Text("Usecase") .foregroundColor(Color.black) }
+            ExampleView11()
+                .tabItem { Text("LifeCycle") .foregroundColor(Color.black) }
+//            ExampleView2()
+//                .tabItem { Text("Usecase") .foregroundColor(Color.black) }
             ExampleView3()
                 .tabItem { Text("Card") .foregroundColor(Color.black) }
             ExampleView6()
