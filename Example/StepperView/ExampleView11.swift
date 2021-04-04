@@ -14,26 +14,67 @@ let customGreen = UIColor(red: 0.00, green: 0.80, blue: 0.66, alpha: 1.00)
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ExampleView11: View {
-    let cells = [ CustomStepTextView(text: "Cancellation requested"),
-                  CustomStepTextView(text: "In-progress"),
-                  CustomStepTextView(text: "Subscription cancelled")
+    let cells = [ CustomStepTextView(text: "Basic Details"),
+                  CustomStepTextView(text: "Company Details"),
+                  CustomStepTextView(text: "Subscription plan"),
+                  CustomStepTextView(text: "Payment details")
                 ]
     
     //Custom Indicators to point.
     let indicators = [
         StepperIndicationType.custom(IndicatorImageView(name: "completed").eraseToAnyView()),
-        StepperIndicationType.custom(IndicatorImageView(name: "inprogress").eraseToAnyView()),
+        StepperIndicationType.custom(IndicatorImageView(name: "completed").eraseToAnyView()),
+        StepperIndicationType.custom(IndicatorImageView(name:"pending").eraseToAnyView()),
         StepperIndicationType.custom(IndicatorImageView(name:"pending").eraseToAnyView())
     ]
     
     var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            StepperView()
+                .addSteps([
+                            CustomStepTextView(text: "Announced"),
+                            CustomStepTextView(text: "Dividend Payment")
+                        ])
+                .indicators([
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed"))
+                        ])
+                .lineOptions(StepperLineOptions.custom(4, Color(customGreen)))
+                .stepLifeCycles([StepLifeCycle.completed, .completed ])
+                .spacing(50)
+            
+            Divider()
+            
             StepperView()
                 .addSteps(cells)
                 .indicators(indicators)
                 .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
-                .stepLifeCycles([StepLifeCycle.completed, .pending, .pending])
-                .spacing(50)
-                .padding(.horizontal, 50)
+                .stepLifeCycles([StepLifeCycle.completed, .completed, .pending, .pending])
+                .spacing(40)
+                .padding(.leading, 50)
+            
+            Divider()
+            
+            StepperView()
+                .addSteps([
+                            CustomStepTextView(text: "Card details"),
+                            CustomStepTextView(text: "Application review"),
+                            CustomStepTextView(text: "Authenticate OTP"),
+                            CustomStepTextView(text: "Create password"),
+                        ])
+                .indicators([
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                            StepperIndicationType.custom(IndicatorImageView(name:"pending"))
+                        ])
+                .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                .stepLifeCycles([StepLifeCycle.completed, .completed, .completed, .pending])
+                .spacing(40)
+                .padding(.leading, 50)
+            
+            Spacer()
+        }
     }
 }
 
