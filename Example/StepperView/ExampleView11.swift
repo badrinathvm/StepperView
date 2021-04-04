@@ -60,7 +60,7 @@ struct ExampleView11: View {
                             CustomStepTextView(text: "Card details"),
                             CustomStepTextView(text: "Application review"),
                             CustomStepTextView(text: "Authenticate OTP"),
-                            CustomStepTextView(text: "Create password"),
+                            CustomStepTextView(text: "Create password")
                         ])
                 .indicators([
                             StepperIndicationType.custom(IndicatorImageView(name: "completed")),

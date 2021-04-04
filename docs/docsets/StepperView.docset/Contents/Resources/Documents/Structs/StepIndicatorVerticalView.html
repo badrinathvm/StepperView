@@ -17,7 +17,7 @@
     <a title="StepIndicatorVerticalView Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">StepperView 1.5.6 Docs</a> (100% documented)</p>
+        <p><a href="../index.html">StepperView 1.6.0 Docs</a> (100% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -66,6 +66,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PitStopLineOptions.html">PitStopLineOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StepLifeCycle.html">StepLifeCycle</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/StepperAlignment.html">StepperAlignment</a>
@@ -174,6 +177,9 @@
                 <a href="../Structs/StepIndicatorVerticalView.html">StepIndicatorVerticalView</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/StepLifeCycleKey.html">StepLifeCycleKey</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/StepperView.html">StepperView</a>
               </li>
               <li class="nav-group-task">
@@ -271,6 +277,34 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@Environment</span>
 <span class="k">var</span> <span class="nv">autoSpacing</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11StepperView021StepIndicatorVerticalB0V13stepLifeCycleSayAA0cgH0OGvp"></a>
+                    <a name="//apple_ref/swift/Property/stepLifeCycle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11StepperView021StepIndicatorVerticalB0V13stepLifeCycleSayAA0cgH0OGvp">stepLifeCycle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>environment variable to access steplife cycles</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Environment</span>
+<span class="k">var</span> <span class="nv">stepLifeCycle</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/StepLifeCycle.html">StepLifeCycle</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -415,6 +449,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11StepperView021StepIndicatorVerticalB0V9isRoundedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isRounded" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11StepperView021StepIndicatorVerticalB0V9isRoundedSbvp">isRounded</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>to detect the whether the line option is of type <code>rounded</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isRounded</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11StepperView021StepIndicatorVerticalB0V5cells10alignments14indicationType11lineOptions15verticalSpacingACyxGSayxG_SayAA0A9AlignmentOGSayAA0a10IndicationI0Oy7SwiftUI03AnyB0VGGAA0a4LineK0O12CoreGraphics7CGFloatVtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(cells:alignments:indicationType:lineOptions:verticalSpacing:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:11StepperView021StepIndicatorVerticalB0V5cells10alignments14indicationType11lineOptions15verticalSpacingACyxGSayxG_SayAA0A9AlignmentOGSayAA0a10IndicationI0Oy7SwiftUI03AnyB0VGGAA0a4LineK0O12CoreGraphics7CGFloatVtcfc">init(cells:<wbr>alignments:<wbr>indicationType:<wbr>lineOptions:<wbr>verticalSpacing:<wbr>)</a>
@@ -472,7 +533,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2021-02-18)</p>
+          <p>&copy; 2021 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2021-04-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

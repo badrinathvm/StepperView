@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HorizontalLineView Structure Reference</title>
+    <title>StepLifeCycleKey Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/HorizontalLineView" class="dashAnchor"></a>
-    <a title="HorizontalLineView Structure Reference"></a>
+    <a name="//apple_ref/swift/Struct/StepLifeCycleKey" class="dashAnchor"></a>
+    <a title="StepLifeCycleKey Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">StepperView 1.6.0 Docs</a> (100% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">StepperView Reference</a>
         <img id="carat" src="../img/carat.png" />
-        HorizontalLineView Structure Reference
+        StepLifeCycleKey Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -210,16 +210,16 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>HorizontalLineView</h1>
+            <h1>StepLifeCycleKey</h1>
               <div class="declaration">
                 <div class="language">
                   
                   <pre class="highlight swift"><code><span class="kd">@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)</span>
-<span class="kd">struct</span> <span class="kt">HorizontalLineView</span> <span class="p">:</span> <span class="kt">View</span></code></pre>
+<span class="kd">struct</span> <span class="kt">StepLifeCycleKey</span> <span class="p">:</span> <span class="kt">EnvironmentKey</span></code></pre>
 
                 </div>
               </div>
-            <p>Horizontal Line View for Step Indictor</p>
+            <p>Environment Key for pit stop line options.</p>
 
           </section>
           <section class="section task-group-section">
@@ -228,9 +228,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11StepperView014HorizontalLineB0V12dividerWidth12CoreGraphics7CGFloatVvp"></a>
-                    <a name="//apple_ref/swift/Property/dividerWidth" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView014HorizontalLineB0V12dividerWidth12CoreGraphics7CGFloatVvp">dividerWidth</a>
+                    <a name="/s:11StepperView16StepLifeCycleKeyV12defaultValueSayAA0cdE0OGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11StepperView16StepLifeCycleKeyV12defaultValueSayAA0cdE0OGvpZ">defaultValue</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -238,97 +238,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>binding variable to hold the divider width</p>
+                        <p>provide a default value for custom dependency</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@Binding</span>
-<span class="k">var</span> <span class="nv">dividerWidth</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">nonmutating</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11StepperView014HorizontalLineB0V19lineYOffsetPosition12CoreGraphics7CGFloatVvp"></a>
-                    <a name="//apple_ref/swift/Property/lineYOffsetPosition" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView014HorizontalLineB0V19lineYOffsetPosition12CoreGraphics7CGFloatVvp">lineYOffsetPosition</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>binding variable to hold line y-axis position</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@Binding</span>
-<span class="k">var</span> <span class="nv">lineYOffsetPosition</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">nonmutating</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11StepperView014HorizontalLineB0V7optionsAA0aD7OptionsOvp"></a>
-                    <a name="//apple_ref/swift/Property/options" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView014HorizontalLineB0V7optionsAA0aD7OptionsOvp">options</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>options for customizing line with either  <code>defaults</code> or  custom <code>width</code>  and <code>Color</code></p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Enums/StepperLineOptions.html">StepperLineOptions</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11StepperView014HorizontalLineB0V4bodyQrvp"></a>
-                    <a name="//apple_ref/swift/Property/body" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperView014HorizontalLineB0V4bodyQrvp">body</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>provides the content and behavior of this view.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultValue</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/StepLifeCycle.html">StepLifeCycle</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>

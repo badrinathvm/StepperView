@@ -60,7 +60,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.5.6'
+pod 'StepperView','~> 1.6.0'
 ```
 
 ## Carthage
@@ -68,7 +68,7 @@ pod 'StepperView','~> 1.5.6'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```ruby
-github "badrinathvm/stepperView" == 1.5.6
+github "badrinathvm/stepperView" == 1.6.0
 ```
 
 ## Swift Package Manager
@@ -77,7 +77,7 @@ StepperView is available through [Swift Package Manager](https://swift.org/packa
 
 ```ruby
 dependencies: [
-      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.5.6")
+      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.6.0")
 ]
 ```
 
@@ -159,7 +159,8 @@ var body: some View {
           2. provides enum with cases .circle(color, width), .image(Image, width), .custom(AnyView), .animation(AnyView)
           
 .lineOptions(_ options: StepperLineOptions): 
-          1. line customization `Color` , `width`
+          1. line customization `color` , `width` , `corner radius`
+          2. Has option of `defaults`, `custom` , `rounded`
           
 .spacing(_ value: CGFloat): 
           1. spacing between each of the step views either vertically horizontally
@@ -176,6 +177,9 @@ var body: some View {
           
 .autoSpacing(true)
           1. Dynamcially calculates the spacing between each of the steps.
+     
+.stepLifeCycles(lifecycle: [StepLifeCycle])
+          1. Can set the life cycle status for each of the step as `completed`, `pending`
 ```
 
 ## Custom Step Indicators
