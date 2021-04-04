@@ -50,6 +50,7 @@
 - Support for Circle, Image, Custom View, Animated Step Indicators
 - Customizable line,spacing & animation options.
 - Pitstop feature to add intermediate stages between Step Indicators
+- Support for updating the life cycle status for each of the steps
 
 ## Documentation
 **[StepperView Reference](https://badrinathvm.github.io/StepperView/)**
@@ -99,6 +100,14 @@ dependencies: [
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Indicator_Animation.gif" width="250" alt="example2"  align="center"/></td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle1.png" alt="lifecycle1"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle2.png" alt="lifecycle2" align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle3.png" alt="lifecycle3"  align="center"/></td>
  </tr>
 </table>
 
