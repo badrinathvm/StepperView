@@ -30,6 +30,9 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     /// environment variable to access autospacing
     @Environment(\.autoSpacing) var autoSpacing
     
+    /// environment variable to access autospacing
+    @Environment(\.stepLifeCycle) var stepLifeCycle
+    
     /// list  of `View's` to display step indictor content
     var cells:[Cell]
     /// list of alignments to display the step indicator position  can be `top` or  `center` or  `bottom`
@@ -40,6 +43,8 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     var lineOptions:StepperLineOptions
     /// spacing between each of the step indicators
     var verticalSpacing: CGFloat
+    /// to detect the whether the line option is of type `rounded`
+    var isRounded:Bool = false
     
     /// initilazes cells, alignments , indicators and spacing
     init(cells: [Cell], alignments: [StepperAlignment] = [], indicationType: [StepperIndicationType<AnyView>],
@@ -48,6 +53,11 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
            self.alignments = alignments
            self.indicationType = indicationType
            self.lineOptions = lineOptions
+            switch lineOptions {
+            case .rounded(_, _, _):
+                     self.isRounded = true
+            default: self.isRounded = false
+            }
            self.verticalSpacing = verticalSpacing
     }
     
@@ -72,6 +82,16 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                                     GeometryReader { proxy in
                                         preferences.map { anchor in
                                             self.drawAnchors(proxy: proxy, value: anchor, pitStopIndex: index)
+                                        }
+                                    }
+                                })
+                            })
+                            .ifTrue(self.isRounded, content: { view in
+                                view.anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { $0 }
+                                .overlayPreferenceValue(BoundsPreferenceKey.self, { (preferences) in
+                                    GeometryReader { proxy in
+                                        preferences.map { value in
+                                            self.drawCustomLine(proxy: proxy, value: value, index: index)
                                         }
                                     }
                                 })
@@ -176,6 +196,27 @@ extension StepIndicatorVerticalView {
                            pitStop: self.pitStopsOptions[pitStopIndex].view, lineOptions:self.pitStopsOptions[pitStopIndex].lineOptions,
                            heightIndex: pitStopIndex)
              .eraseToAnyView()
+    }
+    
+    /// draaws custom line between the indicators
+    /// - Parameters:
+    ///   - proxy: co-ordinates values of step indicator
+    ///   - value: bound values of step indicator
+    ///   - index: index position of step indicator
+    /// - Returns: reurns a `view` of type of  Line
+    private func drawCustomLine(proxy: GeometryProxy, value: Anchor<CGRect>, index: Int) -> some View {
+        guard index != self.cells.count - 1 else { return EmptyView().eraseToAnyView() }
+        switch lineOptions {
+        case .rounded(let width, let cornerRadius, let color):
+            // draw a line
+            return RoundedRectangle(cornerRadius: cornerRadius)
+                .foregroundColor(stepLifeCycle[index] == StepLifeCycle.completed ? color : Color.gray.opacity(0.5))
+                .frame(width: width, height: self.verticalSpacing)
+                .offset(x: proxy[value].midX - width, y: proxy[value].maxY)
+                .eraseToAnyView()
+        default:
+            return EmptyView().eraseToAnyView()
+        }
     }
     
     /// returns offset value to align the the line view

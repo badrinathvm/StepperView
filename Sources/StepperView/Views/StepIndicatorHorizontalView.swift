@@ -81,7 +81,7 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
             }.frame(height: self.height)
              // calclulate the offset position of the bar to move it to center.
             .onPreferenceChange(HeightPreference.self) {
-                print("lineYOffsetPosition \(self.lineYOffsetPosition)")
+                //print("lineYOffsetPosition \(self.lineYOffsetPosition)")
                 self.lineYOffsetPosition = ($0.values.first ?? 12) / 2
             }
         }

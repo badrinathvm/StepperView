@@ -41,6 +41,8 @@ struct VerticalLineView: View {
                             y: getYOffsetPosition(for: alignments.0, last: alignments.1, and: lineYPosition))
                     .padding()
                     .eraseToAnyView()
+        case .rounded(_, _, _):
+            return EmptyView().eraseToAnyView()
         }
     }
     

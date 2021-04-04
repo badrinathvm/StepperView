@@ -70,6 +70,12 @@ extension EnvironmentValues {
         get { self[LoadAnimationOptionsKey.self] }
         set { self[LoadAnimationOptionsKey.self] = newValue }
     }
+    
+    /// property wrapper  for `StepLifeCycleKey`
+    var stepLifeCycle: [StepLifeCycle] {
+        get { self[StepLifeCycleKey.self] }
+        set { self[StepLifeCycleKey.self] = newValue }
+    }
 }
 
 /// Environment Key for Steps
@@ -140,4 +146,11 @@ struct StepAnimationOptionsKey: EnvironmentKey {
 struct LoadAnimationOptionsKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:Double = 0.05
+}
+
+/// Environment Key for pit stop line options.
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+struct StepLifeCycleKey: EnvironmentKey {
+    /// provide a default value for custom dependency
+    static var defaultValue:[StepLifeCycle] = []
 }
