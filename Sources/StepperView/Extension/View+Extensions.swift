@@ -124,6 +124,11 @@ public extension View {
         self.environment(\EnvironmentValues.alignments, alignments)
     }
     
+    /// Sets lifecycle status to environment value
+    func stepLifeCycles(_ lifecycle: [StepLifeCycle] = [.completed, .completed, .completed]) -> some View {
+        self.environment(\EnvironmentValues.stepLifeCycle, lifecycle)
+    }
+    
     /// Sets indicators to environment value
     func indicators<Cell:View>(_ indicators: [StepperIndicationType<Cell>] = []) -> some View {
         self.environment(\EnvironmentValues.indicationType, indicators.map { value  in

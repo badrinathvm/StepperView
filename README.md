@@ -16,6 +16,11 @@
 <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" height="450" alt="StepperView"/>
 </p>
 
+<br/>
+<p align="center">
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/StepperViewLineLifeCycle.png"  alt="StepperViewLineLifeCycle"/>
+</p>
+
 # Table of Contents
 
 * [Features](#features)
@@ -45,6 +50,7 @@
 - Support for Circle, Image, Custom View, Animated Step Indicators
 - Customizable line,spacing & animation options.
 - Pitstop feature to add intermediate stages between Step Indicators
+- Support for updating the life cycle status for each of the steps
 
 ## Documentation
 **[StepperView Reference](https://badrinathvm.github.io/StepperView/)**
@@ -60,7 +66,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.5.6'
+pod 'StepperView','~> 1.6.0'
 ```
 
 ## Carthage
@@ -68,7 +74,7 @@ pod 'StepperView','~> 1.5.6'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```ruby
-github "badrinathvm/stepperView" == 1.5.6
+github "badrinathvm/stepperView" == 1.6.0
 ```
 
 ## Swift Package Manager
@@ -77,7 +83,7 @@ StepperView is available through [Swift Package Manager](https://swift.org/packa
 
 ```ruby
 dependencies: [
-      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.5.6")
+      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.6.0")
 ]
 ```
 
@@ -94,6 +100,14 @@ dependencies: [
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Indicator_Animation.gif" width="250" alt="example2"  align="center"/></td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle1.png" alt="lifecycle1"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle2.png" alt="lifecycle2" align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle3.png" alt="lifecycle3"  align="center"/></td>
  </tr>
 </table>
 
@@ -159,7 +173,8 @@ var body: some View {
           2. provides enum with cases .circle(color, width), .image(Image, width), .custom(AnyView), .animation(AnyView)
           
 .lineOptions(_ options: StepperLineOptions): 
-          1. line customization `Color` , `width`
+          1. line customization `color` , `width` , `corner radius`
+          2. Has option of `defaults`, `custom` , `rounded`
           
 .spacing(_ value: CGFloat): 
           1. spacing between each of the step views either vertically horizontally
@@ -176,6 +191,9 @@ var body: some View {
           
 .autoSpacing(true)
           1. Dynamcially calculates the spacing between each of the steps.
+     
+.stepLifeCycles(lifecycle: [StepLifeCycle])
+          1. Can set the life cycle status for each of the step as `completed`, `pending`
 ```
 
 ## Custom Step Indicators

@@ -103,8 +103,10 @@ public enum StepperIndicationType<Content:View> {
 public enum StepperLineOptions {
     /// default line option
     case defaults
-    /// custom line option with thickness  and  `Color`
+    /// custom line option with `width`  and  `Color`
     case custom(CGFloat, Color)
+    /// rounded line options with `width` , `corner radius`  and   `Color`
+    case rounded(CGFloat, CGFloat, Color)
 }
 
 /**
@@ -120,4 +122,19 @@ public enum StepperMode:String, CaseIterable {
     case vertical
     /// landscape mode
     case horizontal
+}
+
+/**
+   Options for aligns the step indicator either in `pending` or `completed`
+
+   ````
+   case pending
+   case completed
+   ````
+*/
+public enum StepLifeCycle:String, CaseIterable {
+    /// pending mode
+    case pending
+    /// completed mode
+    case completed
 }

@@ -1,6 +1,8 @@
 disabled_rules: # rule identifiers to exclude from running
 - trailing_whitespace
 - colon
+- implicit_getter
+- empty_enum_arguments
 opt_in_rules: # some rules are only opt-in
 # Find all the available rules by running: swiftlint rules
 - trailing_semicolon

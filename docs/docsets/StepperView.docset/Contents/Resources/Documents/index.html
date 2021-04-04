@@ -16,7 +16,7 @@
     <a title="StepperView  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">StepperView 1.5.6 Docs</a> (100% documented)</p>
+        <p><a href="index.html">StepperView 1.6.0 Docs</a> (100% documented)</p>
         <p class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -65,6 +65,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/PitStopLineOptions.html">PitStopLineOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/StepLifeCycle.html">StepLifeCycle</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/StepperAlignment.html">StepperAlignment</a>
@@ -173,6 +176,9 @@
                 <a href="Structs/StepIndicatorVerticalView.html">StepIndicatorVerticalView</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/StepLifeCycleKey.html">StepLifeCycleKey</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/StepperView.html">StepperView</a>
               </li>
               <li class="nav-group-task">
@@ -221,6 +227,12 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" height="450" alt="StepperView"/>
 </p>
+
+<p><br/></p>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/StepperViewLineLifeCycle.png"  alt="StepperViewLineLifeCycle"/>
+</p>
 <h1 id='table-of-contents' class='heading'>Table of Contents</h1>
 
 <ul>
@@ -261,6 +273,7 @@
 <li>Support for Circle, Image, Custom View, Animated Step Indicators</li>
 <li>Customizable line,spacing &amp; animation options.</li>
 <li>Pitstop feature to add intermediate stages between Step Indicators</li>
+<li>Support for updating the life cycle status for each of the steps</li>
 </ul>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
@@ -272,18 +285,18 @@
 
 <p>StepperView is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
 it, simply add the following line to your Podfile.</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'StepperView'</span><span class="p">,</span><span class="s1">'~&gt; 1.5.6'</span>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'StepperView'</span><span class="p">,</span><span class="s1">'~&gt; 1.6.0'</span>
 </code></pre>
 <h2 id='carthage' class='heading'>Carthage</h2>
 
 <p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:</p>
-<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"badrinathvm/stepperView"</span> <span class="o">==</span> <span class="mi">1</span><span class="o">.</span><span class="mi">5</span><span class="o">.</span><span class="mi">6</span>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"badrinathvm/stepperView"</span> <span class="o">==</span> <span class="mi">1</span><span class="o">.</span><span class="mi">6</span><span class="o">.</span><span class="mi">0</span>
 </code></pre>
 <h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
 
 <p>StepperView is available through <a href="https://swift.org/package-manager/">Swift Package Manager</a>. To install it, simply add it to the <code>dependencies</code> of your <code>Package.swift</code></p>
 <pre class="highlight ruby"><code><span class="ss">dependencies: </span><span class="p">[</span>
-      <span class="p">.</span><span class="nf">package</span><span class="p">(</span><span class="ss">url: </span><span class="s2">"https://github.com/badrinathvm/StepperView.git"</span><span class="p">,</span> <span class="ss">from: </span><span class="s2">"1.5.6"</span><span class="p">)</span>
+      <span class="p">.</span><span class="nf">package</span><span class="p">(</span><span class="ss">url: </span><span class="s2">"https://github.com/badrinathvm/StepperView.git"</span><span class="p">,</span> <span class="ss">from: </span><span class="s2">"1.6.0"</span><span class="p">)</span>
 <span class="p">]</span>
 </code></pre>
 <h2 id='requirements' class='heading'>Requirements</h2>
@@ -302,6 +315,14 @@ it, simply add the following line to your Podfile.</p>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example2.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/example3.png" width="250" alt="example2"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/Indicator_Animation.gif" width="250" alt="example2"  align="center"/></td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle1.png" alt="lifecycle1"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle2.png" alt="lifecycle2" align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle3.png" alt="lifecycle3"  align="center"/></td>
  </tr>
 </table>
 <h2 id='iphone' class='heading'>iPhone</h2>
@@ -360,7 +381,8 @@ it, simply add the following line to your Podfile.</p>
           <span class="mi">2</span><span class="p">.</span> <span class="nf">provides</span> <span class="n">enum</span> <span class="n">with</span> <span class="n">cases</span> <span class="p">.</span><span class="nf">circle</span><span class="p">(</span><span class="n">color</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="p">.</span><span class="nf">image</span><span class="p">(</span><span class="no">Image</span><span class="p">,</span> <span class="n">width</span><span class="p">),</span> <span class="p">.</span><span class="nf">custom</span><span class="p">(</span><span class="no">AnyView</span><span class="p">),</span> <span class="p">.</span><span class="nf">animation</span><span class="p">(</span><span class="no">AnyView</span><span class="p">)</span>
 
 <span class="p">.</span><span class="nf">lineOptions</span><span class="p">(</span><span class="n">_</span> <span class="ss">options: </span><span class="no">StepperLineOptions</span><span class="p">):</span> 
-          <span class="mi">1</span><span class="p">.</span> <span class="nf">line</span> <span class="n">customization</span> <span class="sb">`Color`</span> <span class="p">,</span> <span class="sb">`width`</span>
+          <span class="mi">1</span><span class="p">.</span> <span class="nf">line</span> <span class="n">customization</span> <span class="sb">`color`</span> <span class="p">,</span> <span class="sb">`width`</span> <span class="p">,</span> <span class="sb">`corner radius`</span>
+          <span class="mi">2</span><span class="o">.</span> <span class="no">Has</span> <span class="n">option</span> <span class="n">of</span> <span class="sb">`defaults`</span><span class="p">,</span> <span class="sb">`custom`</span> <span class="p">,</span> <span class="sb">`rounded`</span>
 
 <span class="p">.</span><span class="nf">spacing</span><span class="p">(</span><span class="n">_</span> <span class="ss">value: </span><span class="no">CGFloat</span><span class="p">):</span> 
           <span class="mi">1</span><span class="p">.</span> <span class="nf">spacing</span> <span class="n">between</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">step</span> <span class="n">views</span> <span class="n">either</span> <span class="n">vertically</span> <span class="n">horizontally</span>
@@ -377,6 +399,9 @@ it, simply add the following line to your Podfile.</p>
 
 .autoSpacing(true)
           1. Dynamcially calculates the spacing between each of the steps.
+
+.stepLifeCycles(lifecycle: [StepLifeCycle])
+          1. Can set the life cycle status for each of the step as `</span><span class="n">completed</span><span class="sb">`, `</span><span class="n">pending</span><span class="sb">`
 </span></code></pre>
 <h2 id='custom-step-indicators' class='heading'>Custom Step Indicators</h2>
 <h2 id='numberedcircleview' class='heading'>NumberedCircleView</h2>
@@ -408,7 +433,8 @@ it, simply add the following line to your Podfile.</p>
 <a href="https://digest.mbltdev.ru/digests/302">MBLT DEV DIGEST #302</a><br>
 <a href="https://ios.libhunt.com/newsletter/201">Awesome iOS Newsletter #201</a><br>
 <a href="https://juanpe.github.io/About-SwiftUI/">About-SwiftUI Articles</a><br>
-<a href="https://medium.com/better-programming/6-amazing-swiftui-libraries-to-use-in-your-next-project-part-2-df5fb94680bc">Better Programming Medium Article</a></p>
+<a href="https://medium.com/better-programming/6-amazing-swiftui-libraries-to-use-in-your-next-project-part-2-df5fb94680bc">Better Programming - 6 Amazing SwiftUI Libraries</a><br>
+<a href="https://betterprogramming.pub/10-swiftui-libraries-to-use-in-2021-d21c0384e619">10 SwiftUI Libraries in 2021</a></p>
 <h2 id='apps-using-stepperview' class='heading'>Apps Using StepperView</h2>
 
 <p><a href="https://www.watchto5k.com/">WatchTo5K</a></p>
@@ -427,7 +453,7 @@ it, simply add the following line to your Podfile.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2021-02-18)</p>
+          <p>&copy; 2021 <a class="link" href="https://github.com/badrinathvm/StepperView" target="_blank" rel="external">badrinathvm</a>. All rights reserved. (Last updated: 2021-04-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
