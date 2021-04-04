@@ -179,21 +179,21 @@ var body: some View {
 .spacing(_ value: CGFloat): 
           1. spacing between each of the step views either vertically horizontally
           
+.autoSpacing(_ value: Bool):
+          1. if set to `true` - Dynamically calculates the spacing between each of the steps.
+          
 .stepIndicatorMode(_ mode: StepperMode): 
           1. Step Indicator display modes either vertical, horizontal
           
-.addPitStops(_ steps: [PitStopStep])
-          1. optional modifier
-          2. `PitStopStep` - structure that provides option to provide `View`, line customizations
-          
-.loadingAnimationTime(_ time: Double)
+.loadingAnimationTime(_ time: Double):
           1. controls the speed of the animation for step Indicator
-          
-.autoSpacing(true)
-          1. Dynamcially calculates the spacing between each of the steps.
-     
-.stepLifeCycles(lifecycle: [StepLifeCycle])
+
+.stepLifeCycles(_ lifecycle: [StepLifeCycle]):
           1. Can set the life cycle status for each of the step as `completed`, `pending`
+              
+.addPitStops(_ steps: [PitStopStep]):
+          1. optional modifier
+          2. `PitStopStep` - structure that provides option to provide `View`, line customizations.
 ```
 
 ## Custom Step Indicators

@@ -387,21 +387,21 @@ it, simply add the following line to your Podfile.</p>
 <span class="p">.</span><span class="nf">spacing</span><span class="p">(</span><span class="n">_</span> <span class="ss">value: </span><span class="no">CGFloat</span><span class="p">):</span> 
           <span class="mi">1</span><span class="p">.</span> <span class="nf">spacing</span> <span class="n">between</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">step</span> <span class="n">views</span> <span class="n">either</span> <span class="n">vertically</span> <span class="n">horizontally</span>
 
-<span class="p">.</span><span class="nf">stepIndicatorMode</span><span class="p">(</span><span class="n">_</span> <span class="ss">mode: </span><span class="no">StepperMode</span><span class="p">):</span> 
+<span class="p">.</span><span class="nf">autoSpacing</span><span class="p">(</span><span class="n">_</span> <span class="ss">value: </span><span class="no">Bool</span><span class="p">):</span>
+          <span class="mi">1</span><span class="p">.</span> <span class="nf">if</span> <span class="n">set</span> <span class="n">to</span> <span class="sb">`true`</span> <span class="o">-</span> <span class="no">Dynamically</span> <span class="n">calculates</span> <span class="n">the</span> <span class="n">spacing</span> <span class="n">between</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">steps</span><span class="p">.</span>
+
+<span class="nf">.</span><span class="n">stepIndicatorMode</span><span class="p">(</span><span class="n">_</span> <span class="ss">mode: </span><span class="no">StepperMode</span><span class="p">):</span> 
           <span class="mi">1</span><span class="o">.</span> <span class="no">Step</span> <span class="no">Indicator</span> <span class="nb">display</span> <span class="n">modes</span> <span class="n">either</span> <span class="n">vertical</span><span class="p">,</span> <span class="n">horizontal</span>
 
-<span class="p">.</span><span class="nf">addPitStops</span><span class="p">(</span><span class="n">_</span> <span class="ss">steps: </span><span class="p">[</span><span class="no">PitStopStep</span><span class="p">])</span>
+<span class="p">.</span><span class="nf">loadingAnimationTime</span><span class="p">(</span><span class="n">_</span> <span class="ss">time: </span><span class="no">Double</span><span class="p">):</span>
+          <span class="mi">1</span><span class="p">.</span> <span class="nf">controls</span> <span class="n">the</span> <span class="n">speed</span> <span class="n">of</span> <span class="n">the</span> <span class="n">animation</span> <span class="k">for</span> <span class="n">step</span> <span class="no">Indicator</span>
+
+<span class="p">.</span><span class="nf">stepLifeCycles</span><span class="p">(</span><span class="n">_</span> <span class="ss">lifecycle: </span><span class="p">[</span><span class="no">StepLifeCycle</span><span class="p">]):</span>
+          <span class="mi">1</span><span class="o">.</span> <span class="no">Can</span> <span class="n">set</span> <span class="n">the</span> <span class="n">life</span> <span class="n">cycle</span> <span class="n">status</span> <span class="k">for</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">step</span> <span class="n">as</span> <span class="sb">`completed`</span><span class="p">,</span> <span class="sb">`pending`</span>
+
+<span class="p">.</span><span class="nf">addPitStops</span><span class="p">(</span><span class="n">_</span> <span class="ss">steps: </span><span class="p">[</span><span class="no">PitStopStep</span><span class="p">]):</span>
           <span class="mi">1</span><span class="p">.</span> <span class="nf">optional</span> <span class="n">modifier</span>
-          <span class="mi">2</span><span class="p">.</span> <span class="nf">`</span><span class="no">PitStopStep</span><span class="sb">` - structure that provides option to provide `</span><span class="no">View</span><span class="sb">`, line customizations
-
-.loadingAnimationTime(_ time: Double)
-          1. controls the speed of the animation for step Indicator
-
-.autoSpacing(true)
-          1. Dynamcially calculates the spacing between each of the steps.
-
-.stepLifeCycles(lifecycle: [StepLifeCycle])
-          1. Can set the life cycle status for each of the step as `</span><span class="n">completed</span><span class="sb">`, `</span><span class="n">pending</span><span class="sb">`
+          <span class="mi">2</span><span class="p">.</span> <span class="nf">`</span><span class="no">PitStopStep</span><span class="sb">` - structure that provides option to provide `</span><span class="no">View</span><span class="sb">`, line customizations.
 </span></code></pre>
 <h2 id='custom-step-indicators' class='heading'>Custom Step Indicators</h2>
 <h2 id='numberedcircleview' class='heading'>NumberedCircleView</h2>
