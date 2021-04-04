@@ -16,6 +16,11 @@
 <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" height="450" alt="StepperView"/>
 </p>
 
+<br/>
+<p align="center">
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/StepperViewLineLifeCycle.png"  alt="StepperViewLineLifeCycle"/>
+</p>
+
 # Table of Contents
 
 * [Features](#features)
