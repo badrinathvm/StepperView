@@ -19,26 +19,34 @@ struct ExampleView6: View {
         StepperIndicationType.custom(CircledIconView(image: Image("like"),
                                                      width: 40,
                                                      strokeColor: Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))
-                            .eraseToAnyView()),
+                                        .eraseToAnyView()),
         StepperIndicationType.custom(CircledIconView(image: Image("flag"),
                                                      width: 40,
                                                      strokeColor: Color.red)
-                            .eraseToAnyView()),
+                                        .eraseToAnyView()),
         StepperIndicationType.custom(CircledIconView(image: Image("book"),
                                                      width: 40,
                                                      strokeColor: Colors.gray(.darkSilver).rawValue)
-                            .eraseToAnyView())]
+                                        .eraseToAnyView())]
     
     let steps = [TextView(text:"Question", font: .system(size: 14, weight: .semibold)),
-                TextView(text:"Expected Answer", font: .system(size: 14, weight: .semibold)),
-                TextView(text:"Red Flags", font: .system(size: 14, weight: .semibold)),
-                TextView(text:"Further Reading", font: .system(size: 14, weight: .semibold))]
+                 TextView(text:"Expected Answer", font: .system(size: 14, weight: .semibold)),
+                 TextView(text:"Red Flags", font: .system(size: 14, weight: .semibold)),
+                 TextView(text:"Further Reading", font: .system(size: 14, weight: .semibold))]
     
-    let pitStops = [PitStopStep(view: TextView(text:PitStopText.p1).eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.teal.rawValue)),
-                    PitStopStep(view: TextView(text:PitStopText.p2).eraseToAnyView(),
-                                    lineOptions: PitStopLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))),
-                    PitStopStep(view: TextView(text:PitStopText.p3).eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Color.red)),
-                    PitStopStep(view: FurtherReadingView().eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.gray(.darkSilver).rawValue))]
+    let pitStops = [
+        TextView(text:PitStopText.p1).eraseToAnyView(),
+        TextView(text:PitStopText.p2).eraseToAnyView(),
+        TextView(text:PitStopText.p3).eraseToAnyView(),
+        FurtherReadingView().eraseToAnyView()
+    ]
+    
+    let pitStopLines = [
+        StepperLineOptions.custom(1, Colors.teal.rawValue),
+        StepperLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))),
+        StepperLineOptions.custom(1, Color.red),
+        StepperLineOptions.custom(1, Colors.gray(.darkSilver).rawValue)
+    ]
     
     var body: some View {
         VStack {
@@ -46,7 +54,8 @@ struct ExampleView6: View {
                 .addSteps(steps)
                 .indicators(indicators)
                 .addPitStops(pitStops)
-                //.spacing(100) // sets the spacingg to value specified.
+                .pitStopLineOptions(pitStopLines)
+                //.spacing(100) // sets the spacing to value specified.
                 .autoSpacing(true) // auto calculates spacing between steps based on the content.
         }
     }

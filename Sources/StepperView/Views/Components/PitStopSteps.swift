@@ -14,13 +14,13 @@ public struct PitStopStep: Hashable {
     /// placeholder  for `View` to render
     public var view:AnyView
     /// options to customise pitstop line for `width` and `Color`
-    public var lineOptions:PitStopLineOptions
+    public var lineOptions:StepperLineOptions
     
     /// Initilazer to hold `View` and pit stop line Options
     /// - Parameters:
     ///   - view: `View` to render
     ///   - lineOptions: options to customise pitstop line for `width` and `Color`
-    public init(view: AnyView, lineOptions: PitStopLineOptions = .custom(1, Colors.gray(.light).rawValue)) {
+    public init(view: AnyView, lineOptions: StepperLineOptions = .custom(1, Colors.gray(.light).rawValue)) {
         self.view = view
         self.lineOptions = lineOptions
     }

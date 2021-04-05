@@ -13,24 +13,24 @@ import StepperView
 struct ExampleView: View {
     var body: some View {
         TabView {
+            ExampleView6()
+                .tabItem { Text("PitStops") .foregroundColor(Color.black) }
             ExampleView5()
-                .tabItem { Text("Horizontal") .foregroundColor(Color.black) }
+                .tabItem { Text("Examples") .foregroundColor(Color.black) }
             ExampleView11()
                 .tabItem { Text("LifeCycle") .foregroundColor(Color.black) }
 //            ExampleView2()
 //                .tabItem { Text("Usecase") .foregroundColor(Color.black) }
             ExampleView3()
                 .tabItem { Text("Card") .foregroundColor(Color.black) }
-            ExampleView6()
-                .tabItem { Text("PitStops") .foregroundColor(Color.black) }
             ExampleView1()
                 .tabItem { Text("Basic").foregroundColor(Color.black) }
         }
         
-        // to test dynamic way of addingg steps, use ExampleView9
+        // to test dynamic way of adding steps, use ExampleView9
         //ExampleView9()
         
-        // if there are many steps , embed it in scroll view and then set frame to it.
+        // if there are many steps, embed it in scroll view and then set frame to it.
         //ExampleView7()
     }
 }

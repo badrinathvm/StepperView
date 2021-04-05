@@ -31,13 +31,15 @@ struct WatchExampleView4: View {
                 TextView(text:"Create", font: .system(size: 14, weight: .semibold))]
     
     let pitStops = [
-            PitStopStep(view: TextView(text: "StepperView",
-                                   font: .system(size: 12, weight: .semibold)).eraseToAnyView(),
-                                    lineOptions: PitStopLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))),
-            PitStopStep(view: TextView(text:"Repository", font: .system(size: 12, weight: .semibold)).eraseToAnyView(),
-                        lineOptions: PitStopLineOptions.custom(1, Colors.red(.normal).rawValue)),
-            PitStopStep(view: TextView(text:"Pull Request", font: .system(size: 12, weight: .semibold)).eraseToAnyView(),
-                        lineOptions: PitStopLineOptions.custom(1, Colors.gray(.light).rawValue))]
+        TextView(text: "StepperView",font: .system(size: 12, weight: .semibold)).eraseToAnyView(),
+        TextView(text:"Repository", font: .system(size: 12, weight: .semibold)).eraseToAnyView(),
+        TextView(text:"Pull Request", font: .system(size: 12, weight: .semibold)).eraseToAnyView()
+    ]
+    
+    let pitStopLineOptions = [
+           StepperLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))),
+           StepperLineOptions.custom(1, Colors.red(.normal).rawValue),
+           StepperLineOptions.custom(1, Colors.gray(.light).rawValue)]
     
     var body: some View {
             List {
@@ -45,6 +47,7 @@ struct WatchExampleView4: View {
                        .addSteps(steps)
                        .indicators(indicators)
                        .addPitStops(pitStops)
+                       .pitStopLineOptions(pitStopLineOptions)
                        .spacing(60)
                        .padding(.leading, 10)
                  .listRowBackground(Color.black)

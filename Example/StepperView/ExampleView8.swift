@@ -41,12 +41,20 @@ struct ExampleView8: View {
                  TextView(text:"Code review", font: .system(size: 14, weight: .semibold)),
                  TextView(text:"Merge and release", font: .system(size: 14, weight: .semibold))]
     
-    let pitStops = [  PitStopStep(view: TextView(text:GithubPitstops.p1).eraseToAnyView(), lineOptions: .custom(1, Color.black)),
-                      PitStopStep(view: TextView(text:GithubPitstops.p2).eraseToAnyView(), lineOptions: .custom(1, Color.black)),
-                      PitStopStep(view: TextView(text:GithubPitstops.p3).eraseToAnyView(), lineOptions: .custom(1, Color.black)),
-                      PitStopStep(view: TextView(text:GithubPitstops.p4).eraseToAnyView(), lineOptions: .custom(1, Color.black)),
-                      PitStopStep(view: TextView(text:GithubPitstops.p5).eraseToAnyView(), lineOptions: .custom(1, Color.black))
-                    ]
+    let pitStopLineOptions = [
+        StepperLineOptions.custom(1, Color.black),
+        StepperLineOptions.custom(1, Color.black),
+        StepperLineOptions.custom(1, Color.black),
+        StepperLineOptions.custom(1, Color.black)
+    ]
+    
+    let pitStops = [
+        TextView(text:GithubPitstops.p1).eraseToAnyView(),
+        TextView(text:GithubPitstops.p2).eraseToAnyView(),
+        TextView(text:GithubPitstops.p3).eraseToAnyView(),
+        TextView(text:GithubPitstops.p4).eraseToAnyView(),
+        TextView(text:GithubPitstops.p5).eraseToAnyView()
+    ]
     
     var body: some View {
         List {
@@ -54,6 +62,7 @@ struct ExampleView8: View {
                 .addSteps(steps)
                 .indicators(indicators)
                 .addPitStops(pitStops)
+                .pitStopLineOptions(pitStopLineOptions)
                 .spacing(100)
         }
         .padding(.horizontal, -10)

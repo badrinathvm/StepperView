@@ -27,6 +27,9 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     /// environment variable to access pitstop options
     @Environment(\.pitStopOptions) var pitStopsOptions
     
+    /// environment variable to access pitstop options
+    @Environment(\.pitStopLineOptions) var pitStopLineOptions
+    
     /// environment variable to access autospacing
     @Environment(\.autoSpacing) var autoSpacing
     
@@ -59,6 +62,9 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
             default: self.isRounded = false
             }
            self.verticalSpacing = verticalSpacing
+        
+           //construct pitstops
+            
     }
     
     /// Provides the content and behavior of this view.
@@ -190,10 +196,19 @@ extension StepIndicatorVerticalView {
           return EmptyView().eraseToAnyView()
         }
 
+        guard self.pitStopLineOptions.count > 0 else {
+            return PitStopView(proxy: proxy,
+                               value: value,
+                               lineXPosition: $lineXPosition,
+                               pitStop: self.pitStopsOptions[pitStopIndex],
+                               heightIndex: pitStopIndex)
+                .eraseToAnyView()
+        }
+        
         return PitStopView(proxy: proxy,
                            value: value,
                            lineXPosition: $lineXPosition,
-                           pitStop: self.pitStopsOptions[pitStopIndex].view, lineOptions:self.pitStopsOptions[pitStopIndex].lineOptions,
+                           pitStop: self.pitStopsOptions[pitStopIndex], lineOptions: self.pitStopLineOptions[pitStopIndex],
                            heightIndex: pitStopIndex)
              .eraseToAnyView()
     }
