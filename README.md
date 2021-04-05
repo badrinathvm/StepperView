@@ -191,9 +191,12 @@ var body: some View {
 .stepLifeCycles(_ lifecycle: [StepLifeCycle]):
           1. Can set the life cycle status for each of the step as `completed`, `pending`
               
-.addPitStops(_ steps: [PitStopStep]):
+.addPitStops(_ steps: [View]):
           1. optional modifier
-          2. `PitStopStep` - structure that provides option to provide `View`, line customizations.
+          2. list of views which will be displayed below the step text
+
+.pitStopLineOptions(_ options: [StepperLineOptions])
+          1. line customization `color` , `width` , `corner radius`
 ```
 
 ## Custom Step Indicators
