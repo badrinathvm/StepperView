@@ -11,7 +11,7 @@ import SwiftUI
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopLineView: View {
     /// options for customizing pitstop line with either  `defaults` or  custom `width`  and `Color`
-    var options:PitStopLineOptions
+    var options:StepperLineOptions
     /// co-ordinates values of step indicator
     var proxy:GeometryProxy
     /// bound values of step indicator
@@ -35,6 +35,8 @@ struct PitStopLineView: View {
                 .frame(width: width, height: proxy.size.height)
                 .offset(x: proxy[value].midX - self.width / 2 - (width + 1), y: proxy[value].maxY)
                 .eraseToAnyView()
+        case .rounded(_, _, _):
+            return EmptyView().eraseToAnyView()
         }
     }
 }

@@ -21,7 +21,7 @@ struct PitStopView<PitStop:View>: View {
     /// A pitsop view to render
     var pitStop:PitStop
     /// to customise the `width ` , `Color` of the line
-    var lineOptions:PitStopLineOptions
+    var lineOptions:StepperLineOptions = StepperLineOptions.custom(1, Color.gray)
     /// Index position to calculate the height of the pitstop view
     var heightIndex:Int
     
@@ -59,35 +59,10 @@ struct PitStopView<PitStop:View>: View {
     
     /// Returns the `Color` from the line options provided.
     /// - Parameter lineOptions: contains options to customize `width`  and `Color` of the line
-    func getColor(from lineOptions: PitStopLineOptions) -> Color {
+    func getColor(from lineOptions: StepperLineOptions) -> Color {
         if case .custom(_, let color) = lineOptions {
             return color
         }
         return Color.gray.opacity(0.2)
-    }
-}
-
-/**
-   Options for customizing pitstop line with either  `defaults` or  custom `width`  and `Color`
-
-   ````
-   case defaults
-   case custom(CGFloat, Color)
-   ````
-*/
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-public enum PitStopLineOptions {
-     /// default line option
-    case defaults
-    /// custom line option with thickness  and  `Color`
-    case custom(CGFloat, Color)
-    
-    /// to generate hash
-    /// - Parameter hasher: hasger variable
-    func hash(into hasher: inout Hasher) {
-        switch self {
-        case .defaults: hasher.combine(-1)
-        default: hasher.combine(-2)
-        }
     }
 }

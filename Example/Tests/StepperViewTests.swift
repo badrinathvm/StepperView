@@ -3,7 +3,6 @@ import StepperView
 import SnapshotTesting
 import SwiftUI
 
-
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 class StepperViewTests: XCTestCase {
     
@@ -145,17 +144,26 @@ class StepperViewTests: XCTestCase {
                                                             strokeColor: Color.red).eraseToAnyView()),
                 .custom(CircledIconView(image: Image("book"), width: 40,
                                                             strokeColor: Colors.gray(.darkSilver).rawValue).eraseToAnyView())]
+        
+        let pitStopLineOptions = [
+            StepperLineOptions.custom(1, Colors.teal.rawValue),
+            StepperLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))),
+            StepperLineOptions.custom(1, Color.red),
+            StepperLineOptions.custom(1, Colors.gray(.darkSilver).rawValue)
+        ]
+        
         let pitStops = [
-            PitStopStep(view: TextView(text: "Pitstop 1").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.teal.rawValue)),
-            PitStopStep(view: TextView(text:"Pitstop 2").eraseToAnyView(),
-                        lineOptions: PitStopLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))),
-            PitStopStep(view: TextView(text:"Pitstop 3").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Color.red)),
-            PitStopStep(view: TextView(text:"References").eraseToAnyView(), lineOptions: PitStopLineOptions.custom(1, Colors.gray(.darkSilver).rawValue))]
+           TextView(text: "Pitstop 1").eraseToAnyView(),
+           TextView(text:"Pitstop 2").eraseToAnyView(),
+           TextView(text:"Pitstop 3").eraseToAnyView(),
+           TextView(text:"References").eraseToAnyView()
+        ]
         
        let stepperView = StepperView()
                             .addSteps(steps)
                             .indicators(indicators)
                             .addPitStops(pitStops)
+                            .pitStopLineOptions(pitStopLineOptions)
                             .spacing(100)
         
         let vc = UIHostingController(rootView: stepperView)
