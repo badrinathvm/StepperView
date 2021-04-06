@@ -66,7 +66,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.6.1'
+pod 'StepperView','~> 1.6.2'
 ```
 
 ## Carthage
@@ -74,7 +74,7 @@ pod 'StepperView','~> 1.6.1'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```ruby
-github "badrinathvm/stepperView" == 1.6.1
+github "badrinathvm/stepperView" == 1.6.2
 ```
 
 ## Swift Package Manager
@@ -83,7 +83,7 @@ StepperView is available through [Swift Package Manager](https://swift.org/packa
 
 ```ruby
 dependencies: [
-      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.6.1")
+      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.6.2")
 ]
 ```
 
@@ -108,6 +108,7 @@ dependencies: [
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle1.png" alt="lifecycle1"  align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle2.png" alt="lifecycle2" align="center"/></td>
     <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle3.png" alt="lifecycle3"  align="center"/></td>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/lifecycle4.png" alt="lifecycle3"  align="center"/></td>
  </tr>
 </table>
 

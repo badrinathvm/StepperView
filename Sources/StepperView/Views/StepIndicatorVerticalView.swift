@@ -55,16 +55,13 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
            self.cells = cells
            self.alignments = alignments
            self.indicationType = indicationType
+           self.verticalSpacing = verticalSpacing
            self.lineOptions = lineOptions
             switch lineOptions {
             case .rounded(_, _, _):
                      self.isRounded = true
             default: self.isRounded = false
             }
-           self.verticalSpacing = verticalSpacing
-        
-           //construct pitstops
-            
     }
     
     /// Provides the content and behavior of this view.
