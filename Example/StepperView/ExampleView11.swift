@@ -31,51 +31,98 @@ struct ExampleView11: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 10) {
-                StepperView()
-                    .addSteps([
-                        CustomStepTextView(text: "Card details"),
-                        CustomStepTextView(text: "Application review"),
-                        CustomStepTextView(text: "Authenticate OTP"),
-                        CustomStepTextView(text: "Create password")
-                    ])
-                    .indicators([
-                        StepperIndicationType.custom(IndicatorImageView(name: "completed")),
-                        StepperIndicationType.custom(IndicatorImageView(name: "completed")),
-                        StepperIndicationType.custom(IndicatorImageView(name: "completed")),
-                        StepperIndicationType.custom(IndicatorImageView(name:"pending"))
-                    ])
-                    .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
-                    .stepLifeCycles([StepLifeCycle.completed, .completed, .completed, .pending])
-                    .spacing(40)
-                    .padding(.leading, 50)
+                Section(header: Text("Horizontal").foregroundColor(Color.black).font(.headline).padding()) {
+                    ScrollView(Axis.Set.horizontal, showsIndicators: false) {
+                        StepperView()
+                            .addSteps([
+                                CustomStepTextView(text: "Card details"),
+                                CustomStepTextView(text: "Application review"),
+                                CustomStepTextView(text: "Authenticate OTP"),
+                                CustomStepTextView(text: "Create password")
+                            ])
+                            .indicators([
+                                StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                                StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                                StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                                StepperIndicationType.custom(IndicatorImageView(name:"pending"))
+                            ])
+                            .stepIndicatorMode(StepperMode.horizontal)
+                            .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                            .stepLifeCycles([StepLifeCycle.completed, .completed, .completed, .completed, .completed ])
+                            .spacing(70)
+                            .padding(.all, 40)
+                    }
+                    
+                    ScrollView(Axis.Set.horizontal, showsIndicators: false) {
+                        StepperView()
+                            .addSteps(cells)
+                            .indicators(indicators)
+                            .stepIndicatorMode(StepperMode.horizontal)
+                            .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                            .stepLifeCycles([StepLifeCycle.completed, .completed, .pending, .pending])
+                            .spacing(70)
+                            .padding(.all, 40)
+                    }
+                    
+                    StepperView()
+                        .addSteps([
+                            CustomStepTextView(text: "Announced"),
+                            CustomStepTextView(text: "Dividend Payment")
+                        ])
+                        .indicators([
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed"))
+                        ])
+                        .stepIndicatorMode(StepperMode.horizontal)
+                        .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                        .stepLifeCycles([StepLifeCycle.completed, .completed ])
+                        .spacing(70)
+                        .padding(.all, 40)
+                }
                 
                 Divider()
                 
-                StepperView()
-                    .addSteps(cells)
-                    .indicators(indicators)
-                    .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
-                    .stepLifeCycles([StepLifeCycle.completed, .completed, .pending, .pending])
-                    .spacing(40)
-                    .padding(.leading, 50)
-                
-                Divider()
-                
-                
-                
-                StepperView()
-                    .addSteps([
-                        CustomStepTextView(text: "Announced"),
-                        CustomStepTextView(text: "Dividend Payment")
-                    ])
-                    .indicators([
-                        StepperIndicationType.custom(IndicatorImageView(name: "completed")),
-                        StepperIndicationType.custom(IndicatorImageView(name: "completed"))
-                    ])
-                    .lineOptions(StepperLineOptions.custom(4, Color(customGreen)))
-                    .stepLifeCycles([StepLifeCycle.completed, .completed ])
-                    .spacing(50)
-                
+                Section(header: Text("Vertical").foregroundColor(Color.black).font(.headline).padding()) {
+                    StepperView()
+                        .addSteps([
+                            CustomStepTextView(text: "Card details"),
+                            CustomStepTextView(text: "Application review"),
+                            CustomStepTextView(text: "Authenticate OTP"),
+                            CustomStepTextView(text: "Create password")
+                        ])
+                        .indicators([
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                            StepperIndicationType.custom(IndicatorImageView(name:"pending"))
+                        ])
+                        .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                        .stepLifeCycles([StepLifeCycle.completed, .completed, .completed, .pending])
+                        .spacing(40)
+                        .padding(.leading, 50)
+                    
+                    StepperView()
+                        .addSteps(cells)
+                        .indicators(indicators)
+                        .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                        .stepLifeCycles([StepLifeCycle.completed, .completed, .pending, .pending])
+                        .spacing(40)
+                        .padding(.leading, 50)
+                    
+                    StepperView()
+                        .addSteps([
+                            CustomStepTextView(text: "Announced"),
+                            CustomStepTextView(text: "Dividend Payment")
+                        ])
+                        .indicators([
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed")),
+                            StepperIndicationType.custom(IndicatorImageView(name: "completed"))
+                        ])
+                        .lineOptions(StepperLineOptions.custom(4, Color(customGreen)))
+                        .stepLifeCycles([StepLifeCycle.completed, .completed ])
+                        .spacing(50)
+                        .padding(.leading, 10)
+                }
             }
         }
     }
