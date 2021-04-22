@@ -133,39 +133,6 @@ dependencies: [
  </tr>
 </table>
 
-## Usage
-
-<table>
- <tr>
-    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/StepperView_1.png" width="250"  alt="Vertical Stepper View" align="center"/></td>
-</tr>
-</table>
-
-``` swift
-import StepperView
-
-let steps = [ Text("Cart").font(.caption),
-              Text("Delivery Address").font(.caption),
-              Text("Order Summary").font(.caption),
-              Text("Payment Method").font(.caption),
-              Text("Track").font(.caption)]
-
-let indicationTypes = [StepperIndicationType.custom(NumberedCircleView(text: "1")),
-                        .custom(NumberedCircleView(text: "2")),
-                        .custom(NumberedCircleView(text: "3")),
-                        .custom(NumberedCircleView(text: "4")),
-                        .custom(NumberedCircleView(text: "5"))]
-                        
-var body: some View {
-    StepperView()
-        .addSteps(steps)
-        .indicators(indicationTypes)
-        .stepIndicatorMode(StepperMode.vertical)
-        .spacing(30)
-        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-}
-```
-
 ## View Modifiers
 
 ```ruby
@@ -206,6 +173,124 @@ var body: some View {
 .pitStopLineOptions(_ options: [StepperLineOptions])
           1. line customization `color` , `width` , `corner radius`
 ```
+
+## Usage
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/StepperView_1.png"  height="250"  alt="Vertical Stepper View" align="center"/>
+</p>
+
+``` swift
+import StepperView
+
+let steps = [ Text("Cart").font(.caption),
+              Text("Delivery Address").font(.caption),
+              Text("Order Summary").font(.caption),
+              Text("Payment Method").font(.caption),
+              Text("Track").font(.caption)]
+
+let indicationTypes = [StepperIndicationType.custom(NumberedCircleView(text: "1")),
+                        .custom(NumberedCircleView(text: "2")),
+                        .custom(NumberedCircleView(text: "3")),
+                        .custom(NumberedCircleView(text: "4")),
+                        .custom(NumberedCircleView(text: "5"))]
+                        
+var body: some View {
+    StepperView()
+        .addSteps(steps)
+        .indicators(indicationTypes)
+        .stepIndicatorMode(StepperMode.vertical)
+        .spacing(30)
+        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+}
+```
+<p align="center">
+    <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/StepperView_2.png"  height="250"  alt="Horizontal Stepper View" align="center"/>
+</p>
+
+```swift
+import StepperView
+
+let steps = [
+    TextView(text: "Card details", font: Font.system(size: 12, weight: Font.Weight.regular)),
+    TextView(text: "Application review", font: Font.system(size: 12, weight: Font.Weight.regular)),
+    TextView(text: "Authenticate OTP", font: Font.system(size: 12, weight: Font.Weight.regular)),
+    TextView(text: "Create password", font: Font.system(size: 12, weight: Font.Weight.regular))
+]
+
+let indicators = [
+    StepperIndicationType.custom(Image(systemName:"1.circle.fill").font(.largeTitle).eraseToAnyView()),
+    StepperIndicationType.custom(Image(systemName:"2.circle.fill").font(.largeTitle).eraseToAnyView()),
+    StepperIndicationType.custom(Image(systemName:"3.circle.fill").font(.largeTitle).eraseToAnyView()),
+    StepperIndicationType.custom(Image(systemName:"4.circle.fill").font(.largeTitle).eraseToAnyView())
+]
+
+var body: some View {
+    StepperView()
+        .addSteps(steps)
+        .indicators(indicators)
+        .stepIndicatorMode(StepperMode.horizontal)
+        .lineOptions(StepperLineOptions.rounded(4, 8, Color.black)) 
+        .stepLifeCycles([StepLifeCycle.completed, .completed, .completed, .pending])
+        .spacing(50)
+}
+```
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/StepperView_3.png"  height="250"  alt="Pitstop Stepper View" align="center"/>
+</p>
+
+```swift
+
+let steps = [TextView(text:"Manage Tasks", font: .system(size: 14, weight: .semibold)),
+             TextView(text:"Branch", font: .system(size: 14, weight: .semibold)),
+             TextView(text:"Commit", font: .system(size: 14, weight: .semibold)),
+             TextView(text:"Code review", font: .system(size: 14, weight: .semibold)),
+             TextView(text:"Merge and release", font: .system(size: 14, weight: .semibold))]
+
+let indicators = [
+    StepperIndicationType.custom(Image(systemName:"1.circle.fill").font(.largeTitle).eraseToAnyView()),
+    StepperIndicationType.custom(Image(systemName:"2.circle.fill").font(.largeTitle).eraseToAnyView()),
+    StepperIndicationType.custom(Image(systemName:"3.circle.fill").font(.largeTitle).eraseToAnyView()),
+    StepperIndicationType.custom(Image(systemName:"4.circle.fill").font(.largeTitle).eraseToAnyView()),
+    StepperIndicationType.custom(Image(systemName:"5.circle.fill").font(.largeTitle).eraseToAnyView())
+]
+
+let pitStopLineOptions = [
+    StepperLineOptions.custom(1, Color.black),
+    StepperLineOptions.custom(1, Color.black),
+    StepperLineOptions.custom(1, Color.black),
+    StepperLineOptions.custom(1, Color.black),
+    StepperLineOptions.custom(1, Color.black)
+]
+
+let pitStops = [
+    TextView(text:GithubPitstops.p1).eraseToAnyView(),
+    TextView(text:GithubPitstops.p2).eraseToAnyView(),
+    TextView(text:GithubPitstops.p3).eraseToAnyView(),
+    TextView(text:GithubPitstops.p4).eraseToAnyView(),
+    TextView(text:GithubPitstops.p5).eraseToAnyView()
+]
+
+var body: some View {
+    StepperView()
+        .addSteps(steps)
+        .indicators(indicators)
+        .addPitStops(pitStops)
+        .pitStopLineOptions(pitStopLineOptions)
+        .spacing(80) // auto calculates spacing between steps based on the content.
+        .padding()
+}
+
+struct GithubPitstops {
+    static var p1 = "Triage Notifications\nBrowse Repos\nCreate an issue"
+    static var p2 = "Fork or Clone repo\ngit checkout -b branch\ngit stash"
+    static var p3 = "git add -p\ngit diff .\ngit commit -m\ngit push origin branch"
+    static var p4 = "Open pull request\ngit checkout pr-branch\nReview and comment"
+    static var p5 = "View checks\ngit rebase\ngit merge\ngit tag"
+}
+```
+
 
 ## Custom Step Indicators
 
