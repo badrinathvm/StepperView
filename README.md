@@ -135,6 +135,12 @@ dependencies: [
 
 ## Usage
 
+<table>
+ <tr>
+    <td><img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/StepperView_1.png" width="250"  alt="Vertical Stepper View" align="center"/></td>
+</tr>
+</table>
+
 ``` swift
 import StepperView
 
@@ -154,11 +160,12 @@ var body: some View {
     StepperView()
         .addSteps(steps)
         .indicators(indicationTypes)
-        .stepIndicatorMode(StepperMode.horizontal)
-        .spacing(50)
+        .stepIndicatorMode(StepperMode.vertical)
+        .spacing(30)
         .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
 }
 ```
+
 ## View Modifiers
 
 ```ruby
