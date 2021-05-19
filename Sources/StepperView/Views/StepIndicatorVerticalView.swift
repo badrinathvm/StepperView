@@ -224,7 +224,7 @@ extension StepIndicatorVerticalView {
             return RoundedRectangle(cornerRadius: cornerRadius)
                 .foregroundColor(stepLifeCycle[index] == StepLifeCycle.completed ? color : Color.gray.opacity(0.5))
                 .frame(width: width, height: self.verticalSpacing)
-                .offset(x: proxy[value].midX - width, y: proxy[value].maxY)
+                .offset(x: proxy[value].midX - width/2, y: proxy[value].maxY)
                 .eraseToAnyView()
         default:
             return EmptyView().eraseToAnyView()
