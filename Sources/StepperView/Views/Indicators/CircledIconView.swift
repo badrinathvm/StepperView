@@ -37,9 +37,10 @@ public struct CircledIconView: View {
                 .frame(width: width, height: width)
                 .overlay(Circle()
                     .stroke(strokeColor, lineWidth: 1)
-                    .foregroundColor(self.color)
                     .overlay(image
                         .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(self.color)
                         .frame(width: width/2, height: width/2)
                         .aspectRatio(contentMode: .fit)))
         }
