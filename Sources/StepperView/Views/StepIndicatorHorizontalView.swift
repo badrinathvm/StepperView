@@ -51,7 +51,7 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
            self.horizontalSpacing = horizontalSpacing
            self.lineOptions = lineOptions
              switch lineOptions {
-             case .rounded(_, _, _):
+             case .rounded(_, _, _, _):
                       self.isRounded = true
              default: self.isRounded = false
           }
@@ -136,10 +136,10 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
     private func drawCustomLine(proxy: GeometryProxy, value: Anchor<CGRect>, index: Int) -> some View {
         guard index != self.cells.count - 1 else { return EmptyView().eraseToAnyView() }
         switch lineOptions {
-        case .rounded(let width, let cornerRadius, let color):
+        case .rounded(let width, let cornerRadius, let color, let pendingColor):
             // draw a line
             return RoundedRectangle(cornerRadius: cornerRadius)
-                .foregroundColor(stepLifeCycle[index] == StepLifeCycle.completed ? color : Color.gray.opacity(0.5))
+                .foregroundColor(stepLifeCycle[index] == StepLifeCycle.completed ? color : pendingColor)
                 .frame(width: self.horizontalSpacing, height: width)
                 .offset(x: proxy[value].maxX + width, y: proxy[value].midY)
                 .eraseToAnyView()

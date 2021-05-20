@@ -105,8 +105,8 @@ public enum StepperLineOptions {
     case defaults
     /// custom line option with `width`  and  `Color`
     case custom(CGFloat, Color)
-    /// rounded line options with `width` , `corner radius`  and   `Color`
-    case rounded(CGFloat, CGFloat, Color)
+    /// rounded line options with `width` , `corner radius`, `completed color`  and   `pending color`
+    case rounded(CGFloat, CGFloat, Color, Color = Color.gray.opacity(0.5))
 }
 
 /**

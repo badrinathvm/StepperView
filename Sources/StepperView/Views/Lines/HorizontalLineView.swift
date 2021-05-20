@@ -32,7 +32,7 @@ struct HorizontalLineView: View {
             .frame(width: dividerWidth, height: height)
             .offset(y: -(lineYOffsetPosition + 1))
             .eraseToAnyView()
-        case .rounded(_,_,_):
+        case .rounded(_,_,_,_):
             return EmptyView().eraseToAnyView()
         }
     }
