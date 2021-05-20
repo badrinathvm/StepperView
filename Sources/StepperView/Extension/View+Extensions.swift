@@ -200,4 +200,9 @@ public extension View {
         print("** \(log)")
         return EmptyView()
     }
+    
+    /// Sets edgeInsets for StepperView
+    func edgeInsets(_ edgeInsets: EdgeInsets) -> some View {
+        self.environment(\EnvironmentValues.stepperEdgeInsets, edgeInsets)
+    }
 }

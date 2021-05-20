@@ -99,6 +99,7 @@ struct ExampleView11: View {
                         .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
                         .stepLifeCycles([StepLifeCycle.completed, .completed, .completed, .pending])
                         .spacing(40)
+                        .edgeInsets(EdgeInsets(top: 2, leading: 5, bottom: 2, trailing: 5))
                         .padding(.leading, 50)
                     
                     StepperView()

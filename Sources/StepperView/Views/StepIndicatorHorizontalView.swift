@@ -125,7 +125,6 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
              .multilineTextAlignment(.center)
      }
     
-    
     // MARK: - Performas line customization
     /// draws custom line between the indicators
     /// - Parameters:
