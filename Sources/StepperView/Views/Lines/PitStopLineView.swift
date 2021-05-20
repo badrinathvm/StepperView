@@ -35,7 +35,7 @@ struct PitStopLineView: View {
                 .frame(width: width, height: proxy.size.height)
                 .offset(x: proxy[value].midX - self.width / 2 - (width + 1), y: proxy[value].maxY)
                 .eraseToAnyView()
-        case .rounded(_, _, _):
+        case .rounded(_, _, _, _):
             return EmptyView().eraseToAnyView()
         }
     }
