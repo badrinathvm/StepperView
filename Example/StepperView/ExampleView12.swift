@@ -15,7 +15,7 @@ struct ExampleView12: View {
                   Text("Delivery Address").font(.caption),
                   Text("Order Summary").font(.caption),
                   Text("Payment Method").font(.caption),
-                  Text("Track\nTracking\nTracking\nTracking").font(.caption)]
+                  Text("Shipping\nTracking\nDelivered\nReturn Label\nRate The Experience").font(.caption)]
     
     let indicationTypes = [StepperIndicationType.custom(NumberedCircleView(text: "1")),
                             .custom(NumberedCircleView(text: "2")),

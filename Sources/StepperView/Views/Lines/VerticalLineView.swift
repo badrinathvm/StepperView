@@ -37,17 +37,11 @@ struct VerticalLineView: View {
         case .custom(let width, let color):
             return Rectangle()
                     .fill(color)
-                    // if the last alignment is .top, trailing line grows up in order to reduce its height check is being added.
-                .frame(width: width, height: lineHeight)
-//                    .frame(width: width, height: (alignments.1 == .top) ?
-//                            abs(lineHeight - Utils.standardSpacing -
-//                                    (lineHeight / CGFloat(steps.count - (steps.count / 2) ))) : lineHeight )
+                    .frame(width: width, height: lineHeight)
                     // X: subtract one pixel only if the width is 1
                     // Y: subtract half of the lineYposition to set to it's center position.
                     .offset(x: lineXPosition/2 - Utils.halfSpacing,
-                            y: /* (alignments.1 == .top) ?
-                                getYOffsetPosition(for: alignments.0, last: alignments.1, and: lineYPosition) - (CGFloat(steps.count - 1) * Utils.threeFourthSpacing)
-                                : */ getYOffsetPosition(for: alignments.0, last: alignments.1, and: lineYPosition))
+                            y: getYOffsetPosition(for: alignments.0, last: alignments.1, and: lineYPosition))
                     .padding()
                     .eraseToAnyView()
         case .rounded(_, _, _, _):
