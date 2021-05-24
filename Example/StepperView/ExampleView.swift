@@ -23,7 +23,7 @@ struct ExampleView: View {
 //                .tabItem { Text("Usecase") .foregroundColor(Color.black) }
             ExampleView3()
                 .tabItem { Text("Card") .foregroundColor(Color.black) }
-            ExampleView12()
+            ExampleView1()
                 .tabItem { Text("Basic").foregroundColor(Color.black) }
         }
 
@@ -32,7 +32,5 @@ struct ExampleView: View {
 
         // if there are many steps, embed it in scroll view and then set frame to it.
         //ExampleView7()
-        
-        //ExampleView12()
     }
 }
