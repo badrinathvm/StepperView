@@ -58,24 +58,26 @@ struct ExampleView5: View {
                     
                     //animated stepper View
                     ExampleView7()
-                        //.padding(.top, 20)
+                        .frame(height: 100)
+                        .offset(y: 30)
 
-                    HStack(spacing: -10) {
-                        StepperView()
+                    StepperView()
                             .addSteps(self.set2)
                             .indicators(self.indicationTypes)
                             .spacing(30)
                             .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-                        
-                        //animated stepper view
-                        StepperView()
-                            .addSteps(self.set3)
-                            .indicators(self.indicationTypes1)
-                            .spacing(30)
-                            .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
-                            .loadingAnimationTime(0.02) // speed of the animation.
-                    }.offset(y: -100)
+                            .offset(x: UIScreen.main.bounds.size.width / 4)
+                    
+                    //Animated stepper view
+                    StepperView()
+                        .addSteps(self.set3)
+                        .indicators(self.indicationTypes1)
+                        .spacing(30)
+                        .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                        .loadingAnimationTime(0.02) // speed of the animation.
+                        .offset(x: UIScreen.main.bounds.size.width / 4)
                 }
+                
             }
             .navigationBarTitle("StepperView")
         }

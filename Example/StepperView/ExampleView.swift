@@ -23,14 +23,16 @@ struct ExampleView: View {
 //                .tabItem { Text("Usecase") .foregroundColor(Color.black) }
             ExampleView3()
                 .tabItem { Text("Card") .foregroundColor(Color.black) }
-            ExampleView1()
+            ExampleView12()
                 .tabItem { Text("Basic").foregroundColor(Color.black) }
         }
-        
+
         // to test dynamic way of adding steps, use ExampleView9
         //ExampleView9()
-        
+
         // if there are many steps, embed it in scroll view and then set frame to it.
         //ExampleView7()
+        
+        //ExampleView12()
     }
 }

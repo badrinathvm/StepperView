@@ -21,6 +21,9 @@ struct VerticalLineView: View {
     /// tuple holding first and last stepper alignment
     var alignments:(StepperAlignment, StepperAlignment)
     
+    /// contains list of steps to be rendered next to Indicators
+    @Environment(\.steps) var steps
+    
     /// provides the content and behavior of this view.
     var body:some View {
         switch options {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B175A15265B6EAE0008E5A4 /* ExampleView12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B175A14265B6EAE0008E5A4 /* ExampleView12.swift */; };
 		1B4355C12471D25C0005D2BA /* ExampleView8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4355C02471D25C0005D2BA /* ExampleView8.swift */; };
 		1B4874B42467175200B253C6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4874B22467175200B253C6 /* Interface.storyboard */; };
 		1B4874B62467175300B253C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4874B52467175300B253C6 /* Assets.xcassets */; };
@@ -105,6 +106,7 @@
 /* Begin PBXFileReference section */
 		1098E6FABACE76815832C82C /* Pods-StepperView_Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepperView_Watch Extension.debug.xcconfig"; path = "Target Support Files/Pods-StepperView_Watch Extension/Pods-StepperView_Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		15E48D7C4930C791708D715C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1B175A14265B6EAE0008E5A4 /* ExampleView12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView12.swift; sourceTree = "<group>"; };
 		1B4355C02471D25C0005D2BA /* ExampleView8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView8.swift; sourceTree = "<group>"; };
 		1B4874B02467175200B253C6 /* StepperView_Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepperView_Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4874B32467175200B253C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				1BC9B647248D82090012F8AC /* ExampleView9.swift */,
 				1BA768E125ACC05D00E36EB3 /* ExampleView10.swift */,
 				1B4E325326190E38008DB900 /* ExampleView11.swift */,
+				1B175A14265B6EAE0008E5A4 /* ExampleView12.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -731,6 +734,7 @@
 				1BD7CB76244103A100F17698 /* ExampleView.swift in Sources */,
 				1BF00787244A48A700DE5BF9 /* StepTextView.swift in Sources */,
 				1B4E325426190E39008DB900 /* ExampleView11.swift in Sources */,
+				1B175A15265B6EAE0008E5A4 /* ExampleView12.swift in Sources */,
 				1BD0BED32469C574005CE5FE /* ExampleView7.swift in Sources */,
 				1BD42F2624552D3F008D4DAB /* ExampleView6.swift in Sources */,
 				1BD7CB70243FCD4800F17698 /* ImageTextRowView.swift in Sources */,
