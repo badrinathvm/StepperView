@@ -170,7 +170,9 @@ extension StepIndicatorVerticalView {
             case (.top, .center): return self.getYPosition(for: .center)
             case (.top, .bottom): return self.getYPosition(for: firstAlignment)
             //Reduce 2 times to get actual height
-            case (.top, .top): return 2 * self.getYPosition(for: .center)
+            case (.top, .top):
+                print(self.getYPosition(for: .center))
+                return 2 * self.getYPosition(for: .center)
                 
             //Reduce 2 times as it's messured from it's first alignment (.bottom isn this case)
             case(.bottom, .top): return 2 * self.getYPosition(for: firstAlignment)
