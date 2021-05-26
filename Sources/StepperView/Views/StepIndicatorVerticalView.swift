@@ -36,6 +36,9 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     /// environment variable to access steplife cycles
     @Environment(\.stepLifeCycle) var stepLifeCycle
     
+    /// environment variable to access edgeInsets
+    @Environment(\.stepperEdgeInsets) var edgeInsets
+    
     /// list  of `View's` to display step indictor content
     var cells:[Cell]
     /// list of alignments to display the step indicator position  can be `top` or  `center` or  `bottom`
@@ -128,7 +131,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                 self.dynamicSpace = Array($0.values).max() ?? 0.0
                 //print("Auto Spacing:: \(self.dynamicSpace)")
             }
-        }.padding()
+        }.padding(edgeInsets)
     }
 }
 

@@ -172,6 +172,9 @@ dependencies: [
 
 .pitStopLineOptions(_ options: [StepperLineOptions])
           1. line customization `color` , `width` , `corner radius`
+
+. edgeInsets(_ edgeInsets: EdgeInsets)
+          1. Places the stepper view for the insets provided.
 ```
 
 ## Usage

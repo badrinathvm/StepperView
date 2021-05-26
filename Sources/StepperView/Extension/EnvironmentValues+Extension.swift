@@ -82,6 +82,13 @@ extension EnvironmentValues {
         get { self[StepLifeCycleKey.self] }
         set { self[StepLifeCycleKey.self] = newValue }
     }
+    
+    /// property wrapper  for `StepperEdgeInsetsKey`
+    var stepperEdgeInsets: EdgeInsets {
+        get { self[StepperEdgeInsetsKey.self] }
+        set { self[StepperEdgeInsetsKey.self] = newValue }
+    }
+    
 }
 
 /// Environment Key for Steps
@@ -166,4 +173,12 @@ struct LoadAnimationOptionsKey: EnvironmentKey {
 struct StepLifeCycleKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:[StepLifeCycle] = []
+}
+
+/// Environment Key for StepperEdgeInsets .
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+struct StepperEdgeInsetsKey: EnvironmentKey {
+    /// provide default values for Stepper Edge Insets
+    static var defaultValue: EdgeInsets =
+        EdgeInsets(top: Utils.standardSpacing, leading: Utils.standardSpacing, bottom: Utils.standardSpacing, trailing: Utils.standardSpacing)
 }
