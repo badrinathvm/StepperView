@@ -15,7 +15,7 @@ struct WatchExampleView4: View {
     let indicators = [
               StepperIndicationType.custom(CircledIconView(image: Image("like"),
                                                            width: 25,
-                                                           strokeColor: Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))
+                                                           strokeColor: Color(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))
                                   .eraseToAnyView()),
               StepperIndicationType.custom(CircledIconView(image: Image("star"),
                                                            width: 25,
@@ -37,7 +37,7 @@ struct WatchExampleView4: View {
     ]
     
     let pitStopLineOptions = [
-           StepperLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))),
+           StepperLineOptions.custom(1, Color(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)),
            StepperLineOptions.custom(1, Colors.red(.normal).rawValue),
            StepperLineOptions.custom(1, Colors.gray(.light).rawValue)]
     

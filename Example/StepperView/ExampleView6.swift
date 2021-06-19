@@ -18,7 +18,7 @@ struct ExampleView6: View {
         StepperIndicationType<AnyView>.custom(NumberedCircleView(text: "1", width: 40).eraseToAnyView()),
         StepperIndicationType.custom(CircledIconView(image: Image("like"),
                                                      width: 40,
-                                                     strokeColor: Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))
+                                                     strokeColor: Color(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))
                                         .eraseToAnyView()),
         StepperIndicationType.custom(CircledIconView(image: Image("flag"),
                                                      width: 40,
@@ -43,7 +43,7 @@ struct ExampleView6: View {
     
     let pitStopLines = [
         StepperLineOptions.custom(1, Colors.teal.rawValue),
-        StepperLineOptions.custom(1, Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))),
+        StepperLineOptions.custom(1, Color(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)),
         StepperLineOptions.custom(1, Color.red),
         StepperLineOptions.custom(1, Colors.gray(.darkSilver).rawValue)
     ]

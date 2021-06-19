@@ -21,8 +21,8 @@ struct StepperContentView: View {
         .overlay(RoundedRectangle(cornerRadius: 8)
                     .frame(width: 300)
                     .foregroundColor(Color.clear)
-                    .shadow(color: Color(UIColor.black).opacity(0.03), radius: 8, x: 5, y: -5)
-                    .shadow(color: Color(UIColor.black).opacity(0.03), radius: 8, y: 5)
+                    .shadow(color: Color(.black).opacity(0.03), radius: 8, x: 5, y: -5)
+                    .shadow(color: Color(.black).opacity(0.03), radius: 8, y: 5)
                     .border(Color.gray))
     }
     
