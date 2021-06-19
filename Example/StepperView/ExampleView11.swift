@@ -10,7 +10,7 @@ import SwiftUI
 import UIKit
 import StepperView
 
-let customGreen = UIColor(red: 0.00, green: 0.80, blue: 0.66, alpha: 1.00)
+let customGreen = Color(red: 0.00, green: 0.80, blue: 0.66, alpha: 1.00)
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ExampleView11: View {
@@ -47,7 +47,7 @@ struct ExampleView11: View {
                                 StepperIndicationType.custom(IndicatorImageView(name:"pending"))
                             ])
                             .stepIndicatorMode(StepperMode.horizontal)
-                            .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                            .lineOptions(StepperLineOptions.rounded(4, 8, customGreen))
                             .stepLifeCycles([StepLifeCycle.completed, .completed, .completed, .completed, .completed ])
                             .spacing(70)
                             .padding(.all, 40)
@@ -58,7 +58,7 @@ struct ExampleView11: View {
                             .addSteps(cells)
                             .indicators(indicators)
                             .stepIndicatorMode(StepperMode.horizontal)
-                            .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                            .lineOptions(StepperLineOptions.rounded(4, 8, customGreen))
                             .stepLifeCycles([StepLifeCycle.completed, .completed, .pending, .pending])
                             .spacing(70)
                             .padding(.all, 40)
@@ -74,7 +74,7 @@ struct ExampleView11: View {
                             StepperIndicationType.custom(IndicatorImageView(name: "completed"))
                         ])
                         .stepIndicatorMode(StepperMode.horizontal)
-                        .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                        .lineOptions(StepperLineOptions.rounded(4, 8, customGreen))
                         .stepLifeCycles([StepLifeCycle.completed, .completed ])
                         .spacing(70)
                         .padding(.all, 40)
