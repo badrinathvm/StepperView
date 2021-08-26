@@ -156,6 +156,11 @@ public extension View {
         self.environment(\EnvironmentValues.autoSpacing, value)
     }
     
+    /// Configures edgeInsets  to environment value
+    func stepperEdgeInsets(_ value: EdgeInsets) -> some View {
+        self.environment(\EnvironmentValues.stepperEdgeInsets, value)
+    }
+    
     /// Configures line options to environment value
     func lineOptions(_ options: StepperLineOptions) -> some View {
         self.environment(\EnvironmentValues.lineOptions, options)

@@ -38,6 +38,7 @@ struct ExampleView3:View {
                             .stepIndicatorMode(StepperMode.vertical)
                             .indicators(indicationTypes)
                             .lineOptions(StepperLineOptions.custom(1, Colors.blue(.teal).rawValue))
+                            .stepperEdgeInsets(EdgeInsets(top: 10, leading: 5, bottom: 10, trailing: 10)) // for custom leading , trailing , top and bottom spacing
                     }
                 }.padding(.vertical, 50)
             }
