@@ -66,7 +66,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.6.6'
+pod 'StepperView','~> 1.6.7'
 ```
 
 ## Carthage
@@ -74,7 +74,7 @@ pod 'StepperView','~> 1.6.6'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```ruby
-github "badrinathvm/stepperView" == 1.6.6
+github "badrinathvm/stepperView" == 1.6.7
 ```
 
 ## Swift Package Manager
@@ -83,7 +83,7 @@ StepperView is available through [Swift Package Manager](https://swift.org/packa
 
 ```ruby
 dependencies: [
-      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.6.6")
+      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.6.7")
 ]
 ```
 
@@ -172,6 +172,9 @@ dependencies: [
 
 .pitStopLineOptions(_ options: [StepperLineOptions])
           1. line customization `color` , `width` , `corner radius`
+          
+.stepperEdgeInsets(_ value: EdgeInsets)
+         1. Provides custiom `leading`, `trailing`, `top` & `bottom` spacing.  
 ```
 
 ## Usage
