@@ -15,14 +15,14 @@ public struct CircledIconView: View {
     /// width for step indicator
     public var width:CGFloat
     /// color for step indicator
-    public var color:Color
+    public var color:Color?
     /// stroke color for step indicator
     public var strokeColor:Color
     /// detect the color scheme i.e., light or dark mode
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     /// initiazes `image` , `width` , `color` and  `strokeColor`
-    public init(image:Image, width:CGFloat, color: Color = Color.black, strokeColor: Color = Colors.blue(.lightSky).rawValue) {
+    public init(image:Image, width:CGFloat, color: Color?, strokeColor: Color = Colors.blue(.lightSky).rawValue) {
         self.image = image
         self.width = width
         self.color = color
@@ -39,8 +39,9 @@ public struct CircledIconView: View {
                     .stroke(strokeColor, lineWidth: 1)
                     .overlay(image
                         .resizable()
-                        .renderingMode(.template)
-                        .foregroundColor(self.color)
+                        .if(color != nil){
+                              $0.renderingMode(.template).foregroundColor(color)
+                        }
                         .frame(width: width/2, height: width/2)
                         .aspectRatio(contentMode: .fit)))
         }
