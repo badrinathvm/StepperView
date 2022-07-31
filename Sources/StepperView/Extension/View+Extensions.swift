@@ -206,3 +206,16 @@ public extension View {
         return EmptyView()
     }
 }
+
+// MARK: - Helper function of View to operate on.
+/// Helper function of  `View`  to operate on
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+extension View {
+    func `if`<Content: View>(_ conditional: Bool, content: (Self) -> Content) -> TupleView<(Self?, Content?)> {
+        if conditional {
+            return TupleView((nil, content(self)))
+        } else {
+            return TupleView((self, nil))
+        }
+    }
+}
