@@ -40,7 +40,7 @@ public struct CircledIconView: View {
                     .overlay(image
                         .resizable()
                         .if(color != nil){
-                              $0.renderingMode(.template).renderingMode(.template)
+                              $0.renderingMode(.template).foregroundColor(color)
                         }
                         .frame(width: width/2, height: width/2)
                         .aspectRatio(contentMode: .fit)))
