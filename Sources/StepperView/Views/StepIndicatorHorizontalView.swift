@@ -76,7 +76,7 @@ struct StepIndicatorHorizontalView<Cell:View>: View {
                                         self.drawLabel(for: index, proxy: proxy, value: value)
                                     }
                                 }
-                            .ifTrue(self.isRounded, content: { view in
+                            .if(self.isRounded, content: { view in
                                     view.anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { $0 }
                                     .overlayPreferenceValue(BoundsPreferenceKey.self, { (preferences) in
                                         GeometryReader { proxy in
