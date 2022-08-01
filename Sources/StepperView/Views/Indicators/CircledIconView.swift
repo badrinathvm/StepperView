@@ -22,7 +22,7 @@ public struct CircledIconView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     /// initiazes `image` , `width` , `color` and  `strokeColor`
-    public init(image:Image, width:CGFloat, color: Color?, strokeColor: Color = Colors.blue(.lightSky).rawValue) {
+    public init(image:Image, width:CGFloat, color: Color? = nil, strokeColor: Color = Colors.blue(.lightSky).rawValue) {
         self.image = image
         self.width = width
         self.color = color

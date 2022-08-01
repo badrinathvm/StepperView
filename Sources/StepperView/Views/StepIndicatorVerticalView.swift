@@ -82,7 +82,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                         IndicatorView(type: self.indicationType[index], indexofIndicator: index)
                             .padding(.horizontal, Utils.standardSpacing)
                             //for drawing pit stops.
-                            .ifTrue(self.pitStopsOptions.count > 0, content: { view in
+                            .if(self.pitStopsOptions.count > 0, content: { view in
                                 view.anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { $0 }
                                 .overlayPreferenceValue(BoundsPreferenceKey.self, { (preferences) in
                                     GeometryReader { proxy in
@@ -92,7 +92,7 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
                                     }
                                 })
                             })
-                            .ifTrue(self.isRounded, content: { view in
+                            .if(self.isRounded, content: { view in
                                 view.anchorPreference(key: BoundsPreferenceKey.self, value: .bounds) { $0 }
                                 .overlayPreferenceValue(BoundsPreferenceKey.self, { (preferences) in
                                     GeometryReader { proxy in
