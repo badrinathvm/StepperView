@@ -137,7 +137,7 @@ dependencies: [
 
 ```ruby
 .addSteps(_ steps: [View]) : 
-          1. list of views to be closer to indicator
+          1. list of views to be closer to the indicator
 
 .alignments(_ alignments: [StepperAlignment])
           1. optional modifier 
@@ -149,22 +149,22 @@ dependencies: [
           
 .lineOptions(_ options: StepperLineOptions): 
           1. line customization `color` , `width` , `corner radius`
-          2. Has option of `defaults`, `custom` , `rounded`
+          2. Has the option of `defaults`, `custom` , `rounded`
           
 .spacing(_ value: CGFloat): 
-          1. spacing between each of the step views either vertically horizontally
+          1. spacing between each of the step views either vertically or horizontally
           
 .autoSpacing(_ value: Bool):
           1. if set to `true` - Dynamically calculates the spacing between each of the steps.
           
 .stepIndicatorMode(_ mode: StepperMode): 
-          1. Step Indicator display modes either vertical, horizontal
+          1. Step Indicator display modes either vertical or horizontal
           
 .loadingAnimationTime(_ time: Double):
           1. controls the speed of the animation for step Indicator
 
 .stepLifeCycles(_ lifecycle: [StepLifeCycle]):
-          1. Can set the life cycle status for each of the step as `completed`, `pending`
+          1. Can set the life cycle status for each of the steps as `completed`, `pending`
               
 .addPitStops(_ steps: [View]):
           1. optional modifier
@@ -174,7 +174,7 @@ dependencies: [
           1. line customization `color` , `width` , `corner radius`
           
 .stepperEdgeInsets(_ value: EdgeInsets)
-         1. Provides custiom `leading`, `trailing`, `top` & `bottom` spacing.  
+         1. Provides custom `leading`, `trailing`, `top` & `bottom` spacing.  
 ```
 
 ## Usage
@@ -305,7 +305,7 @@ NumberedCircleView(text: "1", width: 40)
 ```
 
 ## CircledIconView
-   This view embeds a icon or image inside the circle.
+   This view embeds an icon or image inside the circle.
    
 ```swift  
 CircledIconView(image: Image("flag"), width: 40, strokeColor: Color.red)
