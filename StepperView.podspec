@@ -19,5 +19,6 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/badrivm'
   s.ios.deployment_target = '11.0'
   s.watchos.deployment_target = '6.0'
+  s.macos.deployment_target = '10.15'
   s.source_files     = 'Sources/**/*.swift'
 end
