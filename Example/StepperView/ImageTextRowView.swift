@@ -35,8 +35,8 @@ struct ImageTextRowView: View {
                     RoundedRectangle(cornerRadius: 8.0)
                         .stroke(Color.gray, lineWidth: 0.5)
                         .foregroundColor(Color.white)
-                        .shadow(color: Color(UIColor.black).opacity(0.03), radius: 8, x: 5, y: -5)
-                        .shadow(color: Color(UIColor.black).opacity(0.03), radius: 8, y: 5))
+                        .shadow(color: Color(.black).opacity(0.03), radius: 8, x: 5, y: -5)
+                        .shadow(color: Color(.black).opacity(0.03), radius: 8, y: 5))
             
         }
     }

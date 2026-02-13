@@ -15,7 +15,7 @@ struct WatchExampleView3: View {
     let indicators = [
            StepperIndicationType.custom(CircledIconView(image: Image("like"),
                                                         width: 30,
-                                                        strokeColor: Color(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)))
+                                                        strokeColor: Color(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))
                                .eraseToAnyView()),
            StepperIndicationType.custom(CircledIconView(image: Image("flag"),
                                                         width: 30,
