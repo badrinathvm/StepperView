@@ -14,17 +14,32 @@ struct ExampleView: View {
     var body: some View {
         TabView {
             ExampleView6()
-                .tabItem { Text("PitStops") .foregroundColor(Color.black) }
+                .tabItem {
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("PitStops")
+                }
             ExampleView5()
-                .tabItem { Text("Examples") .foregroundColor(Color.black) }
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Examples")
+                }
             ExampleView11()
-                .tabItem { Text("LifeCycle") .foregroundColor(Color.black) }
+                .tabItem {
+                    Image(systemName: "arrow.triangle.2.circlepath")
+                    Text("LifeCycle")
+                }
 //            ExampleView2()
 //                .tabItem { Text("Usecase") .foregroundColor(Color.black) }
             ExampleView3()
-                .tabItem { Text("Card") .foregroundColor(Color.black) }
+                .tabItem {
+                    Image(systemName: "creditcard")
+                    Text("Card")
+                }
             ExampleView1()
-                .tabItem { Text("Basic").foregroundColor(Color.black) }
+                .tabItem {
+                    Image(systemName: "circle.grid.2x2")
+                    Text("Basic")
+                }
         }
 
         // to test dynamic way of adding steps, use ExampleView9
