@@ -79,11 +79,17 @@ github "badrinathvm/stepperView" == 1.6.7
 
 ## Swift Package Manager
 
-StepperView is available through [Swift Package Manager](https://swift.org/package-manager/). To install it, simply add it to the `dependencies` of your `Package.swift`
+StepperView is available through [Swift Package Manager](https://swift.org/package-manager/).
 
-```ruby
+**In Xcode:**
+1. Go to `File` > `Add Package Dependencies...`
+2. Enter the repository URL: `https://github.com/badrinathvm/StepperView.git`
+3. Select version `1.6.7` or later
+
+**In `Package.swift`:**
+```swift
 dependencies: [
-      .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.6.7")
+    .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.6.7")
 ]
 ```
 
