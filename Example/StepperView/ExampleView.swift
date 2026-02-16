@@ -25,6 +25,12 @@ struct ExampleView: View {
                 .tabItem { Text("Card") .foregroundColor(Color.black) }
             ExampleView1()
                 .tabItem { Text("Basic").foregroundColor(Color.black) }
+            #if canImport(FoundationModels)
+            if #available(iOS 26.0, *) {
+                AIGeneratorView()
+                    .tabItem { Text("AI").foregroundColor(Color.black) }
+            }
+            #endif
         }
 
         // to test dynamic way of adding steps, use ExampleView9

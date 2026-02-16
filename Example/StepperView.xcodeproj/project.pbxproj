@@ -50,6 +50,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* StepperViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* StepperViewTests.swift */; };
+		71D15F462F42E05A0030F6F8 /* AIGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D15F452F42E05A0030F6F8 /* AIGeneratorView.swift */; };
+		71D15F492F42E0960030F6F8 /* StepperAIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D15F472F42E0960030F6F8 /* StepperAIBuilder.swift */; };
+		71D15F4A2F42E0960030F6F8 /* StepperAIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D15F482F42E0960030F6F8 /* StepperAIModels.swift */; };
 		872EC54461A72FF55CCE6791 /* Pods_StepperView_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872ED7ED42DA6A3F63840795 /* Pods_StepperView_Watch_Extension.framework */; };
 		E61131B35914E40DB8BFD50D /* Pods_StepperView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C4ADB2CA3E6EACDFB4A61A /* Pods_StepperView_Example.framework */; };
 /* End PBXBuildFile section */
@@ -156,6 +159,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* StepperViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewTests.swift; sourceTree = "<group>"; };
 		67C4ADB2CA3E6EACDFB4A61A /* Pods_StepperView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D15F452F42E05A0030F6F8 /* AIGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIGeneratorView.swift; sourceTree = "<group>"; };
+		71D15F472F42E0960030F6F8 /* StepperAIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperAIBuilder.swift; sourceTree = "<group>"; };
+		71D15F482F42E0960030F6F8 /* StepperAIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperAIModels.swift; sourceTree = "<group>"; };
 		75F24B8A146D2F2CAE5CDD1F /* Pods-StepperView_Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepperView_Watch.release.xcconfig"; path = "Target Support Files/Pods-StepperView_Watch/Pods-StepperView_Watch.release.xcconfig"; sourceTree = "<group>"; };
 		872ED7ED42DA6A3F63840795 /* Pods_StepperView_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepperView_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941FA7FB526F5DDEBA9BAEA4 /* Pods-StepperView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepperView_Tests.release.xcconfig"; path = "Target Support Files/Pods-StepperView_Tests/Pods-StepperView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -324,6 +330,8 @@
 		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				71D15F472F42E0960030F6F8 /* StepperAIBuilder.swift */,
+				71D15F482F42E0960030F6F8 /* StepperAIModels.swift */,
 				1BF0B9EF2439C2A500492C74 /* View */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -331,6 +339,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				71D15F452F42E05A0030F6F8 /* AIGeneratorView.swift */,
 			);
 			name = Example;
 			path = StepperView;
@@ -727,6 +736,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BD7CB6C243FC0CE00F17698 /* ExampleView3.swift in Sources */,
+				71D15F492F42E0960030F6F8 /* StepperAIBuilder.swift in Sources */,
+				71D15F4A2F42E0960030F6F8 /* StepperAIModels.swift in Sources */,
 				1BF933BF243E5C8800F2FEA6 /* ExampleView2.swift in Sources */,
 				1BED688324577722000035BD /* FurtherReadingView.swift in Sources */,
 				1BA9B80C2447DCC8007A6BB9 /* ExampleView5.swift in Sources */,
@@ -742,6 +753,7 @@
 				1B4355C12471D25C0005D2BA /* ExampleView8.swift in Sources */,
 				1BF0B9EE2439BB7D00492C74 /* ExampleView1.swift in Sources */,
 				1BC9B648248D820A0012F8AC /* ExampleView9.swift in Sources */,
+				71D15F462F42E05A0030F6F8 /* AIGeneratorView.swift in Sources */,
 				1BA768E225ACC05E00E36EB3 /* ExampleView10.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
