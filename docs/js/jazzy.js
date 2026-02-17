@@ -1,3 +1,7 @@
+// Jazzy - https://github.com/realm/jazzy
+// Copyright Realm Inc.
+// SPDX-License-Identifier: MIT
+
 window.jazzy = {'docset': false}
 if (typeof window.dash != 'undefined') {
   document.documentElement.className += ' dash'
@@ -18,7 +22,7 @@ function itemLinkToContent($link) {
   return $link.parent().parent().next();
 }
 
-// On doc load + hash-change, open any targetted item
+// On doc load + hash-change, open any targeted item
 function openCurrentItemIfClosed() {
   if (window.jazzy.docset) {
     return;
