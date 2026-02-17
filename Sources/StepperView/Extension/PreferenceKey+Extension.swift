@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 /// Collects height of all the cells, with reduce takes the maximum value for the given key
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct HeightPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
     /// provide a default value for custom dependency
@@ -21,7 +20,6 @@ struct HeightPreference: PreferenceKey {
 }
 
 /// Collects height of all the cells, with reduce takes the maximum value for the given key
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct VerticalHeightPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
     /// provide a default value for custom dependency
@@ -33,7 +31,6 @@ struct VerticalHeightPreference: PreferenceKey {
 }
 
 /// Collects height of all pistop cells, with reduce takes the maximum value for the given key
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitstopHeightPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
     /// provide a default value for custom dependency
@@ -45,7 +42,6 @@ struct PitstopHeightPreference: PreferenceKey {
 }
 
 /// Collects width of all the cells, with reduce takes the maximum value for the given key
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct WidthPreference: PreferenceKey {
     typealias Value = [Int:CGFloat]
     /// provide a default value for custom dependency
@@ -56,7 +52,6 @@ struct WidthPreference: PreferenceKey {
 }
 
 /// Collects bound, center coordinates and pass layout data to it's parent View
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct BoundsPreferenceKey: PreferenceKey {
     public typealias Value = Anchor<CGRect>?
     

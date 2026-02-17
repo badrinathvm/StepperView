@@ -2,9 +2,8 @@
 
 #### SwiftUI iOS component for Step Indications
 
-[![CI Status](https://img.shields.io/travis/badrinathvm/StepperView.svg?style=flat)](https://travis-ci.org/badrinathvm/StepperView)
 [![License](https://img.shields.io/cocoapods/l/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
-[![Platform](https://img.shields.io/badge/platform-ios-orange)](https://cocoapods.org/pods/StepperView)
+[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20watchos%20%7C%20macos-orange)](https://cocoapods.org/pods/StepperView)
 [![Version](https://img.shields.io/cocoapods/v/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-orange)](https://swift.org/package-manager/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-orange)](https://github.com/Carthage/Carthage)
@@ -13,7 +12,7 @@
 
 <br/>
 <p align="center">
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" height="450" alt="StepperView"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" alt="StepperView"/>
 </p>
 
 <br/>
@@ -24,6 +23,7 @@
 # Table of Contents
 
 * [Features](#features)
+* [AI-Powered StepperView Generator](#ai-powered-stepperview-generator)
 * [Documentation](#documentation)
 * [Installation](#installation)
     * [CocoaPods](#cocoapods)
@@ -51,6 +51,50 @@
 - Customizable line,spacing & animation options.
 - Pitstop feature to add intermediate stages between Step Indicators
 - Support for updating the life cycle status for each of the steps
+- **NEW:** AI-Powered StepperView Generator using Apple's on-device Foundation Models (iOS 26+)
+
+## AI-Powered StepperView Generator
+
+Generate fully configured StepperViews from natural language prompts using Apple's on-device Foundation Models framework. Describe what you want in plain English, and the AI generates a complete StepperView with indicators, colors, pit stops, and lifecycle states — all rendered live with copyable Swift code.
+
+<!-- TODO: Replace with actual gif -->
+<p align="center">
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/ai_stepper_generator.gif" width="300" alt="AI StepperView Generator"/>
+</p>
+
+### Highlights
+
+- Describe your stepper in natural language (e.g., *"Create a delivery tracking stepper with 5 stops"*)
+- Supports **vertical** and **horizontal** modes
+- Choose from **numbered circles**, **plain circles**, or **SF Symbol** indicators
+- Use **named colors** or any **hex color** (e.g., `#FF6B35`)
+- Optionally add **pit stops** with descriptions
+- **Live preview** and **copyable Swift code** in a tabbed interface
+- Fully on-device — no network calls, powered by Apple Foundation Models
+
+### Quick Start
+
+```swift
+import StepperView
+
+// Add to your SwiftUI view (iOS 26+ only)
+if #available(iOS 26.0, *) {
+    StepperViewAIGeneratorView()
+}
+```
+
+### Example Prompts
+
+| Prompt | What it generates |
+|--------|-------------------|
+| *"Create a 5-step checkout flow"* | Vertical stepper with numbered circles |
+| *"Build a horizontal flight booking stepper with sfSymbol indicators"* | Horizontal stepper with SF Symbol icons |
+| *"Make a recipe stepper in #E11D48 with details"* | Vertical stepper with hex color and pit stops |
+| *"Create a 4-step onboarding flow in purple"* | Vertical stepper with AI-chosen purple hex color |
+
+### Configuration
+
+All AI generation behavior is configurable via `ai_config.yaml` — UI strings, default values, valid colors, SF Symbols allowlist, pit stop keywords, and the system prompt template can all be customized without touching Swift code.
 
 ## Documentation
 **[StepperView Reference](https://badrinathvm.github.io/StepperView/)**
@@ -66,7 +110,7 @@ StepperView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile.
 
 ```ruby
-pod 'StepperView','~> 1.6.7'
+pod 'StepperView','~> 2.0'
 ```
 
 ## Carthage
@@ -74,7 +118,7 @@ pod 'StepperView','~> 1.6.7'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate StepperView into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```ruby
-github "badrinathvm/stepperView" == 1.6.7
+github "badrinathvm/stepperView" == 2.0
 ```
 
 ## Swift Package Manager
@@ -84,20 +128,21 @@ StepperView is available through [Swift Package Manager](https://swift.org/packa
 **In Xcode:**
 1. Go to `File` > `Add Package Dependencies...`
 2. Enter the repository URL: `https://github.com/badrinathvm/StepperView.git`
-3. Select version `1.6.7` or later
+3. Select version `2.0` or later
 
 **In `Package.swift`:**
 ```swift
 dependencies: [
-    .package(url: "https://github.com/badrinathvm/StepperView.git", from: "1.6.7")
+    .package(url: "https://github.com/badrinathvm/StepperView.git", from: "2.0.0")
 ]
 ```
 
 ## Requirements
-- iOS 13.0+
-- Xcode 11.2+
-- Swift 5.0+
-- CocoaPods 1.6.1+
+- iOS 13.0+ (AI features require iOS 26.0+)
+- watchOS 7.0+
+- macOS 10.15+
+- Xcode 16+
+- Swift 5.9+
 
 ## Usecase
 <table>

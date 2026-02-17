@@ -4,6 +4,7 @@ use_frameworks!
 #inhibit_all_warnings!
 
 target 'StepperView_Example' do
+  platform :ios, '13.0'
   pod 'StepperView', :path => '../'
 
   target 'StepperView_Tests' do
@@ -12,11 +13,12 @@ target 'StepperView_Example' do
   end
 end
 
-
 target 'StepperView_Watch' do
+  platform :watchos, '7.0'
   pod 'StepperView', :path => '../'
 end
 
 target 'StepperView_Watch Extension' do
+  platform :watchos, '7.0'
   pod 'StepperView', :path => '../'
 end

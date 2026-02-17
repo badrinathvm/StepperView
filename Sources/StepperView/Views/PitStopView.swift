@@ -8,7 +8,6 @@
 import SwiftUI
 
 /// A View for setting up a pitstop for eg: line with a `circle`  or  `custom` view
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopView<PitStop:View>: View {
     /// state variable to hold width to render  `View`  when values changes
     @State private var width:CGFloat = 0.0

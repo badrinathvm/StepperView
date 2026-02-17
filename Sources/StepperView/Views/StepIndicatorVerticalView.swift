@@ -10,7 +10,6 @@ import SwiftUI
 /// A Step Indications View in `vertical`  direction
 ///
 /// creates step indicator view either in `vertical` mode
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepIndicatorVerticalView<Cell>: View where Cell:View {
     //vertical mode elements
     /// state variable to hold  height of line to render  `View`  when values changes
@@ -136,7 +135,6 @@ struct StepIndicatorVerticalView<Cell>: View where Cell:View {
 }
 
 // MARK: - Helper methods to construct step indicator vertical view.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension StepIndicatorVerticalView {
 
     /// Calculate intermediate heights of the view.

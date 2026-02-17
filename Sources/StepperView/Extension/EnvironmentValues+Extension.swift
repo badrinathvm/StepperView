@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 /// Environment values configuration for standard size margins, can be used across the app
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension EnvironmentValues {
     /// property wrapper  for `StepsKey`
     var steps: [AnyView] {
@@ -91,91 +90,78 @@ extension EnvironmentValues {
 }
 
 /// Environment Key for Steps
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepsKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue = [AnyView]()
 }
 
 /// Environment Key for alignments
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct AlignmentKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue = [StepperAlignment]()
 }
 
 /// Environment Key for Indicators
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct IndicatorKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue = [StepperIndicationType<AnyView>]()
 }
 
 /// Environment Key for StepIndicatorMode
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepIndicatorModeKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue = StepperMode.vertical
 }
 
 /// Environment Key for Spacing
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct SpacingKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:CGFloat = 30.0
 }
 
 /// Environment Key for Auto Spacing
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct AutoSpacingKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:Bool = false
 }
 
 /// Environment Key for Line Options
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct LineOptionsKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:StepperLineOptions = StepperLineOptions.defaults
 }
 
 /// Environment Key for pit stop line options.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopOptionsKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue = [AnyView]()
 }
 
 /// Environment Key for Line Options
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct PitStopLineOptionsKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:[StepperLineOptions] = []
 }
 
 /// Environment Key for pit stop line options.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepAnimationOptionsKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:Int = 0
 }
 
 /// Environment Key for pit stop line options.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct LoadAnimationOptionsKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:Double = 0.05
 }
 
 /// Environment Key for pit stop line options.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepLifeCycleKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue:[StepLifeCycle] = []
 }
 
 /// Environment Key for pit stop line options.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepperEdgeInsetsKey: EnvironmentKey {
     /// provide a default value for custom dependency
     static var defaultValue: EdgeInsets = EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
