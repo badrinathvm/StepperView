@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>StepperView Structure Reference</title>
+    <title>Color Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/StepperView" class="dashAnchor"></a>
-    <a title="StepperView Structure Reference"></a>
+    <a name="//apple_ref/swift/Extension/Color" class="dashAnchor"></a>
+    <a title="Color Extension Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">StepperView 2.0 Docs</a> (93% documented)</p>
@@ -31,9 +31,9 @@
       <p id="breadcrumbs">
         <a href="../index.html">StepperView</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        <a href="../Structs.html">Structures</a>
+        <a href="../Extensions.html">Extensions</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        StepperView Structure Reference
+        SwiftUI.Color Extension Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -125,19 +125,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>StepperView</h1>
+            <h1>Color</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StepperView</span> <span class="p">:</span> <span class="kt">View</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">Color</span></code></pre>
 
                 </div>
               </div>
-            <p>A View for Step Indications.</p>
-
-<p>You create step indicator view either  in <code>vertical</code> or <code>horizontal</code> mode</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -145,9 +141,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11StepperViewAAVABycfc"></a>
-                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperViewAAVABycfc">init()</a>
+                    <a name="/s:7SwiftUI5ColorV11StepperViewE3hexACSgSS_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(hex:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI5ColorV11StepperViewE3hexACSgSS_tcfc">init(hex:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -155,43 +151,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>empty initilazer</p>
+                        <p>Creates a Color from a hex string (e.g. &ldquo;#FF6B35&rdquo; or &ldquo;FF6B35&rdquo;).
+Returns nil if the string is not a valid 6-character hex color.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11StepperViewAAV4bodyQrvp"></a>
-                    <a name="//apple_ref/swift/Property/body" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11StepperViewAAV4bodyQrvp">body</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>provides the content and behavior of this view.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="nv">hex</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

@@ -16,5 +16,7 @@
       <true/>
     <key>DashDocSetFamily</key>
       <string>dashtoc</string>
+    <key>DashDocSetFallbackURL</key>
+      <string>https://badrinathvm.github.io/StepperView/</string>
   </dict>
 </plist>
