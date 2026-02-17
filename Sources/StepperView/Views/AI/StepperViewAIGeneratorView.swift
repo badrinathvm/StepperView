@@ -84,6 +84,7 @@ public struct StepperViewAIGeneratorView: View {
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     StepperAIBuilder.buildStepperView(from: config)
                                         .padding(.all, 40)
+                                        .padding(.top, 5)
                                 }
                             } else {
                                 StepperAIBuilder.buildStepperView(from: config)
