@@ -9,13 +9,12 @@
 import SwiftUI
 import StepperView
 
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct WatchExampleView4: View {
     
     let indicators = [
               StepperIndicationType.custom(CircledIconView(image: Image("like"),
                                                            width: 25,
-                                                           strokeColor: Color(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))
+                                                           strokeColor: Color(red: 26/255, green: 188/255, blue: 156/255, opacity: 1.0))
                                   .eraseToAnyView()),
               StepperIndicationType.custom(CircledIconView(image: Image("star"),
                                                            width: 25,
@@ -37,7 +36,7 @@ struct WatchExampleView4: View {
     ]
     
     let pitStopLineOptions = [
-           StepperLineOptions.custom(1, Color(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)),
+           StepperLineOptions.custom(1, Color(red: 26/255, green: 188/255, blue: 156/255, opacity: 1.0)),
            StepperLineOptions.custom(1, Colors.red(.normal).rawValue),
            StepperLineOptions.custom(1, Colors.gray(.light).rawValue)]
     

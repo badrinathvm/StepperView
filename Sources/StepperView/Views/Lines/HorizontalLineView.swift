@@ -8,7 +8,6 @@
 import SwiftUI
 
 /// Horizontal Line View for Step Indictor
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct HorizontalLineView: View {
     /// binding variable to hold the divider width
     @Binding var dividerWidth: CGFloat

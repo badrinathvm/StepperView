@@ -3,7 +3,6 @@ import StepperView
 import SnapshotTesting
 import SwiftUI
 
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 class StepperViewTests: XCTestCase {
     
     override func setUp() {
@@ -138,7 +137,7 @@ class StepperViewTests: XCTestCase {
         let indicators = [
                StepperIndicationType<AnyView>.custom(NumberedCircleView(text: "1", width: 40).eraseToAnyView()),
                .custom(CircledIconView(image: Image("like"), width: 40,
-                                                            strokeColor: Color(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0))
+                                                            strokeColor: Color(red: 26/255, green: 188/255, blue: 156/255, opacity: 1.0))
                                    .eraseToAnyView()),
                .custom(CircledIconView(image: Image("flag"), width: 40,
                                                             strokeColor: Color.red).eraseToAnyView()),
@@ -147,7 +146,7 @@ class StepperViewTests: XCTestCase {
         
         let pitStopLineOptions = [
             StepperLineOptions.custom(1, Colors.teal.rawValue),
-            StepperLineOptions.custom(1, Color(red: 26/255, green: 188/255, blue: 156/255, alpha: 1.0)),
+            StepperLineOptions.custom(1, Color(red: 26/255, green: 188/255, blue: 156/255, opacity: 1.0)),
             StepperLineOptions.custom(1, Color.red),
             StepperLineOptions.custom(1, Colors.gray(.darkSilver).rawValue)
         ]

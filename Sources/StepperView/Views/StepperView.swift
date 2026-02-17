@@ -10,7 +10,6 @@ import SwiftUI
 /// A View for Step Indications.
 ///
 /// You create step indicator view either  in `vertical` or `horizontal` mode
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct StepperView: View {
     /// contains list of steps to be rendered next to Indicators
     @Environment(\.steps) var steps
@@ -58,7 +57,6 @@ public struct StepperView: View {
     case bottoom
     ````
 */
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum StepperAlignment: String, CaseIterable {
     /// aligns step Indicator  to top
     case top = "Top"
@@ -77,7 +75,6 @@ public enum StepperAlignment: String, CaseIterable {
     case custom(Content)
     ````
  */
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum StepperIndicationType<Content:View> {
     /// alias to `Width`
     public typealias Width = CGFloat
@@ -99,7 +96,6 @@ public enum StepperIndicationType<Content:View> {
    case custom(CGFloat, Color)
    ````
 */
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum StepperLineOptions {
     /// default line option
     case defaults

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if #available(iOS 13.0, *) {
+        if #available(iOS 17.0, *) {
             let stepperView = UIHostingController(rootView: ExampleView())
             stepperView.view.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(stepperView.view)

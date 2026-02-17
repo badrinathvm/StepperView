@@ -10,10 +10,8 @@ import SwiftUI
 import UIKit
 import StepperView
 
-let customGreen = Color(red: 0.00, green: 0.80, blue: 0.66, alpha: 1.00)
-
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ExampleView11: View {
+    let customGreen = Color(red: 0.00, green: 0.80, blue: 0.66, opacity: 1.0)
     let cells = [ CustomStepTextView(text: "Basic Details"),
                   CustomStepTextView(text: "Company Details"),
                   CustomStepTextView(text: "Subscription plan"),
@@ -96,7 +94,7 @@ struct ExampleView11: View {
                             StepperIndicationType.custom(IndicatorImageView(name: "completed")),
                             StepperIndicationType.custom(IndicatorImageView(name:"pending"))
                         ])
-                        .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                        .lineOptions(StepperLineOptions.rounded(4, 8, customGreen))
                         .stepLifeCycles([StepLifeCycle.completed, .completed, .completed, .pending])
                         .spacing(40)
                         .padding(.leading, 50)
@@ -104,7 +102,7 @@ struct ExampleView11: View {
                     StepperView()
                         .addSteps(cells)
                         .indicators(indicators)
-                        .lineOptions(StepperLineOptions.rounded(4, 8, Color(customGreen)))
+                        .lineOptions(StepperLineOptions.rounded(4, 8, customGreen))
                         .stepLifeCycles([StepLifeCycle.completed, .completed, .pending, .pending])
                         .spacing(40)
                         .padding(.leading, 50)
@@ -118,7 +116,7 @@ struct ExampleView11: View {
                             StepperIndicationType.custom(IndicatorImageView(name: "completed")),
                             StepperIndicationType.custom(IndicatorImageView(name: "completed"))
                         ])
-                        .lineOptions(StepperLineOptions.custom(4, Color(customGreen)))
+                        .lineOptions(StepperLineOptions.custom(4, customGreen))
                         .stepLifeCycles([StepLifeCycle.completed, .completed ])
                         .spacing(50)
                         .padding(.leading, 10)
@@ -128,7 +126,6 @@ struct ExampleView11: View {
     }
 }
 
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct IndicatorImageView: View {
     var name:String
     var body: some View {
@@ -144,7 +141,6 @@ struct IndicatorImageView: View {
     }
 }
 
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct CustomStepTextView: View {
     var text:String
     var body: some View {
@@ -157,7 +153,6 @@ struct CustomStepTextView: View {
     }
 }
 
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ExampleView11_Previews: PreviewProvider {
     static var previews: some View {
         ExampleView11()

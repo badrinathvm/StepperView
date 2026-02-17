@@ -9,7 +9,6 @@ import SwiftUI
 
 // MARK: - Indicator View for Stepper Indicator
 /// A `View ` for Step Indicator
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct IndicatorView: View {
     /// state variable to hold  width to render  `View`  when values changes
     @State private var width:CGFloat = 0.0

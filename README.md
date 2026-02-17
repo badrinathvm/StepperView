@@ -24,6 +24,7 @@
 # Table of Contents
 
 * [Features](#features)
+* [AI-Powered StepperView Generator](#ai-powered-stepperview-generator)
 * [Documentation](#documentation)
 * [Installation](#installation)
     * [CocoaPods](#cocoapods)
@@ -51,6 +52,50 @@
 - Customizable line,spacing & animation options.
 - Pitstop feature to add intermediate stages between Step Indicators
 - Support for updating the life cycle status for each of the steps
+- **NEW:** AI-Powered StepperView Generator using Apple's on-device Foundation Models (iOS 26+)
+
+## AI-Powered StepperView Generator
+
+Generate fully configured StepperViews from natural language prompts using Apple's on-device Foundation Models framework. Describe what you want in plain English, and the AI generates a complete StepperView with indicators, colors, pit stops, and lifecycle states — all rendered live with copyable Swift code.
+
+<!-- TODO: Replace with actual gif -->
+<p align="center">
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/ai_stepper_generator.gif" width="300" alt="AI StepperView Generator"/>
+</p>
+
+### Highlights
+
+- Describe your stepper in natural language (e.g., *"Create a delivery tracking stepper with 5 stops"*)
+- Supports **vertical** and **horizontal** modes
+- Choose from **numbered circles**, **plain circles**, or **SF Symbol** indicators
+- Use **named colors** or any **hex color** (e.g., `#FF6B35`)
+- Optionally add **pit stops** with descriptions
+- **Live preview** and **copyable Swift code** in a tabbed interface
+- Fully on-device — no network calls, powered by Apple Foundation Models
+
+### Quick Start
+
+```swift
+import StepperView
+
+// Add to your SwiftUI view (iOS 26+ only)
+if #available(iOS 26.0, *) {
+    StepperViewAIGeneratorView()
+}
+```
+
+### Example Prompts
+
+| Prompt | What it generates |
+|--------|-------------------|
+| *"Create a 5-step checkout flow"* | Vertical stepper with numbered circles |
+| *"Build a horizontal flight booking stepper with sfSymbol indicators"* | Horizontal stepper with SF Symbol icons |
+| *"Make a recipe stepper in #E11D48 with details"* | Vertical stepper with hex color and pit stops |
+| *"Create a 4-step onboarding flow in purple"* | Vertical stepper with AI-chosen purple hex color |
+
+### Configuration
+
+All AI generation behavior is configurable via `ai_config.yaml` — UI strings, default values, valid colors, SF Symbols allowlist, pit stop keywords, and the system prompt template can all be customized without touching Swift code.
 
 ## Documentation
 **[StepperView Reference](https://badrinathvm.github.io/StepperView/)**
