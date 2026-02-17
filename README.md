@@ -12,7 +12,7 @@
 
 <br/>
 <p align="center">
-<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" height="450" alt="StepperView"/>
+<img src="https://raw.githubusercontent.com/badrinathvm/StepperView/master/images/structure.png" alt="StepperView"/>
 </p>
 
 <br/>
