@@ -53,8 +53,7 @@ Carthage/Build
 # Note: if you ignore the Pods directory, make sure to uncomment
 # `pod install` in .travis.yml
 #
-# Pods/
-=======
+Pods/
 
 ## Obj-C/Swift specific
 *.hmap
@@ -73,7 +72,7 @@ playground.xcworkspace
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
 # Packages/
 # Package.pins
-# Package.resolved
+Package.resolved
 # *.xcodeproj
 #
 # Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
@@ -88,7 +87,7 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+Pods/
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
 # *.xcworkspace

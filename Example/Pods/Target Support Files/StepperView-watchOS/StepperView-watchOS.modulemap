@@ -1,6 +1,0 @@
-framework module StepperView {
-  umbrella header "StepperView-watchOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

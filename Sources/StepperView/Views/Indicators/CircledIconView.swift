@@ -8,7 +8,6 @@
 import SwiftUI
 
 /// A  Circled Icon `View ` for Step Indicator
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct CircledIconView: View {
     /// icon for the step indicator
     public var image:Image

@@ -8,7 +8,6 @@
 import SwiftUI
 
 /// Circle view with text inside for Step Indicator
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct NumberedCircleView: View {
     /// text to be paced inside the circle
     var text:String
@@ -46,7 +45,6 @@ public struct NumberedCircleView: View {
 }
 
 /// circles around the border with progress
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct AnimatedCircle: View {
     /// text to be paced inside the circle
     var text:String

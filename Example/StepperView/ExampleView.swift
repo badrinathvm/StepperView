@@ -9,28 +9,45 @@
 import SwiftUI
 import StepperView
 
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ExampleView: View {
     var body: some View {
         TabView {
             ExampleView6()
-                .tabItem { Text("PitStops") .foregroundColor(Color.black) }
+                .tabItem {
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("PitStops")
+                }
+            #if canImport(FoundationModels)
+            if #available(iOS 26.0, *) {
+                StepperViewAIGeneratorView()
+                    .tabItem {
+                        Image(systemName: "wand.and.stars")
+                        Text("AI")
+                    }
+            }
+            #endif
             ExampleView5()
-                .tabItem { Text("Examples") .foregroundColor(Color.black) }
-            ExampleView11()
-                .tabItem { Text("LifeCycle") .foregroundColor(Color.black) }
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Examples")
+                }
 //            ExampleView2()
 //                .tabItem { Text("Usecase") .foregroundColor(Color.black) }
             ExampleView3()
-                .tabItem { Text("Card") .foregroundColor(Color.black) }
+                .tabItem {
+                    Image(systemName: "creditcard")
+                    Text("Card")
+                }
             ExampleView1()
-                .tabItem { Text("Basic").foregroundColor(Color.black) }
-            #if canImport(FoundationModels)
-            if #available(iOS 26.0, *) {
-                AIGeneratorView()
-                    .tabItem { Text("AI").foregroundColor(Color.black) }
-            }
-            #endif
+                .tabItem {
+                    Image(systemName: "circle.grid.2x2")
+                    Text("Basic")
+                }
+            ExampleView11()
+                .tabItem {
+                    Image(systemName: "arrow.triangle.2.circlepath")
+                    Text("LifeCycle")
+                }
         }
 
         // to test dynamic way of adding steps, use ExampleView9

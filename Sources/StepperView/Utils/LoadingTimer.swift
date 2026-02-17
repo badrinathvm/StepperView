@@ -9,7 +9,6 @@ import Foundation
 import Combine
 
 /// creates a publisher for loading time
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 class LoadingTimer {
     
     /// create a publisher

@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 /// Color palette helper accessing colors and it's variations.
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public enum Colors {
     /// red and it's associated variations
     case red(RedSubType)
@@ -144,7 +143,6 @@ public enum Colors {
 }
 
 /// Vvsualize Color palette for each color and it's sub type variation
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension Colors {
     /// alias to `Color`
     public typealias RawValue = Color
@@ -218,5 +216,24 @@ extension Colors {
         case .cyan: return Color(#colorLiteral(red: 0.02745098039, green: 0.768627451, blue: 0.8509803922, alpha: 1))
         case .polar: return Color(#colorLiteral(red: 0.9490196078, green: 0.9843137255, blue: 0.9882352941, alpha: 1))
         }
+    }
+}
+
+// MARK: - Hex Color Support
+
+public extension Color {
+    /// Creates a Color from a hex string (e.g. "#FF6B35" or "FF6B35").
+    /// Returns nil if the string is not a valid 6-character hex color.
+    init?(hex: String) {
+        let trimmed = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+        let hexString = trimmed.hasPrefix("#") ? String(trimmed.dropFirst()) : trimmed
+        guard hexString.count == 6,
+              let hexNumber = UInt64(hexString, radix: 16) else {
+            return nil
+        }
+        let r = Double((hexNumber & 0xFF0000) >> 16) / 255.0
+        let g = Double((hexNumber & 0x00FF00) >> 8) / 255.0
+        let b = Double(hexNumber & 0x0000FF) / 255.0
+        self.init(red: r, green: g, blue: b)
     }
 }

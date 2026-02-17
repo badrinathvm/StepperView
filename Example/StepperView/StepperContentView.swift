@@ -10,7 +10,6 @@ import SwiftUI
 import StepperView
 
 // MARK: - Stepper Content View
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct StepperContentView: View {
     var body: some View {
         return rectangleContent()
@@ -21,8 +20,8 @@ struct StepperContentView: View {
         .overlay(RoundedRectangle(cornerRadius: 8)
                     .frame(width: 300)
                     .foregroundColor(Color.clear)
-                    .shadow(color: Color(UIColor.black).opacity(0.03), radius: 8, x: 5, y: -5)
-                    .shadow(color: Color(UIColor.black).opacity(0.03), radius: 8, y: 5)
+                    .shadow(color: Color(.black).opacity(0.03), radius: 8, x: 5, y: -5)
+                    .shadow(color: Color(.black).opacity(0.03), radius: 8, y: 5)
                     .border(Color.gray))
     }
     
@@ -49,7 +48,6 @@ struct StepperContentView: View {
 }
 
 // MARK: - Image View to host Image
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ImageView: View {
     var name:String
     var body: some View {

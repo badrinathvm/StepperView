@@ -9,7 +9,6 @@
 import SwiftUI
 import StepperView
 
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 struct ImageTextRowView: View {
     var text:String
     var imageName:String
@@ -35,8 +34,8 @@ struct ImageTextRowView: View {
                     RoundedRectangle(cornerRadius: 8.0)
                         .stroke(Color.gray, lineWidth: 0.5)
                         .foregroundColor(Color.white)
-                        .shadow(color: Color(UIColor.black).opacity(0.03), radius: 8, x: 5, y: -5)
-                        .shadow(color: Color(UIColor.black).opacity(0.03), radius: 8, y: 5))
+                        .shadow(color: Color(.black).opacity(0.03), radius: 8, x: 5, y: -5)
+                        .shadow(color: Color(.black).opacity(0.03), radius: 8, y: 5))
             
         }
     }
