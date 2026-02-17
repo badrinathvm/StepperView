@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+#if os(macOS)
+import AppKit
+#endif
 
 #if canImport(FoundationModels)
 import FoundationModels
 
-@available(iOS 26.0, *)
+@available(iOS 26.0, macOS 26.0, *)
 public struct StepperViewAIGeneratorView: View {
     @State private var promptText: String = ""
     @State private var isLoading: Bool = false
@@ -96,7 +99,11 @@ public struct StepperViewAIGeneratorView: View {
                                 HStack {
                                     Spacer()
                                     Button(action: {
+                                        #if os(iOS)
                                         UIPasteboard.general.string = code
+                                        #elseif os(macOS)
+                                        NSPasteboard.general.setString(code, forType: .string)
+                                        #endif
                                     }) {
                                         Label(StepperAIConfig.UIStrings.copyButton, systemImage: "doc.on.doc")
                                             .font(.caption)
@@ -109,7 +116,7 @@ public struct StepperViewAIGeneratorView: View {
                                         .textSelection(.enabled)
                                         .padding(12)
                                 }
-                                .background(Color(.systemGray6))
+                                .background(Color.gray.opacity(0.15))
                                 .cornerRadius(8)
                             }
                         }
@@ -118,9 +125,13 @@ public struct StepperViewAIGeneratorView: View {
                 .padding(.horizontal)
             }
             .navigationTitle(StepperAIConfig.UIStrings.navigationTitle)
+            #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
+            #endif
         }
+        #if os(iOS)
         .navigationViewStyle(.stack)
+        #endif
     }
 
     private func generateStepper() {

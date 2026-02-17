@@ -9,7 +9,7 @@ import SwiftUI
 
 #if canImport(FoundationModels)
 
-@available(iOS 26.0, *)
+@available(iOS 26.0, macOS 26.0, *)
 struct StepperAIBuilder {
 
     // MARK: - Color Mapping

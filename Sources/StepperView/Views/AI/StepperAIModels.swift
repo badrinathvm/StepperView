@@ -9,7 +9,7 @@ import Foundation
 #if canImport(FoundationModels)
 import FoundationModels
 
-@available(iOS 26.0, *)
+@available(iOS 26.0, macOS 26.0, *)
 @Generable
 public struct GeneratedStepperConfig: Codable {
     @Guide(description: "A short descriptive title for the stepper, e.g. 'Delivery Tracking'")
@@ -28,7 +28,7 @@ public struct GeneratedStepperConfig: Codable {
     public var steps: [GeneratedStep]
 }
 
-@available(iOS 26.0, *)
+@available(iOS 26.0, macOS 26.0, *)
 @Generable
 public struct GeneratedStep: Codable {
     @Guide(description: "1-based sequential step number")

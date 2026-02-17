@@ -2,7 +2,6 @@
 
 #### SwiftUI iOS component for Step Indications
 
-[![CI Status](https://img.shields.io/travis/badrinathvm/StepperView.svg?style=flat)](https://travis-ci.org/badrinathvm/StepperView)
 [![License](https://img.shields.io/cocoapods/l/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
 [![Platform](https://img.shields.io/badge/platform-ios%20%7C%20watchos%20%7C%20macos-orange)](https://cocoapods.org/pods/StepperView)
 [![Version](https://img.shields.io/cocoapods/v/StepperView.svg?style=flat)](https://cocoapods.org/pods/StepperView)
