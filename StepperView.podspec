@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.summary          = 'SwiftUI iOS component for Step Indications.'
   s.description      = 'Stepper View Indication componet for SwiftUI'
   s.homepage         = 'https://github.com/badrinathvm/StepperView'
+  s.author           = 'Badarinath Venkatnarayansetty'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.source           = { :git => 'https://github.com/badrinathvm/StepperView.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/badrivm'
