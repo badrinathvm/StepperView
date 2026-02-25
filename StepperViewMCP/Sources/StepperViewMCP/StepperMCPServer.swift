@@ -32,6 +32,9 @@ struct StepperMCPServer: Sendable {
             GetExampleTool.definition
         ]
 
+        let transport = StdioTransport()
+        try await server.start(transport: transport)
+
         let config = self.config  // capture value type for Sendable closures
 
         await server.withMethodHandler(ListTools.self) { _ in
@@ -49,10 +52,6 @@ struct StepperMCPServer: Sendable {
             }
         }
 
-        let transport = StdioTransport()
-        // start() launches a background message-handling Task and returns immediately.
-        // waitUntilCompleted() blocks until stdin closes (i.e. the MCP client disconnects).
-        try await server.start(transport: transport)
         await server.waitUntilCompleted()
     }
 
