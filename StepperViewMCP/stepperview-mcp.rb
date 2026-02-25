@@ -11,13 +11,13 @@ class StepperviewMcp < Formula
   def install
     cd "StepperViewMCP" do
       system "swift", "build", "--configuration", "release", "--disable-sandbox"
-      bin.install ".build/release/StepperViewMCP"
+      bin.install ".build/release/stepperview-mcp"
     end
   end
 
   test do
     input = %({"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"brew-test","version":"1.0"}}}\n)
-    output = pipe_output("#{bin}/StepperViewMCP", input)
+    output = pipe_output("#{bin}/stepperview-mcp", input)
     assert_match "StepperView MCP", output
   end
 end

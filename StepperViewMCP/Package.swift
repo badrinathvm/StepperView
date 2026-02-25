@@ -12,11 +12,12 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "StepperViewMCP",
+            name: "stepperview-mcp",
             dependencies: [
                 .product(name: "MCP", package: "swift-sdk"),
                 .product(name: "Yams", package: "Yams")
             ],
+            path: "Sources/StepperViewMCP",
             resources: [
                 .process("Resources")
             ],
