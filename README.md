@@ -388,6 +388,44 @@ CircledIconView(image: Image("flag"), width: 40, strokeColor: Color.red)
 <a href="https://www.watchto5k.com/">WatchTo5K</a>
 
 
+## MCP Server (AI Tool Integration)
+
+StepperView ships with a Swift-based [Model Context Protocol](https://modelcontextprotocol.io) server that lets any MCP-compatible AI tool (Claude Desktop, Cursor, VS Code) generate production-ready StepperView code directly in your workflow — no example app required.
+
+### Build
+
+```bash
+cd StepperViewMCP
+swift build -c release
+```
+
+### Tools
+
+| Tool | Description |
+|---|---|
+| `generate_stepper_code` | Generate a complete SwiftUI `StepperView` struct from structured parameters |
+| `list_colors` | List all valid named colors + hex color support |
+| `list_sf_symbols` | List the curated SF Symbol allowlist |
+| `get_example` | Return copy-paste Swift code for common patterns (`vertical`, `horizontal`, `pit_stops`, `hex_color`, `mixed_lifecycle`) |
+
+### Claude Desktop Integration
+
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "stepperview": {
+      "command": "/path/to/StepperView/StepperViewMCP/.build/release/StepperViewMCP"
+    }
+  }
+}
+```
+
+Then ask Claude: *"Generate a 4-step onboarding stepper in teal with numbered circle indicators"*
+
+---
+
 ## Author
 
 Badarinath Venkatnarayansetty.Follow and contact me on <a href="https://twitter.com/badrivm">Twitter</a> or <a href="https://www.linkedin.com/in/badarinath-venkatnarayansetty-abb79146/">LinkedIn</a>
