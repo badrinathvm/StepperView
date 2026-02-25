@@ -1,8 +1,8 @@
 class StepperviewMcp < Formula
   desc "MCP server for generating production-ready SwiftUI StepperView code via Claude Desktop, Cursor, and VS Code"
   homepage "https://github.com/badrinathvm/StepperView"
-  url "https://github.com/badrinathvm/StepperView/archive/refs/tags/2.0.1.tar.gz"
-  version "2.0.1"
+  url "https://github.com/badrinathvm/StepperView/archive/refs/tags/2.0.2.tar.gz"
+  version "2.0.2"
   sha256 "FILL_IN_AFTER_TAGGING"
 
   depends_on "swift"
